@@ -24,4 +24,5 @@ Use this property to choose between audio capture, video capture, or combined au
 
 
 ## -capabilities
-webcam, microphone
+backgroundMediaRecording
+microphone, webcam

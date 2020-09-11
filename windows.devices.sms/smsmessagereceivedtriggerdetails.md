@@ -14,12 +14,12 @@ public class SmsMessageReceivedTriggerDetails : Windows.Devices.Sms.ISmsMessageR
 Contains event details for the event raised when an SMS message is received.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators, mobile broadband adapter IHV, or OEM. For more information, see [Mobile Broadband:  device apps](http://msdn.microsoft.com/library/windows/hardware/hh852368.aspx).
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators, mobile broadband adapter IHV, or OEM. For more information, see [Mobile Broadband:  device apps](/windows-hardware/drivers/mobilebroadband/index).
 
 ## -remarks
-You access an [SmsMessageReceivedTriggerDetails](smsmessagereceivedtriggerdetails.md) object through the function that you implement to handle the [SmsMessageRegistration.MessageReceived](smsmessageregistration_messagereceived.md) event.
+You access an SmsMessageReceivedTriggerDetails object through the function that you implement to handle the [SmsMessageRegistration.MessageReceived](smsmessageregistration_messagereceived.md) event.
 
-Your filtering code is required to acknowledge each filtered message by calling [Drop](smsmessagereceivedtriggerdetails_drop.md) or [Accept](smsmessagereceivedtriggerdetails_accept.md) before it can process the next message.
+Your filtering code is required to acknowledge each filtered message by calling [Drop](smsmessagereceivedtriggerdetails_drop_1201404469.md) or [Accept](smsmessagereceivedtriggerdetails_accept_1944939200.md) before it can process the next message.
 
 ## -examples
 
@@ -27,4 +27,4 @@ Your filtering code is required to acknowledge each filtered message by calling 
 
 
 ## -capabilities
-cellularMessaging
+cellularMessaging, sms

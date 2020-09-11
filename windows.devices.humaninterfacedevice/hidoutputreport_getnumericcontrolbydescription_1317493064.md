@@ -11,13 +11,17 @@ public Windows.Devices.HumanInterfaceDevice.HidNumericControl GetNumericControlB
 # Windows.Devices.HumanInterfaceDevice.HidOutputReport.GetNumericControlByDescription
 
 ## -description
+
 Retrieves the numeric control associated with the given *controlDescription*.
 
 ## -parameters
+
 ### -param controlDescription
+
 Describes the numeric control.
 
 ## -returns
+
 A **HidNumericControl** object.
 
 ## -remarks
@@ -25,3 +29,5 @@ A **HidNumericControl** object.
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

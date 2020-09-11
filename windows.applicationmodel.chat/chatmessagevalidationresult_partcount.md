@@ -17,8 +17,11 @@ Gets the total number of text fragments needed for this message. This value has 
 The number of parts.
 
 ## -remarks
-The SMS text portion of a message is divided into multiple parts if necessary. The [PartCount](chatmessagevalidationresult_partcount.md) value is the total count of parts required to contain this message.
+The SMS text portion of a message is divided into multiple parts if necessary. The PartCount value is the total count of parts required to contain this message.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

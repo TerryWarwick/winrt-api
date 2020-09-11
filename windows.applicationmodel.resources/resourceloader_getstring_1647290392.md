@@ -10,7 +10,7 @@ public string GetString(System.String resource)
 # Windows.ApplicationModel.Resources.ResourceLoader.GetString
 
 ## -description
-Returns the most appropriate string value of a resource, specified by resource identifier, for the default [ResourceContext](../windows.applicationmodel.resources.core/resourcecontext.md) of the view in which the [ResourceLoader](resourceloader.md) was obtained using [ResourceLoader.GetForCurrentView](resourceloader_getforcurrentview.md).
+Returns the most appropriate string value of a resource, specified by resource identifier, for the default [ResourceContext](../windows.applicationmodel.resources.core/resourcecontext.md) of the view in which the [ResourceLoader](resourceloader.md) was obtained using [ResourceLoader.GetForCurrentView](resourceloader_getforcurrentview_1363600702.md).
 
 
 <!--Writer todo: Link to how to create and identify resources.-->
@@ -28,16 +28,8 @@ The most appropriate string value of the specified resource for the default [Res
 ## -remarks
 <!--Writer todo: remarks: discuss when to use GetString vs. GetStringByReference.-->
 
-
-Example:
-
-```javascript
-var string = resourceLoader.getString('Header1');
-```
-
-
-
 ## -examples
+See the example in [ResourceLoader](resourceloader.md).
 
 ## -see-also
 [ResourceContext](../windows.applicationmodel.resources.core/resourcecontext.md)

@@ -24,7 +24,17 @@ Include only videos.
 Include images and videos.
 
 
+### -field ImagesAndVideosFromCameraRoll:3
+Include images and videos located in the Camera Roll directory or any of its subdirectories.
+
+
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1809 | 17763 | ImagesAndVideosFromCameraRoll |
 
 ## -examples
 

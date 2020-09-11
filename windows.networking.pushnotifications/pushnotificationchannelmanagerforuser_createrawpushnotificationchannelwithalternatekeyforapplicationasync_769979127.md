@@ -10,12 +10,12 @@ public IAsyncOperation<PushNotificationChannel> PushNotificationChannelManagerFo
 # Windows.Networking.PushNotifications.PushNotificationChannelManagerForUser.CreateRawPushNotificationChannelWithAlternateKeyForApplicationAsync
 
 ## -description
-Creates an object bound to a specified app through which you retrieve a push notificaiton channel from Windows Push Notification Services (WNS). The specified app must be in the same package as the calling app.
+Creates an object bound to a specified app through which you retrieve a push notification channel from Windows Push Notification Services (WNS). The specified app must be in the same package as the calling app.
 
 ## -parameters
 
 ### -param appServerKey
-An uncompressed key in ANSI X9.62 format. This value is from the P-256 curve defined in the [Secure Hash Standard specification](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf).
+An uncompressed key in ANSI X9.62 format. This value is from the P-256 curve defined in the [Secure Hash Standard specification](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf).
 
 ### -param channelId
 The ID of the push notification channel.

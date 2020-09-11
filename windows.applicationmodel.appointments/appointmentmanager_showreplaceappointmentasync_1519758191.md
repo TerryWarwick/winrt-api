@@ -14,7 +14,7 @@ Shows the Appointments provider Replace Appointment UI, to enable the user to re
 
 ## -parameters
 ### -param appointmentId
-The appointment identifier of the current appointment. This is typically obtained from the async return value of a previous [ShowAddAppointmentAsync](appointmentmanager_showaddappointmentasync.md) or [ShowReplaceAppointmentAsync](appointmentmanager_showreplaceappointmentasync.md) call.
+The appointment identifier of the current appointment. This is typically obtained from the async return value of a previous [ShowAddAppointmentAsync](appointmentmanager_showaddappointmentasync_253292089.md) or [ShowReplaceAppointmentAsync](appointmentmanager_showreplaceappointmentasync_1336777815.md) call.
 
 ### -param appointment
 The object representing the information for the appointment to replace the current appointment.
@@ -34,3 +34,5 @@ When this method completes, it returns a **String** object that represents the a
 
 ## -see-also
 [ShowReplaceAppointmentAsync(String, Appointment, Rect)](appointmentmanager_showreplaceappointmentasync_1336777815.md), [ShowReplaceAppointmentAsync(String, Appointment, Rect, Placement, DateTime)](appointmentmanager_showreplaceappointmentasync_1458488223.md)
+## -capabilities
+appointmentsSystem

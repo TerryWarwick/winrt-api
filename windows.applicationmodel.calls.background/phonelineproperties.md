@@ -1,6 +1,7 @@
 ---
 -api-id: T:Windows.ApplicationModel.Calls.Background.PhoneLineProperties
 -api-type: winrt enum
+ms.custom: 19H1
 ---
 
 <!-- Enumeration syntax
@@ -43,9 +44,13 @@ The transport (cellular or voice over IP) for the phone line.
 ### -field Voicemail:256
 The voice mail account associated with the phone line.
 
-
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+phoneCallHistory, phoneCallHistorySystem
+
+

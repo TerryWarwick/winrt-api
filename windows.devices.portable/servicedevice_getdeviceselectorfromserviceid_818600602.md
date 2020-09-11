@@ -10,7 +10,7 @@ public string GetDeviceSelectorFromServiceId(System.Guid serviceId)
 # Windows.Devices.Portable.ServiceDevice.GetDeviceSelectorFromServiceId
 
 ## -description
-An Advanced Query Syntax (AQS) string for identifying a device service by its GUIDs. This string is passed to the [FindAllAsync](../windows.devices.enumeration/deviceinformation_findallasync.md) or [CreateWatcher](../windows.devices.enumeration/deviceinformation_createwatcher.md) method.
+An Advanced Query Syntax (AQS) string for identifying a device service by its GUIDs. This string is passed to the [FindAllAsync](../windows.devices.enumeration/deviceinformation_findallasync_1257462890.md) or [CreateWatcher](../windows.devices.enumeration/deviceinformation_createwatcher_1506431823.md) method.
 
 ## -parameters
 ### -param serviceId
@@ -24,4 +24,4 @@ The AQS string.
 ## -examples
 
 ## -see-also
-[Windows 8 Device Experience: ](http://go.microsoft.com/fwlink/p/?linkid=241442), [Portable Device Services Sample]( http://go.microsoft.com/fwlink/p/?linkid=242031), [Enumerating Common Devices](http://msdn.microsoft.com/library/2deddbba-de46-409e-ac76-87419cb03eba)
+[Windows 8 Device Experience: ](http://msdn.microsoft.com/en-us/library/windows/hardware/br259108.aspx), [Portable Device Services Sample](https://go.microsoft.com/fwlink/p/?linkid=242031), [Enumerating Common Devices](/previous-versions/windows/apps/hh464974(v=win.10))

@@ -11,7 +11,7 @@ public enum Windows.Storage.Pickers.Provider.SetFileNameResult : int
 # SetFileNameResult
 
 ## -description
-Indicates the result of a call to the [fileSavePickerUI.trySetFileName](filesavepickerui_trysetfilename.md) method.
+Indicates the result of a call to the [fileSavePickerUI.trySetFileName](filesavepickerui_trysetfilename_1605308267.md) method.
 
 ## -enum-fields
 ### -field Succeeded:0
@@ -29,4 +29,4 @@ The file name and extension were not updated because the file picker UI wasn't a
 ## -examples
 
 ## -see-also
-[FileSavePickerUI class](filesavepickerui.md), [FileSavePickerUI.AllowedFileTypes property](filesavepickerui_allowedfiletypes.md), [FileSavePickerUI.TrySetFileName method](filesavepickerui_trysetfilename.md)
+[FileSavePickerUI class](filesavepickerui.md), [FileSavePickerUI.AllowedFileTypes property](filesavepickerui_allowedfiletypes.md), [FileSavePickerUI.TrySetFileName method](filesavepickerui_trysetfilename_1605308267.md)

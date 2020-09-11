@@ -25,7 +25,7 @@ Gets or sets the display format for the day value.
 The display format for the day value.
 
 ## -remarks
-Change the format of the day picker by setting the [DayFormat](datepicker_dayformat.md) property.
+Change the format of the day picker by setting the DayFormat property.
 
 The string content of each [ComboBox](combobox.md) in the [DatePicker](datepicker.md) is created by a [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md). You inform the [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md) how to format the day value by providing a string that is either a *format template* or a *format pattern*. Common templates and patterns for day values are listed in the following table.
 
@@ -38,6 +38,9 @@ The string content of each [ComboBox](combobox.md) in the [DatePicker](datepicke
 In some cases, using a format pattern gives you more precise control over the formatting. For example, you can use a format pattern to specify that the day picker always shows 2 digits, including a leading 0 when needed. You can also combine multiple format patterns. For example, you can combine the `{day}` and `{dayofweek.abbreviated}` formats to make the day picker show both the numeric date and the day of the week, like this: **14 Thu**. See the Examples section for more info.
 
 For the complete list of format templates and format patterns, see the Remarks section of the [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md) class documentation.
+
+> [!NOTE]
+> Some date formats should be avoided if the date picker might be displayed in a small area, such as adding the full string value of the day of week. These strings can be long and might be clipped if the DatePicker's width is forced to be small.
 
 ## -examples
 Here's a [DatePicker](datepicker.md) formatted using format templates, and a [DatePicker](datepicker.md) formatted using format strings. Both [DatePicker](datepicker.md) controls look the same when the app is run because the formatting is equivalent.
@@ -61,4 +64,4 @@ Here's a [DatePicker](datepicker.md) that combines 2 format patterns to display 
 
 
 ## -see-also
-[DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md), [MonthFormat](datepicker_monthformat.md), [YearFormat](datepicker_yearformat.md), [DayVisible](datepicker_dayvisible.md), [Quickstart: Adding a DatePicker](http://msdn.microsoft.com/library/feae870d-e423-457b-9d0a-3929247952a9), [How to use patterns to format dates and times](http://msdn.microsoft.com/library/4d281463-2acc-43ab-bffb-7d901e05cf25)
+[DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md), [MonthFormat](datepicker_monthformat.md), [YearFormat](datepicker_yearformat.md), [DayVisible](datepicker_dayvisible.md), [Quickstart: Adding a DatePicker](/previous-versions/windows/apps/dn308514(v=win.10)), [How to use patterns to format dates and times](/previous-versions/windows/apps/jj673581(v=win.10))

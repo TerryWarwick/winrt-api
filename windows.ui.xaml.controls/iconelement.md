@@ -15,14 +15,15 @@ Represents the base class for an icon UI element.
 ## -remarks
 ### IconElement derived classes
 
-[IconElement](iconelement.md) is the parent class for these classes:
+IconElement is the parent class for these classes:
 + [BitmapIcon](bitmapicon.md)
 + [FontIcon](fonticon.md)
 + [PathIcon](pathicon.md)
 + [SymbolIcon](symbolicon.md)
++ [IconSourceElement](iconsourceelement.md)
 
 
 ## -examples
 
 ## -see-also
-[FrameworkElement](../windows.ui.xaml/frameworkelement.md), [BitmapIcon](bitmapicon.md), [FontIcon](fonticon.md), [PathIcon](pathicon.md), [SymbolIcon](symbolicon.md)
+[FrameworkElement](../windows.ui.xaml/frameworkelement.md), [AppBarButton](appbarbutton.md), [Icons for UWP apps](/windows/uwp/style/icons)

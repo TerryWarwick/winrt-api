@@ -10,7 +10,7 @@ public enum Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStat
 # AppInstallState
 
 ## -description
-Defines the app install states that are returned by the [InstallState](appinstallstate.md) property of the [AppInstallStatus](appinstallstatus.md) class.
+Defines the app install states that are returned by the InstallState property of the [AppInstallStatus](appinstallstatus.md) class.
 
 ## -enum-fields
 ### -field Pending:0
@@ -41,7 +41,7 @@ The app install is canceled.
 The app install was paused.
 
 ### -field Error:9
-The ap install encountered an error.
+The app install encountered an error.
 
 ### -field PausedLowBattery:10
 The app install was paused because the battery is low.
@@ -61,3 +61,5 @@ The app is ready to download.
 ## -examples
 
 ## -see-also
+## -capabilities
+runFullTrust

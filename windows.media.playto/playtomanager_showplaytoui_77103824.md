@@ -13,10 +13,10 @@ public void ShowPlayToUI()
 Displays the Play To UI.
 
 ## -remarks
-<!--{annotation author="v-shawja" time="1/27/2012 10:59:25 AM"}The following paragraph uses "target" twice. Note that MSTP generally prefers "destination" over "target". Please make that change if it would be accurate. Or "target" can simply be deleted if it's unnecessary.-->
+
 By default, users invoke the **Devices** charm to select a Play To target device to stream media to. You can also display the UI to enable users to select a Play To target device by using the **ShowPlayToUI** method.
 
 ## -examples
 
 ## -see-also
-[Play To sample](http://go.microsoft.com/fwlink/p/?linkid=245166), [PlayToReceiver sample](http://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](http://go.microsoft.com/fwlink/p/?linkid=245168)
+[Play To sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Media%20Play%20To%20sample%20(Windows%208)), [PlayToReceiver sample](https://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](https://go.microsoft.com/fwlink/p/?linkid=245168)

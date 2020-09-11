@@ -15,15 +15,9 @@ Gets or sets the [Brush](../windows.ui.xaml.media/brush.md) to apply to the text
 ## -xaml-syntax
 ```xaml
 <ContentPresenter Foreground="{StaticResource resourceName}"/>
-
-```
-
-```xaml
+- or -
 <ContentPresenter Foreground="colorString"/>
-
-```
-
-```xaml
+- or -
 <ContentPresenter>
   <ContentPresenter.Foreground>singleBrush</ContentPresenter.Foreground>
 </ContentPresenter>
@@ -44,4 +38,4 @@ The brush used as the foreground brush for the text contents. The default is a n
 ## -examples
 
 ## -see-also
-[Use brushes](http://msdn.microsoft.com/library/02141f86-355e-4046-86ea-2a89d615b7db)
+[Use brushes](/windows/uwp/graphics/using-brushes)

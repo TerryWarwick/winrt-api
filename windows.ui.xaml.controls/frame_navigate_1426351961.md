@@ -14,10 +14,10 @@ Causes the [Frame](frame.md) to load content represented by the specified [Page]
 
 ## -parameters
 ### -param sourcePageType
-The page to navigate to, specified as a type reference to its partial class type. (A type reference is given as [System.Type](https://msdn.microsoft.com/library/system.type.aspx) for Microsoft .NET, or a [TypeName](../windows.ui.xaml.interop/typename.md) helper struct for Visual C++ component extensions (C++/CX)).
+The page to navigate to, specified as a type reference to its partial class type. (A type reference is given as [System.Type](/dotnet/api/system.type?redirectedfrom=MSDN) for Microsoft .NET, or a [TypeName](../windows.ui.xaml.interop/typename.md) helper struct for Visual C++ component extensions (C++/CX)).
 
 ### -param parameter
-The navigation parameter to pass to the target page; must have a basic type (string, char, numeric, or GUID) to support parameter serialization using [GetNavigationState](frame_getnavigationstate.md).
+The navigation parameter to pass to the target page; must have a basic type (string, char, numeric, or [GUID](/windows/win32/api/guiddef/ns-guiddef-guid)) to support parameter serialization using [GetNavigationState](frame_getnavigationstate_1352043812.md).
 
 ### -param infoOverride
 Info about the animated transition.
@@ -28,6 +28,29 @@ Info about the animated transition.
 ## -remarks
 
 ## -examples
+```xaml
+<Frame x:Name="myFrame">
+    <Frame.ContentTransitions>
+        <TransitionCollection>
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Frame.ContentTransitions>
+</Frame>
+```
+
+```csharp
+// Play the default animation
+myFrame.Navigate(typeof(Page2), null);
+
+// Explicitly play the page refresh animation
+myFrame.Navigate(typeof(Page2), null, new EntranceNavigationTransitionInfo());
+
+// Play the drill in animation
+myFrame.Navigate(typeof(Page2), null, new DrillInNavigationTransitionInfo());
+
+// Suppress the default animation
+myFrame.Navigate(typeof(Page2), null, new SuppressNavigationTransitionInfo());
+```
 
 ## -see-also
-[Navigate(Type, Object)](frame_navigate_1603787821.md), [Navigate(Type)](frame_navigate_442648331.md), [Navigation](http://msdn.microsoft.com/library/742c1c18-c7b1-47b7-866c-726eeb8235ec), [XAML Navigation sample](http://go.microsoft.com/fwlink/p/?LinkID=330214)
+[Navigate(Type, Object)](frame_navigate_1603787821.md), [Navigate(Type)](frame_navigate_442648331.md), [Navigation](/windows/uwp/layout/navigation-basics), [XAML Navigation sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/XamlNavigation)

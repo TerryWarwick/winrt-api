@@ -11,7 +11,7 @@ public enum Windows.Storage.Pickers.Provider.AddFileResult : int
 # AddFileResult
 
 ## -description
-Indicates the result of a call to the [fileOpenPickerUI.addFile](fileopenpickerui_addfile.md) method.
+Indicates the result of a call to the [fileOpenPickerUI.addFile](fileopenpickerui_addfile_887814693.md) method.
 
 ## -enum-fields
 ### -field Added:0
@@ -32,4 +32,4 @@ The file wasn't added because the file picker UI is unavailable.  The file pick
 ## -examples
 
 ## -see-also
-[FileOpenPickerUI](fileopenpickerui.md), [FileOpenPickerUI.AddFile method](fileopenpickerui_addfile.md)
+[FileOpenPickerUI](fileopenpickerui.md), [FileOpenPickerUI.AddFile method](fileopenpickerui_addfile_887814693.md)

@@ -49,13 +49,23 @@ The APDU response was not sent.
 ### -field OtherError:11
 An unknown error occurred.
 
-
 ### -field ValidationFailed:12
+The validation failed.
 
+### -field NotSupported:13
+The operation is not supported.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | ValidationFailed |
+| 1709 | 16299 | NotSupported |
 
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)
+

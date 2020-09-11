@@ -14,11 +14,19 @@ public class GattReadResult : Windows.Devices.Bluetooth.GenericAttributeProfile.
 Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value.
 
 ## -remarks
-One of the [ReadValueAsync](gattcharacteristic_readvalueasync.md) methods is used to retrieve a [GattReadResult](gattreadresult.md) object.
+One of the [ReadValueAsync](gattcharacteristic_readvalueasync_2134129157.md) methods is used to retrieve a GattReadResult object.
 
-The [Status](gattreadresult_status.md) property on the [GattReadResult](gattreadresult.md) returned indicates if the result of the operation was successful.
+The [Status](gattreadresult_status.md) property on the GattReadResult returned indicates if the result of the operation was successful.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | ProtocolError |
 
 ## -examples
 
 ## -see-also
-[ReadValueAsync](gattcharacteristic_readvalueasync.md), [Status](gattreadresult_status.md)
+[ReadValueAsync](gattcharacteristic_readvalueasync_2134129157.md), [Status](gattreadresult_status.md)
+## -capabilities
+bluetooth

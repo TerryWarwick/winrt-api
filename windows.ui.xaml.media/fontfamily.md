@@ -15,9 +15,7 @@ Represents a family of related fonts.
 ## -xaml-syntax
 ```xaml
 <FontFamily>fontFamilyName[,fallbackFontFamilyName]*</FontFamily>
-```
-
-```xaml
+- or -
 <object FontFamily="fontFamilyName[,fallbackFontFamilyName]*" ... />
 -or-
 <object FontFamily="[uri]fontFamilyName[,[uri]fallbackFontFamilyName]*" ... />
@@ -27,6 +25,12 @@ Represents a family of related fonts.
 
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1511 | 10586 | XamlAutoFontFamily |
 
 ## -examples
 

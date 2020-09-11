@@ -21,7 +21,7 @@ No mechanism used.
 Secure Remote Password (SRP) anonymous has been deprecated and should no longer be used.
 
 ### -field SrpLogon:2
-Secure Remote Password (SRP) logon (e.g. username and password) has been deprecated and should no longer be used.
+Secure Remote Password (SRP) logon (for example, username and password) has been deprecated and should no longer be used.
 
 ### -field EcdheNull:3
 ECDHE_NULL key exchange.
@@ -37,6 +37,12 @@ ECDHE_SPEKE key exchange.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | EcdheSpeke |
+
 ## -examples
 
 ## -see-also
@@ -44,5 +50,3 @@ ECDHE_SPEKE key exchange.
 
 ## -capabilities
 allJoyn
-
-

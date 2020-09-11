@@ -10,11 +10,11 @@ public Windows.Foundation.Collections.IIterable<Windows.ApplicationModel.Package
 # Windows.Management.Deployment.PackageManager.FindPackagesForUserWithPackageTypes
 
 ## -description
-Retrieves information about a specified family of packages and of specific types that are installed for the specified user.
+Retrieves information about a specified family of [Packages](/uwp/api/windows.applicationmodel.package) and of specific types that are installed for the specified user.
 
 ## -parameters
 ### -param userSecurityId
-The user security identifier (SID). If this parameter is **null**, the packages are retrieved for the current user. Any user SID other than that of current user requires administrative privileges.
+The user security identifier (SID). If this parameter is **String.Empty**, the packages are retrieved for the current user. Any user SID other than that of current user requires administrative privileges.
 
 ### -param packageFamilyName
 The family name of packages to find. This parameter can't be **null**.
@@ -30,7 +30,9 @@ If the method succeeds, an enumerable collection of package objects is returned.
 ## -examples
 
 ## -see-also
-[FindPackagesForUserWithPackageTypes(String, PackageTypes)](packagemanager_findpackagesforuserwithpackagetypes_1422527170.md), [FindPackagesForUserWithPackageTypes(String, String, String, PackageTypes)](packagemanager_findpackagesforuserwithpackagetypes_1875427314.md)
+
+- [Package](/uwp/api/windows.applicationmodel.package)
+- [FindPackagesForUserWithPackageTypes(String, PackageTypes)](packagemanager_findpackagesforuserwithpackagetypes_1422527170.md), [FindPackagesForUserWithPackageTypes(String, String, String, PackageTypes)](packagemanager_findpackagesforuserwithpackagetypes_1875427314.md)
 
 ## -capabilities
 packageQuery

@@ -32,11 +32,11 @@ Gets or sets the zoom level of the map, which is a value between 1 and 20 in 2D 
 The zoom level of the map, which is a value between 1 and 20 in 2D views.
 
 ## -remarks
-See the remarks section of the [TryZoomInAsync](mapcontrol_tryzoominasync.md) method.
+See the remarks section of the [TryZoomInAsync](mapcontrol_tryzoominasync_1251712457.md) method.
 
 
 
 ## -examples
 
 ## -see-also
-[Display maps with 2D, 3D, and Streetside views](http://msdn.microsoft.com/library/3839e00b-2c1e-4627-a45f-6dda98d7077f)
+[Display maps with 2D, 3D, and Streetside views](/windows/uwp/maps-and-location/display-maps)

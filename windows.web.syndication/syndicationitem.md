@@ -10,12 +10,12 @@ public class SyndicationItem : Windows.Web.Syndication.ISyndicationItem, Windows
 # Windows.Web.Syndication.SyndicationItem
 
 ## -description
+
 Represents an item in the feed. This class encapsulates information in the **/rss/channel/item** element in *RSS 2.0* or the **atom:entry** element in *Atom 1.0*.
 
 ## -remarks
-The following code demonstrates how to access the property values of a [SyndicationItem](syndicationitem.md) object.
 
-
+The following code demonstrates how to access the property values of a SyndicationItem object.
 
 ```javascript
 
@@ -76,9 +76,9 @@ private void DisplayCurrentItem()
 }
 ```
 
-For additional examples that demonstrate how this class is used to represent feed content, see [Quickstart: Accessing a web feed](http://msdn.microsoft.com/library/bde79bfb-f566-4dbe-b861-f849ab8bc574).
+For additional examples that demonstrate how this class is used to represent feed content, see [Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)).
 
-The following table maps [SyndicationItem](syndicationitem.md) properties to RSS and Atom feed elements.
+The following table maps SyndicationItem properties to RSS and Atom feed elements.
 
 <table>
    <tr><th>SyndicationItem</th><th>RSS Channel/Item</th><th>Atom entry</th><th>[AtomPub](../windows.web.atompub/windows_web_atompub.md)</th></tr>
@@ -92,8 +92,8 @@ The following table maps [SyndicationItem](syndicationitem.md) properties to RSS
    <tr><td>[EditMediaUri](syndicationitem_editmediauri.md)</td><td /><td>link with rel="edit-media"</td><td /></tr>
    <tr><td>[EditUri](syndicationitem_edituri.md)</td><td /><td>link with rel="edit"</td><td /></tr>
    <tr><td>[ElementExtensions](syndicationitem_elementextensions.md) (foreign markup)</td><td /><td /><td /></tr>
-   <tr><td>**Etag**</td><td /><td /><td>ETag header after [CreateResourceAsync](../windows.web.atompub/atompubclient_createresourceasync.md)</td></tr>
-   <tr><td>[Id](syndicationitem_id.md)</td><td>guid</td><td>id</td><td>Location header after [CreateResourceAsync](../windows.web.atompub/atompubclient_createresourceasync.md)</td></tr>
+   <tr><td>**Etag**</td><td /><td /><td>ETag header after [CreateResourceAsync](../windows.web.atompub/atompubclient_createresourceasync_823380555.md)</td></tr>
+   <tr><td>[Id](syndicationitem_id.md)</td><td>guid</td><td>id</td><td>Location header after [CreateResourceAsync](../windows.web.atompub/atompubclient_createresourceasync_823380555.md)</td></tr>
    <tr><td>[ItemUri](syndicationitem_itemuri.md)</td><td /><td /><td /></tr>
    <tr><td>[Language](syndicationitem_language.md)</td><td>xml:lang</td><td>xml:lang</td><td /></tr>
    <tr><td>[LastUpdatedTime](syndicationitem_lastupdatedtime.md)</td><td /><td>updated</td><td /></tr>
@@ -111,4 +111,5 @@ The following table maps [SyndicationItem](syndicationitem.md) properties to RSS
 ## -examples
 
 ## -see-also
-[Quickstart: Accessing a web feed](http://msdn.microsoft.com/library/bde79bfb-f566-4dbe-b861-f849ab8bc574), [Syndication sample](http://go.microsoft.com/fwlink/p/?linkid=245062), [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061), [Syndication sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620610)
+
+[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Syndication%20sample/C%23), [AtomPub sample](https://go.microsoft.com/fwlink/p/?linkid=245061), [Syndication sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Syndication)

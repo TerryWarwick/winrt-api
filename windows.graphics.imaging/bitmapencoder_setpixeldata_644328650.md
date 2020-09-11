@@ -35,13 +35,13 @@ The vertical resolution, in dots per inch, of the pixel data.
 The pixel data.
 
 ## -remarks
-This method is synchronous because data is not committed until [FlushAsync](bitmapencoder_flushasync.md), [GoToNextFrameAsync](bitmapencoder_gotonextframeasync_718000702.md) or [GoToNextFrameAsync(IIterable(IKeyValuePair))](bitmapencoder_gotonextframeasync_1063265177.md) is called.
+This method is synchronous because data is not committed until [FlushAsync](bitmapencoder_flushasync_491532439.md), [GoToNextFrameAsync](bitmapencoder_gotonextframeasync_718000702.md) or [GoToNextFrameAsync(IIterable(IKeyValuePair))](bitmapencoder_gotonextframeasync_1063265177.md) is called.
 
 Setting a pixel format of **Unknown** will result in failure.
 
 This method treats all pixel data as being in the sRGB color space. When you call this method it automatically clears any existing color space information from the frame, including embedded color profiles.
 
-When you are encoding a new image, before you call [FlushAsync](bitmapencoder_flushasync.md) at the minimum you must set pixel data using this method.
+When you are encoding a new image, before you call [FlushAsync](bitmapencoder_flushasync_491532439.md) at the minimum you must set pixel data using this method.
 
 ## -examples
 

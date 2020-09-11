@@ -10,7 +10,7 @@ public enum Windows.Management.Deployment.PackageState : int
 # PackageState
 
 ## -description
-Represents the state of the package.
+Represents the state of the [Package](/uwp/api/windows.applicationmodel.package).
 
 ## -enum-fields
 ### -field Normal:0
@@ -31,4 +31,6 @@ The package payload was tampered with intentionally.
 ## -examples
 
 ## -see-also
-[Packaging apps](http://msdn.microsoft.com/library/1abcbb13-80f0-4bf1-a812-649ee8bd1915), [PackageManager.SetPackageState](packagemanager_setpackagestate.md)
+
+- [Package](/uwp/api/windows.applicationmodel.package)
+- [Packaging apps](/windows/uwp/packaging/index), [PackageManager.SetPackageState](packagemanager_setpackagestate_175933383.md)

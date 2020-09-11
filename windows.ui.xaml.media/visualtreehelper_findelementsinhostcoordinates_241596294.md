@@ -23,9 +23,9 @@ An object to search for. If the *subtree* object exists in the overall set of el
 An enumerable set of [UIElement](../windows.ui.xaml/uielement.md) objects that are in the visual tree composition in the specified [Rect](../windows.foundation/rect.md) frame.
 
 ## -remarks
-The return value is not a single element, it is a collection. The collection can have more than one element because there can be multiple UI elements stacked over each other in a z-order, and also multiple elements fully or partially in the *intersectingRect* frame. The conventional hit-testing techniques exposed by the input event handlers, such as the *sender* value for a [PointerPressed](../windows.ui.xaml/uielement_pointerpressed.md) event, only account for the topmost element that has the highest z-order. [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates.md) methods return the whole stack of elements that share that point or area in the app UI, listed by visual tree order (which is usually the same as inverse of XAML declaration order). Using [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates.md) can thus be useful for examining cases where you've intentionally or unintentionally stacked elements. You may want to correct the order for rendering and hit-testing, or examine that order for other reasons.
+The return value is not a single element, it is a collection. The collection can have more than one element because there can be multiple UI elements stacked over each other in a z-order, and also multiple elements fully or partially in the *intersectingRect* frame. The conventional hit-testing techniques exposed by the input event handlers, such as the *sender* value for a [PointerPressed](../windows.ui.xaml/uielement_pointerpressed.md) event, only account for the topmost element that has the highest z-order. [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates_1478853318.md) methods return the whole stack of elements that share that point or area in the app UI, listed by visual tree order (which is usually the same as inverse of XAML declaration order). Using [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates_1478853318.md) can thus be useful for examining cases where you've intentionally or unintentionally stacked elements. You may want to correct the order for rendering and hit-testing, or examine that order for other reasons.
 
-[FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates.md) over an area is useful for two scenarios: basic hit testing and hit testing that is filtering for a specific element.
+[FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates_1478853318.md) over an area is useful for two scenarios: basic hit testing and hit testing that is filtering for a specific element.
 
 ### Basic hit testing
 
@@ -33,15 +33,15 @@ For basic hit testing, the goal is to discover which element is highest in the z
 
 For this scenario, you should pass the rectangle you're interested in hit-testing as the value of the *intersectingRect* parameter. For the *subtree* parameter, you can pass it as **null**. Or you can specify *subtree* to be some element that you know is the root visual of a page, or is otherwise some element that you want to be the final stop for hit testing.
 
-The order of element in the returned [IEnumerable](XREF:TODO:T:System.Collections.Generic.IEnumerable`1) of [UIElement](../windows.ui.xaml/uielement.md) items is accounting for both coordinate space in the area and for the z-order. So it's possible to get hits for items that are not at the highest z-order and therefore couldn't be the source of input events. To make sure, you can do an element-filtered hit test for any items from the returned list that you're interested in, using the same *intersectingRect* but passing the element of interest as *subtree*.
+The order of element in the returned [IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1) of [UIElement](../windows.ui.xaml/uielement.md) items is accounting for both coordinate space in the area and for the z-order. So it's possible to get hits for items that are not at the highest z-order and therefore couldn't be the source of input events. To make sure, you can do an element-filtered hit test for any items from the returned list that you're interested in, using the same *intersectingRect* but passing the element of interest as *subtree*.
 
 ### Element-filtered hit testing
 
-Sometimes you want to know whether a specific element exists within an area of the UI. If so, you can specify that area for *intersectingRect* and specify the element you're looking for as the *subtree* parameter. If the return value is not empty, that means that the element exists somewhere in that area. When you're hit-testing an area, the order in the return set isn't as useful for determining z-order because the set includes elements at more than one x-y coordinate. The set has a mix of elements drawing at various x-y coordinates and also elements that might be fully or partially overdrawn. To really examine an overdraw situation, use the overloads of [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates.md) that use a [Point](../windows.foundation/point.md), so that the x-y coordinates and the visual tree order are no longer a factor. See [FindElementsInHostCoordinates(Point,UIElement)](visualtreehelper_findelementsinhostcoordinates_1478853318.md).
+Sometimes you want to know whether a specific element exists within an area of the UI. If so, you can specify that area for *intersectingRect* and specify the element you're looking for as the *subtree* parameter. If the return value is not empty, that means that the element exists somewhere in that area. When you're hit-testing an area, the order in the return set isn't as useful for determining z-order because the set includes elements at more than one x-y coordinate. The set has a mix of elements drawing at various x-y coordinates and also elements that might be fully or partially overdrawn. To really examine an overdraw situation, use the overloads of [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates_1478853318.md) that use a [Point](../windows.foundation/point.md), so that the x-y coordinates and the visual tree order are no longer a factor. See [FindElementsInHostCoordinates(Point,UIElement)](visualtreehelper_findelementsinhostcoordinates_1478853318.md).
 
 If the return value is empty, that means that the *subtree* element didn't exist in the area.
 
-If you are programming using C# or Microsoft Visual Basic, the return value type of this method is projected as an [IEnumerable](XREF:TODO:T:System.Collections.Generic.IEnumerable`1) generic collection that contains [UIElement](../windows.ui.xaml/uielement.md) items. If you are programming using Visual C++ component extensions (C++/CX), the return type of this method is [IIterable&lt;UIElement&gt;](../windows.foundation.collections/iiterable_1.md).
+If you are programming using C# or Microsoft Visual Basic, the return value type of this method is projected as an [IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1) generic collection that contains [UIElement](../windows.ui.xaml/uielement.md) items. If you are programming using Visual C++ component extensions (C++/CX), the return type of this method is [IIterable&lt;UIElement&gt;](../windows.foundation.collections/iiterable_1.md).
 
 ## -examples
 Given this XAML UI:
@@ -56,7 +56,7 @@ Given this XAML UI:
 </Canvas>
 ```
 
-Here are some example usages and results from [FindElementsInHostCoordinates](visualtreehelper_findelementsinhostcoordinates_241596294.md), using different *subtree* values:
+Here are some example usages and results from FindElementsInHostCoordinates, using different *subtree* values:
 
 ```csharp
 private void Test(object sender, RoutedEventArgs e)
@@ -91,4 +91,4 @@ private void Test(object sender, RoutedEventArgs e)
 
 
 ## -see-also
-[Mouse interactions](http://msdn.microsoft.com/library/c8a158ef-70a9-4ba2-a270-7d08125700ac)
+[Mouse interactions](/windows/uwp/input-and-devices/mouse-interactions)

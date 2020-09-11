@@ -10,7 +10,7 @@ public Windows.Foundation.IAsyncOperation<Windows.Storage.StorageFolder> CreateF
 # Windows.Storage.IStorageFolder.CreateFolderAsync
 
 ## -description
-<!--{annotation author="miriamw" time="1/14/2012 6:17:31 PM"}TODO: Does creating a new folder in a file group work?-->
+
 Creates a new folder in the current folder.
 
 ## -parameters
@@ -25,4 +25,4 @@ When this method completes, it returns the new folder as a [StorageFolder](stora
 ## -examples
 
 ## -see-also
-[CreateFolderAsync(String, CreationCollisionOption)](istoragefolder_createfolderasync_1043039832.md), [StorageFolder.CreateFolderAsync](storagefolder_createfolderasync.md)
+[CreateFolderAsync(String, CreationCollisionOption)](istoragefolder_createfolderasync_1043039832.md), [StorageFolder.CreateFolderAsync](/uwp/api/windows.storage.storagefolder.createfolderasync)

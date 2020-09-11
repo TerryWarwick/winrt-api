@@ -10,7 +10,7 @@ public event Windows.Foundation.EventHandler DateChanged<Windows.UI.Xaml.Control
 # Windows.UI.Xaml.Controls.DatePicker.DateChanged
 
 ## -description
-<!--Move in TOC.-->
+
 Occurs when the date value is changed.
 
 ## -xaml-syntax
@@ -18,11 +18,10 @@ Occurs when the date value is changed.
 <DatePicker DateChanged="eventhandler" />
 ```
 
-
 ## -remarks
-When you handle this event, use the [OldDate](datepickervaluechangedeventargs_olddate.md) and [NewDate](datepickervaluechangedeventargs_newdate.md) properties of the [DatePickerValueChangedEventArgs](datepickervaluechangedeventargs.md) event data for your logic. These properties use different data types depending on your programming language (C# and Visual Basic use [System.DateTimeOffset](https://msdn.microsoft.com/library/system.datetimeoffset.aspx); Visual C++ component extensions (C++/CX) uses [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/b5533002-8a72-438d-a3d3-0902ffc21830)).
+When you handle this event, use the [OldDate](datepickervaluechangedeventargs_olddate.md) and [NewDate](datepickervaluechangedeventargs_newdate.md) properties of the [DatePickerValueChangedEventArgs](datepickervaluechangedeventargs.md) event data for your logic. These properties use different data types depending on your programming language (C# and Visual Basic use [System.DateTimeOffset](/dotnet/api/system.datetimeoffset?redirectedfrom=MSDN); Visual C++ component extensions (C++/CX) uses [Windows::Foundation::DateTime](/windows/desktop/api/windows.foundation/ns-windows-foundation-datetime)).
 
 ## -examples
 
 ## -see-also
-[DatePickerValueChangedEventArgs](datepickervaluechangedeventargs.md), [XAML DatePicker and TimePicker controls sample](http://go.microsoft.com/fwlink/p/?LinkID=310075), [Quickstart: Adding a DatePicker](http://msdn.microsoft.com/library/feae870d-e423-457b-9d0a-3929247952a9)
+[DatePickerValueChangedEventArgs](datepickervaluechangedeventargs.md), [XAML DatePicker and TimePicker controls sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/XAML%20DatePicker%20and%20TimePicker%20controls%20sample), [Quickstart: Adding a DatePicker](/previous-versions/windows/apps/dn308514(v=win.10))

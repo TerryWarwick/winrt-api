@@ -37,7 +37,14 @@ A buffer of type **uint**.
 
 
 ## -remarks
-This API is designed for use with 3D Manufacturing Format (3MF) packages. For more info about 3MF, see the [3MF Specification](http://go.microsoft.com/fwlink/p/?LinkId=616252).
+This API is designed for use with 3D Manufacturing Format (3MF) packages. For more info about 3MF, see the [3MF Specification](http://3mf.io/what-is-3mf/3mf-specification/).
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1511 | 10586 | Printing3DDouble |
+| 1511 | 10586 | Printing3DUInt |
 
 ## -examples
 

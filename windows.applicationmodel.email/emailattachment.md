@@ -13,8 +13,13 @@ public class EmailAttachment : Windows.ApplicationModel.Email.IEmailAttachment, 
 Represents an email attachment.
 
 ## -remarks
- 
+
+Attachments that you add to an email by using the [EmailAttachment](/uwp/api/windows.applicationmodel.email.emailattachment) class will appear only in the Mail app. If users have any other mail program configured as their default mail program, the compose window will appear without the attachment. This is a known issue.
+
 ## -examples
 
 ## -see-also
-[Object](https://msdn.microsoft.com/library/system.object.aspx)
+[Object](/dotnet/api/system.object?redirectedfrom=MSDN)
+
+## -capabilities
+email, emailSystem

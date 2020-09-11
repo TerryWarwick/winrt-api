@@ -34,4 +34,4 @@ animation.InsertKeyFrame(1.0f, 0.0f, linear);
 
 
 ## -see-also
-[Composition Animations Overview](http://go.microsoft.com/fwlink/p/?LinkID=692060), [CompositionEasingFunction](compositioneasingfunction.md), [IClosable](../windows.foundation/iclosable.md)
+[Composition Animations Overview](/en-us/windows/uwp/composition/composition-animation), [CompositionEasingFunction](compositioneasingfunction.md), [IClosable](../windows.foundation/iclosable.md)

@@ -17,7 +17,7 @@ Gets a query result object that contains the files in the current folder and, op
 The criteria that are applied to the query.
 
 ## -returns
-A query result object that contains the files in the current folder and, optionally, in the subfolders of the current folder, filtered and sorted based on the specified [QueryOptions](../windows.storage.search/queryoptions.md). Call the [GetFilesAsync](../windows.storage.search/storagefilequeryresult_getfilesasync.md) method of the query result to get the flat list of files, sorted as specified by *queryOptions*. This method returns a list of type **IReadOnlyList**&lt;[StorageFile](storagefile.md)&gt;. Each file is represented by an item of type [StorageFile](storagefile.md).
+A query result object that contains the files in the current folder and, optionally, in the subfolders of the current folder, filtered and sorted based on the specified [QueryOptions](../windows.storage.search/queryoptions.md). Call the [GetFilesAsync](../windows.storage.search/storagefilequeryresult_getfilesasync_1261374131.md) method of the query result to get the flat list of files, sorted as specified by *queryOptions*. This method returns a list of type **IReadOnlyList**&lt;[StorageFile](storagefile.md)&gt;. Each file is represented by an item of type [StorageFile](storagefile.md).
 
 ## -exceptions
 ### System.ArgumentException
@@ -26,7 +26,6 @@ You specified a value other than **DefaultQuery** from the [CommonFileQuery](../
 
 ## -remarks
 In the following cases, this query is a shallow query that returns only files in the current folder.
-
 
 + Default behavior of this method if none of the following options are specified.
 
@@ -37,7 +36,6 @@ In the following cases, this query is a shallow query that returns only files in
 + Specify **Shallow** as the value of the [FolderDepth](../windows.storage.search/queryoptions_folderdepth.md) property of the [QueryOptions](../windows.storage.search/queryoptions.md) object.
 In the following cases, this query is a deep query that returns files from the current folder and from its subfolders.
 
-
 + For a library folder, specify a value other than **DefaultQuery** as the value of [CommonFileQuery](../windows.storage.search/commonfilequery.md) when you instantiate the [QueryOptions](../windows.storage.search/queryoptions.md) object.
 
 - or -
@@ -45,23 +43,21 @@ In the following cases, this query is a deep query that returns files from the c
 > > [!TIP]
 > Some of the values from the [CommonFileQuery](../windows.storage.search/commonfilequery.md) enumeration can only be used with a library folder (such as the Pictures library) or the Homegroup folder. In addition to the **DefaultQuery** option, you can use only the **OrderByName** and **OrderBySearchRank** options with a folder that's not a library folder.
 
-For a list of methods that identifies shallow queries and deep queries, see the Remarks in the topic [GetFilesAsync](storagefolder_getfilesasync.md).
+For a list of methods that identifies shallow queries and deep queries, see the Remarks in the topic [GetFilesAsync](storagefolder_getfilesasync_1429382825.md).
 
-To check whether the [QueryOptions](../windows.storage.search/queryoptions.md) you want to specify are available for the current folder, call the folder's [AreQueryOptionsSupported](storagefolder_arequeryoptionssupported.md) method. To check whether a specific [CommonFileQuery](../windows.storage.search/commonfilequery.md) is available, call the folder's [IsCommonFileQuerySupported](storagefolder_iscommonfilequerysupported.md) method.
+To check whether the [QueryOptions](../windows.storage.search/queryoptions.md) you want to specify are available for the current folder, call the folder's [AreQueryOptionsSupported](storagefolder_arequeryoptionssupported_849436946.md) method. To check whether a specific [CommonFileQuery](../windows.storage.search/commonfilequery.md) is available, call the folder's [IsCommonFileQuerySupported](storagefolder_iscommonfilequerysupported_1848755604.md) method.
 
-You can also get a list of files in the current folder asynchronously by calling one of the [GetFilesAsync](storagefolder_getfilesasync.md) methods.
+You can also get a list of files in the current folder asynchronously by calling one of the [GetFilesAsync](storagefolder_getfilesasync_1429382825.md) methods.
 
-To get a query result object that contains the files in the current folder without configuring a [QueryOptions](../windows.storage.search/queryoptions.md) object, call one of the [CreateFileQuery](storagefolder_createfilequery.md) methods.
+To get a query result object that contains the files in the current folder without configuring a [QueryOptions](../windows.storage.search/queryoptions.md) object, call one of the [CreateFileQuery](storagefolder_createfilequery_1641434999.md) methods.
 
-To get items that are files or folders, call the [CreateItemQueryWithOptions](storagefolder_createitemquerywithoptions.md) method.
+To get items that are files or folders, call the [CreateItemQueryWithOptions](storagefolder_createitemquerywithoptions_1519361285.md) method.
 
 > **For Windows Server 2012**
 > You must install indexer components to use some [QueryOptions](../windows.storage.search/queryoptions.md) because indexer components are not installed by default.
 
-
-
 ## -examples
-The following example shows how to get the JPG files in the user's Pictures folder and its subfolders, sorted by date, by calling the [CreateFileQueryWithOptions(QueryOptions)](storagefolder_createfilequerywithoptions.md) method. This query is a deep query because the folder is a library folder and a value other than **DefaultQuery** from the [CommonFileQuery](../windows.storage.search/commonfilequery.md) enumeration is specified.
+The following example shows how to get the JPG files in the user's Pictures folder and its subfolders, sorted by date, by calling the CreateFileQueryWithOptions(QueryOptions) method. This query is a deep query because the folder is a library folder and a value other than **DefaultQuery** from the [CommonFileQuery](../windows.storage.search/commonfilequery.md) enumeration is specified.
 
 Before you run the following example, enable the **Pictures Library** capability in the app manifest file.
 
@@ -93,6 +89,58 @@ foreach (StorageFile item in sortedFiles)
 }
 ```
 
+```cppwinrt
+IAsyncAction MainPage::ExampleCoroutineAsync()
+{
+    // Get the users's Pictures folder.
+    // Enable the Pictures Library capability in the app manifest file.
+    Windows::Storage::StorageFolder picturesFolder{ Windows::Storage::KnownFolders::PicturesLibrary() };
+
+    // Set options for file type and sort order.
+    Windows::Storage::Search::QueryOptions queryOptions{ Windows::Storage::Search::CommonFileQuery::OrderByDate, { L".png" } };
+
+    // Get the png files in the user's Pictures folder and its subfolders, sorted by date.
+    Windows::Storage::Search::StorageFileQueryResult results{ picturesFolder.CreateFileQueryWithOptions(queryOptions) };
+
+    Windows::Foundation::Collections::IVectorView<Windows::Storage::StorageFile> filesInFolder{
+        co_await results.GetFilesAsync() };
+
+    // Iterate over the results, and print the list of files to the Visual Studio output window.
+    for (StorageFile const& fileInFolder : filesInFolder)
+    {
+        std::wstring output{ fileInFolder.Name() };
+        ::OutputDebugString(output.c_str());
+    }
+}
+```
+
+```cppcx
+//Get the users's pictures folder
+//Enable the corresponding capability in the app manifest file
+StorageFolder^ picturesFolder = KnownFolders::PicturesLibrary;
+
+//Set options for file type and sort order
+Platform::Collections::Vector<String^>^ fileTypeFilter = ref new Platform::Collections::Vector<String^>();
+fileTypeFilter->Append(".jpg");
+QueryOptions^ queryOptions = ref new QueryOptions(Windows::Storage::Search::CommonFileQuery::OrderByDate, fileTypeFilter);
+
+//Get the JPG files in the user's pictures folder 
+//and its subfolders and sort them by date
+StorageFileQueryResult^ results = picturesFolder->CreateFileQueryWithOptions(queryOptions);
+
+create_task(results->GetFilesAsync()).then([=](IVectorView<StorageFile^>^ filesInFolder) 
+{
+	//Iterate over the results and print the list of files
+	// to the visual studio output window
+	for (auto it = filesInFolder->First(); it->HasCurrent; it->MoveNext())
+	{
+			 StorageFile^ file = it->Current;
+			 String^ output = file->Name + "\n";
+			 OutputDebugString(output->Begin());
+	}
+	);
+```
+
 ```javascript
 // Get the user's Pictures folder.
 // Enable the corresponding capability in the app manifest file.
@@ -118,34 +166,5 @@ sortedFilesPromise.done(function (sortedFiles) {
 });
 ```
 
-```cpp
-//Get the users's pictures folder
-//Enable the corresponding cpability in the app manifest file
-StorageFolder^ picturesFolder = KnownFolders::PicturesLibrary;
-
-//Set options for file type and sort order
-Platform::Collections::Vector<String^>^ fileTypeFilter = ref new Platform::Collections::Vector<String^>();
-fileTypeFilter->Append(".jpg");
-QueryOptions^ queryOptions = ref new QueryOptions(Windows::Storage::Search::CommonFileQuery::OrderByDate, fileTypeFilter);
-
-//Get the JPG files in the user's pictures folder 
-//and its subfolders and sort them by date
-StorageFileQueryResult^ results = picturesFolder->CreateFileQueryWithOptions(queryOptions);
-
-create_task(results->GetFilesAsync()).then([=](IVectorView<StorageFile^>^ filesInFolder) 
-{
-	//Iterate over the results and print the list of files
-	// to the visual studio output window
-	for (auto it = filesInFolder->First(); it->HasCurrent; it->MoveNext())
-	{
-			 StorageFile^ file = it->Current;
-			 String^ output = file->Name + "\n";
-			 OutputDebugString(output->Begin());
-	}
-	);
-```
-
-
-
 ## -see-also
-[CreateFileQuery](storagefolder_createfilequery.md), [Content indexer sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620524)
+[CreateFileQuery](storagefolder_createfilequery_1641434999.md), [Content indexer sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ContentIndexer)

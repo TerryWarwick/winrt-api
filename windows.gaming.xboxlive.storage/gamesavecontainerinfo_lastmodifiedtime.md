@@ -10,13 +10,19 @@ public Windows.Foundation.DateTime LastModifiedTime { get; }
 # Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime
 
 ## -description
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Date and time that the game save container was last modified.
 
 ## -property-value
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **Date** \[JavaScript\] | [System.DateTimeOffset](/dotnet/api/system.datetimeoffset?redirectedfrom=MSDN) \[.NET\] | [Windows::Foundation::DateTime](/uwp/api/windows.foundation.datetime) \[C++\]
+
+Date and time that the game save container was last modified.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+[GameSaveContainerInfo](gamesavecontainerinfo.md)

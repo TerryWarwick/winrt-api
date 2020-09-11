@@ -11,9 +11,11 @@ public uint UnitExponent { get; }
 # Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription.UnitExponent
 
 ## -description
-Retrieves the unit exponent for the given numeric control.
+
+Gets the unit exponent for the given numeric control.
 
 ## -property-value
+
 The unit exponent.
 
 ## -remarks
@@ -21,3 +23,5 @@ The unit exponent.
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

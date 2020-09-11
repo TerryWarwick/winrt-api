@@ -9,12 +9,15 @@ public void MediaBindingEventArgs.SetStorageFile(IStorageFile file)
 
 # Windows.Media.Core.MediaBindingEventArgs.SetStorageFile
 
+
 ## -description
 
-## -params
 Binds a storage file to the [MediaSource](mediasource.md) associated with the event.
 
-## -param file
+## -parameters
+
+### -param file
+
 The [StorageFile](../windows.storage/storagefile.md) containing media content.
 
 ## -remarks

@@ -10,20 +10,30 @@ public class PathIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.Co
 # Windows.UI.Xaml.Controls.PathIcon
 
 ## -description
+
 Represents an icon that uses a vector path as its content.
 
 ## -xaml-syntax
+
 ```xaml
 <PathIcon .../>
 ```
 
-
 ## -remarks
+
 > [!NOTE]
-> You can set the **Foreground** property on the [AppBarButton](appbarbutton.md) or on the [PathIcon](pathicon.md). If you set the [Foreground](control_foreground.md) on the [AppBarButton](appbarbutton.md), it's applied only to the default visual state. It's not applied to the other visual states defined in the [AppBarButton](appbarbutton.md) template, like `MouseOver`. If you set the [Foreground](iconelement_foreground.md) on the [PathIcon](pathicon.md), the color is applied to all visual states.
+> You can set the **Foreground** property on the [AppBarButton](appbarbutton.md) or on the PathIcon. If you set the [Foreground](control_foreground.md) on the [AppBarButton](appbarbutton.md), it's applied only to the default visual state. It's not applied to the other visual states defined in the [AppBarButton](appbarbutton.md) template, like `MouseOver`. If you set the [Foreground](iconelement_foreground.md) on the PathIcon, the color is applied to all visual states.
 
 ## -examples
-This example shows an [AppBarButton](appbarbutton.md) with a [PathIcon](pathicon.md).
+
+> [!TIP]
+> For more info, design guidance, and code examples, see [Command bar](/windows/uwp/controls-and-patterns/app-bars).
+>
+> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the PathIcon in action](xamlcontrolsgallery:/item/AppBarButton).
+> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+
+This example shows an [AppBarButton](appbarbutton.md) with a PathIcon.
 
 ```xaml
 <!-- App bar button with path icon. -->
@@ -37,4 +47,4 @@ This example shows an [AppBarButton](appbarbutton.md) with a [PathIcon](pathicon
 
 
 ## -see-also
-[IconElement](iconelement.md), [Path](../windows.ui.xaml.shapes/path.md), [Quickstart: Adding app bar buttons](http://msdn.microsoft.com/library/743b852c-f4fe-4b4f-814e-77155ccfdefe), [Move and draw commands syntax](http://msdn.microsoft.com/library/7772bc3e-a631-46ff-9940-3dd5b9d0e0d9), [AppBarButton](appbarbutton.md), [AppBarToggleButton](appbartogglebutton.md), [BitmapIcon](bitmapicon.md), [FontIcon](fonticon.md), [SymbolIcon](symbolicon.md), [Controls list](http://msdn.microsoft.com/library/11172840-a63d-4f48-9db4-7baca06308ee), [Controls by function](http://msdn.microsoft.com/library/8db4347b-91d6-4659-91f2-80ecf7bbb596)
+[IconElement](iconelement.md), [AppBarButton](appbarbutton.md), [Path](../windows.ui.xaml.shapes/path.md), [Move and draw commands syntax](/windows/uwp/xaml-platform/move-draw-commands-syntax), [Icons for UWP apps](/windows/uwp/style/icons) 

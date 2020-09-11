@@ -10,7 +10,7 @@ public Windows.Foundation.IReference<int> Year { get;  set; }
 # Windows.ApplicationModel.Contacts.ContactDate.Year
 
 ## -description
-Gets and sets the year for an important date for a contact. This value must be convertible to a [FILETIME](XREF:TODO:base.filetime_str) structure.
+Gets and sets the year for an important date for a contact. This value must be convertible to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure.
 
 ## -property-value
 The year for an important date for a contact.
@@ -20,3 +20,6 @@ The year for an important date for a contact.
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

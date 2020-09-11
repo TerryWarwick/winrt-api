@@ -10,12 +10,14 @@ public float Opacity { get;  set; }
 # Windows.UI.Composition.DropShadow.Opacity
 
 ## -description
-The opacity of the shadow.
+The opacity of the shadow. Animatable.
 
 ## -property-value
 The opacity of the shadow.
 
 ## -remarks
+
+This property can be animated. Call [CompositionObject.StartAnimation](compositionobject_startanimation_709050842.md) to associate it with a [CompositionAnimation](/windows/uwp/composition/composition-animation).
 
 ## -examples
 

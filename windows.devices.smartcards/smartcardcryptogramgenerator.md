@@ -14,9 +14,18 @@ Represents the mechanism for providing hardware supported for secure payment app
 
 ## -remarks
 
-<!--TODO: Document how this object is created.-->
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | GetAllCryptogramMaterialCharacteristicsAsync |
+| 1703 | 15063 | GetAllCryptogramMaterialPackageCharacteristicsAsync |
+| 1703 | 15063 | GetAllCryptogramMaterialPackageCharacteristicsAsync(String) |
+| 1703 | 15063 | GetAllCryptogramStorageKeyCharacteristicsAsync |
+| 1703 | 15063 | ValidateRequestApduAsync |
+| 1709 | 16299 | IsSupported |
 
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

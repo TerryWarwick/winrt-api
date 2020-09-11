@@ -11,7 +11,7 @@ public Windows.ApplicationModel.Contacts.Provider.AddContactResult AddContact(Sy
 
 ## -description
 > [!NOTE]
-> [AddContact](contactpickerui_addcontact_1063676932.md) may be altered or unavailable for releases after Windows 8.1. Instead, use [AddContact](contactpickerui_addcontact_79336216.md) without the ID.
+> AddContact may be altered or unavailable for releases after Windows 8.1. Instead, use [AddContact](contactpickerui_addcontact_79336216.md) without the ID.
 
 Adds a [Contact](../windows.applicationmodel.contacts/contact.md).
 
@@ -60,3 +60,5 @@ var statusMessage = document.getElementById("statusMessage");
 
 ## -see-also
 [AddContact(Contact)](contactpickerui_addcontact_79336216.md)
+## -capabilities
+contactsSystem

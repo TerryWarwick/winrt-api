@@ -23,7 +23,7 @@ Represents a flight stick.
 
 Instances of the **FlightStick** class cannot be created directly; instead, instances of the class are retrieved through the [FlightStick.FlightSticks](flightstick_flightsticks.md) property listing all connected flight sticks or through the [FlightStick.FlightStickAdded](flightstick_flightstickadded.md) event.
 
-See [Flight stick](https://docs.microsoft.com/windows/uwp/gaming/flight-stick) for more information about how to use the **FlightStick** class.
+See [Flight stick](/windows/uwp/gaming/flight-stick) for more information about how to use the **FlightStick** class.
 
 ### Supported Devices
 
@@ -31,9 +31,9 @@ See [Flight stick](https://docs.microsoft.com/windows/uwp/gaming/flight-stick) f
 
 ## -see-also
 
-* [Flight stick](https://docs.microsoft.com/windows/uwp/gaming/flight-stick)
-* [Windows.Gaming.Input.IGameController interface](igamecontroller.md)
-* [Windows.Gaming.Input.IGameControllerBatteryInfo interface](igamecontrollerbatteryinfo.md)
+[Flight stick](/windows/uwp/gaming/flight-stick),
+[Input practices for games](/windows/uwp/gaming/input-practices-for-games),
+[Windows.Gaming.Input.IGameController interface](igamecontroller.md),
+[Windows.Gaming.Input.IGameControllerBatteryInfo interface](igamecontrollerbatteryinfo.md)
 
 ## -examples
-

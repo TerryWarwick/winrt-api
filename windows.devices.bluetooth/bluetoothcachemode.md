@@ -11,22 +11,23 @@ public enum Windows.Devices.Bluetooth.BluetoothCacheMode : int
 # BluetoothCacheMode
 
 ## -description
-Indicates whether certain Bluetooth API methods should operate on values cached in the system or retrieve those values from the Bluetooth device.
+Indicates whether applicable Bluetooth API methods should operate on values cached in the system, or whether they should retrieve those values from the Bluetooth device. See **Remarks**.
 
 ## -enum-fields
+
 ### -field Cached:0
-Use system-cached values.
+Use values cached in the system.
 
 ### -field Uncached:1
 Retrieve values from the Bluetooth device.
 
-
 ## -remarks
+The cache in question is a local, system-wide cache (maintained by the operating system, or OS) of GATT attributes for a particular remote device. System-wide; not per-process. Entries in the cache become invalidated whenever the remote device indicates a service change, or when the device becomes unpaired.
 
 ## -examples
 
 ## -see-also
-[GattCharacteristic.ReadValueAsync](../windows.devices.bluetooth.genericattributeprofile/gattcharacteristic_readvalueasync.md), [RfcommDeviceService.GetSdpRawAttributesAsync](../windows.devices.bluetooth.rfcomm/rfcommdeviceservice_getsdprawattributesasync.md)
+[GattCharacteristic.ReadValueAsync](/uwp/api/windows.devices.bluetooth.genericattributeprofile.gattcharacteristic.readvalueasync), [RfcommDeviceService.GetSdpRawAttributesAsync](/uwp/api/windows.devices.bluetooth.rfcomm.rfcommdeviceservice.getsdprawattributesasync)
 
 ## -capabilities
 bluetooth

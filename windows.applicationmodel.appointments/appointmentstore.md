@@ -14,7 +14,15 @@ Represents a store that contains appointments.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | GetChangeTracker |
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+appointmentsSystem

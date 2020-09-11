@@ -14,15 +14,15 @@ public bool TryGetAuthenticationContext(System.String evenToken, Windows.Network
 Gets the context of an authentication attempt.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -parameters
 ### -param evenToken
-The event token retrieved from the network operator hotspot authentication [event](hotspotauthenticationeventdetails.md). The token is a GUID in string format.
+The event token retrieved from the network operator hotspot authentication [event](hotspotauthenticationeventdetails.md). The token is a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) in string format.
 
 ### -param context
 The network operator hotspot authentication context.
@@ -35,3 +35,6 @@ If **true**, the authentication context was retrieved. The authentication contex
 ## -examples
 
 ## -see-also
+
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

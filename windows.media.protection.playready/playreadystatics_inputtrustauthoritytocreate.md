@@ -16,12 +16,11 @@ Gets the PlayReady Trusted Input activation string.
 The PlayReady Trusted Input activation string. This string is used by the Media Protection Manager to tell the media source which Input Trust Authority (ITA) to create.
 
 ## -remarks
-Previous releases of the PlayReady API required callers to hard-code a well-known string and GUID in their code. These APIs provide those values to the caller so they can request them rather than hard-coding them.
+Previous releases of the PlayReady API required callers to hard-code a well-known string and [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) in their code. These APIs provide those values to the caller so they can request them rather than hard-coding them.
 
-In the [MediaProtectionManager.Properties](https://msdn.microsoft.com/library/windows/apps/windows.media.protection.mediaprotectionmanager.properties.aspx) property (a [PropertySet](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.propertyset.aspx) object), the "Windows.Media.Protection.MediaProtectionSystemIdMapping" string maps to another **PropertySet**. This in turn will typically have the string "Windows.Media.Protection.PlayReady.PlayReadyStatics.MediaProtectionSystemId" map to **Windows.Media.Protection.PlayReady.PlayReadyStatics.InputTrustAuthorityToCreate**.
+In the [MediaProtectionManager.Properties](/uwp/api/windows.media.protection.mediaprotectionmanager.properties) property (a [PropertySet](/uwp/api/windows.foundation.collections.propertyset) object), the "Windows.Media.Protection.MediaProtectionSystemIdMapping" string maps to another **PropertySet**. This in turn will typically have the string "Windows.Media.Protection.PlayReady.PlayReadyStatics.MediaProtectionSystemId" map to **Windows.Media.Protection.PlayReady.PlayReadyStatics.InputTrustAuthorityToCreate**.
 
-
-<!--<auto_snippet sample_id="PlayReadyStatics" snippet_id="SetUpMediaProtectionManager"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>-->
+[!code-csharp[SnippetSetUpMediaProtectionManager](../windows.media.protection.playready/code/PlayReadyStatics/csharp/MainPage.xaml.cs#SnippetSetUpMediaProtectionManager)]
 
 ## -examples
 

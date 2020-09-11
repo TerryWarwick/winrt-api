@@ -15,6 +15,15 @@ Provides access to message transports and the message store. Also provides a met
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | RequestSyncManagerAsync |
+
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

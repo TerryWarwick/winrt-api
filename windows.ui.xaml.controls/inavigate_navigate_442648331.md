@@ -21,14 +21,12 @@ A type reference for the content to load.
 <!--TBW clarify the asynch, that  you probably do not get false just because you specified a source that does not exist, you need async events to tell that.-->
 
 ## -remarks
-The [INavigate](inavigate.md) interface is mainly infrastructure. It's not expected that typical Windows Store app will implement this interface.
+The [INavigate](inavigate.md) interface is mainly infrastructure. It's not expected that typical UWP app will implement this interface.
 
 > [!IMPORTANT]
-> 
-
-If you are programming using a Microsoft .NET language (C# or Microsoft Visual Basic), the [TypeName](../windows.ui.xaml.interop/typename.md) type projects as [System.Type](https://msdn.microsoft.com/library/system.type.aspx).
+> If you are programming using a Microsoft .NET language (C# or Microsoft Visual Basic), the [TypeName](../windows.ui.xaml.interop/typename.md) type projects as [System.Type](/dotnet/api/system.type?redirectedfrom=MSDN).
 
 ## -examples
 
 ## -see-also
-[Frame.Navigate](frame_navigate.md), [HyperlinkButton](hyperlinkbutton.md), [System.Type](https://msdn.microsoft.com/library/system.type.aspx)
+[Frame.Navigate](frame_navigate_1426351961.md), [HyperlinkButton](hyperlinkbutton.md), [System.Type](/dotnet/api/system.type?redirectedfrom=MSDN)

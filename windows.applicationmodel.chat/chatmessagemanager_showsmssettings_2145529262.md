@@ -14,8 +14,11 @@ public void ShowSmsSettings()
 Launches the device's SMS settings app.
 
 ## -remarks
-The [ShowSmsSettings](chatmessagemanager_showsmssettings.md) method allows a chat application to launch the SMS settings pane attached to the current UI thread.
+The ShowSmsSettings method allows a chat application to launch the SMS settings pane attached to the current UI thread.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

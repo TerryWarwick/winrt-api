@@ -13,8 +13,10 @@ public class CredentialPickerOptions : Windows.Security.Credentials.UI.ICredenti
 Controls the appearance and behavior of a credential prompt.
 
 ## -remarks
+
+<!-- confirmed -->
 > [!NOTE]
-> : This class is not agile, which means that you need to consider its threading model and marshaling behavior. For more info, see [Threading and Marshaling (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh771042.aspx) and [Using Windows Runtime objects in a multithreaded environment](http://msdn.microsoft.com/library/windows/apps/jj157115.aspx).
+> This class is not agile, which means that you need to consider its threading model and marshaling behavior. For more info, see [Threading and Marshaling (C++/CX)](/cpp/cppcx/threading-and-marshaling-c-cx) and [Using Windows Runtime objects in a multithreaded environment](/windows/uwp/threading-async/using-windows-runtime-objects-in-a-multithreaded-environment).
 
 ## -examples
 

@@ -17,10 +17,11 @@ Called before the [RightTapped](../windows.ui.xaml/uielement_righttapped.md) eve
 Event data for the event.
 
 ## -remarks
+This event is not implemented in a [MapControl](../windows.ui.xaml.controls.maps/mapcontrol.md).
 <!--The following remark is relevant for Windows 8 > 8.1 migration. See WBB 458128-->
 ### Windows 8 behavior
 
-Windows 8 had an issue with the data for the [RightTapped](../windows.ui.xaml/uielement_righttapped.md) event, where the **X** and **Y** values for the point you'd get from [RightTappedRoutedEventArgs.GetPosition](../windows.ui.xaml.input/righttappedroutedeventargs_getposition.md) were reversed (**X** was really **Y**; **Y** was really **X**). This issue has been fixed starting with Windows 8.1. But if you're retargeting a Windows 8 app for Windows 8.1, you might have had code that worked around this issue by swapping the **X** and **Y** back. If so, remove that code when you retarget because the issue is now fixed.
+Windows 8 had an issue with the data for the [RightTapped](../windows.ui.xaml/uielement_righttapped.md) event, where the **X** and **Y** values for the point you'd get from [RightTappedRoutedEventArgs.GetPosition](../windows.ui.xaml.input/righttappedroutedeventargs_getposition_1813281865.md) were reversed (**X** was really **Y**; **Y** was really **X**). This issue has been fixed starting with Windows 8.1. But if you're retargeting a Windows 8 app for Windows 8.1, you might have had code that worked around this issue by swapping the **X** and **Y** back. If so, remove that code when you retarget because the issue is now fixed.
 
 Apps that were compiled for Windows 8 but running on Windows 8.1 continue to use the Windows 8 behavior.
 
@@ -33,4 +34,4 @@ Apps that were compiled for Windows 8 but running on Windows 8.1 do not use th
 ## -examples
 
 ## -see-also
-[UIElement.RightTapped](../windows.ui.xaml/uielement_righttapped.md), [RightTappedRoutedEventArgs](../windows.ui.xaml.input/righttappedroutedeventargs.md), [Events and routed events overview](http://msdn.microsoft.com/library/34c219e8-3efb-45bc-8bbd-6fd937698832), [Custom user interactions](http://msdn.microsoft.com/library/9403c46c-60da-4c13-a381-6fbd069dd9ce), [Handle pointer input](http://msdn.microsoft.com/library/bdbc9e33-4037-4671-9596-471dcf855c82)
+[UIElement.RightTapped](../windows.ui.xaml/uielement_righttapped.md), [RightTappedRoutedEventArgs](../windows.ui.xaml.input/righttappedroutedeventargs.md), [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview), [Custom user interactions](/windows/uwp/design/layout/index), [Handle pointer input](/windows/uwp/input-and-devices/handle-pointer-input)

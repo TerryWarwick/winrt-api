@@ -14,15 +14,15 @@ public Windows.Foundation.IAsyncOperation<Windows.Networking.NetworkOperators.Pr
 Provisions a device for network connectivity asynchronously, based on the supplied XML document.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -parameters
 ### -param provisioningXmlDocument
-An instance of [CarrierControlSchema](XREF:TODO:CarrierControlSchema.Schema_Root) that contains the network connectivity provisioning information.
+An instance of [CarrierControlSchema](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/schema-root) that contains the network connectivity provisioning information.
 
 ## -returns
 An asynchronous handler to start the provisioning attempt and track its completion.
@@ -30,7 +30,7 @@ An asynchronous handler to start the provisioning attempt and track its completi
 ## -remarks
 You can retrieve the results of the provisioning attempt using the [ProvisionResultsXml](provisionfromxmldocumentresults_provisionresultsxml.md) method when the provisioning attempt has completed.
 
-[ProvisionFromXmlDocumentAsync](provisioningagent_provisionfromxmldocumentasync.md) returns critical errors as HRESULTs that are then translated into exceptions. The most common HRESULTs returned are listed below:<table>
+ProvisionFromXmlDocumentAsync returns critical errors as HRESULTs that are then translated into exceptions. The most common HRESULTs returned are listed below:<table>
    <tr><th>Name</th><th>HRESULT</th><th>Description</th></tr>
    <tr><td>E_ACCESSDENIED</td><td>0x80070005L</td><td>Caller is an operator app, but attempted to provision a different operator’s profiles</td></tr>
    <tr><td>PROVCORE_E_XML_MALFORMED</td><td>0x82170001</td><td>Provisioning file is not well-formed XML</td></tr>
@@ -50,4 +50,6 @@ You can retrieve the results of the provisioning attempt using the [ProvisionRes
 
 
 ## -capabilities
+cellularDeviceIdentity, cellularDeviceControl
+networkConnectionManagerProvisioning
 networkDataPlanProvisioning

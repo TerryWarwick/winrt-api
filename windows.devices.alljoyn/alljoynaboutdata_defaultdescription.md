@@ -17,7 +17,7 @@ The default description of the app. This property is a shortcut to the entry in 
 The app description.
 
 ## -remarks
-By default the returned value is pulled from either the "Description" field in a Windows Store app 's app manifest, or [FileDescription](XREF:TODO:properties.props_System_FileDescription) property of the EXE in a Desktop app.
+By default the returned value is pulled from either the "Description" field in a UWP app's app manifest, or [FileDescription](/windows/desktop/properties/props-system-filedescription) property of the EXE in a Desktop app.
 
 ## -examples
 

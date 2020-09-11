@@ -23,9 +23,9 @@ The properties to retrieve, specified by their Windows canonical property names.
 The query.
 
 ## -remarks
-Call the [GetPropertiesAsync](contentindexerquery_getpropertiesasync.md) method to run the query.
+Call the [GetPropertiesAsync](contentindexerquery_getpropertiesasync_1672422196.md) method to run the query.
 
 ## -examples
 
 ## -see-also
-[CreateQuery(String, IIterable(String), IIterable(SortEntry), String)](contentindexer_createquery_2143311724.md), [CreateQuery(String, IIterable(String), IIterable(SortEntry))](contentindexer_createquery_1278239124.md), [GetPropertiesAsync](contentindexerquery_getpropertiesasync.md)
+[CreateQuery(String, IIterable(String), IIterable(SortEntry), String)](contentindexer_createquery_2143311724.md), [CreateQuery(String, IIterable(String), IIterable(SortEntry))](contentindexer_createquery_1278239124.md), [GetPropertiesAsync](/uwp/api/windows.storage.search.contentindexerquery.getpropertiesasync)

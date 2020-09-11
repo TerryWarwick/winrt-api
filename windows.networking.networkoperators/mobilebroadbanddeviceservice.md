@@ -14,16 +14,18 @@ public class MobileBroadbandDeviceService : Windows.Networking.NetworkOperators.
 Represents a mobile broadband device service.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -remarks
-The [GetDeviceService](mobilebroadbandmodem_getdeviceservice.md) method on the [MobileBroadbandModem](mobilebroadbandmodem.md) gets a specific device service for the mobile broadband modem.
+The [GetDeviceService](mobilebroadbandmodem_getdeviceservice_1135670295.md) method on the [MobileBroadbandModem](mobilebroadbandmodem.md) gets a specific device service for the mobile broadband modem.
 
 ## -examples
 
 ## -see-also
-[MobileBroadbandDeviceServiceCommandSession](mobilebroadbanddeviceservicecommandsession.md), [MobileBroadbandDeviceServiceDataSession](mobilebroadbanddeviceservicedatasession.md), [MobileBroadbandModem](mobilebroadbandmodem.md), [MobileBroadbandModem.GetDeviceService](mobilebroadbandmodem_getdeviceservice.md)
+[MobileBroadbandDeviceServiceCommandSession](mobilebroadbanddeviceservicecommandsession.md), [MobileBroadbandDeviceServiceDataSession](mobilebroadbanddeviceservicedatasession.md), [MobileBroadbandModem](mobilebroadbandmodem.md), [MobileBroadbandModem.GetDeviceService](mobilebroadbandmodem_getdeviceservice_1135670295.md)
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

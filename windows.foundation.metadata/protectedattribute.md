@@ -17,4 +17,4 @@ Indicates that the interface contains protected methods.
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

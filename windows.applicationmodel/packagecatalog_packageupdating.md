@@ -10,10 +10,12 @@ public event Windows.Foundation.TypedEventHandler PackageUpdating<Windows.Applic
 # Windows.ApplicationModel.PackageCatalog.PackageUpdating
 
 ## -description
-Indicates that an optional appx package is being updated.
+Indicates that an app package is being updated.
 
 ## -remarks
-Apps only receive package events for their optional packages.
+If the PackageCatalog is obtained using **[OpenForCurrentPackage](/uwp/api/windows.applicationmodel.packagecatalog.OpenForCurrentPackage)**, the app only receives package events for itself or its related packages such as optional packages.
+
+To get package events for all of a user's packages, obtain the PackageCatalog using **[OpenForCurrentUser](/uwp/api/windows.applicationmodel.packagecatalog.OpenForCurrentUser)** instead.
 
 ## -examples
 

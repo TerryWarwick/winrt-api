@@ -19,8 +19,16 @@ NV12 media pixel format.
 ### -field Bgra8:1
 BGRA8 media pixel format.
 
+### -field P010:2
+P010 media pixel format.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1803 | 17134 | P010 |
 
 ## -examples
 

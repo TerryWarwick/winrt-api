@@ -15,10 +15,7 @@ Gets or sets the content for the items footer.
 ## -xaml-syntax
 ```xaml
 <ItemsPresenter Footer="footerString"/>
-
-```
-
-```xaml
+- or -
 <ItemsPresenter>
   <ItemsPresenter.Footer>footerObject</ItemsPresenter.Footer>
 </ItemsPresenter>
@@ -34,7 +31,7 @@ Gets or sets the content for the items footer.
 The content of the items footer. The default is **null**.
 
 ## -remarks
-You can set a data template for the [Footer](itemspresenter_footer.md) by using the [FooterTemplate](itemspresenter_footertemplate.md) property.
+You can set a data template for the Footer by using the [FooterTemplate](itemspresenter_footertemplate.md) property.
 
 ## -examples
 

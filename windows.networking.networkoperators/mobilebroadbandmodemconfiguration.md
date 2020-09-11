@@ -14,8 +14,17 @@ public class MobileBroadbandModemConfiguration : Windows.Networking.NetworkOpera
 Contains details about the mobile broadband modem configuration.
 
 ## -remarks
-Your code gets instances of this class by using the [MobileBroadbandModem.GetCurrentConfigurationAsync](mobilebroadbandmodem_getcurrentconfigurationasync.md) method. It does not instantiate this class directly.
+Your code gets instances of this class by using the [MobileBroadbandModem.GetCurrentConfigurationAsync](mobilebroadbandmodem_getcurrentconfigurationasync_1045804725.md) method. It does not instantiate this class directly.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | SarManager |
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

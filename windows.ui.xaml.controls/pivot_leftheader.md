@@ -15,10 +15,7 @@ Gets or sets the content for the header on the control's left side.
 ## -xaml-syntax
 ```xaml
 <Pivot LeftHeader="headerString"/>
-
-```
-
-```xaml
+- or -
 <Pivot>
   <Pivot.LeftHeader>headerObject</Pivot.LeftHeader>
 </Pivot>
@@ -34,7 +31,7 @@ Gets or sets the content for the header on the control's left side.
 The content of the header on the control's left side. The default is **null**.
 
 ## -remarks
-You can set a data template for the [LeftHeader](pivot_leftheader.md) value by using the [LeftHeaderTemplate](pivot_leftheadertemplate.md) property.
+You can set a data template for the LeftHeader value by using the [LeftHeaderTemplate](pivot_leftheadertemplate.md) property.
 
 ## -examples
 

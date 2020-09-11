@@ -10,23 +10,25 @@ public class StorageFileQueryResult : Windows.Storage.Search.IStorageFileQueryRe
 # Windows.Storage.Search.StorageFileQueryResult
 
 ## -description
-Provides access to the results of a query of the files in the location that is represented by a [storageFolder](../windows.storage/storagefolder.md) object. You can use [storageFileQueryResult](storagefilequeryresult.md) to enumerate the files in that [storageFolder](../windows.storage/storagefolder.md) location.
+
+Provides access to the results of a query of the files in the location that is represented by a [storageFolder](../windows.storage/storagefolder.md) object. You can use storageFileQueryResult to enumerate the files in that [storageFolder](../windows.storage/storagefolder.md) location.
 
 ## -remarks
+
 > [!NOTE]
 > Although it's not attributed with `marshalling_behavior(agile)`, this class can be treated as agile.
 <!--W8B 988884 v2-->
 
-You can get a [storageFileQueryResult](storagefilequeryresult.md) object by calling the following methods from a [storageFolder](../windows.storage/storagefolder.md) or a [folderInformation](../windows.storage.bulkaccess/folderinformation.md) object:
+You can get a storageFileQueryResult object by calling the following methods from a [storageFolder](../windows.storage/storagefolder.md) or a [folderInformation](../windows.storage.bulkaccess/folderinformation.md) object:
 
-+ [storageFolder.createFileQuery methods](istoragefolderqueryoperations_createfilequery.md)
-+ [storageFolder.createFileQueryWithOptions method](../windows.storage/storagefolder_createfilequerywithoptions.md)
-+ [folderInformation.createFileQuery methods](../windows.storage.bulkaccess/folderinformation_createfilequery.md)
-+ [folderInformation.createFileQueryWithOptions](../windows.storage.bulkaccess/folderinformation_createfilequerywithoptions.md)
-
++ [storageFolder.createFileQuery methods](istoragefolderqueryoperations_createfilequery_1641434999.md)
++ [storageFolder.createFileQueryWithOptions method](../windows.storage/storagefolder_createfilequerywithoptions_2038131323.md)
++ [folderInformation.createFileQuery methods](../windows.storage.bulkaccess/folderinformation_createfilequery_1641434999.md)
++ [folderInformation.createFileQueryWithOptions](../windows.storage.bulkaccess/folderinformation_createfilequerywithoptions_2038131323.md)
 
 ## -examples
-This example demonstrates how to get a list of files from a [storageFileQueryResult](storagefilequeryresult.md) object.
+
+This example demonstrates how to get a list of files from a storageFileQueryResult object.
 
 ```csharp
 // Set query options with filter and sort order for results
@@ -63,10 +65,11 @@ query.getFilesAsync().done(function (files) {
 });
 ```
 
-The `query` variable gets the [storageFileQueryResult](storagefilequeryresult.md) that is used to retrieve files that meet the criteria of the query.
+The `query` variable gets the storageFileQueryResult that is used to retrieve files that meet the criteria of the query.
 
 > [!NOTE]
-> You need the Pictures library capability to access the library using [KnownFolders.PicturesLibrary](../windows.storage/knownfolders_pictureslibrary.md). To learn more about capabilities and file access, see [File access permissions](http://msdn.microsoft.com/library/3a404cc0-a997-45c8-b2e8-44745539759d).
+> You need the Pictures library capability to access the library using [KnownFolders.PicturesLibrary](../windows.storage/knownfolders_pictureslibrary.md). To learn more about capabilities and file access, see [File access permissions](/windows/uwp/files/file-access-permissions).
 
 ## -see-also
-[Windows.Storage.storageFolder.createFileQuery methods](istoragefolderqueryoperations_createfilequery.md), [Windows.Storage.storageFolder.createFileQueryWithOptions method](../windows.storage/storagefolder_createfilequerywithoptions.md), [Windows.Storage.BulkAccess.folderInformation.createFileQuery](../windows.storage.bulkaccess/folderinformation_createfilequery.md), [Windows.Storage.BulkAccess.folderInformation.createFileQueryWithOptions](../windows.storage.bulkaccess/folderinformation_createfilequerywithoptions.md), [File search sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620544)
+
+[Windows.Storage.storageFolder.createFileQuery methods](istoragefolderqueryoperations_createfilequery_1641434999.md), [Windows.Storage.storageFolder.createFileQueryWithOptions method](../windows.storage/storagefolder_createfilequerywithoptions_2038131323.md), [Windows.Storage.BulkAccess.folderInformation.createFileQuery](../windows.storage.bulkaccess/folderinformation_createfilequery_1641434999.md), [Windows.Storage.BulkAccess.folderInformation.createFileQueryWithOptions](../windows.storage.bulkaccess/folderinformation_createfilequerywithoptions_2038131323.md), [File search sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/FileSearch), [Folder enumeration sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/FolderEnumeration)

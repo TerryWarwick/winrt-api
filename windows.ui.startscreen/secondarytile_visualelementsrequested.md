@@ -11,16 +11,15 @@ public event Windows.Foundation.TypedEventHandler VisualElementsRequested<Window
 # Windows.UI.StartScreen.SecondaryTile.VisualElementsRequested
 
 ## -description
-Fired when a call is made to [RequestCreateAsync](secondarytile_requestcreateasync.md).
+Fired when a call is made to [RequestCreateAsync](/uwp/api/windows.ui.startscreen.secondarytile.requestcreateasync).
 
 
 
 > This event is not raised on Windows Phone 8.1.
 
 ## -remarks
-> This event is not raised for Windows Phone Store app.
+> This event is not raised for Windows Phone 8.x app.
 
 ## -examples
 
 ## -see-also
-[Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

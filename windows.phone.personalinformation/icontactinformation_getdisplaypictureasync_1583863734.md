@@ -13,14 +13,14 @@ public Windows.Foundation.IAsyncOperation<Windows.Storage.Streams.IRandomAccessS
 Gets the display picture of a contact.
 
 ## -returns
-A stream containing the image data. If you use [Asynchronous programming](http://msdn.microsoft.com/library/23fe28f1-89c5-4a17-a732-a722648f9c5e), the result type is [IRandomAccessStream](../windows.storage.streams/irandomaccessstream.md), which is the bitmap data for an image provided as a stream.
+A stream containing the image data. If you use [Asynchronous programming](/windows/uwp/threading-async/asynchronous-programming-universal-windows-platform-apps), the result type is [IRandomAccessStream](../windows.storage.streams/irandomaccessstream.md), which is the bitmap data for an image provided as a stream.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[ContactInformation.GetDisplayPictureAsync](contactinformation_getdisplaypictureasync.md)
+[ContactInformation.GetDisplayPictureAsync](contactinformation_getdisplaypictureasync_1583863734.md)
 
 ## -capabilities
 ID_CAP_CONTACTS [Windows Phone]

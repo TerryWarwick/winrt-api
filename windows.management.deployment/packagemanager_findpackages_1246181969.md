@@ -10,15 +10,16 @@ public Windows.Foundation.Collections.IIterable<Windows.ApplicationModel.Package
 # Windows.Management.Deployment.PackageManager.FindPackages
 
 ## -description
-Retrieves information about a specified family of packages installed across all users.
+Retrieves information about a specified family of [Packages](/uwp/api/windows.applicationmodel.package) installed across all users.
 
 ## -returns
 If the method succeeds, an enumerable collection of package objects is returned. Each Package object in this collection contains information about the package, including but not limited to its name, publisher, version, and install location.
 
 ## -remarks
+This method requires administrative privileges. Otherwise, an **AccessDeniedException** is thrown.
 
 ## -examples
-This example uses [FindPackages()](packagemanager_findpackages_1246181969.md) to enumerate the installed packages for all users.
+This example uses FindPackages() to enumerate the installed packages for all users.
 
 ```csharp
 using Windows.Management.Deployment;
@@ -63,7 +64,61 @@ private static void DisplayPackageInfo(Windows.ApplicationModel.Package package)
 }
 ```
 
-```cpp
+Also see [Visual Studio support for C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt#visual-studio-support-for-cwinrt-xaml-the-vsix-extension-and-the-nuget-package).
+
+```cppwinrt
+// main.cpp : In Visual Studio, create a new Windows Console Application (C++/WinRT), and run it (or run Visual Studio) as administrator.
+#include "pch.h"
+
+#include <winrt/Windows.ApplicationModel.h>
+#include <winrt/Windows.Management.Deployment.h>
+#include <winrt/Windows.Storage.h>
+#include <iostream>
+
+using namespace winrt;
+using namespace Windows::ApplicationModel;
+using namespace Windows::Management::Deployment;
+using namespace Windows::Storage;
+
+void DisplayPackageInfo(Windows::ApplicationModel::Package const& package)
+{
+    try
+    {
+        std::wcout << L"Name: " << package.Id().Name().c_str() << std::endl;
+        std::wcout << L"FullName: " << package.Id().FullName().c_str() << std::endl;
+        std::wcout << L"Version: " << package.Id().Version().Major << "." << package.Id().Version().Minor << "." << package.Id().Version().Build << "." << package.Id().Version().Revision << std::endl;
+        std::wcout << L"Publisher: " << package.Id().Publisher().c_str() << std::endl;
+        std::wcout << L"PublisherId: " << package.Id().PublisherId().c_str() << std::endl;
+        std::wcout << L"Installed Location: " << package.InstalledLocation().Path().c_str() << std::endl;
+        std::wcout << L"IsFramework: " << (package.IsFramework() ? L"True" : L"False") << std::endl;
+    }
+    catch (winrt::hresult_error const& ex)
+    {
+        std::wcout << ex.message().c_str() << std::endl;
+    }
+}
+
+int wmain()
+{
+    winrt::init_apartment();
+
+    bool noPackagesFound{ true };
+    for (auto const& package : PackageManager{}.FindPackages())
+    {
+        DisplayPackageInfo(package);
+        noPackagesFound = false;
+    }
+
+    if (noPackagesFound)
+    {
+        std::wcout << L"No packages were found." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+```cppcx
 using namespace Windows::Management::Deployment;
 
 [STAThread]
@@ -107,7 +162,9 @@ void DisplayPackageInfo(Windows::ApplicationModel::Package^ package)
 
 
 ## -see-also
-[Enumerate app packages sample](http://code.msdn.microsoft.com/windowsdesktop/Package-Manager-Inventory-ee821079), [FindPackages(String)](packagemanager_findpackages_331793265.md), [FindPackages(String, String)](packagemanager_findpackages_1597689551.md)
+
+- [Package](/uwp/api/windows.applicationmodel.package)
+- [Enumerate app packages sample](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindProvisionedPackages), [FindPackages(String)](packagemanager_findpackages_331793265.md), [FindPackages(String, String)](packagemanager_findpackages_1597689551.md)
 
 ## -capabilities
 packageQuery

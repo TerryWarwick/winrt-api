@@ -10,11 +10,11 @@ public class DualApiPartitionAttribute : System.Attribute
 # Windows.Foundation.Metadata.DualApiPartitionAttribute
 
 ## -description
-Indicates that the type is supported in desktop apps and in Windows Store apps.
+Indicates that the type is supported in desktop apps and in UWP apps.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

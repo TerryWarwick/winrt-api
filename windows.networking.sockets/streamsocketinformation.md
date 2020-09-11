@@ -20,7 +20,7 @@ A [StreamSocketInformation](datagramsocketinformation.md) object is automaticall
 ## -examples
 
 ## -see-also
-[Connecting with sockets ](http://msdn.microsoft.com/library/67cfa78f-570f-4dd4-a0f2-cd6c891f5446), [Connecting with sockets ](http://msdn.microsoft.com/library/2a6448d0-e21f-4963-bca5-aae001ae4fc7), [How to use advanced socket controls ](http://msdn.microsoft.com/library/2e1071d8-a1c7-44c0-b93a-31a701d431c4), [How to use advanced socket controls ](http://msdn.microsoft.com/library/f2c5be73-3461-452e-a38f-d2ddef9b5682), [StreamSocket](streamsocket.md), [StreamSocket.Information](streamsocket_information.md), [StreamSocket.Control](streamsocket_control.md), [ControlChannelTrigger StreamSocket sample](http://go.microsoft.com/fwlink/p/?linkid=243039), [StreamSocket sample](http://go.microsoft.com/fwlink/p/?linkid=243037)
+[Connecting with sockets ](/previous-versions/windows/apps/hh452977(v=win.10)), [Connecting with sockets ](/previous-versions/windows/apps/hh452976(v=win.10)), [How to use advanced socket controls ](/previous-versions/windows/apps/hh780596(v=win.10)), [How to use advanced socket controls ](/previous-versions/windows/apps/jj150598(v=win.10)), [StreamSocket](streamsocket.md), [StreamSocket.Information](streamsocket_information.md), [StreamSocket.Control](streamsocket_control.md), [ControlChannelTrigger StreamSocket sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/ControlChannelTrigger%20StreamSocket%20sample/C%23), [StreamSocket sample](https://go.microsoft.com/fwlink/p/?linkid=243037)
 
 ## -capabilities
 ID_CAP_NETWORKING [Windows Phone], bluetooth.rfcomm

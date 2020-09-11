@@ -14,19 +14,16 @@ public class BluetoothLEAdvertisementPublisher : Windows.Devices.Bluetooth.Adver
 An object to send Bluetooth Low Energy (LE) advertisements.
 
 ## -remarks
-The [BluetoothLEAdvertisementPublisher](bluetoothleadvertisementpublisher.md) class allows the configuration and advertising of a Bluetooth LE advertisement packet. The advertising request is serviced on a best effort basis and the advertising parameters are defined by an advertising policy.
+The BluetoothLEAdvertisementPublisher class allows the configuration and advertising of a Bluetooth LE advertisement packet. The advertising request is serviced on a best effort basis and the advertising parameters are defined by an advertising policy.
 
-The payload of the advertisement is configured when the [BluetoothLEAdvertisementPublisher](bluetoothleadvertisementpublisher.md) is constructed. The payload can be retrieved by the [Advertisement](bluetoothleadvertisementpublisher_advertisement.md) property of the [BluetoothLEAdvertisementPublisher](bluetoothleadvertisementpublisher.md). The [BluetoothLEAdvertisement](bluetoothleadvertisement.md) class must be managed by the caller if used this way. For example, it is not recommended to directly reuse a [BluetoothLEAdvertisement](bluetoothleadvertisement.md) obtained from a [BluetoothLEAdvertisementReceivedEventArgs](bluetoothleadvertisementreceivedeventargs.md) because it contains duplication of actual payload in order to facilitate the access to common data sections. If a received [BluetoothLEAdvertisement](bluetoothleadvertisement.md) needs to be duplicated, only the [DataSections](bluetoothleadvertisement_datasections.md) property should be copied, as they represent the advertisement data sections in their raw form.
+The payload of the advertisement is configured when the BluetoothLEAdvertisementPublisher is constructed. The payload can be retrieved by the [Advertisement](bluetoothleadvertisementpublisher_advertisement.md) property of the BluetoothLEAdvertisementPublisher. The [BluetoothLEAdvertisement](bluetoothleadvertisement.md) class must be managed by the caller if used this way. For example, it is not recommended to directly reuse a [BluetoothLEAdvertisement](bluetoothleadvertisement.md) obtained from a [BluetoothLEAdvertisementReceivedEventArgs](bluetoothleadvertisementreceivedeventargs.md) because it contains duplication of actual payload in order to facilitate the access to common data sections. If a received [BluetoothLEAdvertisement](bluetoothleadvertisement.md) needs to be duplicated, only the [DataSections](bluetoothleadvertisement_datasections.md) property should be copied, as they represent the advertisement data sections in their raw form.
 
 The local advertisement resource is limited at the protocol layer. Usage of this resource is best suited for controlled scenarios such as enterprise use cases. Other apps may compete for this limited resource and regular broadcast of advertisements for any specific use case cannot be guaranteed.
-
 
 The following advertisement types are allowed:
 
 + Manufacturer Specific Information (0xFF)
 + Any non-standard type not reserved by the system, as shown in the list below. For more information on non-standard types, see [this page](https://www.bluetooth.org/specification/assigned-numbers/generic-access-profile) from the Bluetooth specification.
-
-
 
 The following advertisement types are system-reserved and are not allowed:
 
@@ -62,10 +59,18 @@ The following advertisement types are system-reserved and are not allowed:
 + Simple Pairing Randomizer R256 (0x1E)
 + 3D Information Data (0x3D)
 
+### Version history
 
-
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 2004 | 19041 | IncludeTransmitPowerLevel |
+| 2004 | 19041 | IsAnonymous |
+| 2004 | 19041 | PreferredTransmitPowerLevelInDBm |
+| 2004 | 19041 | UseExtendedAdvertisement |
 
 ## -examples
 
 ## -see-also
 [BluetoothLEAdvertisement](bluetoothleadvertisement.md), [BluetoothLEAdvertisement.DataSections](bluetoothleadvertisement_datasections.md), [BluetoothLEAdvertisementReceivedEventArgs](bluetoothleadvertisementreceivedeventargs.md)
+## -capabilities
+bluetooth

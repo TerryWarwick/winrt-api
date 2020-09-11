@@ -34,6 +34,14 @@ The organizational hierarchy tab.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | OrganizationalHierarchy |
+
 ## -examples
 
 ## -see-also
+## -capabilities
+contactsSystem

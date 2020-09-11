@@ -21,6 +21,5 @@ The media types used by the call.
 
 ## -see-also
 
-
 ## -capabilities
-voipCall
+phoneCallHistory, phoneCallHistorySystem, voipCall

@@ -11,11 +11,19 @@ public class WebAccountProvider : Windows.Security.Credentials.IWebAccountProvid
 # Windows.Security.Credentials.WebAccountProvider
 
 ## -description
+
 Represents a web account authentication provider.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1803 | 17134 | IsSystemProvider |
+
 ## -examples
 
 ## -see-also
-[WebAuthenticationBroker sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620622)
+
+[Connect to identity providers with Web Account Manager](/windows/uwp/security/web-account-manager), [WebAuthenticationBroker sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)

@@ -11,7 +11,7 @@ public Windows.Foundation.Collections.IVector<Windows.ApplicationModel.Contacts.
 
 ## -description
 > [!NOTE]
-> [Fields](contact_fields.md) may be altered or unavailable for releases after Windows 8.1. Instead, use [Phones](contact_phones.md), [Emails](contact_emails.md), [Addresses](contact_addresses.md), or [ConnectedServiceAccounts](contact_connectedserviceaccounts.md).
+> Fields may be altered or unavailable for releases after Windows 8.1. Instead, use [Phones](contact_phones.md), [Emails](contact_emails.md), [Addresses](contact_addresses.md), or [ConnectedServiceAccounts](contact_connectedserviceaccounts.md).
 
 Sets the fields that contain information about a contact.
 
@@ -35,3 +35,6 @@ These functions show how you can add different fields to a [Contact](contact.md)
 [!code-js[ContactPickerBasketAppendAddress](../windows.applicationmodel.contacts.provider/code/ContactsMain/javascript/js/contactpicker.js#SnippetContactPickerBasketAppendAddress)]
 
 ## -see-also
+
+## -capabilities
+contactsSystem

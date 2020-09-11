@@ -14,7 +14,18 @@ Contains core methods for obtaining tokens from web account providers.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | CreateWebAccountMonitor |
+| 1803 | 17134 | FindAllAccountsAsync(WebAccountProvider) |
+| 1803 | 17134 | FindAllAccountsAsync(WebAccountProvider,String) |
+| 1803 | 17134 | FindSystemAccountProviderAsync(String) |
+| 1803 | 17134 | FindSystemAccountProviderAsync(String,String) |
+| 1803 | 17134 | FindSystemAccountProviderAsync(String,String,User) |
+
 ## -examples
 
 ## -see-also
-[Web account management code sample](http://go.microsoft.com/fwlink/p/?LinkId=620621)
+[Connect to identity providers with Web Account Manager](/windows/uwp/security/web-account-manager), [Web account management code sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement)

@@ -9,12 +9,13 @@ public IAsyncOperation<DeviceAccessStatus> BluetoothLEDevice.RequestAccessAsync(
 
 # Windows.Devices.Bluetooth.BluetoothLEDevice.RequestAccessAsync
 
+
 ## -description
+
 Requests access to the Bluetooth LowEnergy device.
 
-## -parameters
-
 ## -returns
+
 Returns an asynchronous operation that completes with a DeviceAccessStatus.
 
 ## -remarks
@@ -22,4 +23,8 @@ Returns an asynchronous operation that completes with a DeviceAccessStatus.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

@@ -10,7 +10,7 @@ public enum Windows.System.AppMemoryUsageLevel : int
 # AppMemoryUsageLevel
 
 ## -description
-An enumeration containing 3 levels of app memory usage: low, medium, and high.
+An enumeration containing 4 levels of app memory usage: low, medium, high, and overlimit.
 
 ## -enum-fields
 ### -field Low:0
@@ -27,6 +27,12 @@ App memory usage is over the limit.
 
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | OverLimit |
 
 ## -examples
 

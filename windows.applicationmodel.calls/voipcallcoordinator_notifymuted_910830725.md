@@ -18,6 +18,5 @@ Notifies the system that the user has muted the call using the VoIP app's UI.
 
 ## -see-also
 
-
 ## -capabilities
-voipCall
+phoneCallHistory, phoneCallHistorySystem, voipCall

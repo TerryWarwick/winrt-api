@@ -10,7 +10,7 @@ public Windows.Media.Audio.AudioSubmixNode CreateSubmixNode()
 # Windows.Media.Audio.AudioGraph.CreateSubmixNode
 
 ## -description
-Creates an audio graph submix node that mixes the output of one or more nodes into single output that can be connected to output nodes or other submix nodes.
+Creates an [AudioSubmixNode](audiosubmixnode.md) that mixes the output of one or more audio graph nodes into a single output that can be connected to output nodes or other submix nodes.
 
 ## -returns
 An audio submix node.
@@ -21,3 +21,5 @@ An audio submix node.
 
 ## -see-also
 [CreateSubmixNode(AudioEncodingProperties)](audiograph_createsubmixnode_1936987637.md)
+## -capabilities
+backgroundMediaRecording

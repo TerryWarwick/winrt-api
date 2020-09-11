@@ -15,6 +15,15 @@ Provides information about a [BluetoothLEAdvertisementPublisher](../windows.devi
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 2004 | 19041 | SelectedTransmitPowerLevelInDBm |
+
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

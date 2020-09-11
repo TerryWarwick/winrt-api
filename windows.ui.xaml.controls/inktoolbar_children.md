@@ -16,9 +16,9 @@ Gets the collection of custom buttons displayed on the [InkToolbar](inktoolbar.m
 A collection of [InkToolbar](inktoolbar.md) custom buttons.
 
 ## -remarks
-[Children](inktoolbar_children.md) returns only the number of buttons on the [InkToolbar](inktoolbar.md) that have been added manually (see [ActiveTool](inktoolbar_activetool.md) and [InitialControls](inktoolbar_initialcontrols.md)). The default [InkToolbar](inktoolbar.md) does not add any buttons to the value of this property.
+Children returns only the number of buttons on the [InkToolbar](inktoolbar.md) that have been added manually (see [ActiveTool](inktoolbar_activetool.md) and [InitialControls](inktoolbar_initialcontrols.md)). The default [InkToolbar](inktoolbar.md) does not add any buttons to the value of this property.
 
-[Children](inktoolbar_children.md) does not include buttons declared in markup.
+Children does not include buttons declared in markup.
 
 
 The [InkToolbar](inktoolbar.md) consists of two distinct groups of button types:
@@ -34,4 +34,4 @@ The [InkToolbar](inktoolbar.md) consists of two distinct groups of button types:
 ## -examples
 
 ## -see-also
-[ChildrenProperty](inktoolbar_childrenproperty.md)
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Add an InkToolbar to a Universal Windows Platform (UWP) app](/windows/uwp/input-and-devices/ink-toolbar), [Get Started Tutorial: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [ChildrenProperty](/uwp/api/windows.ui.xaml.controls.inktoolbar.ChildrenProperty), [Simple ink sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk), [Complex ink sample (C++)](https://go.microsoft.com/fwlink/p/?LinkID=620314), [Ink sample (JavaScript)](https://go.microsoft.com/fwlink/p/?LinkID=620308), [Get Started Tutorial: Support ink in your UWP app](https://aka.ms/appsample-ink), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample)

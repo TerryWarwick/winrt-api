@@ -10,11 +10,16 @@ public class ApplicationTrigger : Windows.ApplicationModel.Background.IApplicati
 # Windows.ApplicationModel.Background.ApplicationTrigger
 
 ## -description
-This allows you to programmatically trigger a background tasks from within your application.
+This allows you to programmatically trigger a background task from within your application.
 
 ## -remarks
+
+> [!IMPORTANT]
+> An app can only register one **ApplicationTrigger** with the [BackgroundTaskBuilder](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskBuilder) at any given time.
 
 ## -examples
 
 ## -see-also
+
+[Trigger a background task from within your app](trigger-background-task-from-app.md)  
 [IBackgroundTrigger](ibackgroundtrigger.md)

@@ -13,8 +13,11 @@ public class EmailConversationBatch : Windows.ApplicationModel.Email.IEmailConve
 Represents a group of [EmailConversation](emailconversation.md) objects for batch processing.
 
 ## -remarks
-Obtain an instance of this class by calling [EmailConversationReader.ReadBatchAsync](emailconversationreader_readbatchasync.md).
+Obtain an instance of this class by calling [EmailConversationReader.ReadBatchAsync](emailconversationreader_readbatchasync_888788553.md).
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+email, emailSystem

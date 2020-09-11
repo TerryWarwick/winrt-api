@@ -19,15 +19,16 @@ A string that represents the content disposition information in the **Content-Di
 ## -returns
 An [HttpContentDispositionHeaderValue](httpcontentdispositionheadervalue.md) instance.
 
-## -exceptions
+## -remarks
+Below are the exceptions that this function throws.
+
 ### E_INVALIDARG
 
 The *input* parameter is **null** (**Nothing** in Visual Basic).
 
 The *input* parameter is not valid content disposition information.
 
-## -remarks
-
 ## -examples
+See the code example in [HttpContentHeaderCollection class](httpcontentheadercollection.md).
 
 ## -see-also

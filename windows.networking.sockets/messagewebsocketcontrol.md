@@ -13,9 +13,9 @@ public class MessageWebSocketControl : Windows.Networking.Sockets.IMessageWebSoc
 Provides socket control data on a [MessageWebSocket](messagewebsocket.md).
 
 ## -remarks
-The [MessageWebSocketControl](messagewebsocketcontrol.md) class provides access to advanced socket control data on a [MessageWebSocket](messagewebsocket.md) object.
+The MessageWebSocketControl class provides access to advanced socket control data on a [MessageWebSocket](messagewebsocket.md) object.
 
-A [MessageWebSocketControl](messagewebsocketcontrol.md) object is automatically created with the parent [MessageWebSocket](messagewebsocket.md) object. The [MessageWebSocket.Control](messagewebsocket_control.md) property provides access to the associated [MessageWebSocket](messagewebsocket.md) object.
+A MessageWebSocketControl object is automatically created with the parent [MessageWebSocket](messagewebsocket.md) object. The [MessageWebSocket.Control](messagewebsocket_control.md) property provides access to the associated [MessageWebSocket](messagewebsocket.md) object.
 
 The [SupportedProtocols](messagewebsocketcontrol_supportedprotocols.md) property gets the value of this property and can be called at any time.
 
@@ -23,13 +23,55 @@ The [MessageType](messagewebsocketcontrol_messagetype.md) property can be change
 
 The [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md) property must be set before the [MessageWebSocket](messagewebsocket.md) is connected. Setting this property after the [MessageWebSocket](messagewebsocket.md) is connected has no effect.
 
-Any changes to the other property values on the [MessageWebSocketControl](messagewebsocketcontrol.md) must be set before the [DatagramSocket](datagramsocket.md) is bound or connected. As a result if you need to make changes to the [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), or [ServerCredential](messagewebsocketcontrol_servercredential.md) properties, then these changes must occur before a successful call to the [ConnectAsync](messagewebsocket_connectasync.md) method on the [MessageWebSocket](messagewebsocket.md).
+Any changes to the other property values on the MessageWebSocketControl must be set before the [DatagramSocket](datagramsocket.md) is bound or connected. As a result if you need to make changes to the [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), or [ServerCredential](messagewebsocketcontrol_servercredential.md) properties, then these changes must occur before a successful call to the [ConnectAsync](messagewebsocket_connectasync_682685111.md) method on the [MessageWebSocket](messagewebsocket.md).
 
 The following example creates a [MessageWebSocket](messagewebsocket.md), and then demonstrates how to set the [MessageWebSocketControl.MessageType](messagewebsocketcontrol_messagetype.md) property to **binary**. (Other properties may be set in a similar manner.) After this is done, the app can connect the [MessageWebSocket](messagewebsocket.md).
 
+```csharp
+using Windows.Networking.Sockets;
 
+MessageWebSocket clientWebSocket = new MessageWebSocket();
 
+// Get the current setting for this option.
+// This isn't required, but it shows how to get the current setting.
+SocketMessageType currentSetting = clientWebSocket.Control.MessageType;
 
+// Set messageType to Binary.
+clientWebSocket.Control.MessageType = SocketMessageType.Binary;
+
+// Now you can call the ConnectAsync method to connect the MessageWebSocket.
+```
+
+```cppwinrt
+#include <winrt/Windows.Networking.Sockets.h>
+using namespace winrt;
+...
+Windows::Networking::Sockets::MessageWebSocket clientSocket;
+
+// Get the current setting for this option.
+// This isn't required, but it shows how to get the current setting.
+auto currentSetting{ clientSocket.Control().MessageType() };
+
+// Set QualityOfService to Binary.
+clientSocket.Control().MessageType(Windows::Networking::Sockets::SocketMessageType::Binary);
+
+// Now you can call the ConnectAsync function to connect the MessageWebSocket.
+```
+
+```cppcx
+using namespace Windows::Networking::Sockets;
+
+MessageWebSocket^ clientWebSocket = ref new MessageWebSocket();
+
+// Get the current setting for this option.
+// This isn't required, but it shows how to get the current setting.
+SocketMessageType currentSetting = clientWebSocket->Control->MessageType;
+
+// Set messageType to Binary.
+clientWebSocket->Control->MessageType = SocketMessageType::Binary;
+
+// Now you can call the ConnectAsync method to connect the MessageWebSocket.
+```
 
 ```javascript
 var clientWebSocket = new Windows.Networking.Sockets.MessageWebSocket();
@@ -42,46 +84,27 @@ var currentSetting = clientWebSocket.control.messageType;
 clientWebSocket.control.messageType = Windows.Networking.Sockets.SocketMessageType.binary;
    
 // Now you can call the ConnectAsync method to connect the MessageWebSocket.
-
 ```
 
-```cpp
+For more information on using MessageWebSocketControl, see [How to use advanced WebSocket controls ](/previous-versions/windows/apps/hh761447(v=win.10)) and [How to use advanced WebSocket controls ](/previous-versions/windows/apps/hh994400(v=win.10)).
 
-using namespace Windows::Networking::Sockets;
+### Version history
 
-MessageWebSocket^ clientWebSocket = ref new MessageWebSocket();
-
-// Get the current setting for this option
-// This isn't required, but it shows how to get the current setting
-SocketMessageType currentSetting = clientWebSocket->Control->MessageType;
-
-// Set messageType to binary 
-clientWebSocket->Control->MessageType = SocketMessageType::Binary;
-
-// Now you can call the ConnectAsync method to connect the MessageWebSocket.
-```
-
-```csharp
-using Windows.Networking.Sockets;
-
-MessageWebSocket clientWebSocket = new MessageWebSocket();
-
-// Get the current setting for this option
-// This isn't required, but it shows how to get the current setting
-SocketMessageType currentSetting = clientWebSocket.Control.MessageType;
-
-// Set messageType to binary 
-clientWebSocket.Control.MessageType = SocketMessageType.Binary;
-
-// Now you can call the ConnectAsync method to connect the MessageWebSocket.
-
-```
-
-
-
-For more information on using [MessageWebSocketControl](messagewebsocketcontrol.md), see [How to use advanced WebSocket controls ](http://msdn.microsoft.com/library/0a47f7c3-66f9-4315-886e-bd1afe77bf39) and [How to use advanced WebSocket controls ](http://msdn.microsoft.com/library/4ab9621e-90e5-420e-88d0-09f1c7239d7a).
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | IgnorableServerCertificateErrors |
+| 1709 | 16299 | ActualUnsolicitedPongInterval |
+| 1709 | 16299 | ClientCertificate |
+| 1709 | 16299 | DesiredUnsolicitedPongInterval |
+| 1709 | 16299 | ReceiveMode |
 
 ## -examples
 
 ## -see-also
-[How to use advanced WebSocket controls ](http://msdn.microsoft.com/library/0a47f7c3-66f9-4315-886e-bd1afe77bf39), [How to use advanced WebSocket controls ](http://msdn.microsoft.com/library/4ab9621e-90e5-420e-88d0-09f1c7239d7a), [MessageWebSocket](messagewebsocket.md), [MessageWebSocket.Control](messagewebsocket_control.md), [MessageWebSocketInformation](messagewebsocketinformation.md), [Connecting with WebSockets sample](http://go.microsoft.com/fwlink/p/?linkid=239964)
+[How to use advanced WebSocket controls ](/previous-versions/windows/apps/hh761447(v=win.10)),
+[How to use advanced WebSocket controls ](/previous-versions/windows/apps/hh994400(v=win.10)),
+[MessageWebSocket](messagewebsocket.md),
+[MessageWebSocket.Control](messagewebsocket_control.md),
+[MessageWebSocketInformation](messagewebsocketinformation.md),
+[WebSockets](/windows/uwp/networking/websockets?branch=live),
+[WebSocket sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebSocket)

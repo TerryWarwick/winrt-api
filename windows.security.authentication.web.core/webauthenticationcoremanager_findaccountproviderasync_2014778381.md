@@ -10,7 +10,7 @@ public Windows.Foundation.IAsyncOperation<Windows.Security.Credentials.WebAccoun
 # Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.FindAccountProviderAsync
 
 ## -description
-Finds a web account provider asynchronously with three inputs.
+Asynchronously attempts to find a web account provider.
 
 ## -parameters
 ### -param webAccountProviderId
@@ -22,12 +22,15 @@ The authority of the web account provider to find.
 ### -param user
 The user associated with the web account provider to find.
 
+> [!IMPORTANT]
+> When using `"https://login.windows.local"` as the *webAccountProviderId* value, you should not specify an *authority* value. Use the [single-parameter overload](webauthenticationcoremanager_findaccountproviderasync_1831443503.md) of this method instead.
+
 ## -returns
-When this method completes successfully, it returns the found web account provider.
+An asynchronous find operation. On successful completion, contains a [WebAccountProvider](../windows.security.credentials/webaccountprovider.md) object representing the found web account provider.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[Web account management code sample](http://go.microsoft.com/fwlink/p/?LinkId=620621), [FindAccountProviderAsync(String)](webauthenticationcoremanager_findaccountproviderasync_1831443503.md), [FindAccountProviderAsync(String, String)](webauthenticationcoremanager_findaccountproviderasync_567644561.md)
+[Web account management code sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement), [FindAccountProviderAsync(String)](webauthenticationcoremanager_findaccountproviderasync_1831443503.md), [FindAccountProviderAsync(String, String)](webauthenticationcoremanager_findaccountproviderasync_567644561.md)

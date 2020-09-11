@@ -16,12 +16,12 @@ Gets the IP address of the remote sender of the datagram on the [DatagramSocket]
 The IP address of the remote network destination when the message is received on a [DatagramSocket](datagramsocket.md).
 
 ## -remarks
-The [DatagramSocketMessageReceivedEventArgs.RemoteAddress](datagramsocketmessagereceivedeventargs_remoteaddress.md) property gets the IP address of the remote sender when a datagram was received on a [DatagramSocket](datagramsocket.md). A message received event can only occur after a successful connect or bind operation on the [DatagramSocket](datagramsocket.md).
+The DatagramSocketMessageReceivedEventArgs.RemoteAddress property gets the IP address of the remote sender when a datagram was received on a [DatagramSocket](datagramsocket.md). A message received event can only occur after a successful connect or bind operation on the [DatagramSocket](datagramsocket.md).
 
 ## -examples
 
 ## -see-also
-[BindServiceNameAsync](datagramsocket_bindservicenameasync.md), [ConnectAsync](datagramsocket_connectasync.md), [DatagramSocket](datagramsocket.md), [DatagramSocketInformation.LocalAddress](datagramsocketinformation_localaddress.md), [DatagramSocketInformation.LocalPort](datagramsocketinformation_localport.md), [DatagramSocketInformation.RemoteAddress](datagramsocketinformation_remoteaddress.md), [DatagramSocketInformation.RemotePort](datagramsocketinformation_remoteport.md), [DatagramSocketMessageReceivedEventArgs.LocalAddress](datagramsocketmessagereceivedeventargs_localaddress.md), [DatagramSocketMessageReceivedEventArgs.RemotePort](datagramsocketmessagereceivedeventargs_remoteport.md), [HostName](../windows.networking/hostname.md)
+[BindServiceNameAsync](datagramsocket_bindservicenameasync_440542334.md), [ConnectAsync](datagramsocket_connectasync_13692504.md), [DatagramSocket](datagramsocket.md), [DatagramSocketInformation.LocalAddress](datagramsocketinformation_localaddress.md), [DatagramSocketInformation.LocalPort](datagramsocketinformation_localport.md), [DatagramSocketInformation.RemoteAddress](datagramsocketinformation_remoteaddress.md), [DatagramSocketInformation.RemotePort](datagramsocketinformation_remoteport.md), [DatagramSocketMessageReceivedEventArgs.LocalAddress](datagramsocketmessagereceivedeventargs_localaddress.md), [DatagramSocketMessageReceivedEventArgs.RemotePort](datagramsocketmessagereceivedeventargs_remoteport.md), [HostName](../windows.networking/hostname.md)
 
 ## -capabilities
 ID_CAP_NETWORKING [Windows Phone]

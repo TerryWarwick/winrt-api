@@ -19,9 +19,20 @@ The phone call supports audio only.
 ### -field AudioAndVideo:1
 The phone call supports audio and video.
 
+### -field AudioAndRealTimeText:2
+The phone call supports audio and realtime text.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | AudioAndRealTimeText |
 
 ## -examples
 
 ## -see-also
+## -capabilities
+phoneCallHistory, phoneCallHistorySystem
+

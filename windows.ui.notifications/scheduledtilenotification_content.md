@@ -19,12 +19,9 @@ The object that contains the notification content.
 ## -remarks
 This information is set when the [ScheduledTileNotification](scheduledtilenotification.md) is created.
 
-The retrieved elements and their attributes are manipulated through Document Object Model (DOM) manipulation functions. See [Tile schema](XREF:TODO:tile.Schema_Root) for an explanation of tile elements and attributes found in the XML document.
-
-
-<!-- @WRITER erictill 12/13/2011 : I still don't have a good explanation why anyone would want this. -->
+The retrieved elements and their attributes are manipulated through Document Object Model (DOM) manipulation functions. See [Tile schema](/uwp/schemas/tiles/tilesschema/schema-root) for an explanation of tile elements and attributes found in the XML document.
 
 ## -examples
 
 ## -see-also
-[Scheduled notifications sample](http://go.microsoft.com/fwlink/p/?linkid=241614), [Tile schema](XREF:TODO:tile.Schema_Root), [Guidelines and checklist for scheduled notifications](http://msdn.microsoft.com/library/ca9e9121-d1b1-461f-9c7e-b25225d917ca)
+[Scheduled notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Scheduled%20notifications%20sample), [Tile schema](/uwp/schemas/tiles/tilesschema/schema-root), [Guidelines and checklist for scheduled notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-choosing-a-notification-delivery-method)

@@ -10,10 +10,10 @@ public bool CanMaintainConnection { get; }
 # Windows.Devices.Bluetooth.GenericAttributeProfile.GattSession.CanMaintainConnection
 
 ## -description
-Gets a boolean that indicates if the connection can be maintained.
+Gets a Boolean value that indicates whether the connection can be maintained.
 
 ## -property-value
-A boolean that indicates if the connection can be maintained.
+`true` if the connection can be maintained, otherwise `false`.
 
 ## -remarks
 
@@ -21,3 +21,5 @@ A boolean that indicates if the connection can be maintained.
 
 ## -examples
 
+## -capabilities
+bluetooth

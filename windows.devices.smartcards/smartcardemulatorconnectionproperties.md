@@ -13,9 +13,9 @@ public class SmartCardEmulatorConnectionProperties : Windows.Devices.SmartCards.
 Provides information about a smart card emulator connection to an NFC reader.
 
 ## -remarks
-TODO: Document how the developer can obtain this class object, and add or update retriever elements as necessary.
+
 
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

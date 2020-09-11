@@ -34,13 +34,21 @@ An aerial 3D map.
 ### -field Aerial3DWithRoads:6
 A hybrid map that combines an aerial 3D map with roads.
 
+### -field Custom:7
+A map that uses a custom [Style](mapcontrol_style.md).
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | Custom |
 
 ## -examples
 
 ## -see-also
-[Display maps with 2D, 3D, and Streetside views](http://msdn.microsoft.com/library/3839e00b-2c1e-4627-a45f-6dda98d7077f)
+[Display maps with 2D, 3D, and Streetside views](/windows/uwp/maps-and-location/display-maps)
 
 ### -field Custom:7
 

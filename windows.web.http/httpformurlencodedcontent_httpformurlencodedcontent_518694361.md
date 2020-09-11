@@ -16,13 +16,27 @@ Initializes a new instance of the [HttpFormUrlEncodedContent](httpformurlencoded
 ### -param content
 The content used to initialize the [HttpFormUrlEncodedContent](httpformurlencodedcontent.md).
 
-## -exceptions
+## -remarks
+Below are the exceptions that this function throws.
+
 ### E_INVALIDARG
 
 The *content* parameter is **null** (**Nothing** in Visual Basic).
 
-## -remarks
-
 ## -examples
+
+```cppwinrt
+auto contentKeyValuePairs{
+winrt::single_threaded_map<winrt::hstring, winrt::hstring>(std::map<winrt::hstring, winrt::hstring>{
+    { L"firstname", L"Jane" }, { L"lastname", L"Austen" }
+})
+};
+Windows::Web::Http::HttpFormUrlEncodedContent content1{ contentKeyValuePairs };
+
+Windows::Web::Http::HttpFormUrlEncodedContent content2{
+    std::map<winrt::hstring, winrt::hstring>{
+        { L"firstname", L"Jane" }, { L"lastname", L"Austen" }}
+};
+```
 
 ## -see-also

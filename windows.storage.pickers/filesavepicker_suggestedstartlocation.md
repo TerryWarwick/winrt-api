@@ -12,11 +12,12 @@ public Windows.Storage.Pickers.PickerLocationId SuggestedStartLocation { get;  s
 ## -description
 Gets or sets the location that the file save picker suggests to the user as the location to save a file.
 
+
 ## -property-value
 The initial suggested location for saving a file.
 
 ## -remarks
-The [SuggestedStartLocation](fileopenpicker_suggestedstartlocation.md) is not always used as the start location for the file picker. To give the user a sense of consistency, the file picker remembers the last location that the user navigated to and will generally start at that location.
+The SuggestedStartLocation is not always used as the start location for the file picker. To give the user a sense of consistency, the file picker remembers the last location that the user navigated to and will generally start at that location.
 
 ## -examples
 

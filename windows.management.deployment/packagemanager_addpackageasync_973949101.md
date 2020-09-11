@@ -10,7 +10,7 @@ public Windows.Foundation.IAsyncOperationWithProgress<Windows.Management.Deploym
 # Windows.Management.Deployment.PackageManager.AddPackageAsync
 
 ## -description
-Adds a package (the main package) and its dependency packages for the current user, using the specified deployment options.
+Adds a [Package](/uwp/api/windows.applicationmodel.package) (the main package) and its dependency packages for the current user, using the specified deployment options.
 
 ## -parameters
 ### -param packageUri
@@ -28,7 +28,7 @@ The status of the deployment request. The [DeploymentResult](deploymentresult.md
 ## -remarks
 
 ## -examples
-The following example uses the [PackageManager.AddPackageAsync](packagemanager_addpackageasync.md) method to install a package that has no dependencies or whose dependencies are already installed. Note that the path of the main package is passed as an argument in the example. [AddPackageAsync](packagemanager_addpackageasync.md) returns an object that can be used to manage the asynchronous operation. The example uses the [Completed](../windows.foundation/iasyncoperationwithprogress_2_completed.md) property to set the [delegate](../windows.foundation/asyncoperationwithprogresscompletedhandler_2.md) and checks the [Status](../windows.foundation/iasyncinfo_status.md) property to determine the status of the deployment operation. If the status is **Error**, the example calls the [GetResults](../windows.foundation/iasyncoperationwithprogress_2_getresults.md) method to get additional error information.
+The following example uses the [PackageManager.AddPackageAsync](packagemanager_addpackageasync_1360552771.md) method to install a package that has no dependencies or whose dependencies are already installed. Note that the path of the main package is passed as an argument in the example. [AddPackageAsync](packagemanager_addpackageasync_1360552771.md) returns an object that can be used to manage the asynchronous operation. The example uses the [Completed](../windows.foundation/iasyncoperationwithprogress_2_completed.md) property to set the [delegate](../windows.foundation/asyncoperationwithprogresscompletedhandler_2.md) and checks the [Status](../windows.foundation/iasyncinfo_status.md) property to determine the status of the deployment operation. If the status is **Error**, the example calls the [GetResults](../windows.foundation/iasyncoperationwithprogress_2_getresults_732303200.md) method to get additional error information.
 
 ```csharp
 using Windows.Foundation;
@@ -84,8 +84,59 @@ public static int Main(string[] args)
 }
 ```
 
-```cpp
+Also see [Visual Studio support for C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt#visual-studio-support-for-cwinrt-xaml-the-vsix-extension-and-the-nuget-package).
 
+```cppwinrt
+// main.cpp : In Visual Studio, create a new Windows Console Application (C++/WinRT).
+#include "pch.h"
+
+#include <winrt/Windows.Foundation.h>
+#include <winrt/Windows.Management.Deployment.h>
+#include <iostream>
+
+using namespace winrt;
+using namespace Windows::Foundation;
+using namespace Windows::Management::Deployment;
+
+int wmain(int /* argc */, wchar_t *argv[], wchar_t * /* envp[] */)
+{
+    winrt::init_apartment();
+
+    int returnValue{ 0 };
+
+    std::wstring packageUriString{ argv[1] };
+    Uri packageUri{ packageUriString };
+    PackageManager packageManager;
+
+    auto deploymentOperation{ packageManager.AddPackageAsync(packageUri, nullptr, DeploymentOptions::None) };
+    deploymentOperation.get();
+
+    // Check the status of the operation
+    if (deploymentOperation.Status() == AsyncStatus::Error)
+    {
+        auto deploymentResult{ deploymentOperation.GetResults() };
+        std::wcout << L"Error code: " << deploymentOperation.ErrorCode() << std::endl;
+        std::wcout << L"Error text: " << deploymentResult.ErrorText().c_str() << std::endl;
+        returnValue = 1;
+    }
+    else if (deploymentOperation.Status() == AsyncStatus::Canceled)
+    {
+        std::wcout << L"Installation canceled" << std::endl;
+    }
+    else if (deploymentOperation.Status() == AsyncStatus::Completed)
+    {
+        std::wcout << L"Installation succeeded" << std::endl;
+    }
+    else
+    {
+        std::wcout << L"Installation status unknown" << std::endl;
+        returnValue = 1;
+    }
+    return returnValue;
+}
+```
+
+```cppcx
 using namespace Windows::Foundation;
 using namespace Windows::Management::Deployment;
 
@@ -145,10 +196,10 @@ int __cdecl main(Platform::Array<String^>^ args)
 }
 ```
 
-
-
 ## -see-also
-[Add app package sample](http://go.microsoft.com/fwlink/p/?linkid=236968), [AddPackageAsync(Uri, IIterable(Uri), DeploymentOptions, PackageVolume)](packagemanager_addpackageasync_2048203939.md)
+
+- [Package](/uwp/api/windows.applicationmodel.package)
+- [Add app package sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Add%20app%20package%20sample), [AddPackageAsync(Uri, IIterable(Uri), DeploymentOptions, PackageVolume)](packagemanager_addpackageasync_2048203939.md)
 
 ## -capabilities
 packageManagement

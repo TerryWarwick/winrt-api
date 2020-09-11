@@ -10,7 +10,7 @@ public class GattWriteResult
 # Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteResult
 
 ## -description
-Contains the result of GATT write operations like [**WriteValueWithResultAsync**](../../windows.devices.bluetooth.genericattributeprofile/gattcharacteristic_writevaluewithresultasync_2074671654.md).
+Contains the result of GATT write operations like [WriteValueWithResultAsync](../../windows.devices.bluetooth.genericattributeprofile/gattcharacteristic_writevaluewithresultasync_2074671654.md).
 
 ## -remarks
 
@@ -18,3 +18,6 @@ Contains the result of GATT write operations like [**WriteValueWithResultAsync**
 
 ## -examples
 
+
+## -capabilities
+bluetooth

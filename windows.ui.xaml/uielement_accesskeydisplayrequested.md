@@ -10,11 +10,23 @@ public event Windows.Foundation.TypedEventHandler AccessKeyDisplayRequested<Wind
 # Windows.UI.Xaml.UIElement.AccessKeyDisplayRequested
 
 ## -description
-Occurs when the access key sequence is started to notify controls that they should show access key visuals.
+
+Occurs when the user requests that access keys be displayed.
+
+## -xaml-syntax
+
+```xaml
+<uiElement AccessKeyDisplayRequested="eventhandler"/>
+```
 
 ## -remarks
+
+This event notifies an element to show access key visuals.
+
 This event is not raised if the element is under an element with its [Visibility](uielement_visibility.md) property set to **Collapsed**.
 
 ## -examples
 
 ## -see-also
+
+[AccessKeyDisplayDismissedEventArgs](../windows.ui.xaml.input/accesskeydisplarequestedeventargs.md), [Access keys](/windows/uwp/design/input/access-keys)

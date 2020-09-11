@@ -11,10 +11,13 @@ public void Close()
 # Windows.Devices.Bluetooth.BluetoothLEDevice.Close
 
 ## -description
-Closes this Bluetooth LE device.
+Closes this Bluetooth LE device. This may close the connection to the device if this is the only app with a connection.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

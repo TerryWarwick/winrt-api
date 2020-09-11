@@ -10,9 +10,15 @@ public class InteractionTrackerCustomAnimationStateEnteredArgs : Windows.UI.Comp
 # Windows.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
 
 ## -description
-Arguments for the [IInteractionTrackerOwner.CustomAnimationStateEntered](iinteractiontrackerowner_customanimationstateentered.md) callback.
+Arguments for the [IInteractionTrackerOwner.CustomAnimationStateEntered](iinteractiontrackerowner_customanimationstateentered_1536907716.md) callback.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1903 | 18362 | IsFromBinding |
 
 ## -examples
 

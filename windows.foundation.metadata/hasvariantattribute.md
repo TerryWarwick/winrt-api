@@ -17,4 +17,4 @@ Indicates that the type is an instance of a variant **IInspectable**. Applies to
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

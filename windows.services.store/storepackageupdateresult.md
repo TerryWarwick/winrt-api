@@ -10,11 +10,17 @@ public class StorePackageUpdateResult : Windows.Services.Store.IStorePackageUpda
 # Windows.Services.Store.StorePackageUpdateResult
 
 ## -description
-Provides info about a completed package update request for the current app.
+Provides response data for a request to download and install a package for the current app.
 
 ## -remarks
-The [RequestDownloadAndInstallStorePackagesAsync](storecontext_requestdownloadandinstallstorepackagesasync.md), [RequestDownloadAndInstallStorePackageUpdatesAsync](storecontext_requestdownloadandinstallstorepackageupdatesasync.md), and [RequestDownloadStorePackageUpdatesAsync](storecontext_requestdownloadstorepackageupdatesasync.md) methods of the [StoreContext](storecontext.md) class return an object of this type.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1803 | 17134 | StoreQueueItems |
 
 ## -examples
 
 ## -see-also
+[RequestDownloadAndInstallStorePackagesAsync](storecontext_requestdownloadandinstallstorepackagesasync_435433203.md),[DownloadAndInstallStorePackagesAsync](storecontext_downloadandinstallstorepackagesasync_1940804668.md),[RequestDownloadAndInstallStorePackageUpdatesAsync](storecontext_requestdownloadandinstallstorepackageupdatesasync_1750789617.md),[RequestDownloadStorePackageUpdatesAsync](storecontext_requestdownloadstorepackageupdatesasync_889669938.md)

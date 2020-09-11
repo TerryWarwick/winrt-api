@@ -11,11 +11,25 @@ public class HolographicCameraRenderingParameters : Windows.Graphics.Holographic
 # Windows.Graphics.Holographic.HolographicCameraRenderingParameters
 
 ## -description
+
 Represents per-camera parameters for rendering holographic content.
 
 ## -remarks
-An app can call the SetFocusPoint method each frame to improve holographic image quality. The app can specify the position, normal, and velocity of the user's likely focus point within the scene. Holograms will be most stable both at the specified position, and along the plane defined by that position and the normal. If the content does not have an obvious normal, omit it or have it face the user.
+
+Calling this method acquires a buffer that will be used to update the primary layer for the holographic compositor. The buffer remains acquired until the app presents the HolographicFrame used to create the corresponding HolographicCameraRenderingParameters object, at which time the buffer will be committed to the holographic compositor. Apps can have up to two primary layer buffers acquired at any given time. The primary layer buffer format is 8-bit BGRA.
+
+Your app will generally achieve optimal visual quality by calling CommitDirect3D11DepthBuffer to commit an accurate depth buffer whose pixels can be mapped back to meters using your specified near and far planes and then not calling SetFocusPoint.  This enables depth-based stabilization of the holograms in your frame.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | CommitDirect3D11DepthBuffer |
+| 1703 | 15063 | ReprojectionMode |
+| 1709 | 16299 | IsContentProtectionEnabled |
 
 ## -examples
 
 ## -see-also
+
+[Depth-based focus plane](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicDepthBasedImageStabilization), [Tag-along hologram sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicTagAlong)

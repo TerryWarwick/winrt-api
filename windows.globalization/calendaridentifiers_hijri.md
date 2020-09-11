@@ -16,13 +16,13 @@ Gets the identifier for the Hijri calendar.
 The string "HijriCalendar", which is the identifier for the Hijri calendar.
 
 ## -remarks
-<!--{annotation author="raymonsh" time="9/6/2012 3:01:23 PM"}The following remarks are adapted from http://msdn.microsoft.com/en-us/library/system.globalization.hijricalendar-->
+
 The Hijri calendar system recognizes one era: A.H. (Latin "Anno Hegirae", which means "the year of the migration", in reference to the migration of Muhammad from Mecca).
 
 In every 30-year cycle that ends with a year that is evenly divisible by 30, the 2nd, 5th, 7th, 10th, 13th, 16th, 18th, 21st, 24th, 26th, and 29th years are leap years. A common year has 354 days and a leap year has 355 days.
 
 The Hijri calendar has 12 months with 29 to 30 days each:<table>
-   <tr><th>[MonthAsNumericString](calendar_monthasnumericstring.md)</th><th>Month</th><th>Days in common years</th><th>Days in leap years</th></tr>
+   <tr><th>[MonthAsNumericString](calendar_monthasnumericstring_952914344.md)</th><th>Month</th><th>Days in common years</th><th>Days in leap years</th></tr>
    <tr><td>1</td><td>محرم (Muharram)</td><td>30</td><td>30</td></tr>
    <tr><td>2</td><td>صفر (Safar)</td><td>29</td><td>29</td></tr>
    <tr><td>3</td><td>‏ربيع الاول (Rabi I)</td><td>30</td><td>30</td></tr>

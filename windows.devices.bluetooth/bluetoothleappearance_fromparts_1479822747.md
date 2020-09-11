@@ -15,7 +15,7 @@ Creates a [BluetoothLEAppearance](bluetoothleappearance.md) object by supplying 
 
 ## -parameters
 ### -param appearanceCategory
-The Bluetooth LE appearance category. See [BluetoothLEAppearanceSubcategories](bluetoothleappearancesubcategories.md).
+The Bluetooth LE appearance category. See [BluetoothLEAppearanceCategories](bluetoothleappearancecategories.md).
 
 ### -param appearanceSubCategory
 The Bluetooth LE appearance subcategory. See [BluetoothLEAppearanceSubcategories](bluetoothleappearancesubcategories.md).
@@ -28,3 +28,6 @@ The Bluetooth LE appearance object that was created from the appearance category
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

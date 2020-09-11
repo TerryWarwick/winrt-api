@@ -20,11 +20,11 @@ The key of the item to lookup.
 The value, if an item with the specified key exists. Use the **HasKey** method to determine whether the key exists.
 
 ## -remarks
-Use the [HasKey](httpcontentheadercollection_haskey.md) method to determine whether the key exists in the [HttpContentHeaderCollection](httpcontentheadercollection.md).
+Use the [HasKey](httpcontentheadercollection_haskey_425964900.md) method to determine whether the key exists in the [HttpContentHeaderCollection](httpcontentheadercollection.md).
 
 When programming with .NET, this method is hidden and developers should use the [Item](httpcontentheadercollection_item.md) indexer.
 
 ## -examples
 
 ## -see-also
-[HasKey](httpcontentheadercollection_haskey.md)
+[HasKey](httpcontentheadercollection_haskey_425964900.md)

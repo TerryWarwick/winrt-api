@@ -21,11 +21,11 @@ A unique identifier of the file to add.
 The file to add to the list of files that the user has chosen.
 
 ## -returns
-The enumeration value that indicates the result of this [addFile](fileopenpickerui_addfile.md) method.
+The enumeration value that indicates the result of this addFile method.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[FileOpenPickerUI class](fileopenpickerui.md), [FileOpenPickerUI.CanAddFile method](fileopenpickerui_canaddfile.md), [FileOpenPickerUI.RemoveFile method](fileopenpickerui_removefile.md)
+[FileOpenPickerUI class](fileopenpickerui.md), [FileOpenPickerUI.CanAddFile method](fileopenpickerui_canaddfile_448184137.md), [FileOpenPickerUI.RemoveFile method](fileopenpickerui_removefile_245169084.md)

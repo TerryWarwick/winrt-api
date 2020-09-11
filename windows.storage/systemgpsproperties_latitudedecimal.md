@@ -10,7 +10,7 @@ public string LatitudeDecimal { get; }
 # Windows.Storage.SystemGPSProperties.LatitudeDecimal
 
 ## -description
-Gets the name of the property (one of the [GPS file properties](https://msdn.microsoft.com/library/windows/desktop/mt805735.aspx).
+Gets the name of the property (one of the [GPS file properties](/windows/desktop/properties/props-system-gps-latitudedecimal).
 
 ## -property-value
 The name of the file property.

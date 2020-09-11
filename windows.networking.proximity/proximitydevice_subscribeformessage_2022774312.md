@@ -24,11 +24,11 @@ The handler that the proximity provider will call when it delivers a message.
 A unique ID for the subscription.
 
 ## -remarks
-After your app calls the [SubscribeForMessage](proximitydevice_subscribeformessage.md) method, it will receive messages that are published with the same message type (as indicated by the *messageType* parameter) from any proximate devices. For details on the different message types, see the remarks in the [PublishBinaryMessage(String, IBuffer)](proximitydevice_publishbinarymessage_285088637.md) reference topic.
+After your app calls the SubscribeForMessage method, it will receive messages that are published with the same message type (as indicated by the *messageType* parameter) from any proximate devices. For details on the different message types, see the remarks in the [PublishBinaryMessage(String, IBuffer)](proximitydevice_publishbinarymessage_285088637.md) reference topic.
 
-You can cancel a subscription by passing the subscription ID that's returned by the [SubscribeForMessage](proximitydevice_subscribeformessage.md) method to the [StopSubscribingForMessage](proximitydevice_stopsubscribingformessage.md) method.
+You can cancel a subscription by passing the subscription ID that's returned by the SubscribeForMessage method to the [StopSubscribingForMessage](proximitydevice_stopsubscribingformessage_728466472.md) method.
 
-You can publish a message to a subscriber by using the [PublishMessage](proximitydevice_publishmessage.md), [PublishBinaryMessage](proximitydevice_publishbinarymessage.md), or [PublishUriMessage](proximitydevice_publishurimessage.md) method.
+You can publish a message to a subscriber by using the [PublishMessage](proximitydevice_publishmessage_1881696512.md), [PublishBinaryMessage](proximitydevice_publishbinarymessage_285088637.md), or [PublishUriMessage](proximitydevice_publishurimessage_632953271.md) method.
 
 
 
@@ -45,8 +45,8 @@ You can publish a message to a subscriber by using the [PublishMessage](proximit
 [!code-vb[PublishSubscribe](../windows.networking.proximity/code/ProximityReferenceSample/vbnet/MainPage.xaml.vb#SnippetPublishSubscribe)]
 
 ## -see-also
-[Proximity and Tapping (JavaScript)](http://msdn.microsoft.com/library/84a30dcf-ef14-4a93-9e7c-7a3de867d46b), [Proximity and Tapping (C#/VB/C++)](http://msdn.microsoft.com/library/f25bb1df-1cfd-45cd-8c67-04eec73ebfbd), [Proximity sample](http://go.microsoft.com/fwlink/p/?linkid=245082)
+[Proximity and Tapping (JavaScript)](/previous-versions/windows/apps/hh465229(v=win.10)), [Proximity and Tapping (C#/VB/C++)](/previous-versions/windows/apps/hh465221(v=win.10)), [Proximity sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Proximity%20sample)
 
 ## -capabilities
-proximity, ID_CAP_PROXIMITY [Windows Phone]
- ID_CAP_PROXIMITY [Windows Phone]
+proximity
+ID_CAP_PROXIMITY [Windows Phone], ID_CAP_PROXIMITY [Windows Phone]

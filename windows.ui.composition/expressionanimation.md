@@ -12,22 +12,25 @@ public class ExpressionAnimation : Windows.UI.Composition.CompositionAnimation, 
 ## -description
 A Composition Animation that uses a mathematical equation to calculate the value for an animating property every frame.
 
-The core of [ExpressionAnimation](expressionanimation.md) s allows a developer to define a mathematical equation that can be used to calculate the value of a targeted animating property each frame. This contrasts [KeyFrameAnimation](keyframeanimation.md) s, which use an interpolator to define how the animating property changes over time. The mathematical equation can be defined using references to properties of Composition objects, mathematical functions and operators and Input. Expression Animations open the door to making experiences such as sticky headers and parallax easily describable.
-
-For a detailed walkthrough of using Composition [ExpressionAnimation](expressionanimation.md), check out the [Animations Overview document](https://msdn.microsoft.com/en-us/windows/uwp/graphics/composition-animation).
-
 ## -remarks
+
+The core of ExpressionAnimations allows a developer to define a mathematical equation that can be used to calculate the value of a targeted animating property each frame. This contrasts [KeyFrameAnimation](keyframeanimation.md) s, which use an interpolator to define how the animating property changes over time. The mathematical equation can be defined using references to properties of Composition objects, mathematical functions and operators and Input. Expression Animations open the door to making experiences such as sticky headers and parallax easily describable.
+
+For a detailed walkthrough of using Composition ExpressionAnimation, check out the [Animations Overview document](/windows/uwp/graphics/composition-animation).
+
+Use the [CompostionObject.StartAnimation](compositionobject_startanimation_709050842.md) and [CompostionObject.StopAnimation](compositionobject_stopanimation_1075337060.md) methods to start and stop the animation.
+
 ### So why are Expression Animations useful?
 
-The real power of Expression Animations comes from their ability to create a mathematical relationship with references to properties on other objects. This means you can have an equation referencing property values on other Composition objects, local variables, or even shared values in Composition Property Sets. As these references change and update over time, your expression will as well. This opens up bigger possibilities beyond traditional KeyFrame Animations where values must be discrete and pre-defined – [ExpressionAnimation](expressionanimation.md) s can make more dynamic animation experiences.
+The real power of Expression Animations comes from their ability to create a mathematical relationship with references to properties on other objects. This means you can have an equation referencing property values on other Composition objects, local variables, or even shared values in Composition Property Sets. As these references change and update over time, your expression will as well. This opens up bigger possibilities beyond traditional KeyFrame Animations where values must be discrete and pre-defined – ExpressionAnimations can make more dynamic animation experiences.
 
 ### Things to Note
 
 + ExpressionAnimation has an infinite lifetime – they will continue to run until they are explicitly stopped.
-+ The mathematical equation will be input into the expression as a string – this can be done when constructing the [ExpressionAnimation](expressionanimation.md) or separately by changing the property. If done during construction, the property will be set.    + ExpressionAnimation exp = _compositor.CreateExpressionAnimation(); exp.Expression = "this.Target.Offset.X / xWindowSize";
++ The mathematical equation will be input into the expression as a string – this can be done when constructing the ExpressionAnimation or separately by changing the property. If done during construction, the property will be set.    + ExpressionAnimation exp = _compositor.CreateExpressionAnimation(); exp.Expression = "this.Target.Offset.X / xWindowSize";
    + ExpressionAnimation exp = _compositor.CreateExpressionAnimation("this.Target.Offset.X / xWindowSize")
 
-+ The mathematical equation will be used every frame to calculate the value of the animating property (this is in stark contrast to [KeyFrameAnimation](keyframeanimation.md) s that use an interpolator)
++ The mathematical equation will be used every frame to calculate the value of the animating property (this is in stark contrast to [KeyFrameAnimation](keyframeanimation.md)s that use an interpolator)
 + Pay attention to the type of the property you plan to animate – your equation must resolve to the same type. Otherwise, an error will get thrown when the expression gets calculated. If your equation resolves to Nan (number/0), the system will use the previously calculated value
 
 
@@ -245,7 +248,7 @@ translation.X, translation.Y, translation.Z, 1.0]</td></tr>
    <tr><td>ColorLerp(Color colorTo, Color colorFrom, Float progress)</td><td>Returns a Color object that represents the calculated linear interpolation value between two color objects based on a given progress. (Note: Progress is between 0.0 and 1.0)</td></tr>
    <tr><td>ColorLerpRGB(Color colorTo, Color colorFrom, Float progress)</td><td>Returns a Color object that represents the calculated linear interpolation value between two objects based on a given progress in the RGB color space.</td></tr>
    <tr><td>ColorLerpHSL(Color colorTo, Color colorFrom, Float progress)</td><td>Returns a Color object that represents the calculated linear interpolation value between two objects based on a given progress in the HSL color space.</td></tr>
-   <tr><td>ColorArgb(Float a, Float r, Float g, Float b)</td><td>Constructs an object representing Color defined by ARGB components</td></tr>
+   <tr><td>ColorRGB(Float a, Float r, Float g, Float b)</td><td>Constructs an object representing Color defined by ARGB components.  (Note: ARGB components are between 0.0 and 255.0)</td></tr>
    <tr><td>ColorHsl(Float h, Float s, Float l)</td><td>Constructs an object representing Color defined by HSL components (Note: Hue is defined from 0 and 2pi)</td></tr>
 </table>
 
@@ -295,4 +298,4 @@ void angleBetweenVectors()
 
 
 ## -see-also
-[Animations Overview document](https://msdn.microsoft.com/en-us/windows/uwp/graphics/composition-animation), [Expression Property](expressionanimation_expression.md)
+[Animations Overview document](/windows/uwp/graphics/composition-animation), [Expression Property](expressionanimation_expression.md)

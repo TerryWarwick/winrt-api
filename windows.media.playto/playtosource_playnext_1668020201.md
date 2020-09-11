@@ -13,10 +13,10 @@ public void PlayNext()
 Connects the next Play To source element to the Play To target.
 
 ## -remarks
-You can use the [PlayNext](playtosource_playnext.md) method to stop streaming the current Play To source media to the target and then start streaming the Play To source identified by the [Next](playtosource_next.md) property to the Play To target.
+You can use the PlayNext method to stop streaming the current Play To source media to the target and then start streaming the Play To source identified by the [Next](playtosource_next.md) property to the Play To target.
 
 For an example of using the [Next](playtosource_next.md) property, see [Streaming a slide show using Play To
-(JavaScript)](http://msdn.microsoft.com/library/780cb5f5-4ee5-4294-ad60-5be54107838a) or [Media casting](http://msdn.microsoft.com/library/40b97e0c-eb1b-40c2-a022-1ab95dfb085e).
+(JavaScript)](/previous-versions/windows/apps/hh770876(v=win.10)) or [Media casting](/windows/uwp/audio-video-camera/media-casting).
 
 ## -examples
 
@@ -28,5 +28,5 @@ For an example of using the [Next](playtosource_next.md) property, see [Streamin
 [!code-vb[SlideShow](../windows.media.playto/code/PlayTo_SlideShow1/vbnet/MainPage.xaml.vb#SnippetSlideShow_CS)]
 
 ## -see-also
-[Play To sample](http://go.microsoft.com/fwlink/p/?linkid=245166), [PlayToReceiver sample](http://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](http://go.microsoft.com/fwlink/p/?linkid=245168)
+[Play To sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Media%20Play%20To%20sample%20(Windows%208)), [PlayToReceiver sample](https://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](https://go.microsoft.com/fwlink/p/?linkid=245168)
 soft.com/fwlink/p/?linkid=245168)

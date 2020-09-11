@@ -32,6 +32,8 @@ The client has called [Stop](spatialentitywatcher_stop_1201535524.md) and the wa
 The watcher has aborted operation. No subsequent events will be raised.
 
 ## -remarks
+> [!IMPORTANT]
+> The [SpatialEntityStore](spatialentitystore.md) approach of synchronizing spatial anchors between devices is not currently supported.  Consider using [Azure Spatial Anchors](/azure/spatial-anchors) instead.
 
 ## -see-also
 

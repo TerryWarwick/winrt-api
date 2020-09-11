@@ -1,6 +1,7 @@
 ---
 -api-id: P:Windows.ApplicationModel.Package.InstalledLocation
 -api-type: winrt property
+ms.custom: 19H1
 ---
 
 <!-- Property syntax
@@ -10,13 +11,16 @@ public Windows.Storage.StorageFolder InstalledLocation { get; }
 # Windows.ApplicationModel.Package.InstalledLocation
 
 ## -description
-Gets the location of the installed package.
+
+Gets the current package's path in the original install folder for the current package.
 
 ## -property-value
-The location of the installed package.
+
+The current package's path in the original install folder for the current package.
 
 ## -remarks
-There are several other ways to refer to the a file in a package.
+
+There are several other ways to refer to a file in a package.
 
 
 + You can just begin a URI with a "/" to refer to the package root. For example: `<img src="/file.png" alt="" />`
@@ -24,9 +28,10 @@ There are several other ways to refer to the a file in a package.
 + You can also omit the package name to let the system fill in the domain, as shown here:
 
 `<img src="ms-appx:///file.png" alt="" />`
-For more info about how to refer to files in an app's package, see [How to load file resources](http://msdn.microsoft.com/library/2fc07702-7022-44b7-8471-8d477a105fc5).
+For more info about how to refer to files in an app's package, see [URI schemes](/windows/uwp/app-resources/uri-schemes) and [Reference an image or other asset from XAML markup and code](/windows/uwp/app-resources/images-tailored-for-scale-theme-contrast#reference-an-image-or-other-asset-from-xaml-markup-and-code).
 
 ## -examples
 
 ## -see-also
-[App package information sample](http://code.msdn.microsoft.com/windowsapps/Package-sample-46e239fa), [App package information sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620581)
+
+[MutableLocation](package_mutablelocation.md),[EffectiveLocation](package_effectivelocation.md),[App package information sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Package)

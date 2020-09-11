@@ -17,4 +17,4 @@ Implements the [ISyndicationNode](isyndicationnode.md) interface which represent
 ## -examples
 
 ## -see-also
-[Quickstart: Accessing a web feed](http://msdn.microsoft.com/library/bde79bfb-f566-4dbe-b861-f849ab8bc574), [Syndication sample](http://go.microsoft.com/fwlink/p/?linkid=245062), [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061)
+[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Syndication%20sample/C%23), [AtomPub sample](https://go.microsoft.com/fwlink/p/?linkid=245061)

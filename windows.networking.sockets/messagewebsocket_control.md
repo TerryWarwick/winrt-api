@@ -16,7 +16,7 @@ Gets socket control data on a [MessageWebSocket](messagewebsocket.md) object.
 Socket control data on a [MessageWebSocket](messagewebsocket.md) object.
 
 ## -remarks
-The [Control](messagewebsocket_control.md) property gets the [MessageWebSocketControl](messagewebsocketcontrol.md) instance associated with a [MessageWebSocket](messagewebsocket.md) object.
+The Control property gets the [MessageWebSocketControl](messagewebsocketcontrol.md) instance associated with a [MessageWebSocket](messagewebsocket.md) object.
 
 A [MessageWebSocketControl](messagewebsocketcontrol.md) object is automatically created with the parent [MessageWebSocket](messagewebsocket.md) object. The [MessageWebSocketControl](messagewebsocketcontrol.md) instance can then be used to get or set control data used by the [MessageWebSocket](messagewebsocket.md) object. These properties on the [MessageWebSocketControl](messagewebsocketcontrol.md) instance include the following:
 
@@ -35,9 +35,9 @@ The [MessageType](messagewebsocketcontrol_messagetype.md) property can be change
 
 The [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md) property must be set before the [MessageWebSocket](messagewebsocket.md) is connected. Setting this property after the [MessageWebSocket](messagewebsocket.md) is connected has no effect.
 
-Changes to any other property values on the [MessageWebSocketControl](messagewebsocketcontrol.md) must be set before the [MessageWebSocket](messagewebsocket.md) is connected. As a result if you need to make changes to the [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), or [ServerCredential](messagewebsocketcontrol_servercredential.md) properties, then these changes must occur before a successful call to the [ConnectAsync](messagewebsocket_connectasync.md) method on the [MessageWebSocket](messagewebsocket.md).
+Changes to any other property values on the [MessageWebSocketControl](messagewebsocketcontrol.md) must be set before the [MessageWebSocket](messagewebsocket.md) is connected. As a result if you need to make changes to the [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), or [ServerCredential](messagewebsocketcontrol_servercredential.md) properties, then these changes must occur before a successful call to the [ConnectAsync](messagewebsocket_connectasync_682685111.md) method on the [MessageWebSocket](messagewebsocket.md).
 
 ## -examples
 
 ## -see-also
-[How to use advanced WebSocket controls](http://msdn.microsoft.com/library/0a47f7c3-66f9-4315-886e-bd1afe77bf39), [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [MessageType](messagewebsocketcontrol_messagetype.md), [MessageWebSocketControl](messagewebsocketcontrol.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), [SupportedProtocols](messagewebsocketcontrol_supportedprotocols.md)
+[How to use advanced WebSocket controls](/previous-versions/windows/apps/hh761447(v=win.10)), [MaxMessageSize](messagewebsocketcontrol_maxmessagesize.md), [MessageType](messagewebsocketcontrol_messagetype.md), [MessageWebSocketControl](messagewebsocketcontrol.md), [OutboundBufferSizeInBytes](messagewebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](messagewebsocketcontrol_proxycredential.md), [SupportedProtocols](messagewebsocketcontrol_supportedprotocols.md)

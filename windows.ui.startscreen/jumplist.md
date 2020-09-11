@@ -10,12 +10,15 @@ public class JumpList : Windows.UI.StartScreen.IJumpList
 # Windows.UI.StartScreen.JumpList
 
 ## -description
-Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists.
+
+Provides functionality for an app's jump list. A jump list is a system-provided menu that appears when the user right-clicks a program in the taskbar or on the Start menu. It is used to provide quick access to recently or frequently-used documents and offer direct links to app functionality. Not all device families support jump lists.
 
 ## -remarks
-An app's [JumpList](jumplist.md) is retrieved using the [LoadCurrentAsync](jumplist_loadcurrentasync.md) method. If an application does not customize its jump list, the system provides a default jump list. Currently, the default jump list shows Recent items.
+
+An app's JumpList is retrieved using the [LoadCurrentAsync](jumplist_loadcurrentasync_313230072.md) method. If an application does not customize its jump list, the system provides a default jump list. Currently, the default jump list shows recent items. Make sure your app has registered to become the default file handler for a certain file type that you want to show in the recent items list. For more information, see [Handle file activation](/windows/uwp/launch-resume/handle-file-activation).
 
 ## -examples
+
 The following example demonstrates how to remove the jump list for an app, including any custom items that might have been previously added.
 
 ```csharp
@@ -54,6 +57,6 @@ private async void SetSystemGroupAsync()
 
 ```
 
-
-
 ## -see-also
+
+[Jump list customization sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/JumpList)

@@ -23,4 +23,4 @@ Value of the clock frequency in Hz.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

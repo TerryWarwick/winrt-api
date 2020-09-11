@@ -25,7 +25,7 @@ Gets or sets the display format for the month value.
 The display format for the month value.
 
 ## -remarks
-Change the format of the month value by setting the [MonthFormat](datepickerflyout_monthformat.md) property.
+Change the format of the month value by setting the MonthFormat property.
 
 The string content of the month value is created by a [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md). You inform the [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md) how to format the day value by providing a string that is either a *format template* or a *format pattern*. Common templates and patterns for day values are listed in the following table.
 
@@ -39,7 +39,10 @@ In some cases, using a format pattern gives you more precise control over the fo
 
 For the complete list of format templates and format patterns, see the Remarks section of the [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md) class documentation.
 
+> [!NOTE]
+> Some date formats should be avoided if the date picker might be displayed in a small area, such as adding the full string value of the day of week. These strings can be long and might be clipped if the DatePicker's width is forced to be small.
+
 ## -examples
 
 ## -see-also
-[DayFormat](datepickerflyout_dayformat.md), [YearFormat](datepickerflyout_yearformat.md), [DatePicker](datepicker.md), [DatePicker.DayFormat](datepicker_dayformat.md), [DatePicker.MonthFormat](datepicker_monthformat.md), [DatePicker.YearFormat](datepicker_yearformat.md), [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md), [How to use patterns to format dates and times](http://msdn.microsoft.com/library/4d281463-2acc-43ab-bffb-7d901e05cf25)
+[DayFormat](datepickerflyout_dayformat.md), [YearFormat](datepickerflyout_yearformat.md), [DatePicker](datepicker.md), [DatePicker.DayFormat](datepicker_dayformat.md), [DatePicker.MonthFormat](datepicker_monthformat.md), [DatePicker.YearFormat](datepicker_yearformat.md), [DateTimeFormatter](../windows.globalization.datetimeformatting/datetimeformatter.md), [How to use patterns to format dates and times](/previous-versions/windows/apps/jj673581(v=win.10))

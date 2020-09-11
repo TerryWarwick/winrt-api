@@ -17,3 +17,4 @@ Initializes a new instance of the [AccessKeyInvokedEventArgs](accesskeyinvokedev
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

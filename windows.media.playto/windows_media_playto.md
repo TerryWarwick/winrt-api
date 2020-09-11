@@ -19,11 +19,11 @@ Play To is part of the **Devices** charm. For applications that contain audio, v
 
 
 <!-- Add an image of the Connect charm showing PlayTo targets -->
-To enable Play To in your application, register for the [SourceRequested](playtomanager_sourcerequested.md) event. To register for the [SourceRequested](playtomanager_sourcerequested.md) event, get a reference to the current [PlayToManager](playtomanager.md) class  by calling the [GetForCurrentView](playtomanager_getforcurrentview.md) method. You can then call addEventHandler on the [PlayToManager](playtomanager.md) class to associate your event handler with the [SourceRequested](playtomanager_sourcerequested.md) event. In your event handler, pass the media element from your application to the [SetSource](playtosourcerequest_setsource.md) method of the [PlayToSourceRequestedEventArgs](playtosourcerequestedeventargs.md) object   that was  passed to the event handler.
+To enable Play To in your application, register for the [SourceRequested](playtomanager_sourcerequested.md) event. To register for the [SourceRequested](playtomanager_sourcerequested.md) event, get a reference to the current [PlayToManager](playtomanager.md) class  by calling the [GetForCurrentView](playtomanager_getforcurrentview_1363600702.md) method. You can then call addEventHandler on the [PlayToManager](playtomanager.md) class to associate your event handler with the [SourceRequested](playtomanager_sourcerequested.md) event. In your event handler, pass the media element from your application to the [SetSource](playtosourcerequest_setsource_1024738425.md) method of the [PlayToSourceRequestedEventArgs](playtosourcerequestedeventargs.md) object   that was  passed to the event handler.
 
-When a user selects a Play To target from the **Devices** charm, Play To  fires the [SourceRequested](playtomanager_sourcerequested.md) event. Play To then streams the media element that was passed to the [SetSource](playtosourcerequest_setsource.md) method to the target device  that the user has   selected.
+When a user selects a Play To target from the **Devices** charm, Play To  fires the [SourceRequested](playtomanager_sourcerequested.md) event. Play To then streams the media element that was passed to the [SetSource](playtosourcerequest_setsource_1024738425.md) method to the target device  that the user has   selected.
 
-For an example of how to use  Play To in an application, see [PlayReady DRM](http://msdn.microsoft.com/library/dd8ffa8c-dff0-41e3-8f7a-345c5a248fc2).
+For an example of how to use  Play To in an application, see [PlayReady DRM](/windows/uwp/audio-video-camera/playready-client-sdk).
 
 
 ## -examples
@@ -37,5 +37,5 @@ For an example of how to use  Play To in an application, see [PlayReady DRM](htt
 
 
 ## -see-also
-[Play To sample](http://go.microsoft.com/fwlink/p/?linkid=245166), [PlayToReceiver sample](http://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](http://go.microsoft.com/fwlink/p/?linkid=245168)
+[Play To sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Media%20Play%20To%20sample%20(Windows%208)), [PlayToReceiver sample](https://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](https://go.microsoft.com/fwlink/p/?linkid=245168)
 soft.com/fwlink/p/?linkid=245168)

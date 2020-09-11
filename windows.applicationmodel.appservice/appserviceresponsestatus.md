@@ -10,7 +10,7 @@ public enum Windows.ApplicationModel.AppService.AppServiceResponseStatus : int
 # AppServiceResponseStatus
 
 ## -description
-Describes the status when an app tries to send a message to an app service by calling the [AppServiceConnection.SendMessageAsync](appserviceconnection_sendmessageasync.md) method. App service providers enable app-to-app communication by providing services that other Universal Windows app can consume.
+Describes the status when an app tries to send a message to an app service by calling the [AppServiceConnection.SendMessageAsync](appserviceconnection_sendmessageasync_1777128850.md) method. App service providers enable app-to-app communication by providing services that other Universal Windows app can consume.
 
 ## -enum-fields
 ### -field Success:0
@@ -31,12 +31,36 @@ The device to which the message was sent is not available.
 ### -field MessageSizeTooLarge:5
 The app service failed to process the message because it is too large.
 
+### -field AppUnavailable:6
+The operation failed due to the app failing to start.
+
+### -field AuthenticationError:7
+The operation failed due to unsuccessful account authentication. The user must re-validate the account to continue.
+
+### -field DisabledByPolicy:9
+The operation failed, as the app service needed service or capabilities disabled by some policies on the local or remote device.
+
+### -field NetworkNotAvailable:8
+The operation failed due to lack of an internet connection.
+
+### -field WebServiceUnavailable:10
+The operation failed because one or more necessary cloud services were temporarily unavailable.
 
 ## -remarks
-> [!NOTE]
-> **RemoteSystemUnavailable** and **MessageSizeTooLarge** were introduced in Windows 10, version 1607
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | MessageSizeTooLarge |
+| 1607 | 14393 | RemoteSystemUnavailable |
+| 2004 | 19041 | AppUnavailable |
+| 2004 | 19041 | AuthenticationError |
+| 2004 | 19041 | DisabledByPolicy |
+| 2004 | 19041 | NetworkNotAvailable |
+| 2004 | 19041 | WebServiceUnavailable |
 
 ## -examples
 
 ## -see-also
-[AppServiceConnection.SendMessageAsync](appserviceconnection_sendmessageasync.md), [AppServiceResponse.Status](appserviceresponse_status.md)
+[AppServiceConnection.SendMessageAsync](appserviceconnection_sendmessageasync_1777128850.md), [AppServiceResponse.Status](appserviceresponse_status.md)

@@ -15,15 +15,13 @@ Gets or sets the text contents of the [Run](run.md).
 ## -xaml-syntax
 ```xaml
 <Run Text="text"/>
-```
-
-```xaml
+- or -
 <Run ...>text</Run>
 ```
 
 
 ## -property-value
-A string that specifies the text contents of the [Run](run.md). The default is [String.Empty](https://msdn.microsoft.com/library/system.string.empty.aspx).
+A string that specifies the text contents of the [Run](run.md). The default is [String.Empty](/dotnet/api/system.string.empty?redirectedfrom=MSDN).
 
 ## -remarks
 

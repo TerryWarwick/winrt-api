@@ -37,6 +37,14 @@ The account must be manually removed.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1511 | 10586 | ManualAccountRemovalRequired |
+
 ## -examples
 
 ## -see-also
+## -capabilities
+contactsSystem

@@ -16,7 +16,7 @@ Represents a write transaction for a random-access stream.
 
 
 ## -examples
-The [File Access sample]( http://go.microsoft.com/fwlink/p/?linkid=231445) shows you how to use a [StorageStreamTransaction](storagestreamtransaction.md) object to perform a transacted write operation on a file.
+The [File Access sample]( http://go.microsoft.com/fwlink/p/?linkid=231445) shows you how to use a StorageStreamTransaction object to perform a transacted write operation on a file.
 
 ```csharp
 
@@ -70,4 +70,4 @@ if ( file !== null) {
 In the example, `file` is a local variable that contains a [storageFile](storagefile.md) that represents the file to write.
 
 ## -see-also
-[File Access sample]( http://go.microsoft.com/fwlink/p/?linkid=231445), [IClosable](../windows.foundation/iclosable.md)
+[File Access sample](https://go.microsoft.com/fwlink/p/?linkid=231445), [IClosable](../windows.foundation/iclosable.md)

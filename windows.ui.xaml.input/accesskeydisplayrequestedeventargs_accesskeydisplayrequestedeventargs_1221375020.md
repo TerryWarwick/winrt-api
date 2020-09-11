@@ -17,3 +17,4 @@ Initializes a new instance of the [AccessKeyDisplayRequestedEventArgs](accesskey
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

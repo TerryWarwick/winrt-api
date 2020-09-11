@@ -17,9 +17,9 @@ Forces content in the view to scroll until the item that's specified by [Semanti
 The item in the view to scroll to.
 
 ## -remarks
-You use the [MakeVisible](hub_makevisible.md) method to bring an item into view when the [Hub](hub.md) control is used as a view in a [SemanticZoom](semanticzoom.md) control. To bring an item into view when the [Hub](hub.md) control is not used in a [SemanticZoom](semanticzoom.md), use the [ScrollToSection](hub_scrolltosection.md) method instead.
+You use the MakeVisible method to bring an item into view when the [Hub](hub.md) control is used as a view in a [SemanticZoom](semanticzoom.md) control. To bring an item into view when the [Hub](hub.md) control is not used in a [SemanticZoom](semanticzoom.md), use the [ScrollToSection](hub_scrolltosection_614196066.md) method instead.
 
 ## -examples
 
 ## -see-also
-[SemanticZoom](semanticzoom.md), [SemanticZoom.IsZoomedInViewActive](semanticzoom_iszoomedinviewactive.md), [ISemanticZoomInformation.IsActiveView](isemanticzoominformation_isactiveview.md), [ISemanticZoomInformation](isemanticzoominformation.md), [IsActiveView](hub_isactiveview.md), [IsZoomedInView](hub_iszoomedinview.md), [SemanticZoomOwner](hub_semanticzoomowner.md), [CompleteViewChange](hub_completeviewchange.md), [CompleteViewChangeFrom](hub_completeviewchangefrom.md), [CompleteViewChangeTo](hub_completeviewchangeto.md), [InitializeViewChange](hub_initializeviewchange.md), [StartViewChangeFrom](hub_startviewchangefrom.md), [StartViewChangeTo](hub_startviewchangeto.md)
+[SemanticZoom](semanticzoom.md), [SemanticZoom.IsZoomedInViewActive](semanticzoom_iszoomedinviewactive.md), [ISemanticZoomInformation.IsActiveView](isemanticzoominformation_isactiveview.md), [ISemanticZoomInformation](isemanticzoominformation.md), [IsActiveView](hub_isactiveview.md), [IsZoomedInView](hub_iszoomedinview.md), [SemanticZoomOwner](hub_semanticzoomowner.md), [CompleteViewChange](hub_completeviewchange_1917507883.md), [CompleteViewChangeFrom](hub_completeviewchangefrom_788425485.md), [CompleteViewChangeTo](hub_completeviewchangeto_41306206.md), [InitializeViewChange](hub_initializeviewchange_1165335344.md), [StartViewChangeFrom](hub_startviewchangefrom_1386295791.md), [StartViewChangeTo](hub_startviewchangeto_1504058226.md)

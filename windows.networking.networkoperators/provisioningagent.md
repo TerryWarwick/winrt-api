@@ -14,11 +14,11 @@ public class ProvisioningAgent : Windows.Networking.NetworkOperators.IProvisioni
 Represents an agent that provisions connectivity and subscription information with a network provider.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -remarks
 
@@ -28,4 +28,6 @@ For technical help with this API, please reach out to [Network Operators API Hel
 
 
 ## -capabilities
+cellularDeviceIdentity, cellularDeviceControl
+networkConnectionManagerProvisioning
 networkDataPlanProvisioning

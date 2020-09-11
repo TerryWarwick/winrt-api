@@ -15,10 +15,7 @@ Gets or sets the content for the control's header.
 ## -xaml-syntax
 ```xaml
 <ComboBox Header="headerString"/>
-
-```
-
-```xaml
+- or -
 <ComboBox>
   <ComboBox.Header>headerObject</ComboBox.Header>
 </ComboBox>
@@ -34,7 +31,7 @@ Gets or sets the content for the control's header.
 The content of the control's header. The default is **null**.
 
 ## -remarks
-You can set a data template for the [Header](combobox_header.md) by using the [HeaderTemplate](combobox_headertemplate.md) property.
+You can set a data template for the Header by using the [HeaderTemplate](combobox_headertemplate.md) property.
 
 ## -examples
 

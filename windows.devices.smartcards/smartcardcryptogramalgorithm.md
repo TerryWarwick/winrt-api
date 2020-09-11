@@ -37,13 +37,18 @@ Use the signed dynamic application data algorithm.
 ### -field RsaPkcs1:7
 Use the Public-Key Cryptography Standards 1 (PKCS) RSA algorithm.
 
-
 ### -field Sha256Hmac:8
-
+Use the SHA-256 HMAC algorithm.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | Sha256Hmac |
 
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

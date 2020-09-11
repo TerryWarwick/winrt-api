@@ -34,3 +34,6 @@ The call is in an invalid state.
 ## -examples
 
 ## -see-also
+
+## -capabilities
+phoneCallHistory, phoneCallHistorySystem, voipCall

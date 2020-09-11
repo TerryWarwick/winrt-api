@@ -20,12 +20,21 @@ Use default behavior from the dependency property that uses the binding. In Wind
 The binding source is updated whenever the binding target value changes. This is detected automatically by the binding system.
 
 ### -field Explicit:2
-The binding source is updated only when you call the [BindingExpression.UpdateSource](bindingexpression_updatesource.md) method.
+The binding source is updated only when you call the [BindingExpression.UpdateSource](bindingexpression_updatesource_190615267.md) method.
 
+
+### -field LostFocus:3
+The binding source is updated whenever the binding target element loses focus.
 
 ## -remarks
 > [!NOTE]
-> The default [UpdateSourceTrigger](updatesourcetrigger.md) value is **Default** rather than **PropertyChanged** for legacy reasons. Previous XAML frameworks enabled a way to register a dependency property with a value that influenced what its default binding update behavior does. That dependency property behavior isn't implemented in the Windows Runtime.
+> The default UpdateSourceTrigger value is **Default** rather than **PropertyChanged** for legacy reasons. Previous XAML frameworks enabled a way to register a dependency property with a value that influenced what its default binding update behavior does. That dependency property behavior isn't implemented in the Windows Runtime.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | LostFocus |
 
 ## -examples
 

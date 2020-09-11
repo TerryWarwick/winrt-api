@@ -14,7 +14,7 @@ public enum Windows.Devices.Sms.SmsEncoding : int
 This enumerated type is used to determine the encoding algorithm to send or calculate the length of an [SmsTextMessage](smstextmessage.md) object.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators, mobile broadband adapter IHV, or OEM. For more information, see [Mobile Broadband:  device apps](http://msdn.microsoft.com/library/windows/hardware/hh852368.aspx).
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators, mobile broadband adapter IHV, or OEM. For more information, see [Mobile Broadband:  device apps](/windows-hardware/drivers/mobilebroadband/index).
 
 ## -enum-fields
 ### -field Unknown:0
@@ -60,4 +60,4 @@ The encodings are defined in sections 4.5.2 and 23.038 of the 3GPP2 specificatio
 
 
 ## -capabilities
-sms, cellularMessaging
+cellularMessaging, sms

@@ -14,16 +14,18 @@ public class MobileBroadbandDeviceServiceDataSession : Windows.Networking.Networ
 Represents a device service data session which allows the caller to write data to the modem on a mobile broadband device service.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -remarks
-A [MobileBroadbandDeviceServiceDataSession](mobilebroadbanddeviceservicedatasession.md) instance is returned when the [OpenDataSession](mobilebroadbanddeviceservice_opendatasession.md) method is called on the [MobileBroadbandDeviceService](mobilebroadbanddeviceservice.md) object.
+A MobileBroadbandDeviceServiceDataSession instance is returned when the [OpenDataSession](mobilebroadbanddeviceservice_opendatasession_2126087991.md) method is called on the [MobileBroadbandDeviceService](mobilebroadbanddeviceservice.md) object.
 
 ## -examples
 
 ## -see-also
-[MobileBroadbandDeviceService](mobilebroadbanddeviceservice.md), [MobileBroadbandDeviceService.OpenDataSession](mobilebroadbanddeviceservice_opendatasession.md), [MobileBroadbandModem](mobilebroadbandmodem.md), [MobileBroadbandModem.MaxDeviceServiceDataSizeInBytes](mobilebroadbandmodem_maxdeviceservicedatasizeinbytes.md)
+[MobileBroadbandDeviceService](mobilebroadbanddeviceservice.md), [MobileBroadbandDeviceService.OpenDataSession](mobilebroadbanddeviceservice_opendatasession_2126087991.md), [MobileBroadbandModem](mobilebroadbandmodem.md), [MobileBroadbandModem.MaxDeviceServiceDataSizeInBytes](mobilebroadbandmodem_maxdeviceservicedatasizeinbytes.md)
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

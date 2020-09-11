@@ -11,9 +11,11 @@ public ushort ReportId { get; }
 # Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription.ReportId
 
 ## -description
-Retrieves the identifier for the report associated with the given numeric control.
+
+Gets the report ID of the HID report that contains the usage or usage range for the given numeric control.
 
 ## -property-value
+
 The report identifier.
 
 ## -remarks
@@ -21,3 +23,5 @@ The report identifier.
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

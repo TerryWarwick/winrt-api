@@ -15,11 +15,24 @@ Provides socket information on a [MessageWebSocket](messagewebsocket.md).
 ## -remarks
 [MessageWebSocketInformation](messagewebsocket_information.md) can be called any time after the [MessageWebSocket](messagewebsocket.md) has been created.
 
-A [MessageWebSocketInformation](messagewebsocketinformation.md) object is automatically created with the parent [MessageWebSocket](messagewebsocket.md) object. The [MessageWebSocket.Information](messagewebsocket_information.md) property provides access to the associated [MessageWebSocketInformation](messagewebsocketinformation.md) object.
+A MessageWebSocketInformation object is automatically created with the parent [MessageWebSocket](messagewebsocket.md) object. The [MessageWebSocket.Information](messagewebsocket_information.md) property provides access to the associated MessageWebSocketInformation object.
 
+### Version history
 
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | ServerCertificate |
+| 1607 | 14393 | ServerCertificateErrors |
+| 1607 | 14393 | ServerCertificateErrorSeverity |
+| 1607 | 14393 | ServerIntermediateCertificates |
 
 ## -examples
 
 ## -see-also
-[How to use advanced socket controls ](http://msdn.microsoft.com/library/2e1071d8-a1c7-44c0-b93a-31a701d431c4), [How to use advanced socket controls ](http://msdn.microsoft.com/library/f2c5be73-3461-452e-a38f-d2ddef9b5682), [MessageWebSocket](messagewebsocket.md), [MessageWebSocket.Information](messagewebsocket_information.md), [MessageWebSocketControl](messagewebsocketcontrol.md)
+[How to use advanced socket controls](/previous-versions/windows/apps/hh780596(v=win.10)),
+[How to use advanced socket controls](/previous-versions/windows/apps/jj150598(v=win.10)),
+[MessageWebSocket](messagewebsocket.md),
+[MessageWebSocket.Information](messagewebsocket_information.md),
+[MessageWebSocketControl](messagewebsocketcontrol.md),
+[WebSockets](/windows/uwp/networking/websockets?branch=live),
+[WebSocket sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebSocket),

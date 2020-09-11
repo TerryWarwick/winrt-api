@@ -11,7 +11,7 @@ public class FileRevocationManager
 
 ## -description
 > [!NOTE]
-> [FileRevocationManager](filerevocationmanager.md) may be unavailable for releases after Windows 10. Instead, use [FileProtectionManager](fileprotectionmanager.md).
+> FileRevocationManager may be unavailable for releases after Windows 10. Instead, use [FileProtectionManager](fileprotectionmanager.md).
 
 
 
@@ -25,4 +25,4 @@ Provides access to Selective Wipe operations.
 ## -examples
 
 ## -see-also
-[FileRevocationManager sample](http://go.microsoft.com/fwlink/p/?LinkID=299023), [How to protect files with Selective Wipe  (C#/VB/C++)](http://msdn.microsoft.com/library/a1afb4fb-6731-461a-8dd2-51eec5e880a1), [How to protect files with Selective Wipe (JavaScript)](http://msdn.microsoft.com/library/5b8652eb-6462-4bf1-b5b7-4a37957c605f)
+[FileRevocationManager sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/File%20Revocation%20Manager%20Sample), [How to protect files with Selective Wipe  (C#/VB/C++)](/previous-versions/windows/apps/dn456782(v=win.10)), [How to protect files with Selective Wipe (JavaScript)](/previous-versions/windows/apps/dn456781(v=win.10))

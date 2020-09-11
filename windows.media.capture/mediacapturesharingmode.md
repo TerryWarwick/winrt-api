@@ -21,8 +21,10 @@ The [MediaCapture](mediacapture.md) can acquire frames from the frame sources sp
 
 
 ## -remarks
-Specify the [MediaCapture](mediacapturememorypreference.md) sharing mode by setting the [SharingMode](mediacaptureinitializationsettings_sharingmode.md) property of the [MediaCaptureInitializationSettings](mediacaptureinitializationsettings.md) object before calling [MediaCapture.InitializeAsync](mediacapture_initializeasync.md).
+Specify the [MediaCapture](mediacapturememorypreference.md) sharing mode by setting the [SharingMode](mediacaptureinitializationsettings_sharingmode.md) property of the [MediaCaptureInitializationSettings](mediacaptureinitializationsettings.md) object before calling [MediaCapture.InitializeAsync](/uwp/api/windows.media.capture.mediacapture.initializeasync).
 
 ## -examples
 
 ## -see-also
+## -capabilities
+backgroundMediaRecording

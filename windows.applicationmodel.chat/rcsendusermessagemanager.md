@@ -14,8 +14,11 @@ public class RcsEndUserMessageManager : Windows.ApplicationModel.Chat.IRcsEndUse
 Provides functionality for handling message events.
 
 ## -remarks
-Call the [RcsManager.GetEndUserMessageManager](rcsmanager_getendusermessagemanager.md) method to get an instance of this class.
+Call the [RcsManager.GetEndUserMessageManager](rcsmanager_getendusermessagemanager_1380387568.md) method to get an instance of this class.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

@@ -13,7 +13,7 @@ public uint GetResults()
 Returns the result of the data load operation.
 
 ## -returns
-The result of the operation.
+The number of bytes read by the [DataReader](/uwp/api/windows.storage.streams.datareader).
 
 ## -remarks
 

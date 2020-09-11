@@ -10,11 +10,23 @@ public class Magnetometer : Windows.Devices.Sensors.IMagnetometer, Windows.Devic
 # Windows.Devices.Sensors.Magnetometer
 
 ## -description
+
 Represents a magnetic sensor.
 
 ## -remarks
-<!-- <rem>TODO: Document how the developer can obtain this class object, and add or update retriever elements as necessary.</rem>-->
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | FromIdAsync |
+| 1709 | 16299 | GetDeviceSelector |
+| 1709 | 16299 | MaxBatchSize |
+| 1709 | 16299 | ReportLatency |
+| 2004 | 19041 | ReportThreshold |
 
 ## -examples
 
 ## -see-also
+
+[Magnetometer sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Magnetometer)

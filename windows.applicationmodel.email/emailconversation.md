@@ -13,8 +13,11 @@ public class EmailConversation : Windows.ApplicationModel.Email.IEmailConversati
 Represents an email conversation.
 
 ## -remarks
-Obtain an instance of this class by calling [EmailConversationReader.ReadBatchAsync](emailconversationreader_readbatchasync.md).
+Obtain an instance of this class by calling [EmailConversationReader.ReadBatchAsync](emailconversationreader_readbatchasync_888788553.md).
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+email, emailSystem

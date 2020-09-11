@@ -17,15 +17,13 @@ Provides the animated transition behavior for when list-view controls items chan
 <ReorderThemeTransition .../>
 ```
 
-
 ## -remarks
 Note that setting the [Duration](timeline_duration.md) property has no effect on this object since the duration is preconfigured.
 
 ## -examples
-The following example applies a [ReorderThemeAnimation](reorderthemetransition.md) to a set of rectangles. As the new rectangles are added to the set, the other rectangles animate around the new one.
+The following example applies a ReorderThemeAnimation to a set of rectangles. As the new rectangles are added to the set, the other rectangles animate around the new one.
 
 ```xaml
-
 <StackPanel>
     <Button x:Name="AddItemButton" Content="AddItem" Click="AddItemButton_Click"/>
     <ItemsControl x:Name="ItemsList">
@@ -65,7 +63,27 @@ private void AddItemButton_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-```cpp
+```cppwinrt
+void DocsCppWinRT::MainPage::AddItemButton_Click(Windows::Foundation::IInspectable const& sender, Windows::UI::Xaml::RoutedEventArgs const& e)
+{
+    Windows::UI::Xaml::Shapes::Rectangle newItem;
+
+    newItem.Height(100);
+    newItem.Width(100);
+
+    Windows::UI::Color color;
+    color.R = std::rand() % 256;
+    color.G = std::rand() % 256;
+    color.B = std::rand() % 256;
+
+    newItem.Fill(Windows::UI::Xaml::Media::SolidColorBrush(color));
+
+    // Insert a new Rectangle of a random color into the ItemsControl at index 2.
+    ItemsList().Items().InsertAt(2, newItem);
+}
+```
+
+```cppcx
 void DocsCPP::MainPage::AddItemButton_Click(Object^ sender,RoutedEventArgs^ e)
 {
     Rectangle^ newItem = ref new Rectangle();
@@ -84,8 +102,6 @@ void DocsCPP::MainPage::AddItemButton_Click(Object^ sender,RoutedEventArgs^ e)
     ItemsList->Items->InsertAt(2, newItem);
 }
 ```
-
-
 
 ## -see-also
 [Transition](transition.md)

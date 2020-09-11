@@ -15,15 +15,9 @@ Gets or sets the [Brush](../windows.ui.xaml.media/brush.md) that fills the foreg
 ## -xaml-syntax
 ```xaml
 <SettingsFlyout HeaderForeground="{StaticResource resourceName}"/>
-
-```
-
-```xaml
+- or -
 <SettingsFlyout HeaderForeground="colorString"/>
-
-```
-
-```xaml
+- or -
 <SettingsFlyout>
   <SettingsFlyout.HeaderForegroundsingleBrush</SettingsFlyout.HeaderForeground>
 </SettingsFlyout>
@@ -44,4 +38,4 @@ The brush that provides the foreground of the [SettingsFlyout](settingsflyout.md
 ## -examples
 
 ## -see-also
-[Use brushes](http://msdn.microsoft.com/library/02141f86-355e-4046-86ea-2a89d615b7db)
+[Use brushes](/windows/uwp/graphics/using-brushes)

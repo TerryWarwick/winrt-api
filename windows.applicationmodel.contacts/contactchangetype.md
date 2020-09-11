@@ -23,7 +23,7 @@ A contact was modified.
 A contact was deleted.
 
 ### -field ChangeTrackingLost:3
-Change tracking was lost. Call [Reset](contactchangetracker_reset.md) to reestablish continuity with the [ContactStore](contactstore.md).
+Change tracking was lost. Call [Reset](contactchangetracker_reset_1636126115.md) to reestablish continuity with the [ContactStore](contactstore.md).
 
 
 ## -remarks
@@ -31,3 +31,5 @@ Change tracking was lost. Call [Reset](contactchangetracker_reset.md) to reestab
 ## -examples
 
 ## -see-also
+## -capabilities
+contactsSystem

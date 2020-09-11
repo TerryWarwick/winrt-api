@@ -13,7 +13,13 @@ public class AudioSubmixNode : Windows.Foundation.IClosable, Windows.Media.Audio
 Represents an audio submix node that mixes the output of one or more nodes into single output that can be connected to output nodes or other submix nodes.
 
 ## -remarks
-Get an instance of this class by calling [CreateSubmixNode](audiograph_createsubmixnode.md).
+Get an instance of this class by calling [CreateSubmixNode](audiograph_createsubmixnode_1505743305.md).
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | Emitter |
 
 ## -examples
 

@@ -10,14 +10,14 @@ public class KnownFolders
 # Windows.Storage.KnownFolders
 
 ## -description
+
 Provides access to common locations that contain user content. This includes content from a user's local libraries (such as Documents, Pictures, Music, and Videos), HomeGroup, removable devices, and media server devices.
 
 ## -remarks
+
 This class is static and cannot be instantiated. Access its properties directly, as shown in the following example.
 
-
 + `    StorageFolder storageFolder = KnownFolders.PicturesLibrary;`
-
 
 ### Prerequisites
 
@@ -25,11 +25,10 @@ To access the folders and libraries represented by the properties of this class,
 
 ### Return value
 
-The properties of the [KnownFolders](knownfolders.md) class return a [StorageFolder](storagefolder.md). To work with the known folder and its contents, call the methods and properties of the [StorageFolder](storagefolder.md) class.
+The properties of the KnownFolders class return a [StorageFolder](storagefolder.md). To work with the known folder and its contents, call the methods and properties of the [StorageFolder](storagefolder.md) class.
 
-+ For info about how to use pictures, music, and videos in your app, see [Audio, video, and camera](http://msdn.microsoft.com/library/0fc12d26-f1cf-4da7-b5a7-735a5074b74a).
-+ For general info about how to use files and folders, see [Enumerate and query files and folders](http://msdn.microsoft.com/library/4c59d5ac-58f7-4863-a884-e9e54228a5ad).
-
++ For info about how to use pictures, music, and videos in your app, see [Audio, video, and camera](/windows/uwp/audio-video-camera/index).
++ For general info about how to use files and folders, see [Enumerate and query files and folders](/windows/uwp/files/quickstart-listing-files-and-folders).
 
 ### More info
 
@@ -37,9 +36,20 @@ Here's how to access some other commonly used locations.
 
 + Get the app's local folder from the [Windows.Storage.ApplicationData.Current.LocalFolder](applicationdata_localfolder.md) property.
 + Get the app's installation folder from the [Windows.ApplicationModel.Package.Current.InstalledLocation](../windows.applicationmodel/package_installedlocation.md) property.
-To learn more about the locations that your app can access, see [File access permissions](http://msdn.microsoft.com/library/3a404cc0-a997-45c8-b2e8-44745539759d).
+
+To learn more about the locations that your app can access, see [File access permissions](/windows/uwp/files/file-access-permissions).
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1511 | 10586 | GetFolderForUserAsync |
+| 2004 | 19041 | GetFolderAsync |
+| 2004 | 19041 | RequestAccessAsync |
+| 2004 | 19041 | RequestAccessForUserAsync |
 
 ## -examples
+
 The [File access sample]( http://go.microsoft.com/fwlink/p/?linkid=231445) shows you how to use the [PicturesLibrary](knownfolders_pictureslibrary.md) property to create a new file in the Pictures library.
 
 ```csharp
@@ -60,7 +70,8 @@ Windows.Storage.KnownFolders.picturesLibrary.createFileAsync("sample.png", Windo
 );
 ```
 
-After the [CreateFileAsync](storagefolder_createfileasync.md) method completes, the `file` variable contains a [StorageFile](storagefile.md) that represents the new file.
+After the [CreateFileAsync](storagefolder_createfileasync_1058061470.md) method completes, the `file` variable contains a [StorageFile](storagefile.md) that represents the new file.
 
 ## -see-also
-[File access sample]( http://go.microsoft.com/fwlink/p/?linkid=231445), [File access permissions](http://msdn.microsoft.com/library/3a404cc0-a997-45c8-b2e8-44745539759d), [Enumerate and query files and folders](http://msdn.microsoft.com/library/4c59d5ac-58f7-4863-a884-e9e54228a5ad), [StorageFile class](storagefile.md), [StorageFolder class](storagefolder.md), [Windows.Storage.Search namespace](../windows.storage.search/windows_storage_search.md), [HomeGroup sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620549)
+
+[File access sample](https://go.microsoft.com/fwlink/p/?linkid=231445), [File access permissions](/windows/uwp/files/file-access-permissions), [Enumerate and query files and folders](/windows/uwp/files/quickstart-listing-files-and-folders), [StorageFile class](storagefile.md), [StorageFolder class](storagefolder.md), [Windows.Storage.Search namespace](../windows.storage.search/windows_storage_search.md), [HomeGroup sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HomeGroup)

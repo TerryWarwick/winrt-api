@@ -10,9 +10,15 @@ public class SceneLightingEffect : Windows.Graphics.Effects.IGraphicsEffect, Win
 # Windows.UI.Composition.Effects.SceneLightingEffect
 
 ## -description
-Controls the reflective properties of a SpriteVisual. A [SceneLightingEffect](scenelightingeffect.md) will overwrite [CompositionLight](../windows.ui.composition/compositionlight.md) defaults. It is used to control the reflective properties of a SpriteVisual. A NormalMap can be used as an input source but is not required.
+Controls the reflective properties of a SpriteVisual. A SceneLightingEffect will overwrite [CompositionLight](../windows.ui.composition/compositionlight.md) defaults. It is used to control the reflective properties of a SpriteVisual. A NormalMap can be used as an input source but is not required.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | ReflectanceModel |
 
 ## -examples
 
@@ -42,4 +48,4 @@ IGraphicsEffect graphicsEffect = new CompositeEffect()
 
 
 ## -see-also
-[CompositionLight](../windows.ui.composition/compositionlight.md), [CompositionLight.Targets](../windows.ui.composition/compositionlight_targets.md), [Compositor.CreateAmbientLight](../windows.ui.composition/compositor_createambientlight.md), [Compositor.CreateDistantLight](../windows.ui.composition/compositor_createdistantlight.md), [Compositor.CreatePointLight](../windows.ui.composition/compositor_createpointlight.md)
+[CompositionLight](../windows.ui.composition/compositionlight.md), [CompositionLight.Targets](../windows.ui.composition/compositionlight_targets.md), [Compositor.CreateAmbientLight](../windows.ui.composition/compositor_createambientlight_920812985.md), [Compositor.CreateDistantLight](../windows.ui.composition/compositor_createdistantlight_2124441775.md), [Compositor.CreatePointLight](../windows.ui.composition/compositor_createpointlight_53515673.md)

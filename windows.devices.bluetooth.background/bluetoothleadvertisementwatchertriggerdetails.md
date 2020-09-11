@@ -11,10 +11,13 @@ public class BluetoothLEAdvertisementWatcherTriggerDetails : Windows.Devices.Blu
 # Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails
 
 ## -description
-Provides information about a [BluetoothLEAdvertisementWatcher](XREF:TODO:BluetoothLEAdvertisementPublisherTriggerDetails) trigger. You can obtain an instance of this class through a [BluetoothLEAdvertisementWatcher](XREF:TODO:BluetoothLEAdvertisementPublisherTriggerDetails) trigger.
+Provides information about a [BluetoothLEAdvertisementWatcher](/uwp/api/windows.devices.bluetooth.background.bluetoothleadvertisementpublishertriggerdetails) trigger. You can obtain an instance of this class through a [BluetoothLEAdvertisementWatcher](/uwp/api/windows.devices.bluetooth.background.bluetoothleadvertisementpublishertriggerdetails) trigger.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

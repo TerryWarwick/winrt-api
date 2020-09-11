@@ -10,16 +10,19 @@ public bool TryHide()
 # Windows.UI.ViewManagement.InputPane.TryHide
 
 ## -description
-Hides the [InputPane](inputpane.md) if it is showing.
+Tries to hide the [InputPane](inputpane.md), if it is visible.
 
 ## -returns
-**true** if the [InputPane](inputpane.md) was hidden successfully; otherwise **false**.
+**true** if the request to hide the [InputPane](inputpane.md) was accepted; otherwise **false**.
+
+If this method is called from an app that is not in foreground, the request is rejected and **false** is returned.
 
 ## -remarks
-> In some cases, overlay UI such as an [InputPane](inputpane.md) is not fully supported. This includes:+ [ apps](https://msdn.microsoft.com/en-us/windows/uwp/gaming/index) in full-screen mode.
-+ Windows Holographic apps in [holographic view](https://developer.microsoft.com/en-us/windows/holographic/app_model#app_views).
 
+If you set [CoreTextEditContext.InputPaneDisplayPolicy](../windows.ui.text.core/coretexteditcontext_inputpanedisplaypolicy.md) to **Manual** in your app, you are responsible for showing and hiding the input pane using TryShow and TryHide.
 
 ## -examples
 
 ## -see-also
+- [TryShow](inputpane_tryshow_1077566544.md)
+- [Hiding](inputpane_hiding.md)

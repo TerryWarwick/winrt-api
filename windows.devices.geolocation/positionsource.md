@@ -32,10 +32,17 @@ The position was obtained from Wi-Fi network data.
 (Starting with Windows 10, version 1607.) The position was obtained from the user's manually-set location.
 
 ### -field Obfuscated:6
-(Starting with Windows 10, version 1607.) The position was obtained via the Consentless Location feature and was therefore intentionally made inaccurate to a degree.
+(Starting with Windows 10, version 1607.) The position was obtained via the coarse location feature and was therefore intentionally made inaccurate to a degree.
 
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | Default |
+| 1607 | 14393 | Obfuscated |
 
 ## -examples
 
@@ -43,4 +50,5 @@ The position was obtained from Wi-Fi network data.
 
 
 ## -capabilities
+location
 ID_CAP_LOCATION [Windows Phone]

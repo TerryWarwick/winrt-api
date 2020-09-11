@@ -17,4 +17,4 @@ Represents an attribute that is applied to the class definition and determines t
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

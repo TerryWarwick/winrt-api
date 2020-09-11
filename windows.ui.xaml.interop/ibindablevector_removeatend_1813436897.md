@@ -13,9 +13,9 @@ public void RemoveAtEnd()
 Removes the last item in the vector.
 
 ## -remarks
-When programming with .NET, this interface is hidden and developers should use the [System.Collections.IList](https://msdn.microsoft.com/library/system.collections.ilist.aspx) interface.
+When programming with .NET, this interface is hidden and developers should use the [System.Collections.IList](/dotnet/api/system.collections.ilist?redirectedfrom=MSDN) interface.
 
 ## -examples
 
 ## -see-also
-[XAML data binding sample](http://go.microsoft.com/fwlink/p/?linkid=226854)
+[XAML data binding sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlBind)

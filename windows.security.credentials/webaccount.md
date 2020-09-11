@@ -11,6 +11,7 @@ public class WebAccount : Windows.Security.Credentials.IWebAccount, Windows.Secu
 # Windows.Security.Credentials.WebAccount
 
 ## -description
+
 Identifies an account from a web account provider.
 
 ## -remarks
@@ -18,4 +19,6 @@ Identifies an account from a web account provider.
 ## -examples
 
 ## -see-also
-[WebAuthenticationBroker sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620622)
+
+[Connect to identity providers with Web Account Manager](/windows/uwp/security/web-account-manager),  
+[WebAuthenticationBroker sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker), [Web account management sample](https://go.microsoft.com/fwlink/p/?LinkId=620621)

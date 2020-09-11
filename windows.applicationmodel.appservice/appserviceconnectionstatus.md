@@ -10,7 +10,7 @@ public enum Windows.ApplicationModel.AppService.AppServiceConnectionStatus : int
 # AppServiceConnectionStatus
 
 ## -description
-Describes the status for the attempt that an app makes to open a connection to an app service by calling the [AppServiceConnection.OpenAsync](appserviceconnection_openasync.md) method. App service providers enable app-to-app communication by providing services that other Universal Windows app can consume.
+Describes the status for the attempt that an app makes to open a connection to an app service by calling the [AppServiceConnection.OpenAsync](appserviceconnection_openasync_171309613.md) method. App service providers enable app-to-app communication by providing services that other Universal Windows app can consume.
 
 ## -enum-fields
 ### -field Success:0
@@ -32,17 +32,40 @@ An unknown error occurred.
 The device to which a connection was attempted is not available.
 
 ### -field RemoteSystemNotSupportedByApp:6
-The app does not support remote connections to the device you attempted to connect with.
+The app on the remote device does not support remote connections. It needs to specify SupportsRemoteSystems="true" on the appService extension in its AppXManifest to accept remote connections.
 
 ### -field NotAuthorized:7
 The user for your app is not authorized to connect to the service.
 
+### -field AuthenticationError:8
+The operation failed due to unsuccessful account authentication. The user must re-validate the account to continue.
+
+### -field DisabledByPolicy:10
+The operation failed, as the app service needed service or capabilities disabled by some policies on the local or remote device.
+
+### -field NetworkNotAvailable:9
+The operation failed due to lack of an internet connection.
+
+
+### -field WebServiceUnavailable:11
+The operation failed because one or more necessary cloud services were temporarily unavailable.
+
 
 ## -remarks
-> [!NOTE]
-> **RemoteSystemUnavailable**, **RemoteSystemNotSupportedByApp**, and **NotAuthorized** were introduced in Windows 10, version 1607
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | NotAuthorized |
+| 1607 | 14393 | RemoteSystemNotSupportedByApp |
+| 1607 | 14393 | RemoteSystemUnavailable |
+| 2004 | 19041 | AuthenticationError |
+| 2004 | 19041 | DisabledByPolicy |
+| 2004 | 19041 | NetworkNotAvailable |
+| 2004 | 19041 | WebServiceUnavailable |
 
 ## -examples
 
 ## -see-also
-[AppServiceConnection.OpenAsync](appserviceconnection_openasync.md)
+[AppServiceConnection.OpenAsync](appserviceconnection_openasync_171309613.md)

@@ -15,39 +15,176 @@ Supports the ability to identify the connected pointer devices and determine the
 ## -remarks
 The values returned by the properties discussed here are based on the total number of pointer devices connected: Boolean properties return true if one device supports a specific capability and numeric properties return the maximum value exposed by all devices.
 
-The [Device Capabilities Sample](http://go.microsoft.com/fwlink/p/?linkid=231530) demonstrates how to detect the presence of input devices and retrieve the capabilities and attributes of each device.
+The [Device Capabilities Sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Input%20Device%20capabilities%20sample) demonstrates how to detect the presence of input devices and retrieve the capabilities and attributes of each device.
 
+<!-- confirmed -->
 > [!NOTE]
-> : This class is not agile, which means that you need to consider its threading model and marshaling behavior. For more info, see [Threading and Marshaling (C++/CX)](http://go.microsoft.com/fwlink/p/?linkid=258275) and [Using Windows Runtime objects in a multithreaded environment (.NET)](http://go.microsoft.com/fwlink/p/?linkid=258277).
+> This class is not agile, which means that you need to consider its threading model and marshaling behavior. For more info, see [Threading and Marshaling (C++/CX)](/cpp/cppcx/threading-and-marshaling-c-cx) and [Using Windows Runtime objects in a multithreaded environment (.NET)](https://go.microsoft.com/fwlink/p/?linkid=258277).
 
 ## -examples
-The following code shows how to use [PointerDevice](pointerdevice.md).
+The following code shows how to use PointerDevice.
 
 ```javascript
-function getPointerDevicesAndAttributes() {
-    var pointerDevices = Windows.Devices.Input.PointerDevice.GetPointerDevices();
-    var htmlWrite = "";
-    for (i = 0; i < pointerDevices.Size; i++)  {
-         htmlWrite += "<tr><td>(" + i + ") Pointer Device Type</td><td>";
-         htmlWrite += getPointerDeviceType(pointerDevices[i].PointerDeviceType) + "</td></tr>";
-         htmlWrite += "<tr><td>(" + i + ") Is External</td><td>" + pointerDevices[i].IsExternal + "</td></tr>";
-         htmlWrite += "<tr><td>(" + i + ") Max Contacts</td><td>" + pointerDevices[i].MaxContacts + "</td></tr>";
-         htmlWrite += "<tr><td>(" + i + ") Physical Device Rect</td><td>" +
-             pointerDevices[i].PhysicalDeviceRect.X + "," +
-             pointerDevices[i].PhysicalDeviceRect.Y + "," +
-             pointerDevices[i].PhysicalDeviceRect.Width + "," +
-             pointerDevices[i].PhysicalDeviceRect.Height + "</td></tr>";
-         htmlWrite += "<tr><td>(" + i + ") Screen Rect</td><td>" +
-             pointerDevices[i].ScreenRect.X + "," +
-             pointerDevices[i].ScreenRect.Y + "," +
-             pointerDevices[i].ScreenRect.Width + "," +
-             pointerDevices[i].ScreenRect.Height + "</td></tr>";
+function getPointerCapabilities() { 
+        var pointerDevices = 
+            Windows.Devices.Input.PointerDevice.getPointerDevices(); 
+        var htmlWrite = ""; 
+        var i; 
+        for (i = 0; i < pointerDevices.size; i++) { 
+            var displayIndex = /*@static_cast(String)*/(i + 1); 
+            htmlWrite += 
+                "<tr><td>(" + displayIndex + ") Pointer Device Type</td>  <td>" + 
+                getPointerDeviceType(pointerDevices[i].pointerDeviceType) + "</td></tr>"; 
+            htmlWrite += "<tr><td>(" + displayIndex + ") Is Integrated</td><td>" + 
+                /*@static_cast(String)*/pointerDevices[i].isIntegrated + "</td></tr>"; 
+            htmlWrite += "<tr><td>(" + displayIndex + ") Max Contacts</td><td>" + 
+                pointerDevices[i].maxContacts + "</td></tr>"; 
+            htmlWrite += "<tr><td>(" + displayIndex + ") Physical Device Rect</td><td>" + 
+                 pointerDevices[i].physicalDeviceRect.x + "," + 
+                 pointerDevices[i].physicalDeviceRect.y + "," + 
+                 pointerDevices[i].physicalDeviceRect.width + "," + 
+                 pointerDevices[i].physicalDeviceRect.height + "</td></tr>"; 
+            htmlWrite += "<tr><td>(" + displayIndex + ") Screen Rect</td><td>" + 
+                 pointerDevices[i].screenRect.x + "," + 
+                 pointerDevices[i].screenRect.y + "," + 
+                 pointerDevices[i].screenRect.width + "," + 
+                 pointerDevices[i].screenRect.height + "</td></tr>"; 
+        } 
+        id("pointerDevices").innerHTML = htmlWrite; 
     }
-    id("pointerDevices").innerHTML = htmlWrite;
+```
+
+```csharp
+/// <summary> 
+/// Invoked when this page is about to be displayed in a Frame. 
+/// </summary> 
+/// <param name="e">Event data that describes how this page was reached.  The Parameter 
+/// property is typically used to configure the page.</param> 
+protected override void OnNavigatedTo(NavigationEventArgs e) 
+{ 
+    string Buffer; 
+
+    Buffer = "List of all pointer devices: \n\n"; 
+
+    var PointerDeviceList = Windows.Devices.Input.PointerDevice.GetPointerDevices(); 
+    int displayIndex = 1; 
+
+    foreach (Windows.Devices.Input.PointerDevice PointerDevice in PointerDeviceList) 
+    { 
+        Buffer += string.Format("Pointer device " + displayIndex + ":\n"); 
+        Buffer += string.Format("This pointer device type is " + 
+            PointerType(PointerDevice) + "\n"); 
+        Buffer += string.Format("This pointer device is " + 
+            (PointerDevice.IsIntegrated ? "not " : "") + "external\n"); 
+        Buffer += string.Format("This pointer device has a maximum of " + 
+            PointerDevice.MaxContacts + " contacts\n"); 
+        Buffer += string.Format("The physical device rect is " + 
+            PointerDevice.PhysicalDeviceRect.X.ToString() + ", " + 
+            PointerDevice.PhysicalDeviceRect.Y.ToString() + ", " + 
+            PointerDevice.PhysicalDeviceRect.Width.ToString() + ", " + 
+            PointerDevice.PhysicalDeviceRect.Height.ToString() + "\n"); 
+        Buffer += string.Format("The screen rect is " + 
+            PointerDevice.ScreenRect.X.ToString() + ", " + 
+            PointerDevice.ScreenRect.Y.ToString() + ", " + 
+            PointerDevice.ScreenRect.Width.ToString() + ", " + 
+            PointerDevice.ScreenRect.Height.ToString() + "\n\n"); 
+    }  
+    PointerOutputTextBlock.Text = Buffer; 
 }
 ```
 
+```cppwinrt
+#include <sstream>
+#include <winrt/Windows.Devices.Input.h>
+#include <winrt/Windows.Foundation.Collections.h>
+#include <winrt/Windows.UI.Xaml.Controls.h>
+using namespace winrt;
+using namespace Windows::Devices::Input;
+using namespace Windows::UI::Xaml::Controls;
 
+...
+
+void PointerGetSettings_Click(Windows::Foundation::IInspectable const& sender, Windows::UI::Xaml::RoutedEventArgs const& args)
+{
+    auto b{ sender.try_as<Button>() };
+    if (b)
+    {
+        Windows::Foundation::Collections::IVectorView<PointerDevice> pointerDeviceList{ PointerDevice::GetPointerDevices() };
+        std::wostringstream buffer;
+
+        for (uint32_t i = 0; i < pointerDeviceList.Size(); i++)
+        {
+            winrt::hstring displayIndex{ winrt::to_hstring(i + 1) };
+            buffer << L"Pointer device " << displayIndex.c_str() << std::endl;
+            buffer << L"This pointer device type is ";
+
+            switch (pointerDeviceList.GetAt(i).PointerDeviceType())
+            {
+            case PointerDeviceType::Mouse:
+                buffer << L"Mouse" << std::endl;
+                break;
+            case PointerDeviceType::Pen:
+                buffer << L"Pen" << std::endl;
+                break;
+            case PointerDeviceType::Touch:
+                buffer << L"Touch" << std::endl;
+                break;
+            default:
+                buffer << L"unknown" << std::endl;
+            }
+
+            buffer << L"This pointer device is " << (pointerDeviceList.GetAt(i).IsIntegrated() ? L"not " : L"") << L"external" << std::endl;
+            buffer << L"This pointer device has a maximum of " << pointerDeviceList.GetAt(i).MaxContacts() << L" contacts" << std::endl;
+            buffer << L"The physical device rect is " <<
+                pointerDeviceList.GetAt(i).PhysicalDeviceRect().X << L", " <<
+                pointerDeviceList.GetAt(i).PhysicalDeviceRect().Y << L", " <<
+                pointerDeviceList.GetAt(i).PhysicalDeviceRect().Width << L", " <<
+                pointerDeviceList.GetAt(i).PhysicalDeviceRect().Height << std::endl;
+            buffer << L"The screen rect is " <<
+                pointerDeviceList.GetAt(i).ScreenRect().X << L", " <<
+                pointerDeviceList.GetAt(i).ScreenRect().Y << L", " <<
+                pointerDeviceList.GetAt(i).ScreenRect().Width << L", " <<
+                pointerDeviceList.GetAt(i).ScreenRect().Height << std::endl << std::endl;
+        }
+
+        PointerOutputTextBlock().Text(buffer.str());
+    }
+}
+```
+
+```cppcx
+void SDKSample::DeviceCaps::Pointer::PointerGetSettings_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e) 
+{ 
+    Button^ b = safe_cast<Button^>(sender); 
+    if (b != nullptr) 
+    { 
+        Windows::Foundation::Collections::IVectorView<PointerDevice^>^ PointerDeviceList = PointerDevice::GetPointerDevices(); 
+        Platform::String^ Buffer; 
+ 
+        for (unsigned i = 0; i < PointerDeviceList->Size; i++) { 
+            Platform::String^ displayIndex = (i + 1).ToString(); 
+            Buffer += "Pointer device " + displayIndex + ":\n"; 
+            Buffer += "This pointer device type is " + PointerType(PointerDeviceList->GetAt(i)) + "\n"; 
+            Buffer += "This pointer device is " + (PointerDeviceList->GetAt(i)->IsIntegrated ? "not " : "") + "external\n"; 
+            Buffer += "This pointer device has a maximum of " + PointerDeviceList->GetAt(i)->MaxContacts.ToString() + " contacts\n"; 
+            Buffer += "The physical device rect is " + 
+                PointerDeviceList->GetAt(i)->PhysicalDeviceRect.X.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->PhysicalDeviceRect.Y.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->PhysicalDeviceRect.Width.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->PhysicalDeviceRect.Height.ToString() + "\n"; 
+            Buffer += "The screen rect is " + 
+                PointerDeviceList->GetAt(i)->ScreenRect.X.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->ScreenRect.Y.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->ScreenRect.Width.ToString() + ", " + 
+                PointerDeviceList->GetAt(i)->ScreenRect.Height.ToString() + "\n\n"; 
+        } 
+         
+        PointerOutputTextBlock->Text = Buffer; 
+    } 
+}
+```
 
 ## -see-also
-[Windows.Devices.Input](windows_devices_input.md), [Quickstart: Identifying input devices](http://msdn.microsoft.com/library/7001b56d-081b-4683-84bb-24c361397c08)
+
+- [Windows.Devices.Input](windows_devices_input.md)
+- [Quickstart: Identifying input devices](/windows/uwp/design/input/identify-input-devices)

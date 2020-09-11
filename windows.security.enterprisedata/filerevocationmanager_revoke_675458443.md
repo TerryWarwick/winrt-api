@@ -25,9 +25,9 @@ Revokes all files and folders protected for selective wipe for a specified enter
 Revoke all files and folders protected by selective wipe for this enterprise id. The *enterpriseIdentity* value must be formatted as an Internationalized Domain Name (IDN) and cannot contain spaces. For example, **contoso.com**.
 
 ## -remarks
-When your app determines that a user is no longer valid, you can quickly revoke access to all of the files and folders protected for an enterprise identity using the [Revoke](filerevocationmanager_revoke.md) method, as shown in the following example. The file is not deleted by the [Revoke](filerevocationmanager_revoke.md) method. The [Revoke](filerevocationmanager_revoke.md) method puts the file into state where it cannot be accessed. You can add code to your app to delete a file that is inaccessible and has been revoked.
+When your app determines that a user is no longer valid, you can quickly revoke access to all of the files and folders protected for an enterprise identity using the Revoke method, as shown in the following example. The file is not deleted by the Revoke method. The Revoke method puts the file into state where it cannot be accessed. You can add code to your app to delete a file that is inaccessible and has been revoked.
 
 ## -examples
 
 ## -see-also
-[FileRevocationManager sample](http://go.microsoft.com/fwlink/p/?LinkID=299023), [How to protect files with Selective Wipe  (C#/VB/C++)](http://msdn.microsoft.com/library/a1afb4fb-6731-461a-8dd2-51eec5e880a1), [How to protect files with Selective Wipe (JavaScript)](http://msdn.microsoft.com/library/5b8652eb-6462-4bf1-b5b7-4a37957c605f)
+[FileRevocationManager sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/File%20Revocation%20Manager%20Sample), [How to protect files with Selective Wipe  (C#/VB/C++)](/previous-versions/windows/apps/dn456782(v=win.10)), [How to protect files with Selective Wipe (JavaScript)](/previous-versions/windows/apps/dn456781(v=win.10))

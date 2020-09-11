@@ -10,7 +10,7 @@ public void AddHttpRoutePolicy(Windows.Networking.Connectivity.RoutePolicy route
 # Windows.Networking.Connectivity.ConnectivityManager.AddHttpRoutePolicy
 
 ## -description
-Specifies a [RoutePolicy](routepolicy.md) that the Http stack (WinInet) will follow when routing traffic.
+Specifies a [RoutePolicy](routepolicy.md) that the Http stack (WinInet) will follow when routing traffic. Routing policies are only available for cellular profiles
 
 ## -parameters
 ### -param routePolicy
@@ -21,4 +21,4 @@ Indicates the policy for traffic routing.
 ## -examples
 
 ## -see-also
-[RemoteHttpRoutePolicy](connectivitymanager_removehttproutepolicy.md), [RoutePolicy](routepolicy.md)
+[RemoteHttpRoutePolicy](connectivitymanager_removehttproutepolicy_960581104.md), [RoutePolicy](routepolicy.md)

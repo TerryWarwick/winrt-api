@@ -13,11 +13,11 @@ public bool IsConnected { get;  set; }
 Indicates if connection profiles that represent currently established connections are included in query results.
 
 ## -property-value
-A [Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) value that determines if profiles for established connections are included.
+A [Boolean](/dotnet/api/system.boolean?redirectedfrom=MSDN) value that determines if profiles for established connections are included.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[FindConnectionProfilesAsync](networkinformation_findconnectionprofilesasync.md)
+[FindConnectionProfilesAsync](networkinformation_findconnectionprofilesasync_358252851.md)

@@ -10,7 +10,7 @@ public enum Windows.UI.Xaml.Controls.Maps.MapAnimationKind : int
 # MapAnimationKind
 
 ## -description
-Specifies the animation to use when you change the view of the map. For example, you can specify animation when calling the [TrySetViewAsync](mapcontrol_trysetviewasync_2106504554.md) or [TrySetViewBoundsAsync](mapcontrol_trysetviewboundsasync.md) methods.
+Specifies the animation to use when you change the view of the map. For example, you can specify animation when calling the [TrySetViewAsync](mapcontrol_trysetviewasync_2106504554.md) or [TrySetViewBoundsAsync](mapcontrol_trysetviewboundsasync_1104525723.md) methods.
 
 ## -enum-fields
 ### -field Default:0
@@ -31,4 +31,4 @@ A parabolic animation.
 ## -examples
 
 ## -see-also
-[Display maps with 2D, 3D, and Streetside views](http://msdn.microsoft.com/library/3839e00b-2c1e-4627-a45f-6dda98d7077f)
+[Display maps with 2D, 3D, and Streetside views](/windows/uwp/maps-and-location/display-maps)

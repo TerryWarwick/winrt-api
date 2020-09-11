@@ -28,9 +28,11 @@ The call is incoming but not yet active.
 ### -field Outgoing:4
 The call is outgoing but not yet active.
 
-
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+phoneCallHistory, phoneCallHistorySystem, voipCall

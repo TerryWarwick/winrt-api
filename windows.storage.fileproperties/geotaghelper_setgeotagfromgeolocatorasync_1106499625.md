@@ -10,17 +10,17 @@ public Windows.Foundation.IAsyncAction SetGeotagFromGeolocatorAsync(Windows.Stor
 # Windows.Storage.FileProperties.GeotagHelper.SetGeotagFromGeolocatorAsync
 
 ## -description
-Asynchronously sets the geographic metadata of a file to the device's current location using the provided [Geolocator](geotaghelper_setgeotagfromgeolocatorasync.md) object.
+Asynchronously sets the geographic metadata of a file to the device's current location using the provided Geolocator object.
 
 ## -parameters
 ### -param file
 The file into which the geographic metadata is set.
 
 ### -param geolocator
-The [Geolocator](geotaghelper_setgeotagfromgeolocatorasync.md) object that will be used to determine the device's current location.
+The Geolocator object that will be used to determine the device's current location.
 
 ## -returns
-An asychronous action.
+An asynchronous action.
 
 ## -remarks
 

@@ -14,7 +14,7 @@ Returns the status of a [MapLocationFinder](maplocationfinder.md) query. This en
 
 ## -enum-fields
 ### -field Success:0
-The query was successful.
+Query search operation was successful. Check result size before accessing results.
 
 ### -field UnknownError:1
 The query returned an unknown error.
@@ -26,7 +26,7 @@ The query provided credentials that are not valid.
 The specified point cannot be converted to a location. For example, the point is in an ocean or a desert.
 
 ### -field IndexFailure:4
-The query could not find a result.
+The query encountered an internal error.
 
 ### -field NetworkFailure:5
 The query encountered a network failure.
@@ -36,9 +36,9 @@ The query is not supported.
 
 
 ## -remarks
-Your [Universal Windows app](https://msdn.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) must be authenticated before it can use the [MapControl](../windows.ui.xaml.controls.maps/mapcontrol.md) and map services in the [Windows.Services.Maps](windows_services_maps.md) namespace. To authenticate your app, you must specify a maps authentication key.
+Your [Universal Windows app](/windows/uwp/get-started/universal-application-platform-guide) must be authenticated before it can use the [MapControl](../windows.ui.xaml.controls.maps/mapcontrol.md) and map services in the [Windows.Services.Maps](windows_services_maps.md) namespace. To authenticate your app, you must specify a maps authentication key.
 
-See [Request a maps authentication key](https://msdn.microsoft.com/windows/uwp/maps-and-location/authentication-key).
+See [Request a maps authentication key](/windows/uwp/maps-and-location/authentication-key).
 
 ## -examples
 

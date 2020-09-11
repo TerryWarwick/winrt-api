@@ -26,13 +26,13 @@ The publication ID of the message.
 ## -remarks
 Only one URI can be published at a time for each proximity device.
 
-You can stop publishing a URI by passing the publication ID returned by the [PublishUriMessage](proximitydevice_publishurimessage.md) method to the [StopPublishingMessage](proximitydevice_stoppublishingmessage.md) method.
+You can stop publishing a URI by passing the publication ID returned by the [PublishUriMessage](proximitydevice_publishurimessage_632953271.md) method to the [StopPublishingMessage](proximitydevice_stoppublishingmessage_1046474884.md) method.
 
 Unlike the other publish methods for a proximity device, URI publishing is handled by the default protocol handler for the URI. A subscription to a URI message publication is not required. You can receive URI messages by registering a default handler for a URI protocol such as the HTTP protocol.
 
 The PackageFamilyName value of the sending application is automatically sent along with the URI. If no handler is registered for the protocol of a URI, the PackageFamilyName value of the sending application is used to direct the receiving application to the application store.
 
-You can use the [PublishMessage](proximitydevice_publishmessage.md) method to publish a text message to a proximate computer. You can use the [PublishBinaryMessage](proximitydevice_publishbinarymessage.md) method to publish non-text messages or messages that conform to the NDEF messaging standard.
+You can use the [PublishMessage](proximitydevice_publishmessage_1881696512.md) method to publish a text message to a proximate computer. You can use the [PublishBinaryMessage](proximitydevice_publishbinarymessage_285088637.md) method to publish non-text messages or messages that conform to the NDEF messaging standard.
 
 
 
@@ -61,9 +61,10 @@ You can use the [PublishMessage](proximitydevice_publishmessage.md) method to pu
 [!code-vb[PublishSubscribeUri2](../windows.networking.proximity/code/Proximity_PublishUri/vbnet/MainPage.xaml.vb#SnippetPublishSubscribeUri2)]
 
 ## -see-also
-[PublishUriMessage(Uri)](proximitydevice_publishurimessage_632953271.md), [Proximity and Tapping (JavaScript)](http://msdn.microsoft.com/library/84a30dcf-ef14-4a93-9e7c-7a3de867d46b), [Proximity and Tapping (C#/VB/C++)](http://msdn.microsoft.com/library/f25bb1df-1cfd-45cd-8c67-04eec73ebfbd), [Proximity sample](http://go.microsoft.com/fwlink/p/?linkid=245082)
+[PublishUriMessage(Uri)](proximitydevice_publishurimessage_632953271.md), [Proximity and Tapping (JavaScript)](/previous-versions/windows/apps/hh465229(v=win.10)), [Proximity and Tapping (C#/VB/C++)](/previous-versions/windows/apps/hh465221(v=win.10)), [Proximity sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Proximity%20sample)
 
 
 
 ## -capabilities
-proximity, ID_CAP_PROXIMITY [Windows Phone]
+proximity
+ID_CAP_PROXIMITY [Windows Phone]

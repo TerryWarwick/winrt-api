@@ -23,4 +23,4 @@ The communication mode.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

@@ -15,10 +15,7 @@ Gets or sets the header for the [PivotItem](pivotitem.md).
 ## -xaml-syntax
 ```xaml
 <PivotItem Header="headerString"/>
-
-```
-
-```xaml
+- or -
 <PivotItem>
   <PivotItem.Header>
     headerObject
@@ -33,7 +30,7 @@ Gets or sets the header for the [PivotItem](pivotitem.md).
 <dt>headerObject</dt><dd>headerObjectAn single object element that serves as header content. Use discretion when using objects as header content; not all objects are suitable for use within the limited presentation surface that appears for headers.</dd>
 </dl>
 ## -property-value
-Returns [Object](https://msdn.microsoft.com/library/system.object.aspx).
+Returns [Object](/dotnet/api/system.object?redirectedfrom=MSDN).
 
 ## -remarks
 

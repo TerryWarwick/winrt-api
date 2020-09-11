@@ -23,7 +23,7 @@ The time at which the tile should be updated with the notification information.
 ## -remarks
 
 ## -examples
-The following example, which shows a tile scheduled to display in one hour, includes the use of the [ScheduledTileNotification](scheduledtilenotification_scheduledtilenotification.md) constructor to create the notification object.
+The following example, which shows a tile scheduled to display in one hour, includes the use of the ScheduledTileNotification constructor to create the notification object.
 
 ```javascript
 
@@ -60,4 +60,4 @@ Notifications.TileUpdateManager.createTileUpdaterForApplication().addToSchedule(
 
 
 ## -see-also
-[Tile schema](XREF:TODO:tile.Schema_Root), [Scheduled notifications sample](http://go.microsoft.com/fwlink/p/?linkid=241614), [Guidelines and checklist for scheduled notifications](http://msdn.microsoft.com/library/ca9e9121-d1b1-461f-9c7e-b25225d917ca)
+[Tile schema](/uwp/schemas/tiles/tilesschema/schema-root), [Scheduled notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Scheduled%20notifications%20sample), [Guidelines and checklist for scheduled notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-choosing-a-notification-delivery-method)

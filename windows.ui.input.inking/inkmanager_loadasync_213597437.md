@@ -23,7 +23,7 @@ Ink data is serialized as Ink Serialized Format (ISF) metadata and embedded into
 The stream that contains the stroke collection. An [IRandomAccessStream](../windows.storage.streams/irandomaccessstream.md) (requires [IOutputStream](../windows.storage.streams/ioutputstream.md)) object can be specified instead.
 
 ## -returns
-The status of the asynchronous operation as the number of bytes fetched. For more information, see [ReadAsync](http://msdn.microsoft.com/library/4d5046c8-a1d2-435f-9c3d-64c242fc20cf) method.
+The status of the asynchronous operation as the number of bytes fetched. For more information, see [ReadAsync](/previous-versions/hh438388(v=vs.85)) method.
 
 ## -remarks
 Embedding the metadata into a Graphics Interchange Format (GIF) file enables ink to be viewed in applications that are not ink-enabled while maintaining full fidelity for ink-enabled applications. This format is ideal for transporting ink content within an HTML file and making it usable by both ink and non-ink applications. 
@@ -34,8 +34,8 @@ Embedding the metadata into a Graphics Interchange Format (GIF) file enables ink
 ## -examples
 The `loadStrokes` function in this example demonstrates how to:
 + Display a file open screen where the file type is constrained to Graphics Interchange Format (GIF) format using the [FileOpenPicker](../windows.storage.pickers/fileopenpicker.md) object.
-+ Set up an input stream through the [OpenAsync](../windows.storage/storagefile_openasync.md) method.
-+ Use the [LoadAsync](inkmanager_loadasync.md) method of an [InkManager](inkmanager.md) object (`inkManager`) to de-serialize the ink data from a Graphics Interchange Format (GIF) file (`storageFile`).
++ Set up an input stream through the [OpenAsync](../windows.storage/storagefile_openasync_1542217918.md) method.
++ Use the LoadAsync method of an [InkManager](inkmanager.md) object (`inkManager`) to de-serialize the ink data from a Graphics Interchange Format (GIF) file (`storageFile`).
 
 
 
@@ -43,4 +43,6 @@ The `loadStrokes` function in this example demonstrates how to:
 [!code-js[LoadStrokes](../windows.ui.input.inking/code/CaptureInkData_JS/js/InkPage.js#SnippetLoadStrokes)]
 
 ## -see-also
-[Pen and stylus interactions](http://msdn.microsoft.com/library/3da4f2d2-5405-42a1-9ed9-3a87bcd84c43), [Ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620308), [Simple ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620312), [Complex ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620314)
+
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Get started: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [Ink analysis sample (basic) (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-analysis-basic.zip), [Ink handwriting recognition sample (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-handwriting-reco.zip), [Save and load ink strokes from an Ink Serialized Format (ISF) file](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store.zip), [Save and load ink strokes from the clipboard](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store-clipboard.zip), [Ink toolbar location and orientation sample (basic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness.zip), [Ink toolbar location and orientation sample (dynamic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness-dynamic.zip), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample), [Inking sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink), [Simple inking sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk), [Complex inking sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk), [Ink analysis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/InkAnalysis)
+

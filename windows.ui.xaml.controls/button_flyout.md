@@ -17,10 +17,7 @@ Gets or sets the flyout associated with this button.
 <Button>
   <Button.Flyout>flyout</Button.Flyout>
 </Button>
-
-```
-
-```xaml
+- or -
 <Button Flyout="{StaticResurce flyoutResourceKey"/>
 
 ```
@@ -34,9 +31,9 @@ Gets or sets the flyout associated with this button.
 The flyout associated with this button, if any; otherwise, **null**. The default is **null**.
 
 ## -remarks
-By default, the flyout that's set as the value of the [Flyout](button_flyout.md) property displays when the button is tapped or otherwise invoked, you don't need to call methods to display it. That differs from the behavior of flyouts assigned through the [FlyoutBase.AttachedFlyout](../windows.ui.xaml.controls.primitives/flyoutbase_attachedflyout.md) attached property; these flyouts must be explicitly displayed by calling [ShowAt](../windows.ui.xaml.controls.primitives/flyoutbase_showat.md) on the flyout instance, or the static [ShowAttachedFlyout](../windows.ui.xaml.controls.primitives/flyoutbase_showattachedflyout.md) method.
+By default, the flyout that's set as the value of the Flyout property displays when the button is tapped or otherwise invoked, you don't need to call methods to display it. That differs from the behavior of flyouts assigned through the [FlyoutBase.AttachedFlyout](/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase#xaml-attached-properties) attached property; these flyouts must be explicitly displayed by calling [ShowAt](../windows.ui.xaml.controls.primitives/flyoutbase_showat_157739403.md) on the flyout instance, or the static [ShowAttachedFlyout](../windows.ui.xaml.controls.primitives/flyoutbase_showattachedflyout_1146189011.md) method.
 
 ## -examples
 
 ## -see-also
-[Flyout](flyout.md), [MenuFlyout](menuflyout.md), [Quickstart: Adding a Flyout](http://msdn.microsoft.com/library/de211e9b-6de8-4014-9264-c278a5c3f7bd), [XAML Flyout and MenuFlyout sample](http://go.microsoft.com/fwlink/p/?LinkID=310074)
+[Flyout](flyout.md), [MenuFlyout](menuflyout.md), [Quickstart: Adding a Flyout](/previous-versions/windows/apps/dn308515(v=win.10)), [XAML Flyout and MenuFlyout sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/XAML%20Flyout%20and%20MenuFlyout%20sample)

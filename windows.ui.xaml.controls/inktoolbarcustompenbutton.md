@@ -10,31 +10,29 @@ public class InkToolbarCustomPenButton : Windows.UI.Xaml.Controls.InkToolbarPenB
 # Windows.UI.Xaml.Controls.InkToolbarCustomPenButton
 
 ## -description
+
 Represents an [InkToolbar](inktoolbar.md) button that activates a pen for which the ink color palette and pen tip properties, such as shape, rotation, and size, are defined by the host app.
 
+## -remarks
 
 The [InkToolbar](inktoolbar.md) consists of two distinct groups of button types:
 
-+ One group of "tool" buttons containing the built-in drawing ([InkToolbarBallpointPenButton](inktoolbarballpointpenbutton.md), [InkToolbarPencilButton](inktoolbarpencilbutton.md)), erasing ([InkToolbarEraserButton](inktoolbareraserbutton.md)), and highlighting ([InkToolbarHighlighterButton](inktoolbarhighlighterbutton.md)) buttons. Custom tools ([InkToolbarCustomPenButton](inktoolbarcustompenbutton.md) and [InkToolbarCustomToolButton](inktoolbarcustomtoolbutton.md)) are added here.
++ One group of "tool" buttons containing the built-in drawing ([InkToolbarBallpointPenButton](inktoolbarballpointpenbutton.md), [InkToolbarPencilButton](inktoolbarpencilbutton.md)), erasing ([InkToolbarEraserButton](inktoolbareraserbutton.md)), and highlighting ([InkToolbarHighlighterButton](inktoolbarhighlighterbutton.md)) buttons. Custom tools (InkToolbarCustomPenButton and [InkToolbarCustomToolButton](inktoolbarcustomtoolbutton.md)) are added here.
 
+    > Feature selection is mutually exclusive.
 
-
-> Feature selection is mutually exclusive.
 + A second group of "toggle" buttons containing the built-in ruler ([InkToolbarRulerButton](inktoolbarrulerbutton.md)) button. Custom toggles ([InkToolbarCustomToggleButton](inktoolbarcustomtogglebutton.md)) are added here.
 
-
-
-> Features are not mutually exclusive and can be used concurrently with other active tools.
+    > Features are not mutually exclusive and can be used concurrently with other active tools.
 
 
 Built-in buttons can be displayed by default, or you can specify which should be displayed by your app. 
 
-> You cannot change the display order of the built-in buttons. The default display order is: [InkToolbarBallpointPenButton](inktoolbarballpointpenbutton.md), [InkToolbarPencilButton](inktoolbarpencilbutton.md), [InkToolbarHighlighterButton](inktoolbarhighlighterbutton.md), [InkToolbarEraserButton](inktoolbareraserbutton.md), and [InkToolbarRulerButton](inktoolbarrulerbutton.md), with custom tool buttons appended to the radio button group and custom toggle buttons appended to the toggle button group.
+You cannot change the display order of the built-in buttons. The default display order is: [InkToolbarBallpointPenButton](inktoolbarballpointpenbutton.md), [InkToolbarPencilButton](inktoolbarpencilbutton.md), [InkToolbarHighlighterButton](inktoolbarhighlighterbutton.md), [InkToolbarEraserButton](inktoolbareraserbutton.md), and [InkToolbarRulerButton](inktoolbarrulerbutton.md), with custom tool buttons appended to the radio button group and custom toggle buttons appended to the toggle button group.
 
-## -remarks
 You can use the built-in [InkToolbarPenConfigurationControl](inktoolbarpenconfigurationcontrol.md) or you can specify a custom [InkToolbarPenConfigurationControl](inktoolbarpenconfigurationcontrol.md) definition in the standard [InkToolbar](inktoolbar.md) pen declaration.
 
-For custom configurations, your pen class must derive from [InkToolbarCustomPen](inktoolbarcustompen.md), and override the [CreateInkDrawingAttributesCore](inktoolbarcustompen_createinkdrawingattributescore.md) method. You can then set an instance of the derived class into [InkToolbarCustomPenButton.CustomPen](inktoolbarcustompenbutton_custompen.md) and provide the custom configuration UI elements.
+For custom configurations, your pen class must derive from [InkToolbarCustomPen](inktoolbarcustompen.md), and override the [CreateInkDrawingAttributesCore](inktoolbarcustompen_createinkdrawingattributescore_257776854.md) method. You can then set an instance of the derived class into [InkToolbarCustomPenButton.CustomPen](inktoolbarcustompenbutton_custompen.md) and provide the custom configuration UI elements.
 
 ## -examples
 Here's an example of a custom pen that reuses the default [InkToolbarPenConfigurationControl](inktoolbarpenconfigurationcontrol.md).
@@ -43,13 +41,13 @@ Here's an example of a custom pen that reuses the default [InkToolbarPenConfigur
 <Page ...>
     <Page.Resources>
         <local:CalligraphicPen x:Key="CalligraphicPen"/>
-        <ColorCollection x:Key="CalligraphicPenPalette">
-            <Color>Crimson</Color>
-            <Color>Black</Color>
-            <Color>Green</Color>
-            <Color>Blue</Color>
-            <Color>White</Color>
-        </ColorCollection>
+        <BrushCollection x:Key="CalligraphicPenPalette">
+            <SolidColorBrush>Crimson</Color>
+            <SolidColorBrush>Black</Color>
+            <SolidColorBrush>Green</Color>
+            <SolidColorBrush>Blue</Color>
+            <SolidColorBrush>White</Color>
+        </BrushCollection>
         <Color x:Key="CallipgraphicPenDefaultColor">Crimson</Color>
     </Page.Resources>
 
@@ -58,7 +56,7 @@ Here's an example of a custom pen that reuses the default [InkToolbarPenConfigur
     <InkToolbar TargetInkCanvas="{x:Bind m_inkCanvas}">
         <InkToolbarCustomPenButton CustomPen="{StaticResource CalligraphicPen}"
         MinStrokeWidth="1" MaxStrokeWidth="3" SelectedStrokeWidth="2"
-        ColorPalette="{StaticResource CalligraphicPenPalette}"
+        Palette="{StaticResource CalligraphicPenPalette}"
         SelectedColor="{StaticResource CallipgraphicPenDefaultColor}">
     
             <SymbolIcon Symbol="Placeholder"/>
@@ -76,10 +74,10 @@ Here's an example of a custom pen that reuses the default [InkToolbarPenConfigur
 Here's an example of a custom pen that customizes the default [InkToolbarPenConfigurationControl](inktoolbarpenconfigurationcontrol.md).
 
 ```xaml
-<Style TargetType="local:InkToolbarPenConfigurationControl">
+<Style TargetType="InkToolbarPenConfigurationControl">
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="local:InkToolbarPenConfigurationControl">
+            <ControlTemplate TargetType="InkToolbarPenConfigurationControl">
                 <Grid MinWidth="272">
                     <Grid.Resources>
                         <Style x:Key="FlyoutStrokeWidthSelectorStyle" TargetType="Slider">
@@ -121,7 +119,25 @@ Here's an example of a custom pen that customizes the default [InkToolbarPenConf
 </Style> 
 ```
 
-
-
 ## -see-also
-[Windows.UI.Xaml.Controls classes](windows_ui_xaml_controls_classes.md)
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Add an InkToolbar to a Universal Windows Platform (UWP) app](/windows/uwp/input-and-devices/ink-toolbar), [Get Started Tutorial: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [Windows.UI.Xaml.Controls classes](windows_ui_xaml_controls_classes.md), [InkToolbarPenButton](inktoolbarpenbutton.md), [InkToolbarCustomPen](inktoolbarcustompen.md), [Ink sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink), [Get Started Tutorial: Support ink in your UWP app](https://aka.ms/appsample-ink), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample)
+
+## -ignore
+<!--
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions)
+
+[Add an InkToolbar to a Universal Windows Platform (UWP) app](/windows/uwp/input-and-devices/ink-toolbar)
+
+[Get Started Tutorial: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough)
+
+### Reference
+[Windows.UI.Xaml.Controls classes](windows_ui_xaml_controls_classes.md), [InkToolbarPenButton](inktoolbarpenbutton.md), [InkToolbarCustomPen](inktoolbarcustompen.md)
+
+### Samples
+* [Simple ink sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk)
+* [Complex ink sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk)
+* [Ink sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink)
+* [Get Started Tutorial: Support ink in your UWP app](https://aka.ms/appsample-ink)
+* [Coloring book sample](https://aka.ms/cpubsample-coloringbook)
+* [Family notes sample](https://aka.ms/cpubsample-familynotessample)
+-->

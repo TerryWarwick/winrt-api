@@ -10,7 +10,7 @@ public Windows.ApplicationModel.PackageCatalog OpenForCurrentUser()
 # Windows.ApplicationModel.PackageCatalog.OpenForCurrentUser
 
 ## -description
-Opens the catalog of appx packages on the device that are available to the current user.
+Opens the catalog of app packages on the device that are available to the current user.
 
 ## -returns
 The catalog of packages for the current user.
@@ -20,7 +20,7 @@ The catalog of packages for the current user.
 ## -examples
 
 ## -see-also
-[PackageManager.FindPackages](../windows.management.deployment/packagemanager_findpackages.md)
+[PackageManager.FindPackages](/uwp/api/windows.management.deployment.packagemanager.findpackages)
 
 ## -capabilities
 packageQuery

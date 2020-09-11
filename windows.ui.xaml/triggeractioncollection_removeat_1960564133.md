@@ -18,9 +18,9 @@ The index of the item to remove.
 
 ## -remarks
 > [!NOTE]
-> The equivalent Microsoft .NET  API is [RemoveAt](triggeractioncollection_removeat.md).
+> The equivalent Microsoft .NET  API is RemoveAt.
 
 ## -examples
 
 ## -see-also
-[RemoveAt](triggeractioncollection_removeat.md)
+RemoveAt

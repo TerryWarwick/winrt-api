@@ -9,12 +9,13 @@ public IAsyncOperation<GattReadRequest> GattReadRequestedEventArgs.GetRequestAsy
 
 # Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadRequestedEventArgs.GetRequestAsync
 
+
 ## -description
+
 Gets the GATT read request.
 
-## -parameters
-
 ## -returns
+
 An asynchronous operation that completes with a GattReadRequest object.
 
 ## -remarks
@@ -22,4 +23,8 @@ An asynchronous operation that completes with a GattReadRequest object.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

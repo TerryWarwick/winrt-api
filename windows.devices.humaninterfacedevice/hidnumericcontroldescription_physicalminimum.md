@@ -11,13 +11,17 @@ public int PhysicalMinimum { get; }
 # Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription.PhysicalMinimum
 
 ## -description
-Retrieves the physical minimum-value for the given control.
+
+Gets the lowest possible value for the given control after scaling is applied to the [LogicalMinimum](hidnumericcontroldescription_logicalminimum.md) value.
 
 ## -property-value
-The physical minimum value.
+
+The signed lower bound.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

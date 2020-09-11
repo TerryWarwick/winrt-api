@@ -28,6 +28,14 @@ Other apps on the device cannot read any properties of appointments in the calen
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | None |
+
 ## -examples
 
 ## -see-also
+## -capabilities
+appointmentsSystem

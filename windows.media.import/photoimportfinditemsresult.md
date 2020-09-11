@@ -14,7 +14,13 @@ public class PhotoImportFindItemsResult : Windows.Media.Import.IPhotoImportFindI
 Represents the result of a operation that finds media items on a source.
 
 ## -remarks
-Get an instance of this class by calling [PhotoImportSession.FindItemsAsync](photoimportsession_finditemsasync.md).
+Get an instance of this class by calling [PhotoImportSession.FindItemsAsync](photoimportsession_finditemsasync_1686050162.md).
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | AddItemsInDateRangeToSelection |
 
 ## -examples
 

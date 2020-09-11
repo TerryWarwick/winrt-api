@@ -20,3 +20,4 @@ The keys that were pressed to start the access key sequence.
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

@@ -9,10 +9,10 @@ public void AppBroadcastState.RestartCameraCapture()
 
 # Windows.Media.Capture.AppBroadcastState.RestartCameraCapture
 
-## -description
-Restarts camera capture for the app broadcast.
 
-## -params
+## -description
+
+Restarts camera capture for the app broadcast.
 
 ## -remarks
 
@@ -20,8 +20,7 @@ Restarts camera capture for the app broadcast.
 
 ## -examples
 
-
-
 ## -capabilities
-appBroadcast
-appBroadcastSettings
+
+appBroadcast, appBroadcastSettings
+

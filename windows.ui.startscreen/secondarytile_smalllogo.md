@@ -12,7 +12,7 @@ public Windows.Foundation.Uri SmallLogo { get;  set; }
 
 ## -description
 > [!NOTE]
-> [SmallLogo](secondarytile_smalllogo.md) may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.Square30x30Logo](secondarytilevisualelements_square30x30logo.md).
+> SmallLogo may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.Square30x30Logo](secondarytilevisualelements_square30x30logo.md).
 
 Gets or sets the small logo image, used in search results, the All Programs list, and other locations in the UI.
 
@@ -29,4 +29,3 @@ A logo image that is saved locally (ms-appdata://localfolder/) by the app to use
 ## -examples
 
 ## -see-also
-[Logo](secondarytile_logo.md), [WideLogo](secondarytile_widelogo.md), [Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

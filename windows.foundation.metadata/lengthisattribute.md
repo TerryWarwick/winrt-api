@@ -17,4 +17,4 @@ Indicates the number of array elements.
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

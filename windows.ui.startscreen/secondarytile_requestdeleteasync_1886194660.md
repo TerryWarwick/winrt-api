@@ -24,22 +24,18 @@ An object that provides information concerning the asynchronous delete operation
 The only property that must be set on the tile before calling this method is [tileId](secondarytile_tileid.md). If [tileId](secondarytile_tileid.md) is not set, the call to this method raises an exception.
 
 This method returns an asynchronous Boolean value through its [IAsyncOperation.getResults](../windows.foundation/iasyncoperation_1.md) method as shown here.
-<!-- @WRITER erictill 10/19/2011 : Make sure there really is such a method. -->
-```csharp
-  
-[JavaScript]  
-oSecondaryTile.requestCreateAsync( { x:100, y:100 } ).then( function (isDeleted) { } );      
 
-[C#]  
+```javascript
+oSecondaryTile.requestCreateAsync( { x:100, y:100 } ).then( function (isDeleted) { } );      
+```
+
+```csharp
 void async showTileCreateRequest( SecondaryTile tile, Point pt)  
 {      
     bool isDeleted = await tile.requestCreateAsync( pt );  
 }
 ```
 
-
-
 ## -examples
 
 ## -see-also
-[RequestDeleteAsync](secondarytile_requestdeleteasync_880835933.md), [Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

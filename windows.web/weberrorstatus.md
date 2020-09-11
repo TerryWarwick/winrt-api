@@ -172,51 +172,18 @@ The server was acting as a gateway or proxy and did not receive a timely respons
 ### -field HttpVersionNotSupported:505
 The server does not support the HTTP protocol version used in the request.
 
+### -field InsufficientRangeSupport:22
+The request does not support the range. 
+
+### -field MissingContentLengthSupport:23
+The request is mising the file size.
 
 ## -remarks
-A [WebErrorStatus](weberrorstatus.md) value is returned by [Windows.Web.WebError.GetStatus | getStatus](weberror_getstatus.md), [Windows.Networking.WebSocketError.GetStatus | getStatus](../windows.networking.sockets/websocketerror_getstatus.md), and [Windows.Networking.BackgroundTransfer.GetStatus | getStatus](../windows.networking.backgroundtransfer/backgroundtransfererror_getstatus.md).
+A WebErrorStatus value is returned by [Windows.Web.WebError.GetStatus](weberror_getstatus_1856274933.md), [Windows.Networking.WebSocketError.GetStatus](../windows.networking.sockets/websocketerror_getstatus_1856274933.md), and [Windows.Networking.BackgroundTransfer.GetStatus](../windows.networking.backgroundtransfer/backgroundtransfererror_getstatus_1856274933.md).
 
-The following example demonstrates how to use [WebErrorStatus](weberrorstatus.md) to display a different error message depending on the type of error. In this example, the [WebErrorStatus](weberrorstatus.md) value is returned by [Windows.Networking.WebSocketError.GetStatus | getStatus](../windows.networking.sockets/websocketerror_getstatus.md).
-
-
-
-```javascript
-
-var errorStatus = Windows.Networking.Sockets.WebSocketError.getStatus(error.number);
-if (errorStatus === Windows.Web.WebErrorStatus.cannotConnect ||
-    errorStatus === Windows.Web.WebErrorStatus.notFound ||
-    errorStatus === Windows.Web.WebErrorStatus.requestTimeout) {
-    WinJS.log && WinJS.log("Cannot connect to the server");
-}
-else {
-    WinJS.log && WinJS.log("Failed to connect: " + getError(error));
-}
-```
-
-```cpp
-
-using namespace Windows::Web;
-using namespace Windows::Networking::Sockets;
-
-// Pointer back to the main page. Needed to call methods in MainPage such as NotifyUser()
-rootPage = MainPage::Current;
-
-WebErrorStatus status = WebSocketError::GetStatus(exception->HResult);
-
-if (status == WebErrorStatus::CannotConnect || 
-    status == WebErrorStatus::NotFound || 
-    status == WebErrorStatus::RequestTimeout)
-{
-    rootPage->NotifyUser("Cannot connect to the server", NotifyType::ErrorMessage);
-}
-else
-{
-    rootPage->NotifyUser("Error: " + status.ToString(), NotifyType::ErrorMessage);
-}
-```
+This example demonstrates how to use WebErrorStatus to display a different error message depending on the type of error. In this example, the WebErrorStatus value is returned by [Windows.Networking.WebSocketError.GetStatus](../windows.networking.sockets/websocketerror_getstatus_1856274933.md).
 
 ```csharp
-
 using Windows.Web;
 using Windows.Networking.Sockets;
 
@@ -237,9 +204,68 @@ else
 }
 ```
 
+```cppwinrt
+// Pointer back to the main page. Needed to call methods in MainPage such as NotifyUser().
+m_rootPage = MainPage::Current();
 
+Windows::Web::WebErrorStatus status{ Windows::Networking::Sockets::WebSocketError::GetStatus(exception.to_abi()) };
+
+if (status == Windows::Web::WebErrorStatus::CannotConnect ||
+    status == Windows::Web::WebErrorStatus::NotFound ||
+    status == Windows::Web::WebErrorStatus::RequestTimeout)
+{
+    m_rootPage.NotifyUser(L"Cannot connect to the server", NotifyType::ErrorMessage);
+}
+else
+{
+    m_rootPage.NotifyUser(std::wstring(L"Error: ") + exception.message().c_str(), NotifyType::ErrorMessage);
+}
+```
+
+```cppcx
+using namespace Windows::Web;
+using namespace Windows::Networking::Sockets;
+
+// Pointer back to the main page. Needed to call methods in MainPage such as NotifyUser()
+rootPage = MainPage::Current;
+
+WebErrorStatus status = WebSocketError::GetStatus(exception->HResult);
+
+if (status == WebErrorStatus::CannotConnect || 
+    status == WebErrorStatus::NotFound || 
+    status == WebErrorStatus::RequestTimeout)
+{
+    rootPage->NotifyUser("Cannot connect to the server", NotifyType::ErrorMessage);
+}
+else
+{
+    rootPage->NotifyUser("Error: " + status.ToString(), NotifyType::ErrorMessage);
+}
+```
+
+```javascript
+var errorStatus = Windows.Networking.Sockets.WebSocketError.getStatus(error.number);
+if (errorStatus === Windows.Web.WebErrorStatus.cannotConnect ||
+    errorStatus === Windows.Web.WebErrorStatus.notFound ||
+    errorStatus === Windows.Web.WebErrorStatus.requestTimeout) {
+    WinJS.log && WinJS.log("Cannot connect to the server");
+}
+else {
+    WinJS.log && WinJS.log("Failed to connect: " + getError(error));
+}
+```
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | InsufficientRangeSupport |
+| 1709 | 16299 | MissingContentLengthSupport |
 
 ## -examples
 
 ## -see-also
-[Windows.Web.WebError.GetStatus | getStatus](weberror_getstatus.md), [Windows.Networking.WebSocketError.GetStatus | getStatus](../windows.networking.sockets/websocketerror_getstatus.md), [Windows.Networking.BackgroundTransfer.GetStatus | getStatus](../windows.networking.backgroundtransfer/backgroundtransfererror_getstatus.md), [Background Transfer Download  sample](http://go.microsoft.com/fwlink/p/?linkid=245064)
+[Windows.Web.WebError.GetStatus](weberror_getstatus_1856274933.md),
+[Windows.Networking.WebSocketError.GetStatus](../windows.networking.sockets/websocketerror_getstatus_1856274933.md),
+[Windows.Networking.BackgroundTransfer.GetStatus](../windows.networking.backgroundtransfer/backgroundtransfererror_getstatus_1856274933.md),
+[Background Transfer Download sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Background%20Transfer%20sample)

@@ -18,8 +18,7 @@ Gets or sets whether word boundary metadata is added to a [SpeechSynthesisStream
 ## -remarks
 
 ## -see-also
-[IncludeSentenceBoundaryMetadata](speechsynthesizeroptions_includesentenceboundarymetadata.md)
-[SpeechSynthesisStream.TimedMetadataTracks](speechsynthesisstream_timedmetadatatracks.md)
+[IncludeSentenceBoundaryMetadata](speechsynthesizeroptions_includesentenceboundarymetadata.md), [SpeechSynthesisStream.TimedMetadataTracks](speechsynthesisstream_timedmetadatatracks.md), [Speech interactions](/windows/uwp/design/input/speech-interactions), [Speech recognition and speech synthesis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
 
 ## -examples
 

@@ -11,18 +11,18 @@ public Windows.UI.Input.Inking.InkInputRightDragAction RightDragAction { get;  s
 # Windows.UI.Input.Inking.InkInputProcessingConfiguration.RightDragAction
 
 ## -description
-Gets or sets the input behavior of the [InkPresenter](inkpresenter.md) object, when the input is modified with a secondary affordance, such as a pen barrel button, right mouse button, or similar.
+Gets or sets how the [InkPresenter](inkpresenter.md) object handles secondary input from a pen barrel button, pen eraser tip, right mouse button, or similar.
 
-By default, modified input is processed as standard input and rendered as an [InkStroke](inkstroke.md) (see remarks).
+By default, this secondary input is processed as primary input and rendered as an [InkStroke](inkstroke.md) (see remarks).
 
 ## -property-value
 The input behavior when modified with a secondary affordance.
 
 ## -remarks
-To pass input as [UnprocessedInput](inkpresenter_unprocessedinput.md) through to your app for custom processing, set [RightDragAction](inkinputprocessingconfiguration_rightdragaction.md) to [LeaveUnprocessed](inkinputrightdragaction.md).
+To pass input as [UnprocessedInput](inkpresenter_unprocessedinput.md) through to your app for custom processing, set RightDragAction to [LeaveUnprocessed](inkinputrightdragaction.md).
 
 ## -examples
-Here, we set [RightDragAction](inkinputprocessingconfiguration_rightdragaction.md) to [LeaveUnprocessed](inkinputrightdragaction.md) and declare [UnprocessedInput](inkpresenter_unprocessedinput.md) event listeners for pointer input.
+Here, we set RightDragAction to [LeaveUnprocessed](inkinputrightdragaction.md) and declare [UnprocessedInput](inkpresenter_unprocessedinput.md) event listeners for pointer input.
 
 ```csharp
 inkCanvas.InkPresenter.InputProcessingConfiguration.RightDragAction = 
@@ -71,4 +71,6 @@ private void UnprocessedInput_PointerReleased(InkUnprocessedInput sender, Window
 
 
 ## -see-also
-[Pen and stylus interactions](http://msdn.microsoft.com/library/3da4f2d2-5405-42a1-9ed9-3a87bcd84c43), [Ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620308), [Simple ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620312), [Complex ink sample](http://go.microsoft.com/fwlink/p/?LinkID=620314)
+
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Get started: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [Ink analysis sample (basic) (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-analysis-basic.zip), [Ink handwriting recognition sample (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-handwriting-reco.zip), [Save and load ink strokes from an Ink Serialized Format (ISF) file](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store.zip), [Save and load ink strokes from the clipboard](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store-clipboard.zip), [Ink toolbar location and orientation sample (basic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness.zip), [Ink toolbar location and orientation sample (dynamic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness-dynamic.zip), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample), [Inking sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink), [Simple inking sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk), [Complex inking sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk), [Ink analysis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/InkAnalysis)
+

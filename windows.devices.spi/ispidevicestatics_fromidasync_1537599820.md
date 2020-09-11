@@ -30,4 +30,4 @@ The SPI device.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

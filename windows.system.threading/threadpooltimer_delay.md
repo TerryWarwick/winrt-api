@@ -10,7 +10,7 @@ public Windows.Foundation.TimeSpan Delay { get; }
 # Windows.System.Threading.ThreadPoolTimer.Delay
 
 ## -description
-Gets the timeout value of a single-use timer created with [CreateTimer](threadpooltimer_createtimer.md).
+Gets the timeout value of a single-use timer created with [CreateTimer](threadpooltimer_createtimer_1268637445.md).
 
 ## -property-value
 The timeout value. When the timeout value elapses, the timer expires and its [TimerElapsedHandler](timerelapsedhandler.md) delegate is called.
@@ -21,7 +21,7 @@ The timeout value. When the timeout value elapses, the timer expires and its [Ti
 
 
 > **JavaScript and C#**
-> This amount of time is specified using the [System.TimeSpan](https://msdn.microsoft.com/library/system.timespan.aspx) structure. It can be specified in ticks, or it can be specified in milliseconds, seconds, and so on.
+> This amount of time is specified using the [System.TimeSpan](/dotnet/api/system.timespan?redirectedfrom=MSDN) structure. It can be specified in ticks, or it can be specified in milliseconds, seconds, and so on.
 
 ## -remarks
 A timer begins counting down as soon as the timer object is created.

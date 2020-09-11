@@ -2,6 +2,7 @@
 -api-id: M:Windows.ApplicationModel.Chat.ChatCapabilitiesManager.GetCapabilitiesFromNetworkAsync(System.String)
 -api-type: winrt method
 -api-device-family-note: xbox
+ms.custom: RS5
 ---
 
 <!-- Method syntax
@@ -25,3 +26,6 @@ The Rich Communication Services (RCS) chat capabilities from the service provide
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

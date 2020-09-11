@@ -37,6 +37,7 @@ The size of tile to pin. This value must be **Default** (which provides Windows�
 > The *desiredSize* parameter is ignored on Windows Phone 8.1. On the phone, all tiles— including secondary tiles— are pinned as medium tiles, after which they can be resized by the user.
 
 ## -remarks
+To use this object from a desktop app, create the object, and then use [the IInitializeWithWindow::Initialize method](/en-us/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iinitializewithwindow-initialize) to associate the object with a window handle.
 
 ## -examples
 The following example demonstrates the use of this constructor.
@@ -57,4 +58,3 @@ var tile = new Windows.UI.StartScreen.SecondaryTile("SecondaryTile.01",
 
 
 ## -see-also
-[SecondaryTile(String, String, String, String, TileOptions, Uri)](secondarytile_secondarytile_735070396.md), [SecondaryTile(String, String, String, String, TileOptions, Uri, Uri)](secondarytile_secondarytile_1985961532.md), [SecondaryTile(String)](secondarytile_secondarytile_290278668.md), [SecondaryTile()](secondarytile_secondarytile_1221375020.md), [Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

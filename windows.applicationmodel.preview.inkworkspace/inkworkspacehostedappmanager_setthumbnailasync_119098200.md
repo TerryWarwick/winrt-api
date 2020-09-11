@@ -27,5 +27,5 @@ An asynchronous action that doesn't return anything.
 ## -examples
 
 ## -capabilities
-previewInkWorkspace 
-
+previewInkWorkspace
+previewPenWorkspace

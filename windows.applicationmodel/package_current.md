@@ -17,9 +17,9 @@ The package.
 
 ## -remarks
 > [!IMPORTANT]
-> Although [Package](package.md) is supported in desktop apps, this member is supported only in Windows Store apps. To access a package object from a desktop app, use [Windows.Management.Deployment.PackageManager](../windows.management.deployment/packagemanager.md).
+> Although [Package](package.md) is supported in desktop apps, this member is supported only in UWP apps. To access a package object from a desktop app, use [Windows.Management.Deployment.PackageManager](../windows.management.deployment/packagemanager.md).
 
 ## -examples
 
 ## -see-also
-[App package information sample](http://code.msdn.microsoft.com/windowsapps/Package-sample-46e239fa)
+[App package information sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Package)

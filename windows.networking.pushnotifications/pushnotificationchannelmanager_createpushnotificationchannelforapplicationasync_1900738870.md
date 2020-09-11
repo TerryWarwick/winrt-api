@@ -14,7 +14,9 @@ Creates an object, bound to a specified app, through which you retrieve a push n
 
 ## -parameters
 ### -param applicationId
-The Package Relative Application ID (PRAID) of the app to bind to the push notification channel.
+The package-relative application identifier (PRAID) of the app to bind to the push notification channel. The specified app must be in the same package as the calling app. For more info on the PRAID, see the **Id** attribute of the [Application](/uwp/schemas/appxpackage/appxmanifestschema/element-application#attributes-and-elements) element.
+
+If you are hosting background task(s) in an out-of-process COM server, separate from your main application, then pass as the argument for `applicationId` the PRAID of the application that defines the `windows.backgroundTask` extension in its own package manifest.
 
 ## -returns
 The object, bound to the app specified in *applicationId*, that is used to request a [PushNotificationChannel](pushnotificationchannel.md) from the Windows Push Notification Services (WNS).
@@ -22,9 +24,9 @@ The object, bound to the app specified in *applicationId*, that is used to reque
 ## -remarks
 Tile update, toast, and badge notifications that arrive on this channel are delivered to the app's main or default tile.
 
-An exception is thrown if you attempt to register a WNS push notification channel when there is no data connection. For a list of error codes that can be received, see [CreatePushNotificationChannelForApplicationAsync](pushnotificationchannelmanager_createpushnotificationchannelforapplicationasync.md).
+An exception is thrown if you attempt to register a WNS push notification channel when there is no data connection.
 
 ## -examples
 
 ## -see-also
-[CreatePushNotificationChannelForApplicationAsync](pushnotificationchannelmanager_createpushnotificationchannelforapplicationasync_684392470.md), [Windows Push Notification Services (WNS) overview](http://msdn.microsoft.com/library/2125b09f-db90-4515-9aa6-516c7e9acccd), [Push and periodic notifications sample](http://go.microsoft.com/fwlink/p/?linkid=231476), [Quickstart: Sending a tile push notification](XREF:TODO:m_ui_tiles.quickstart_sending_a_tile_push), [Quickstart: Sending a toast push notification](XREF:TODO:m_ui_tiles.quickstart_sending_a_toast_push), [How to update a badge through push notifications](XREF:TODO:m_ui_tiles.howto_update_badges_push), [How to authenticate with the Windows Push Notification Service (WNS)](http://msdn.microsoft.com/library/15975fe8-5e63-4d5d-b885-c4113c86b20e), [How to request, create, and save a notification channel](http://msdn.microsoft.com/library/7aae5dbd-f03e-4cfa-bcf2-c9ad1d7cdb42), [Guidelines and checklist for push notifications](XREF:TODO:m_ui_tiles.guidelines_for_push_notifications), [Push notification service request and response headers](http://msdn.microsoft.com/library/50575c54-b617-40c5-9dda-79a065e00cca)
+[CreatePushNotificationChannelForApplicationAsync](pushnotificationchannelmanager_createpushnotificationchannelforapplicationasync_684392470.md), [Windows Push Notification Services (WNS) overview](/windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview), [Push and periodic notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Push%20and%20periodic%20notifications%20client-side%20sample), [Quickstart: Sending a tile push notification](/windows/uwp/controls-and-patterns/tiles-and-notifications-sending-a-local-tile-notification), [Quickstart: Sending a toast push notification](/windows/uwp/controls-and-patterns/tiles-and-notifications-adaptive-interactive-toasts), [How to update a badge through push notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-badges), [How to authenticate with the Windows Push Notification Service (WNS)](/previous-versions/windows/apps/hh465407(v=win.10)), [How to request, create, and save a notification channel](/previous-versions/windows/apps/hh465412(v=win.10)), [Guidelines and checklist for push notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-sending-a-local-tile-notification), [Push notification service request and response headers](/previous-versions/windows/apps/hh465435(v=win.10))

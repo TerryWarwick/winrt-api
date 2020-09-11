@@ -15,9 +15,9 @@ Represents a command separator in a context menu.
 ## -remarks
 You can use a command separator to create a visual separation between groups of items in a context menu.
 
-Setting properties on a [UICommandSeparator](uicommandseparator.md) object has no effect.
+Setting properties on a UICommandSeparator object has no effect.
 
 ## -examples
 
 ## -see-also
-[Adding context menus](http://msdn.microsoft.com/library/9778aea7-c959-4b3e-bd79-9659f07095a6), [Context menu sample](http://go.microsoft.com/fwlink/p/?linkid=234891), [Guidelines and checklist for ](http://msdn.microsoft.com/library/23063edd-ed89-4a82-9857-44001fad770b), [PopupMenu.Commands](popupmenu_commands.md), [UICommand](uicommand.md)
+[Adding context menus](/previous-versions/windows/apps/hh465300(v=win.10)), [Context menu sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Context%20menu%20sample), [Guidelines and checklist for ](/windows/uwp/design/controls-and-patterns/index), [PopupMenu.Commands](popupmenu_commands.md), [UICommand](uicommand.md)

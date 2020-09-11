@@ -13,10 +13,10 @@ public event Windows.Foundation.TypedEventHandler SourceSelected<Windows.Media.P
 Occurs when a Play To source element has been selected.
 
 ## -remarks
-<!--{annotation author="v-shawja" time="1/27/2012 11:21:18 AM"}The following paragraph uses "target" three times. Note that MSTP generally prefers "destination" over "target". Please make that change if it would be accurate. Or "target" can simply be deleted if it's unnecessary.-->
-In a Play To– enabled app, the user selects the **Devices** charm (or the Play To UI) to stream audio, video, or images from the app to a target device. The [SourceSelected](playtomanager_sourceselected.md) event is fired after the user has selected a target device. If the user exits the **Devices** charm or the Play To UI without selecting a target device, the [SourceSelected](playtomanager_sourceselected.md) event isn't fired.
+
+In a Play To– enabled app, the user selects the **Devices** charm (or the Play To UI) to stream audio, video, or images from the app to a target device. The SourceSelected event is fired after the user has selected a target device. If the user exits the **Devices** charm or the Play To UI without selecting a target device, the SourceSelected event isn't fired.
 
 ## -examples
 
 ## -see-also
-[Play To sample](http://go.microsoft.com/fwlink/p/?linkid=245166), [PlayToReceiver sample](http://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](http://go.microsoft.com/fwlink/p/?linkid=245168)
+[Play To sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Media%20Play%20To%20sample%20(Windows%208)), [PlayToReceiver sample](https://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](https://go.microsoft.com/fwlink/p/?linkid=245168)

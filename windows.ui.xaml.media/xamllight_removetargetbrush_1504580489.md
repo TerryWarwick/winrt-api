@@ -9,15 +9,20 @@ public void XamlLight.RemoveTargetBrush(String lightId, Brush brush)
 
 # Windows.UI.Xaml.Media.XamlLight.RemoveTargetBrush
 
-## -description
-Removes a Brush from being a target of a compostion light.
 
-## -params
+## -description
+
+Stops a [Brush](/uwp/api/Windows.UI.Xaml.Media.Brush) from being a target of a [XamlLight](XamlLight.md).
+
+## -parameters
+
 ### -param lightId
-The identifier for the compostion light.
+
+The identifier for the [XamlLight](XamlLight.md) that should no longer target the [Brush](/uwp/api/Windows.UI.Xaml.Media.Brush).
 
 ### -param brush
-The brush that the compostion light targets.
+
+The [Brush](/uwp/api/Windows.UI.Xaml.Media.Brush) that the light should no longer target.
 
 ## -remarks
 

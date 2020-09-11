@@ -19,9 +19,7 @@ Gets or sets the template that defines the panel that controls the layout of ite
     singlePanelTemplate
   </itemsControl.ItemsPanel>
 </itemsControl>
-```
-
-```xaml
+- or -
 <itemsControl ItemsPanel="resourceReferenceToPanelTemplate"/>
 ```
 
@@ -35,8 +33,23 @@ An [ItemsPanelTemplate](itemspaneltemplate.md) that defines the panel to use for
 
 ## -remarks
 > [!NOTE]
-> [ComboBox](combobox.md) uses a [CarouselPanel](../windows.ui.xaml.controls.primitives/carouselpanel.md) as its [ItemsPanel](itemscontrol_itemspanel.md). Using a different panel as the [ItemsPanel](itemscontrol_itemspanel.md) of [ComboBox](combobox.md) is not supported and might result in undesired behavior.
+> [ComboBox](combobox.md) uses a [CarouselPanel](../windows.ui.xaml.controls.primitives/carouselpanel.md) as its ItemsPanel. Using a different panel as the ItemsPanel of [ComboBox](combobox.md) is not supported and might result in undesired behavior.
 
 ## -examples
+
+Replace the default panel used in a ListView with an [ItemsStackPanel](/uwp/api/Windows.UI.Xaml.Controls.ItemsStackPanel) that has its Orientation changed to Horizontal.
+
+```xaml
+<ListView>
+    <x:String>Hello</x:String>
+    <x:String>World</x:String>
+
+    <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+            <ItemsStackPanel Orientation="Horizontal" />
+        </ItemsPanelTemplate>
+    </ItemsControl.ItemsPanel>
+</ListView>
+```
 
 ## -see-also

@@ -19,7 +19,7 @@ Launches the Contact Picker for selecting a single contact.
 The operation that launches the Contact Picker.
 
 ## -remarks
-To pick multiple contacts at once, use [PickMultipleContactsAsync](contactpicker_pickmultiplecontactsasync.md).
+To pick multiple contacts at once, use [PickMultipleContactsAsync](contactpicker_pickmultiplecontactsasync_1630502573.md).
 
 Use the [SelectionMode](contactpicker_selectionmode.md) property to control whether your app receives all of a contact's information, or just specific fields.
 
@@ -27,4 +27,6 @@ Use the [SelectionMode](contactpicker_selectionmode.md) property to control whet
 
 
 ## -see-also
-[PickContactAsync](contactpicker_pickcontactasync.md)
+[PickContactAsync](contactpicker_pickcontactasync_1323728873.md)
+## -capabilities
+contactsSystem

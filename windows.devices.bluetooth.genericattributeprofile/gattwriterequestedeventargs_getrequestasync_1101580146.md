@@ -9,12 +9,13 @@ public IAsyncOperation<GattWriteRequest> GattWriteRequestedEventArgs.GetRequestA
 
 # Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteRequestedEventArgs.GetRequestAsync
 
+
 ## -description
+
 Gets the write request.
 
-## -parameters
-
 ## -returns
+
 An asynchronous operation that completes with the write request.
 
 ## -remarks
@@ -22,4 +23,8 @@ An asynchronous operation that completes with the write request.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

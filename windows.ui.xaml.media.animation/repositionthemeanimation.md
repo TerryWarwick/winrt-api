@@ -17,7 +17,6 @@ Use to animate an object that is being repositioned.
 <RepositionThemeAnimation .../>
 ```
 
-
 ## -remarks
 Note that setting the [Duration](timeline_duration.md) property has no effect on this object since the duration is preconfigured.
 
@@ -52,7 +51,17 @@ private void Rectangle_PointerReleased(object sender, PointerRoutedEventArgs e)
 }
 ```
 
-```cpp
+```cppwinrt
+void DocsCppWinRT::MainPage::Rectangle_PointerReleased(
+    Windows::Foundation::IInspectable const& /* sender */,
+    Windows::UI::Xaml::Input::PointerRoutedEventArgs const& /* e */)
+{
+    myRectangle().Margin({ 400, 0, 0, 0 });
+    PointerReleasedStoryboard().Begin();
+}
+```
+
+```cppcx
 void MyPage::Rectangle_PointerReleased(Object^ sender, PointerRoutedEventArgs^ e)
 {
     myRectangle->Margin = Thickness(400, 0, 0, 0);
@@ -60,7 +69,5 @@ void MyPage::Rectangle_PointerReleased(Object^ sender, PointerRoutedEventArgs^ e
 }
 ```
 
-
-
 ## -see-also
-[Timeline](timeline.md), [Animating repositions](http://msdn.microsoft.com/library/4d715c69-79e6-4179-a66c-a193629966d1), [Guidelines and checklist for reposition animations](http://msdn.microsoft.com/library/25d1ee31-5c25-4f21-b34c-fbd8fb1c8fff)
+[Timeline](timeline.md), [Animating repositions](/previous-versions/windows/apps/jj649434(v=win.10)), [Guidelines and checklist for reposition animations](/windows/uwp/style/motion-reposition)

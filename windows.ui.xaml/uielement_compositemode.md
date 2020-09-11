@@ -29,9 +29,7 @@ Setting **CompositeMode** to **MinBlend** is useful for a mixed XAML / Microsoft
 Setting a value of **MinBlend** is typically most relevant for a [SwapChainPanel](../windows.ui.xaml.controls/swapchainbackgroundpanel.md) element, so that the hosted content gets this behavior. But for some scenarios such as text overlays it can also be set on specific UI elements such as [Rectangle](../windows.ui.xaml.shapes/rectangle.md), [Canvas](../windows.ui.xaml.controls/canvas.md) and so on.
 
 
-<!--TODO is there ever any reason for specific elements to set as SourceOver?-->
-
 ## -examples
 
 ## -see-also
-[SwapChainBackgroundPanel](../windows.ui.xaml.controls/swapchainbackgroundpanel.md), [DirectX and XAML interop](http://msdn.microsoft.com/library/17987eea-6771-423c-9b68-6b9aeadc7b7f)
+[SwapChainBackgroundPanel](../windows.ui.xaml.controls/swapchainbackgroundpanel.md), [DirectX and XAML interop](/previous-versions/windows/apps/hh825871(v=win.10))

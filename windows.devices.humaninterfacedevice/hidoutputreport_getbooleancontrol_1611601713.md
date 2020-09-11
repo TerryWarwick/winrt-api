@@ -11,16 +11,21 @@ public Windows.Devices.HumanInterfaceDevice.HidBooleanControl GetBooleanControl(
 # Windows.Devices.HumanInterfaceDevice.HidOutputReport.GetBooleanControl
 
 ## -description
+
 Retrieves the boolean control associated with the given *usagePage* and *usageId*.
 
 ## -parameters
+
 ### -param usagePage
+
 The usage page associated with the given control.
 
 ### -param usageId
+
 The usage identifier associated with the given control.
 
 ## -returns
+
 A **HidBooleanControl** object.
 
 ## -remarks
@@ -28,3 +33,5 @@ A **HidBooleanControl** object.
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

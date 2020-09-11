@@ -9,12 +9,13 @@ public Deferral GattReadRequestedEventArgs.GetDeferral()
 
 # Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadRequestedEventArgs.GetDeferral
 
+
 ## -description
+
 Gets a deferral.
 
-## -parameters
-
 ## -returns
+
 Returns a deferral object.
 
 ## -remarks
@@ -22,4 +23,8 @@ Returns a deferral object.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

@@ -23,4 +23,5 @@ The error code.
 
 
 ## -capabilities
-webcam, microphone
+backgroundMediaRecording
+microphone, webcam

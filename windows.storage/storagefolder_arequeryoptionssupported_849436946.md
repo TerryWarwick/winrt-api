@@ -22,12 +22,12 @@ True if the folder or file group supports the specified [QueryOptions](../window
 ## -remarks
 [QueryOptions](../windows.storage.search/queryoptions.md) let you enumerate files in a folder and its subfolders by letting you specify criteria that you can then use to create a query result object of files in that folder and subfolders. The [CommonFileQuery](../windows.storage.search/commonfilequery.md) and [CommonFolderQuery](../windows.storage.search/commonfolderquery.md) enumeration represent some of the most common criteria used to filter and enumerate files and folders.
 
-Use the [AreQueryOptionsSupported](storagefolder_arequeryoptionssupported.md) method to verify that the [QueryOptions](../windows.storage.search/queryoptions.md) you want to specify are available for the current folder. You can also check whether a specific [CommonFileQuery](../windows.storage.search/commonfilequery.md) or [CommonFolderQuery](../windows.storage.search/commonfolderquery.md) value is available, by calling [IsCommonFileQuerySupported](storagefolder_iscommonfilequerysupported.md) or [IsCommonFolderQuerySupported](storagefolder_iscommonfolderquerysupported.md), respectively.
+Use the AreQueryOptionsSupported method to verify that the [QueryOptions](../windows.storage.search/queryoptions.md) you want to specify are available for the current folder. You can also check whether a specific [CommonFileQuery](../windows.storage.search/commonfilequery.md) or [CommonFolderQuery](../windows.storage.search/commonfolderquery.md) value is available, by calling [IsCommonFileQuerySupported](storagefolder_iscommonfilequerysupported_1848755604.md) or [IsCommonFolderQuerySupported](storagefolder_iscommonfolderquerysupported_1797734947.md), respectively.
 
 The specific options available to you depend on where the files or folders that you want to enumerate are located. For folders and files that are located inside a library or homegroup, you can use any combination of [QueryOptions](../windows.storage.search/queryoptions.md).
 
 
-<!--{annotation author="miriamw" time="3/5/2012 4:02:04 PM"}TODO: Change for RC (from katiebl) orderByName/orderBySearchRank will not be supported at the root node for MediaServerDevices RC+-->
+
 Folders and files outside of a library or homegroup support a only subset of options.
 
 + For queries that enumerate only the top-level files or folders (also known as a shallow query), create a [QueryOptions](../windows.storage.search/queryoptions.md) object in one of the following three ways:

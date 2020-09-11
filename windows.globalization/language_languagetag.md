@@ -10,12 +10,12 @@ public string LanguageTag { get; }
 # Windows.Globalization.Language.LanguageTag
 
 ## -description
-Gets the normalized [BCP-47](http://go.microsoft.com/fwlink/p/?linkid=227302) language tag for this language.
+Gets the normalized [BCP-47](https://tools.ietf.org/html/bcp47) language tag for this language.
 
 ## -property-value
-The normalized [BCP-47](http://go.microsoft.com/fwlink/p/?linkid=227302) language tag.
+The normalized [BCP-47](https://tools.ietf.org/html/bcp47) language tag.
 
-**Starting in :** Language tags can support Unicode extensions. See the Remarks for the [Language](language_language.md) constructor.
+**Starting in :** Language tags can support Unicode extensions. See the Remarks for the [Language](language_language_290278668.md) constructor.
 
 ## -remarks
 
@@ -23,4 +23,4 @@ The normalized [BCP-47](http://go.microsoft.com/fwlink/p/?linkid=227302) languag
 ## -examples
 
 ## -see-also
-[BCP-47 language tags](http://go.microsoft.com/fwlink/p/?linkid=227302)
+[BCP-47 language tags](https://tools.ietf.org/html/bcp47)

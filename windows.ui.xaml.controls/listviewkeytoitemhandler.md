@@ -8,7 +8,7 @@ public delegate Windows.Foundation.IAsyncOperation<object> ListViewKeyToItemHand
 # Windows.UI.Xaml.Controls.ListViewKeyToItemHandler
 
 ## -description
-Represents the asynchronous method that will handle callback for the [SetRelativeScrollPositionAsync](listviewpersistencehelper_setrelativescrollpositionasync.md) method.
+Represents the asynchronous method that will handle callback for the [SetRelativeScrollPositionAsync](listviewpersistencehelper_setrelativescrollpositionasync_2138322716.md) method.
 
 ## -parameters
 ### -param key
@@ -22,4 +22,4 @@ An asynchronous operation that, upon successful completion, returns the [ListVie
 ## -examples
 
 ## -see-also
-[SetRelativeScrollPositionAsync](listviewpersistencehelper_setrelativescrollpositionasync.md)
+[SetRelativeScrollPositionAsync](listviewpersistencehelper_setrelativescrollpositionasync_2138322716.md)

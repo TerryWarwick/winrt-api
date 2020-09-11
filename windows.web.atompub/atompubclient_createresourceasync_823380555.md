@@ -10,7 +10,7 @@ public Windows.Foundation.IAsyncOperationWithProgress<Windows.Web.Syndication.Sy
 # Windows.Web.AtomPub.AtomPubClient.CreateResourceAsync
 
 ## -description
-Creates a new Entry resource in the specified collection. The Uri of the collection in which to create the new resource can be discovered from the [ResourceCollection](resourcecollection.md) object retrieved from the [RetrieveResourceAsync](atompubclient_retrieveresourceasync.md) method.
+Creates a new Entry resource in the specified collection. The Uri of the collection in which to create the new resource can be discovered from the [ResourceCollection](resourcecollection.md) object retrieved from the [RetrieveResourceAsync](atompubclient_retrieveresourceasync_1946100714.md) method.
 
 ## -parameters
 ### -param uri
@@ -28,7 +28,7 @@ The object that is used to create the resource asynchronously and to report the 
 ## -remarks
 
 ## -examples
-The following code demonstrates how to access a service document and retrieve edit URI values. For additional examples of how AtomPub can be used to manage feed content, download the [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061).
+The following code demonstrates how to access a service document and retrieve edit URI values. For additional examples of how AtomPub can be used to manage feed content, download the [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/AtomPub%20sample/C%23).
 
 ```javascript
     function createResource() {
@@ -72,7 +72,7 @@ The following code demonstrates how to access a service document and retrieve ed
 ```
 
 > [!NOTE]
-> See [RetrieveServiceDocumentAsync](atompubclient_retrieveservicedocumentasync.md) for the code behind the **findEditUri** function called in this example.
+> See [RetrieveServiceDocumentAsync](atompubclient_retrieveservicedocumentasync_1639649532.md) for the code behind the **findEditUri** function called in this example.
 
 ## -see-also
-[Quickstart: Managing Feed Entries](http://msdn.microsoft.com/library/239d42bc-5812-4ead-a91c-b3696fc3ef75), [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061)
+[Quickstart: Managing Feed Entries](/previous-versions/windows/apps/hh700368(v=win.10)), [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/AtomPub%20sample/C%23)

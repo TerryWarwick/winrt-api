@@ -22,4 +22,7 @@ This instance of the method retrieves the first available feature report.
 ## -examples
 
 ## -see-also
-[GetFeatureReportAsync(UInt16)](hiddevice_getfeaturereportasync_1194285243.md)
+
+### Reference
+
+[GetFeatureReportAsync(UInt16)](hiddevice_getfeaturereportasync_1194285243.md), [Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

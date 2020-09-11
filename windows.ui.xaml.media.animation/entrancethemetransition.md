@@ -21,54 +21,56 @@ Provides the animated transition behavior on controls when they first appear. Yo
 ## -remarks
 
 ## -examples
-The following example shows a how to apply an [EntranceThemeTransition](entrancethemetransition.md) to a [Button](../windows.ui.xaml.controls/button.md).
+This example shows a how to apply an EntranceThemeTransition to a [Button](../windows.ui.xaml.controls/button.md).
 
+[!code-xaml[EntranceThemeTransitionSimple](../windows.ui.xaml.media.animation/code/EntranceThemeTransition/csharp/BlankPage.xaml#SnippetEntranceThemeTransitionSimple)]
 
-<!--  
-      <p xml:space="preserve">
-            <TRANSLATE_MANUALLY>
-              <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
-                <linkText>Run this sample</linkText>
-                <linkUri>http://go.microsoft.com/fwlink/p/?linkid=139798&amp;sref=BackEase_scale</linkUri>
-              </externalLink>
-            </TRANSLATE_MANUALLY>
-          </p>-->
+Here, the EntranceThemeTransition is applied using a Style resource.
 
+[!code-xaml[EntranceThemeTransitionStyle](../windows.ui.xaml/code/EntranceThemeTransitionStyle/csharp/BlankPage.xaml#SnippetEntranceThemeTransitionStyle)]
 
+If you set an EntranceThemeTransition animation on a panel, the children of the panel will automatically offset when they animate into view to create a visually appealing entrance.
 
-[!code-xml[EntranceThemeTransitionSimple](../windows.ui.xaml.media.animation/code/EntranceThemeTransition/csharp/BlankPage.xaml#SnippetEntranceThemeTransitionSimple)]
+Here, as rectangles are added to the StackPanel, they fly in from the upper right, rather than just appearing in place.
 
+```xaml
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Button Content="Add rectangle" Click="Button_Click"/>
 
-<!--  
-      <p xml:space="preserve">
-            <TRANSLATE_MANUALLY>
-              <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
-                <linkText>Run this sample</linkText>
-                <linkUri>http://go.microsoft.com/fwlink/p/?linkid=139798&amp;sref=BackEase_scale</linkUri>
-              </externalLink>
-            </TRANSLATE_MANUALLY>
-          </p>-->
+    <StackPanel x:Name="panel1" HorizontalAlignment="Left" Margin="200">
+        <StackPanel.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition 
+                FromHorizontalOffset="200" 
+                FromVerticalOffset="-200"/>
+            </TransitionCollection>
+        </StackPanel.ChildrenTransitions>
+    </StackPanel>
+</Grid>
+```
 
+```csharp
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    // Add a rectangle to the StackPanel.
+    Rectangle r = new Rectangle();
+    r.Width = 100;
+    r.Height = 100;
 
-
-[!code-xml[EntranceThemeTransitionStyle](../windows.ui.xaml/code/EntranceThemeTransitionStyle/csharp/BlankPage.xaml#SnippetEntranceThemeTransitionStyle)]
-
-
-<!--  
-      <p xml:space="preserve">
-            <TRANSLATE_MANUALLY>
-              <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
-                <linkText>Run this sample</linkText>
-                <linkUri>http://go.microsoft.com/fwlink/p/?linkid=139798&amp;sref=BackEase_scale</linkUri>
-              </externalLink>
-            </TRANSLATE_MANUALLY>
-          </p>-->
-
-
-
-[!code-xml[EntranceThemeTransitionGrid](../windows.ui.xaml.media.animation/code/EntranceThemeTransition/csharp/BlankPage.xaml#SnippetEntranceThemeTransitionGrid)]
+    // Alternate colors as rectangles are added.
+    if (panel1.Children.Count % 2 == 0)
+    {
+        r.Fill = new SolidColorBrush(Colors.Green);
+    }
+    else
+    {
+        r.Fill = new SolidColorBrush(Colors.Yellow);
+    }
+    panel1.Children.Add(r);
+}
+```
 
 
 
 ## -see-also
-[Transition](transition.md), [Animating page transitions](http://msdn.microsoft.com/library/57659b10-39c2-4ff4-95ff-51a349d01911), [Guidelines and checklist for page transition animations](http://msdn.microsoft.com/library/a5784163-05a0-414f-872c-f14793d00a91)
+[Transition](transition.md), [Animating page transitions](/previous-versions/windows/apps/jj649426(v=win.10)), [Guidelines and checklist for page transition animations](https://msdn.microsoft.com/library/windows/apps/jj635239.aspx)

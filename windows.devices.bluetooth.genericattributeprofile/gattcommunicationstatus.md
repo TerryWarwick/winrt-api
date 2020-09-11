@@ -30,7 +30,17 @@ There was a GATT communication protocol error.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | AccessDenied |
+| 1703 | 15063 | ProtocolError |
+
 ## -examples
 
 ## -see-also
 
+
+## -capabilities
+bluetooth

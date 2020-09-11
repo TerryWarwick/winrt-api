@@ -9,12 +9,13 @@ public string BluetoothAdapter.GetDeviceSelector()
 
 # Windows.Devices.Bluetooth.BluetoothAdapter.GetDeviceSelector
 
+
 ## -description
+
 Gets an Advanced Query Syntax (AQS) string for identifying instances of this adapter. This string is passed to the FindAllAsync or CreateWatcher method.
 
-## -parameters
-
 ## -returns
+
 Returns an AQS string.
 
 ## -remarks
@@ -22,4 +23,8 @@ Returns an AQS string.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

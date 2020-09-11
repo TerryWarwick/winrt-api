@@ -29,7 +29,7 @@ By default, the [InkToolbar](inktoolbar.md) consists of two distinct groups of b
 The collection of built-in buttons to add to the [InkToolbar](inktoolbar.md).
 
 ## -remarks
-Default built-in buttons, or those specified through [InitialControls](inktoolbar_initialcontrols.md), are not added to the [Children](inktoolbar_children.md) property.
+Default built-in buttons, or those specified through InitialControls, are not added to the [Children](inktoolbar_children.md) property.
 
 Built-in or custom buttons added programmatically or declared in XAML, are added to the [Children](inktoolbar_children.md) property.
 
@@ -39,7 +39,7 @@ Built-in buttons are displayed in a pre-determined order within their respective
 
 To specify which built-in buttons are displayed at initialization:
 
-1. Set [InitialControls](inktoolbar_initialcontrols.md) to [None](inktoolbarinitialcontrols.md).
+1. Set InitialControls to [None](inktoolbarinitialcontrols.md).
 1. Add the individual buttons.
 1. Specify the [InkToolbar](inktoolbar.md) UI experience, such as the default button.
 The following examples (both XAML and code-behind) show how to clear the default buttons from the InkToolber, add ballpoint pen, pencil, and eraser buttons, and set the default button to pencil.
@@ -48,11 +48,11 @@ XAML
 
 
 
-[!code-xml[UI](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage.xaml#SnippetUI)]
+[!code-xaml[UI](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage.xaml#SnippetUI)]
 
 
 
-[!code-xml[UI_CB](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage_CodeBehind.xaml#SnippetUI_CB)]
+[!code-xaml[UI_CB](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage_CodeBehind.xaml#SnippetUI_CB)]
 
 [!code-csharp[InkToolbarMainPageCB](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage_CodeBehind.xaml.cs#SnippetInkToolbarMainPageCB)]
 
@@ -61,4 +61,23 @@ XAML
 [!code-csharp[InkToolbarLoadedCB](../windows.ui.input.inking/code/Ink_Basic_InkToolbar/csharp/MainPage_CodeBehind.xaml.cs#SnippetInkToolbarLoadedCB)]
 
 ## -see-also
-[InitialControlsProperty](inktoolbar_initialcontrolsproperty.md)
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Add an InkToolbar to a Universal Windows Platform (UWP) app](/windows/uwp/input-and-devices/ink-toolbar), [Get Started Tutorial: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [**InitialControlsProperty**](/uwp/api/windows.ui.xaml.controls.inktoolbar.InitialControlsProperty), [Simple ink sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk), [Complex ink sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk), [Ink sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink), [Get Started Tutorial: Support ink in your UWP app](https://aka.ms/appsample-ink), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample)
+
+<!--
+[Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions)
+
+[Add an InkToolbar to a Universal Windows Platform (UWP) app](/windows/uwp/input-and-devices/ink-toolbar)
+
+[Get Started Tutorial: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough)
+
+### Reference
+[InitialControlsProperty](/uwp/api/windows.ui.xaml.controls.inktoolbar#Windows_UI_Xaml_Controls_InkToolbar_InitialControlsProperty)
+
+### Samples
+* [Simple ink sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk)
+* [Complex ink sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk)
+* [Ink sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink)
+* [Get Started Tutorial: Support ink in your UWP app](https://aka.ms/appsample-ink)
+* [Coloring book sample](https://aka.ms/cpubsample-coloringbook)
+* [Family notes sample](https://aka.ms/cpubsample-familynotessample)
+-->

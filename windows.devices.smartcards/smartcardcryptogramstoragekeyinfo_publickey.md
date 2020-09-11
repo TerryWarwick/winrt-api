@@ -13,11 +13,11 @@ public Windows.Storage.Streams.IBuffer PublicKey { get; }
 Gets the public key.
 
 ## -property-value
-A buffer containing the public key in the format specified when calling [RequestCryptogramMaterialStorageKeyInfoAsync](smartcardcryptogramgenerator_requestcryptogrammaterialstoragekeyinfoasync.md).
+A buffer containing the public key in the format specified when calling [RequestCryptogramMaterialStorageKeyInfoAsync](smartcardcryptogramgenerator_requestcryptogrammaterialstoragekeyinfoasync_688264229.md).
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

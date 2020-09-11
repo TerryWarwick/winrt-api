@@ -18,6 +18,5 @@ When upgrading a call from cellular to video, notifies the system that the app i
 
 ## -see-also
 
-
 ## -capabilities
-voipCall
+phoneCallHistory, phoneCallHistorySystem, voipCall

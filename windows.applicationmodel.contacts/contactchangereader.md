@@ -13,8 +13,11 @@ public class ContactChangeReader : Windows.ApplicationModel.Contacts.IContactCha
 Provides a way to monitor and react to changes to contacts.
 
 ## -remarks
-Call the [GetChangeReader](contactchangetracker_getchangereader.md) method to get an instance of this class.
+Call the [GetChangeReader](contactchangetracker_getchangereader_1364424875.md) method to get an instance of this class.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

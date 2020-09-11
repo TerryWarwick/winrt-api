@@ -16,6 +16,7 @@ Gets the [UIElement](../windows.ui.xaml/uielement.md) owner that is associated w
 The element that owns this instance of the peer class.
 
 ## -remarks
+If the owner element has been deleted, getting this property fails.
 
 ## -examples
 

@@ -20,3 +20,4 @@ The identifier for the [AccessKeyScopeOwner](uielement_accesskeyscopeowner.md) d
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

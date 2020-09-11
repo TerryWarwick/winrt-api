@@ -13,12 +13,12 @@ public class MediaProtectionManager : Windows.Media.Protection.IMediaProtectionM
 Contains a content protection manager object for an application that handles protected media content.
 
 ## -remarks
-The [MediaProtectionManager](mediaprotectionmanager.md) can be passed to the media playback infrastructure in either of two ways: 
-+ As an attribute for a `<video>` or `<audio>` tag using the [msSetMediaProtectionManager](https://msdn.microsoft.com/library/windows/apps/hh465953.aspx) method.
-+ Directly to a media playback API. The [MediaProtectionManager](mediaprotectionmanager.md) object is notified of content enabler objects. These objects must be processed by the application, to establish access to protected content. Each [MediaProtectionManager](mediaprotectionmanager.md) object is associated with a single instance of playback.
+The MediaProtectionManager can be passed to the media playback infrastructure in either of two ways: 
++ As an attribute for a `<video>` or `<audio>` tag using the [msSetMediaProtectionManager](/previous-versions/hh772532(v=vs.85)) method.
++ Directly to a media playback API. The MediaProtectionManager object is notified of content enabler objects. These objects must be processed by the application, to establish access to protected content. Each MediaProtectionManager object is associated with a single instance of playback.
 
 ## -examples
-The following example shows how to create a [MediaProtectionManager](mediaprotectionmanager.md), set the [Properties](mediaprotectionmanager_properties.md) property, and add event listeners for [ComponentLoadFailed](mediaprotectionmanager_componentloadfailed.md) and [ServiceRequested](mediaprotectionmanager_servicerequested.md). See the [How to use pluggable DRM](http://msdn.microsoft.com/library/3b7d0373-7c59-4b9e-a0a4-fc787738f7a1) topic for the full example. 
+The following example shows how to create a MediaProtectionManager, set the [Properties](mediaprotectionmanager_properties.md) property, and add event listeners for [ComponentLoadFailed](mediaprotectionmanager_componentloadfailed.md) and [ServiceRequested](mediaprotectionmanager_servicerequested.md). See the [How to use pluggable DRM](/previous-versions/windows/apps/hh452779(v=win.10)) topic for the full example. 
 
 ```javascript
 
@@ -56,6 +56,44 @@ mediaProtectionManager.addEventListener("rebootneeded", RebootNeeded, false);
 
 ```
 
+```csharp
+private void InitMediaProtectionManager()
+{
+   mediaProtectionManager = new Windows.Media.Protection.MediaProtectionManager();
+   mediaProtectionManager.ServiceRequested += MediaProtectionManager_ServiceRequested;
+   mediaProtectionManager.ComponentLoadFailed += MediaProtectionManager_ComponentLoadFailed;
+   mediaProtectionManager.RebootNeeded += MediaProtectionManager_RebootNeeded;
+}
 
+
+
+private void MediaProtectionManager_RebootNeeded(MediaProtectionManager sender)
+{
+   LogMessage("Reboot Required");
+}
+
+private void MediaProtectionManager_ComponentLoadFailed(MediaProtectionManager sender, ComponentLoadFailedEventArgs e)
+{
+   LogMessage(e.Information.Items.Count.ToString() + " failed components");
+   LogMessage("<h2>Components:</h2>");
+
+   //  List the failing components
+   for (var i = 0; i < e.Information.Items.Count; i++)
+   {
+         LogMessage("<h3>" + e.Information.Items[i].Name + "</h3>" +
+               "<p>Reasons=0x" + e.Information.Items[i].Reasons.ToString() +
+               "<p>Renewal Id=" + e.Information.Items[i].RenewalId);
+   }
+
+   e.Completion.Complete(true);
+}
+
+private void MediaProtectionManager_ServiceRequested(MediaProtectionManager sender, ServiceRequestedEventArgs e)
+{
+   LogMessage("Got Enabler - system/type: {" + e.Request.ProtectionSystem + "}/{" + e.Request.Type + "}");
+   e.Completion.Complete(true);
+}
+
+```
 
 ## -see-also

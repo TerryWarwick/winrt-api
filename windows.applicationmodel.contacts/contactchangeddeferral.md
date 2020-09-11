@@ -13,8 +13,11 @@ public class ContactChangedDeferral : Windows.ApplicationModel.Contacts.IContact
 The deferral object to use while asynchronously processing [ContactChanged](contactstore_contactchanged.md) events.
 
 ## -remarks
-Call [GetDeferral](contactchangedeventargs_getdeferral.md) to get an instance of this class.
+Call [GetDeferral](contactchangedeventargs_getdeferral_254836512.md) to get an instance of this class.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

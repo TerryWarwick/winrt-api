@@ -16,7 +16,7 @@ Retrieves an adjusted thumbnail image for the file, determined by the purpose of
 ### -param mode
 The enum value that describes the purpose of the thumbnail and determines how the thumbnail image is adjusted.
 
-For guidance about choosing the best thumbnail mode, see [Guidelines and checklist for thumbnails](http://msdn.microsoft.com/library/46868748-8847-49ed-a07f-324e77b27da4).
+For guidance about choosing the best thumbnail mode, see [Guidelines and checklist for thumbnails](/windows/uwp/files/thumbnails).
 
 ### -param requestedSize
 The requested size, in pixels, of the longest edge of the thumbnail. Windows uses the *requestedSize* as a guide and tries to scale the thumbnail image without reducing the quality of the image.
@@ -27,7 +27,7 @@ If Windows can't find a thumbnail image that it can scale to meet the requested 
 The enum value that describes the desired behavior to use to retrieve the thumbnail image. The specified behavior might affect the size and/or quality of the image and how quickly the thumbnail image is retrieved.
 
 
-<!--{annotation author="miriamw" time="1/12/2012 2:59:42 PM"}TODO: Too vague and awkard to add ... : There are very few reasons developers would want to stray away from using the scaleForPPI default thumbnail option, although a gallery app may choose to alter this in order to display more items in the view-->
+
 
 ## -returns
 When this method completes successfully, it returns a [StorageItemThumbnail](../windows.storage.fileproperties/storageitemthumbnail.md) that represents the thumbnail image or **null** if there is no thumbnail image associated with the file.
@@ -35,7 +35,7 @@ When this method completes successfully, it returns a [StorageItemThumbnail](../
 ## -remarks
 
 ## -examples
-This example shows you how to capture the thumbnail of a file using the [storageFile.getThumbnailAsync(mode, requestedSize, options)](storagefile_getthumbnailasync_91362086.md) method.
+This example shows you how to capture the thumbnail of a file using the [storageFile.getThumbnailAsync(mode, requestedSize, options) method.
 
 ```javascript
 storageFile.getThumbnailAsync(
@@ -48,7 +48,7 @@ storageFile.getThumbnailAsync(
     );
 ```
 
-You must have a [StorageFile](storagefile.md) object (`storageFile` in the example) that represents your file in order to use one of the [StorageFile.GetThumbnailAsync](storagefile_getthumbnailasync.md) methods.
+You must have a [StorageFile](storagefile.md) object (`storageFile` in the example) that represents your file in order to use one of the [StorageFile.GetThumbnailAsync](storagefile_getthumbnailasync_1511435522.md) methods.
 
 ## -see-also
 [GetThumbnailAsync(ThumbnailMode)](storagefile_getthumbnailasync_1575071988.md), [GetThumbnailAsync(ThumbnailMode, UInt32)](storagefile_getthumbnailasync_1511435522.md), [ThumbnailOptions](../windows.storage.fileproperties/thumbnailoptions.md)

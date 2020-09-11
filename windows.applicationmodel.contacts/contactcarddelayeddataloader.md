@@ -10,14 +10,21 @@ public class ContactCardDelayedDataLoader : Windows.ApplicationModel.Contacts.IC
 # Windows.ApplicationModel.Contacts.ContactCardDelayedDataLoader
 
 ## -description
+
 Represents a delayed data loader for a contact card.
 
 ## -remarks
-Call [ContactManager.ShowDelayLoadedContactCard](contactmanager_showdelayloadedcontactcard.md) to show a contact card with delayed data loader.
 
-For info about how to manage contacts, see [Managing contact cards ](http://msdn.microsoft.com/library/a0667d13-a274-4cb2-982a-5bfabb0488c2) and [Managing contact cards ](http://msdn.microsoft.com/library/364d763b-adf6-410e-a892-ba4af3799b93).
+Call [ContactManager.ShowDelayLoadedContactCard](contactmanager_showdelayloadedcontactcard_1685487355.md) to show a contact card with delayed data loader.
+
+For info about how to manage contacts, see [Managing contact cards](/previous-versions/windows/apps/dn518181(v=win.10)) and [Managing contact cards](/previous-versions/windows/apps/dn518237(v=win.10)).
 
 ## -examples
 
 ## -see-also
-[Contact manager API sample](http://go.microsoft.com/fwlink/p/?LinkID=310079), [IClosable](../windows.foundation/iclosable.md), [ShowDelayLoadedContactCard](contactmanager_showdelayloadedcontactcard.md), [Contact cards sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=624040)
+
+[Contact manager API sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Contact%20manager%20API%20sample), [IClosable](../windows.foundation/iclosable.md), [ShowDelayLoadedContactCard](contactmanager_showdelayloadedcontactcard_1685487355.md), [Contact cards sample (Windows 10)](https://go.microsoft.com/fwlink/p/?LinkId=624040)
+
+## -capabilities
+
+contactsSystem

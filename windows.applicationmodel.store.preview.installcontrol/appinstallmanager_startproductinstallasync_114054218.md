@@ -20,7 +20,7 @@ The product ID of the app to install.
 The catalog ID of the app to install.
 
 ### -param flightId
-The bundle to install.
+The flight ID of the app to install.
 
 ### -param clientId
 The ID of the caller.
@@ -38,10 +38,13 @@ A correlation vector string that can be used to generate telemetry data.
 The package storage volume where the app or app bundle will be installed.
 
 ## -returns
-An asynchronous operation that, on successful completion, returns the app or set of apps (for an app bundle) that were added to the installation queue. If you use [Asynchronous programming](https://msdn.microsoft.com/windows/uwp/threading-async/asynchronous-programming-universal-windows-platform-apps), the result type is a read-only list/vector of [AppInstallItem](appinstallitem.md) items. (You can use APIs of [IVectorView&lt;AppInstallItem&gt;](../windows.foundation.collections/ivectorview_1.md) for C++ or JavaScript, APIs of [IReadOnlyList&lt;AppInstallItem&gt;](https://msdn.microsoft.com/library/hh192385.aspx) for .NET.)
+An asynchronous operation that, on successful completion, returns the app or set of apps (for an app bundle) that were added to the installation queue. If you use [Asynchronous programming](/windows/uwp/threading-async/asynchronous-programming-universal-windows-platform-apps), the result type is a read-only list/vector of [AppInstallItem](appinstallitem.md) items. (You can use APIs of [IVectorView&lt;AppInstallItem&gt;](../windows.foundation.collections/ivectorview_1.md) for C++ or JavaScript, APIs of [IReadOnlyList&lt;AppInstallItem&gt;](/dotnet/api/system.collections.generic.ireadonlylist-1?redirectedfrom=MSDN) for .NET.)
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+runFullTrust

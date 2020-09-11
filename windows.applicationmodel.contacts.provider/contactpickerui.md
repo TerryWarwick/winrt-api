@@ -13,10 +13,10 @@ public class ContactPickerUI : Windows.ApplicationModel.Contacts.Provider.IConta
 Allows you to call the contact picker UI so you can select one or more contacts.
 
 ## -remarks
-To see an example of how to use this class, check out our [code sample](http://go.microsoft.com/fwlink/p/?linkid=231575).
+To see an example of how to use this class, check out our [code sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/ContactPicker).
 
 ## -examples
-This example code prepares the page to use [ContactPickerUI](contactpickerui.md):
+This example code prepares the page to use ContactPickerUI:
 
 ```javascript
 
@@ -155,3 +155,5 @@ function removeContactFromBasket(sampleContact) {
 
 
 ## -see-also
+## -capabilities
+contactsSystem

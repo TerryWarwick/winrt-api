@@ -11,9 +11,11 @@ public Windows.Foundation.Collections.IVectorView<Windows.Devices.HumanInterface
 # Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription.ParentCollections
 
 ## -description
-Retrieves the parent collection for a given Boolean control.
+
+Gets the parent collection for a given Boolean control.
 
 ## -property-value
+
 The control's parent collection.
 
 ## -remarks
@@ -21,3 +23,5 @@ The control's parent collection.
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

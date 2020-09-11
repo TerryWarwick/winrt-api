@@ -14,8 +14,17 @@ public class ChatMessageStore : Windows.ApplicationModel.Chat.IChatMessageStore,
 Provides the methods and properties to read, manage and send messages. An application gets access to the message store using the static [ChatMessageManager class](chatmessagemanager.md).
 
 ## -remarks
-Obtain an instance of this class by calling [RequestStoreAsync](chatmessagemanager_requeststoreasync.md).
+Obtain an instance of this class by calling [RequestStoreAsync](chatmessagemanager_requeststoreasync_428591920.md).
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | GetMessageBySyncIdAsync |
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

@@ -22,7 +22,7 @@ The object that is used to retrieve the service document asynchronously and to r
 ## -remarks
 
 ## -examples
-The following code demonstrates how to access a service document and retrieve edit URI values. For additional examples of how AtomPub can be used to manage feed content, download the [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061).
+The following code demonstrates how to access a service document and retrieve edit URI values. For additional examples of how AtomPub can be used to manage feed content, download the [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/AtomPub%20sample/C%23).
 
 ```javascript
 
@@ -47,4 +47,4 @@ The following code demonstrates how to access a service document and retrieve ed
 
 
 ## -see-also
-[Quickstart: Managing Feed Entries](http://msdn.microsoft.com/library/239d42bc-5812-4ead-a91c-b3696fc3ef75), [AtomPub sample](http://go.microsoft.com/fwlink/p/?linkid=245061)
+[Quickstart: Managing Feed Entries](/previous-versions/windows/apps/hh700368(v=win.10)), [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/AtomPub%20sample/C%23)

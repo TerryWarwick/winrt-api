@@ -10,6 +10,7 @@ public event Windows.Foundation.TypedEventHandler PointerRoutedReleased<Windows.
 # Windows.UI.Core.CoreWindow.PointerRoutedReleased
 
 ## -description
+
 Occurs on a process associated with, but not currently receiving input from, a pointer that fires a [PointerReleased](corewindow_pointerreleased.md) event on a different process.
 
 ## -remarks
@@ -17,4 +18,5 @@ Occurs on a process associated with, but not currently receiving input from, a p
 ## -examples
 
 ## -see-also
-[Handle pointer input](http://msdn.microsoft.com/library/bdbc9e33-4037-4671-9596-471dcf855c82)
+
+[Handle pointer input](/windows/uwp/design/input/handle-pointer-input), [Relative mouse movement and CoreWindow](/windows/uwp/gaming/relative-mouse-movement), [XAML user input events sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Input%20XAML%20user%20input%20events%20sample)

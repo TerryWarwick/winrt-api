@@ -13,10 +13,10 @@ public Windows.Foundation.IAsyncOperation<Windows.Storage.FileProperties.Documen
 Retrieves the document properties of the item (like a file of folder).
 
 ## -returns
-When this method completes successfully, it returns a [documentProperties](documentproperties.md) object.
+When this method completes successfully, it returns a [DocumentProperties](documentproperties.md) object.
 
 ## -remarks
-In JavaScript, use [then](http://msdn.microsoft.com/library/c63904fc-465b-4fd5-a1d6-e4fb200248e7) or [done](http://msdn.microsoft.com/library/9a5e6877-a2cf-421f-a91e-37d84ccb40da) to specify handler functions that will capture and process the [documentProperties](documentproperties.md) object when it is returned.
+In JavaScript, use [then](/previous-versions/windows/apps/br229728(v=win.10)) or [done](/previous-versions/windows/apps/hh701079(v=win.10)) to specify handler functions that will capture and process the [documentProperties](documentproperties.md) object when it is returned.
 
 ## -examples
 

@@ -16,7 +16,7 @@ Stops recording.
 Returns a [IAsyncAction](../windows.foundation/iasyncaction.md) object that is used to control the asynchronous operation.
 
 ## -remarks
-Before playing back a video, the [RandomAccessStream](../windows.storage.streams/randomaccessstream.md) should be closed when [StopRecordAsync](mediacapture_stoprecordasync.md) completes.
+Before playing back a video, the [RandomAccessStream](../windows.storage.streams/randomaccessstream.md) should be closed when StopRecordAsync completes.
 
 ## -examples
 
@@ -24,4 +24,5 @@ Before playing back a video, the [RandomAccessStream](../windows.storage.streams
 
 
 ## -capabilities
-webcam, microphone
+backgroundMediaRecording
+microphone, webcam

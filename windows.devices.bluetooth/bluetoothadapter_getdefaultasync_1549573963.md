@@ -9,12 +9,13 @@ public IAsyncOperation<BluetoothAdapter> BluetoothAdapter.GetDefaultAsync()
 
 # Windows.Devices.Bluetooth.BluetoothAdapter.GetDefaultAsync
 
+
 ## -description
+
 Gets the default BluetoothAdapter.
 
-## -parameters
-
 ## -returns
+
 An asynchronous operation that completes with a BluetoothAdapter.
 
 ## -remarks
@@ -22,4 +23,8 @@ An asynchronous operation that completes with a BluetoothAdapter.
 ## -see-also
 
 ## -examples
+
+## -capabilities
+
+bluetooth
 

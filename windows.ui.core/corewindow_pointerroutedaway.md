@@ -10,12 +10,15 @@ public event Windows.Foundation.TypedEventHandler PointerRoutedAway<Windows.UI.C
 # Windows.UI.Core.CoreWindow.PointerRoutedAway
 
 ## -description
+
 Occurs on the process receiving input when the pointer input is routed to another process.
 
 ## -remarks
+
 This event is not fired on a [PointerReleased](corewindow_pointerreleased.md) event.
 
 ## -examples
 
 ## -see-also
-[Handle pointer input](http://msdn.microsoft.com/library/bdbc9e33-4037-4671-9596-471dcf855c82)
+
+[Handle pointer input](/windows/uwp/design/input/handle-pointer-input), [Relative mouse movement and CoreWindow](/windows/uwp/gaming/relative-mouse-movement), [XAML user input events sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Input%20XAML%20user%20input%20events%20sample)

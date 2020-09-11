@@ -11,18 +11,16 @@ public class HidOutputReport : Windows.Devices.HumanInterfaceDevice.IHidOutputRe
 # Windows.Devices.HumanInterfaceDevice.HidOutputReport
 
 ## -description
-Represents an output report.
+
+Represents a [HID Output Report](/windows-hardware/drivers/hid/introduction-to-hid-concepts#reports).
 
 Hosts issue output reports to request changes on the device. For example, a host could issue a request to a keyboard to turn an LED on or off.
 
 ## -remarks
-The following example demonstrates how a Windows Store app built with XAML and C# uses the **CreateOutputReport** method to create an output report. This example then uses the **SendOutputReportAsync** method to send the report to the device.
 
+The following example demonstrates how a UWP app built with XAML and C# uses the **CreateOutputReport** method to create an output report. This example then uses the **SendOutputReportAsync** method to send the report to the device.
 
-
-
-
-```css
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -90,3 +88,5 @@ namespace HidSampleCS
 ## -examples
 
 ## -see-also
+
+[Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

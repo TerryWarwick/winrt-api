@@ -14,7 +14,18 @@ public class ClaimedBarcodeScanner : Windows.Devices.PointOfService.IClaimedBarc
 Represents the claimed barcode scanner.
 
 ## -remarks
-The object is created when [ClaimScannerAsync](barcodescanner_claimscannerasync.md) method completes.
+The object is created when [ClaimScannerAsync](barcodescanner_claimscannerasync_558793678.md) method completes.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | GetSymbologyAttributesAsync |
+| 1703 | 15063 | SetSymbologyAttributesAsync |
+| 1803 | 17134 | HideVideoPreview |
+| 1803 | 17134 | IsVideoPreviewShownOnEnable |
+| 1803 | 17134 | ShowVideoPreviewAsync |
+| 1809 | 17763 | Closed |
 
 ## -examples
 

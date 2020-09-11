@@ -10,10 +10,11 @@ public enum Windows.UI.ViewManagement.ApplicationViewState : int
 # ApplicationViewState
 
 ## -description
-> [!NOTE]
-> ApplicationViewState may be altered or unavailable for releases after Windows 8.1. Instead, query for window layout sizes directly.
 
 Specifies the set of app view state changes that can be handled.
+
+> [!IMPORTANT]
+> ApplicationViewState may be altered or unavailable for releases after Windows 8.1. Instead, query for window layout sizes directly.
 
 ## -enum-fields
 ### -field FullScreenLandscape:0
@@ -34,4 +35,3 @@ The current app's view is in full-screen (has no snapped app adjacent to it), an
 ## -examples
 
 ## -see-also
-[Snap sample](http://go.microsoft.com/fwlink/p/?linkid=231523)

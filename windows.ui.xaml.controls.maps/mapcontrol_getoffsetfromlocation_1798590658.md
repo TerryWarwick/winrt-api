@@ -20,9 +20,11 @@ A geographic location to convert to a point on the map.
 When this method returns, contains the corresponding point on the map.
 
 ## -remarks
-Compare the [GetLocationFromOffset](mapcontrol_getlocationfromoffset.md) method.
+This method returns a valid point only when the geographic location appears within the map control view.
+ 
+Compare the [GetLocationFromOffset](mapcontrol_getlocationfromoffset_1281571330.md) method.
 
 ## -examples
 
 ## -see-also
-[Display maps with 2D, 3D, and Streetside views](http://msdn.microsoft.com/library/3839e00b-2c1e-4627-a45f-6dda98d7077f)
+[Display maps with 2D, 3D, and Streetside views](/windows/uwp/maps-and-location/display-maps)

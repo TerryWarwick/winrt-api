@@ -30,4 +30,4 @@ The SPI device requested.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

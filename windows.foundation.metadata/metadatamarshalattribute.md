@@ -17,4 +17,4 @@ Indicates that tools should create an entry for an interface when creating an ap
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

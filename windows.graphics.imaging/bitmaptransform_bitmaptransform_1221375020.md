@@ -10,10 +10,10 @@ public BitmapTransform()
 # Windows.Graphics.Imaging.BitmapTransform.BitmapTransform
 
 ## -description
-Creates a new [BitmapTransform](bitmaptransform_bitmaptransform.md) object.
+Creates a new BitmapTransform object.
 
 ## -remarks
-The default values of [BitmapTransform](bitmaptransform_bitmaptransform.md) result in a pass-through operation.
+The default values of BitmapTransform result in a pass-through operation.
 
 ## -examples
 

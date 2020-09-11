@@ -16,10 +16,10 @@ Gets the media object to connect to a Play To target.
 The media object to connect to a Play To target.
 
 ## -remarks
-<!--{annotation author="v-shawja" time="1/27/2012 12:51:39 PM"}In the following sentence, I formatted SourceRequest as a property, but please provide the correct targtype and rid attributes.-->
+
 You use the  property to pass media from your application to Play To during the [SourceRequested](playtomanager_sourcerequested.md) event.
 
 ## -examples
 
 ## -see-also
-[SourceRequested](playtomanager_sourcerequested.md), [Play To sample](http://go.microsoft.com/fwlink/p/?linkid=245166), [PlayToReceiver sample](http://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](http://go.microsoft.com/fwlink/p/?linkid=245168)
+[SourceRequested](playtomanager_sourcerequested.md), [Play To sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Media%20Play%20To%20sample%20(Windows%208)), [PlayToReceiver sample](https://go.microsoft.com/fwlink/p/?linkid=245167), [Media Server sample](https://go.microsoft.com/fwlink/p/?linkid=245168)

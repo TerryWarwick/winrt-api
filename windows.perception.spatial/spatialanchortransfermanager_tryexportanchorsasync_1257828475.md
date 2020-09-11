@@ -30,7 +30,7 @@ This method yields a result of **true** if the export succeeded. The export can 
 
 **Note:** If you're using JavaScript, you can't create the *anchors* parameter directly, because it's of type IIterable&lt;IKeyValuePair&lt;Platform::String^, Windows::Perception::Spatial::SpatialAnchor^&gt;&gt;. Instead, create a native WinRT helper component that has a **CreateMap** function:
 
-```cpp
+```cppcx
 #include "pch.h"
 #include "SpatialAnchorHelper.h"
  
@@ -43,7 +43,7 @@ Windows::Foundation::Collections::IMap<Platform::String^, Windows::Perception::S
 }
 ```
 
-Now you can populate the anchors collection in JavaScript and pass it to the [TryExportAnchorsAsync](spatialanchortransfermanager_tryexportanchorsasync.md) method. The following code example shows how to use the SpatialAnchorHelper class to populate the anchors collection.
+Now you can populate the anchors collection in JavaScript and pass it to the TryExportAnchorsAsync method. The following code example shows how to use the SpatialAnchorHelper class to populate the anchors collection.
 
 ```javascript
 waitForPositionalTracking(function () {
@@ -69,3 +69,6 @@ waitForPositionalTracking(function () {
 ## -examples
 
 ## -see-also
+
+## -capabilities
+spatialPerception

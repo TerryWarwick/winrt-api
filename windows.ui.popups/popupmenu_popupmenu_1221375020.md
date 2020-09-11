@@ -13,10 +13,12 @@ public PopupMenu()
 Creates a new instance of the [PopupMenu](popupmenu.md) class.
 
 ## -remarks
-You can see complete code examples that demonstrate how to create and customize context menu in the [Context menu sample](http://go.microsoft.com/fwlink/p/?linkid=234891) on the [ sample home page](http://go.microsoft.com/fwlink/p/?linkid=226952).
+You can see complete code examples that demonstrate how to create and customize context menu in the [Context menu sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Context%20menu%20sample) on the [ sample home page](https://go.microsoft.com/fwlink/p/?linkid=226952).
+
+To use this object from a desktop app, create the object, and then use [the IInitializeWithWindow::Initialize method](/en-us/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iinitializewithwindow-initialize) to associate the object with a window handle.
 
 ## -examples
-To customize the context menu, call [preventDefault](XREF:TODO:wwa.IDOMEvent_preventDefault) on the [oncontextmenu](XREF:TODO:wwa.oncontextmenu_Event) event (`e` in the example) to suppress the default context menu, and then create a new, empty context menu menu as shown in the [Context menu sample](http://go.microsoft.com/fwlink/p/?linkid=234891).
+To customize the context menu, call [preventDefault](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ff975967(v=vs.85)) on the [oncontextmenu](XREF:TODO:wwa.oncontextmenu_Event) event (`e` in the example) to suppress the default context menu, and then create a new, empty context menu as shown in the [Context menu sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Context%20menu%20sample).
 
 
 
@@ -25,4 +27,4 @@ To customize the context menu, call [preventDefault](XREF:TODO:wwa.IDOMEvent_pre
 [!code-js[newcontextmenu_js](../windows.ui.popups/code/ContextMenu/js/js/scenario1.js#Snippetnewcontextmenu_js)]
 
 ## -see-also
-[Adding context menus](http://msdn.microsoft.com/library/9778aea7-c959-4b3e-bd79-9659f07095a6), [Context menu sample](http://go.microsoft.com/fwlink/p/?linkid=234891), [Guidelines and checklist for ](http://msdn.microsoft.com/library/23063edd-ed89-4a82-9857-44001fad770b), [UICommand](uicommand.md), [UICommandSeparator](uicommandseparator.md)
+[Adding context menus](/previous-versions/windows/apps/hh465300(v=win.10)), [Context menu sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Context%20menu%20sample), [Guidelines and checklist for ](/windows/uwp/design/controls-and-patterns/index), [UICommand](uicommand.md), [UICommandSeparator](uicommandseparator.md)

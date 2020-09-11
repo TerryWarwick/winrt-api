@@ -9,15 +9,20 @@ public void XamlLight.AddTargetElement(String lightId, UIElement element)
 
 # Windows.UI.Xaml.Media.XamlLight.AddTargetElement
 
-## -description
-Sets a UIElement as a target of a compostion light.
 
-## -params
+## -description
+
+Sets a [UIElement](/uwp/api/Windows.UI.Xaml.UIElement) as a target of a [XamlLight](XamlLight.md).
+
+## -parameters
+
 ### -param lightId
-The identifier for the compostion light.
+
+The identifier for the [XamlLight](XamlLight.md) that should target the [UIElement](/uwp/api/Windows.UI.Xaml.UIElement).
 
 ### -param element
-The element that the compostion light targets.
+
+The [UIElement](/uwp/api/Windows.UI.Xaml.UIElement) that the light should target.
 
 ## -remarks
 

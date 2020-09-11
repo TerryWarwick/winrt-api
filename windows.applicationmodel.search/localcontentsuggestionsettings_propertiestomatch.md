@@ -18,14 +18,14 @@ The list of the file properties that are used to provide suggestions from local 
 ## -remarks
 If local suggestions are disabled, this property has no effect.
 
-Adding properties to this list limits local suggestions to the values of the specified properties for local, indexed files. For example, if you want to limit suggestions to musical artists, you would append the "System.Music.AlbumArtist" (Album artists) or the "System.Music.Artist" (Contributing artists) property to the [PropertiesToMatch](localcontentsuggestionsettings_propertiestomatch.md) list.
+Adding properties to this list limits local suggestions to the values of the specified properties for local, indexed files. For example, if you want to limit suggestions to musical artists, you would append the "System.Music.AlbumArtist" (Album artists) or the "System.Music.Artist" (Contributing artists) property to the PropertiesToMatch list.
 
 Adding properties to this list limits local suggestions to local, indexed files that have the listed properties.
 
 
-<!--{annotation author="grerol" time="7/18/2011 3:39:00 PM"}TODO: Need to insert or link to a list of file props. Apparently, they're listed in the Type Ahead Spec.-->
+
 
 ## -examples
 
 ## -see-also
-[Access to user resources using the Windows Runtime](http://msdn.microsoft.com/library/7b4402ea-55f6-438d-b9d1-8e65d56c8f42), [Quickstart: Adding search](http://msdn.microsoft.com/library/d412c562-22d2-41c4-9f27-27503b89b9e9), [Search contract sample](http://go.microsoft.com/fwlink/p/?linkid=234892), [Object class](https://msdn.microsoft.com/library/system.object.aspx), [LocalContentSuggestionSettings class](localcontentsuggestionsettings.md), [LocalContentSuggestionSettings.Enabled](localcontentsuggestionsettings_enabled.md), [SearchPane.SetLocalContentSuggestionSettings](searchpane_setlocalcontentsuggestionsettings.md)
+[Access to user resources using the Windows Runtime](/previous-versions/windows/apps/hh464936(v=win.10)), [Quickstart: Adding search](/previous-versions/windows/apps/hh465238(v=win.10)), [Search contract sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Search%20contract%20sample), [Object class](/dotnet/api/system.object?redirectedfrom=MSDN), [LocalContentSuggestionSettings class](localcontentsuggestionsettings.md), [LocalContentSuggestionSettings.Enabled](localcontentsuggestionsettings_enabled.md), [SearchPane.SetLocalContentSuggestionSettings](searchpane_setlocalcontentsuggestionsettings_156524340.md)

@@ -53,4 +53,4 @@ Notifications.TileUpdateManager.createTileUpdaterForApplication().addToSchedule(
 
 
 ## -see-also
-[ScheduledTileNotification](scheduledtilenotification.md), [Scheduled notifications sample](http://go.microsoft.com/fwlink/p/?linkid=241614), [Tile schema](XREF:TODO:tile.Schema_Root), [Guidelines and checklist for scheduled notifications](http://msdn.microsoft.com/library/ca9e9121-d1b1-461f-9c7e-b25225d917ca)
+ScheduledTileNotification, [Scheduled notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Scheduled%20notifications%20sample), [Tile schema](/uwp/schemas/tiles/tilesschema/schema-root), [Guidelines and checklist for scheduled notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-choosing-a-notification-delivery-method)

@@ -11,13 +11,13 @@ public double SourceLossRisk { get; }
 # Windows.UI.Input.Spatial.SpatialInteractionSourceProperties.SourceLossRisk
 
 ## -description
-Gets the risk that detection of a hand or spatial controller will be lost as a value from 0.0 to 1.0.
+Gets the risk that detection of a hand or motion controller will be lost as a value from 0.0 to 1.0.
 
 ## -property-value
 The source loss risk.
 
 ## -remarks
- As the value nears 1.0, you should suggest that the user moves this source in the direction indicated by [TryGetSourceLossMitigationDirection](spatialinteractionsourceproperties_trygetsourcelossmitigationdirection.md).
+ As the value nears 1.0, you should suggest that the user moves this source in the direction indicated by [TryGetSourceLossMitigationDirection](spatialinteractionsourceproperties_trygetsourcelossmitigationdirection_282458382.md).
 
 ## -examples
 

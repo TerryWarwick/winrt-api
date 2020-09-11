@@ -10,21 +10,28 @@ public enum Windows.Gaming.Preview.GamesEnumeration.GameListCategory : int
 # GameListCategory
 
 ## -description
+
 This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
 
 ## -enum-fields
+
 ### -field Candidate:0
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+The Candidate constant.
 
 ### -field ConfirmedBySystem:1
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+The ConfirmedBySystem constant.
 
 ### -field ConfirmedByUser:2
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
 
+The ConfirmedByUser constant.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+gameList

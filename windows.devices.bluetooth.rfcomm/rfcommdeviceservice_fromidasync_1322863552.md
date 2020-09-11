@@ -26,8 +26,8 @@ The first time this method is invoked by a store app, it should be called from a
 If a store app has not declared the right capabilities or the user does not grant consent, the method returns a null object.
 
 
-+ For Universal Windows Platform (UWP) apps, use the **bluetooth** capability. For more info, see [App capability declarations](http://aka.ms/appcap).
-+ For Windows 8.x store apps, see [How to specify device capabilities for Bluetooth (Windows)](XREF:TODO:AppxManifestSchema.how_to_specify_device_capabilities_for_bluetooth) to declare the right capabilities.
++ For Universal Windows Platform (UWP) apps, use the **bluetooth** capability. For more info, see [App capability declarations](https://aka.ms/appcap).
++ For Windows 8.x store apps, see [How to specify device capabilities for Bluetooth (Windows)](/uwp/schemas/appxpackage/how-to-specify-device-capabilities-for-bluetooth) to declare the right capabilities.
 
 
 > [!WARNING]

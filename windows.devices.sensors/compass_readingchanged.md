@@ -17,25 +17,25 @@ An application may register this event handler to obtain sensor readings. The ap
 
 Applications can set the frequency of this event by setting the **ReportInterval** property.
 
-The following example demonstrates how a Windows Store app built with C# and XAML registers its **ReadingChanged** event handler.
+The following example demonstrates how a UWP app built with C# and XAML registers its **ReadingChanged** event handler.
 
 
 
 [!code-csharp[EnableReadingChangedCS](../windows.devices.sensors/code/compass/csharp/Scenario1.xaml.cs#SnippetEnableReadingChangedCS)]
 
-The following example shows the [ReadingChanged](compass_readingchanged.md) event handler.
+The following example shows the ReadingChanged event handler.
 
 
 
 [!code-csharp[ReadingChangedCS](../windows.devices.sensors/code/compass/csharp/Scenario1.xaml.cs#SnippetReadingChangedCS)]
 
-The following example demonstrates how a Windows Store app built with JavaScript registers its **ReadingChanged** event handler.
+The following example demonstrates how a UWP app built with JavaScript registers its **ReadingChanged** event handler.
 
 
 
 [!code-js[EnableReadingChangedJS](../windows.devices.sensors/code/compass/javascript/scenario1.js#SnippetEnableReadingChangedJS)]
 
-The following example shows the [ReadingChanged](compass_readingchanged.md) event handler.
+The following example shows the ReadingChanged event handler.
 
 
 

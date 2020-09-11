@@ -17,7 +17,6 @@ A collection of [IPropertyAnimation](ipropertyanimation.md) instances, each of w
 
 ## -remarks
 The returned animations should be applied to the object in the order they appear in the collection array. If two or more animations apply to an object, they will appear in the array in this order:
-<!-- @WRITER erictill 7/22/2011 : This guarantee on the order of animations is made in order to reduce the difficulty of carrying out the animation description. -->
 
 1. Scale
 1. Translate
@@ -27,4 +26,4 @@ If the animations are being applied to more than one object, then the stagger-re
 ## -examples
 
 ## -see-also
-[PropertyAnimationType](propertyanimationtype.md), [Animation metrics sample](http://go.microsoft.com/fwlink/p/?linkid=242462)
+[PropertyAnimationType](propertyanimationtype.md), [Animation metrics sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/AnimationMetrics)

@@ -10,7 +10,7 @@ public class MuteChangeEventArgs : Windows.ApplicationModel.Calls.IMuteChangeEve
 # Windows.ApplicationModel.Calls.MuteChangeEventArgs
 
 ## -description
-Supports the [NotifyMuted](voipcallcoordinator_notifymuted.md) and [NotifyUnmuted](voipcallcoordinator_notifyunmuted.md) events.
+Supports the [NotifyMuted](voipcallcoordinator_notifymuted_910830725.md) and [NotifyUnmuted](voipcallcoordinator_notifyunmuted_41225160.md) events.
 
 ## -remarks
 
@@ -20,4 +20,5 @@ Supports the [NotifyMuted](voipcallcoordinator_notifymuted.md) and [NotifyUnmute
 
 
 ## -capabilities
+phoneCallHistory, phoneCallHistorySystem
 voipCall

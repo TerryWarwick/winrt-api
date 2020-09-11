@@ -6,10 +6,12 @@
 # Windows.Devices.Lights
 
 ## -description
-Provides APIs for accessing and controlling lamp devices.
+Provides APIs for accessing and controlling [LampArrays](lamparray.md) and legacy [Lamp](lamp.md) devices.
 
 ## -remarks
-A common scenario for using the APIs in this namespace is adding a flashlight feature to your app that allows the user to manually turn on and off a device's camera torch light, if one is available.
+[LampArray](lamparray.md) APIs can be used in a game or notification application to control the lights on your keyboard or mouse.
+
+A common scenario for using the [Lamp](lamp.md) APIs in this namespace is adding a flashlight feature to your app that allows the user to manually turn on and off a device's camera torch light, if one is available.
 
 ## -examples
 

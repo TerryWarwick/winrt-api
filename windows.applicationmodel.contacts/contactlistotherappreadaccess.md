@@ -1,4 +1,4 @@
-.---
+---
 -api-id: T:Windows.ApplicationModel.Contacts.ContactListOtherAppReadAccess
 -api-type: winrt enum
 ---
@@ -28,6 +28,15 @@ No other apps can read any of the contact information.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | None |
+
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

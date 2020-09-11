@@ -18,15 +18,15 @@ The default simple orientation sensor or null if no simple orientation sensors a
 ## -remarks
 This method only returns values for hardware that has been integrated into the computer by the manufacturer. (The simple orientation-sensor readings are derived from an accelerometer.) A null value will be returned if the specified sensor is not available in the system.
 
-When a system is in Connected Standby, a call to the [GetDefault](simpleorientationsensor_getdefault.md) method will return immediately with a null result.
+When a system is in Connected Standby, a call to the [GetDefault](/uwp/api/windows.devices.sensors.orientationsensor.getdefault) method will return immediately with a null result.
 
-The following example demonstrates how a Windows Store app built with XAML and C# used this method to establish a connection to the simple orientation sensor.
+The following example demonstrates how a UWP app built with XAML and C# used this method to establish a connection to the simple orientation sensor.
 
 
 
 [!code-csharp[GetDefaultCS](../windows.devices.sensors/code/simpleorientation/csharp/Scenario1.xaml.cs#SnippetGetDefaultCS)]
 
-The following example demonstrates how a Windows Store app built for Windows using JavaScript used this method to establish a connection to the simple orientation sensor.
+The following example demonstrates how a UWP app built for Windows using JavaScript used this method to establish a connection to the simple orientation sensor.
 
 
 

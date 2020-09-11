@@ -15,6 +15,15 @@ Represents the value of a single Presentation Format GATT Descriptor.
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | FromParts |
+
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

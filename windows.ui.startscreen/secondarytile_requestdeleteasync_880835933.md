@@ -19,7 +19,7 @@ An object that provides information concerning the asynchronous delete operation
 ## -remarks
 
 ## -examples
-The following example demonstrates how to delete (unpin) a secondary tile. Note that this example assumes that the tile exists. To determine whether the tile is pinned before you call [RequestDeleteAsync](secondarytile_requestdeleteasync_880835933.md), see the [Exists](secondarytile_exists.md) method.
+The following example demonstrates how to delete (unpin) a secondary tile. Note that this example assumes that the tile exists. To determine whether the tile is pinned before you call RequestDeleteAsync, see the [Exists](secondarytile_exists_1536819090.md) method.
 
 ```javascript
 
@@ -39,4 +39,3 @@ tileToBeDeleted.requestDeleteAsync().then(function (isDeleted) {
 
 
 ## -see-also
-[RequestDeleteAsync(Point)](secondarytile_requestdeleteasync_1886194660.md), [Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

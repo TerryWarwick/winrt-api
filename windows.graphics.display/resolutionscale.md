@@ -14,7 +14,7 @@ Describes the scale factor of the immersive environment. The scale factor is det
 
 ## -enum-fields
 ### -field Invalid:0
-Specifies the scale of a display is invalid.
+Specifies that the scale of a display is invalid.
 
 ### -field Scale100Percent:100
 Specifies the scale of a display as 100 percent. This percentage indicates a minimum screen resolution for Windows all up is 1024x768.
@@ -29,10 +29,10 @@ Specifies the scale of a display as 125 percent.
 Specifies the scale of a display as 140 percent. This percentage indicates a minimum screen resolution to scale at 140 is 1440x1080.
 
 ### -field Scale150Percent:150
-Applies to Windows Phone 8.
+Specifies the scale of a display as 150 percent. Also applies to Windows Phone 8.
 
 ### -field Scale160Percent:160
-Applies to Windows Phone 8.
+Specifies the scale of a display as 160 percent. Applies to Windows Phone 8.
 
 ### -field Scale175Percent:175
 Specifies the scale of a display as 175 percent.
@@ -64,21 +64,18 @@ Specifies the scale of a display as 450 percent.
 ### -field Scale500Percent:500
 Specifies the scale of a display as 500 percent.
 
-
 ## -remarks
-For more info on scaling to pixel density, see [UX guidelines for layout and scaling](http://msdn.microsoft.com/library/c388f639-6f35-4d52-bffe-53ff3f537d4b).
+For more info on scaling to pixel density, see [UX guidelines for layout and scaling](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design).
 
-The [Scaling according to DPI sample](http://go.microsoft.com/fwlink/p/?linkid=231577) shows how to use the [ResolutionScale](resolutionscale.md) enumeration.
+The [Scaling according to DPI sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Scaling%20according%20to%20DPI%20sample) shows how to use the ResolutionScale enumeration.
 
+For UWP apps and Windows Phone apps, we recommend these scale factors:
 
-For Windows Store app and Windows Phone apps, we recommend these scale factors:
-
-+ Windows Store app (100/140/180)
++ UWP app (100/140/180)
 + Windows Phone apps for Windows Phone 8.1 and later (100/140/240)
 + Windows Phone apps for Windows Phone 8 (100/150/160)
-
 
 ## -examples
 
 ## -see-also
-[ResolutionScale Property](displayinformation_resolutionscale.md)
+[DisplayInformation.ResolutionScale property](/uwp/api/windows.graphics.display.displayinformation.resolutionscale#Windows_Graphics_Display_DisplayInformation_ResolutionScale)

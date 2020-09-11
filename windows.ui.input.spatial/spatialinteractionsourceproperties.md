@@ -11,10 +11,13 @@ public class SpatialInteractionSourceProperties : Windows.UI.Input.Spatial.ISpat
 # Windows.UI.Input.Spatial.SpatialInteractionSourceProperties
 
 ## -description
-Represents advanced state of a hand or spatial controller.
+
+Represents advanced state of a hand or motion controller.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+[Spatial interaction source sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpatialInteractionSource)

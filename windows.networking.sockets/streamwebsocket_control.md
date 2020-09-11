@@ -16,7 +16,7 @@ Gets socket control data on a [StreamWebSocket](streamwebsocket.md) object.
 Socket control data on a [StreamWebSocket](streamwebsocket.md) object.
 
 ## -remarks
-The [Control](streamwebsocket_control.md) property gets the [StreamWebSocketControl](streamwebsocketcontrol.md) instance associated with a [StreamWebSocket](streamwebsocket.md) object.
+The Control property gets the [StreamWebSocketControl](streamwebsocketcontrol.md) instance associated with a [StreamWebSocket](streamwebsocket.md) object.
 
 A [StreamWebSocketControl](streamwebsocketcontrol.md) object is automatically created with the parent [StreamWebSocket](streamwebsocket.md) object. The [StreamWebSocketControl](streamwebsocketcontrol.md) instance can then be used to get or set control data used by the [StreamWebSocket](streamwebsocket.md) object. These properties on the [MessageWebSocketControl](messagewebsocketcontrol.md) instance include the following:
 
@@ -28,9 +28,9 @@ A [StreamWebSocketControl](streamwebsocketcontrol.md) object is automatically cr
 + [SupportedProtocols](streamwebsocketcontrol_supportedprotocols.md) - Gets a collection that can be used to add a list of supported sub-protocols that will be advertised to the server during the connect handshake.
 
 
-Any changes to the [StreamWebSocketControl](streamwebsocketcontrol.md) property values must be set before the [StreamWebSocket](streamwebsocket.md) is connected. As a result if you need to make changes to the [NoDelay](streamwebsocketcontrol_nodelay.md), [OutboundBufferSizeInBytes](streamwebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](streamwebsocketcontrol_proxycredential.md), [ServerCredential](streamwebsocketcontrol_servercredential.md), or [SupportedProtocols](streamwebsocketcontrol_supportedprotocols.md) properties, then these changes must occur before a successful call to the [ConnectAsync](streamsocket_connectasync.md) method on the [StreamWebSocket](streamwebsocket.md).
+Any changes to the [StreamWebSocketControl](streamwebsocketcontrol.md) property values must be set before the [StreamWebSocket](streamwebsocket.md) is connected. As a result if you need to make changes to the [NoDelay](streamwebsocketcontrol_nodelay.md), [OutboundBufferSizeInBytes](streamwebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](streamwebsocketcontrol_proxycredential.md), [ServerCredential](streamwebsocketcontrol_servercredential.md), or [SupportedProtocols](streamwebsocketcontrol_supportedprotocols.md) properties, then these changes must occur before a successful call to the [ConnectAsync](streamsocket_connectasync_13692504.md) method on the [StreamWebSocket](streamwebsocket.md).
 
 ## -examples
 
 ## -see-also
-[How to use advanced WebSocket controls](http://msdn.microsoft.com/library/0a47f7c3-66f9-4315-886e-bd1afe77bf39), [NoDelay](streamwebsocketcontrol_nodelay.md), [OutboundBufferSizeInBytes](streamwebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](streamwebsocketcontrol_proxycredential.md), [ServerCredential](streamwebsocketcontrol_servercredential.md), [StreamWebSocketControl](streamwebsocketcontrol.md), [SupportedProtocols](streamwebsocketcontrol_supportedprotocols.md)
+[How to use advanced WebSocket controls](/previous-versions/windows/apps/hh761447(v=win.10)), [NoDelay](streamwebsocketcontrol_nodelay.md), [OutboundBufferSizeInBytes](streamwebsocketcontrol_outboundbuffersizeinbytes.md), [ProxyCredential](streamwebsocketcontrol_proxycredential.md), [ServerCredential](streamwebsocketcontrol_servercredential.md), [StreamWebSocketControl](streamwebsocketcontrol.md), [SupportedProtocols](streamwebsocketcontrol_supportedprotocols.md)

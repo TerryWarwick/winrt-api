@@ -19,16 +19,19 @@ Launches the Contact Picker for selecting multiple contacts.
 The operation that launches the contact picker.
 
 ## -remarks
-To pick only a single contact, use [PickSingleContactAsync](contactpicker_picksinglecontactasync.md).
+To pick only a single contact, use [PickSingleContactAsync](contactpicker_picksinglecontactasync_2033050338.md).
 
 Use the [SelectionMode](contactpicker_selectionmode.md) property to control whether your app receives all of a contact's information, or just specific fields.
 
 ## -examples
-This example demonstrates how to use [PickMultipleContactsAsync](contactpicker_pickmultiplecontactsasync.md) to get multiple contacts.
+This example demonstrates how to use PickMultipleContactsAsync to get multiple contacts.
 
 
 
 [!code-js[ContactsMultiPicker](../windows.applicationmodel.contacts.provider/code/ContactsMain/javascript/js/contacts.js#SnippetContactsMultiPicker)]
 
 ## -see-also
-[PickContactsAsync](contactpicker_pickcontactsasync.md)
+[PickContactsAsync](contactpicker_pickcontactsasync_540067144.md)
+
+## -capabilities
+contactsSystem

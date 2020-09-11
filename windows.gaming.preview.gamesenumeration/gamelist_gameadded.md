@@ -17,3 +17,7 @@ This API is not available to all apps. Unless your developer account is speciall
 ## -examples
 
 ## -see-also
+
+
+## -capabilities
+gameList

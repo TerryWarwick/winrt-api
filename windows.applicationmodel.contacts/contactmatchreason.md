@@ -13,8 +13,11 @@ public class ContactMatchReason : Windows.ApplicationModel.Contacts.IContactMatc
 Provides details about why search results matched the query parameters.
 
 ## -remarks
-Call [ContactReader.GetMatchingPropertiesWithMatchReason](contactreader_getmatchingpropertieswithmatchreason.md) to get an instance of this class.
+Call [ContactReader.GetMatchingPropertiesWithMatchReason](contactreader_getmatchingpropertieswithmatchreason_951039830.md) to get an instance of this class.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

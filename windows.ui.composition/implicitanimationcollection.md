@@ -12,11 +12,9 @@ public class ImplicitAnimationCollection : Windows.UI.Composition.CompositionObj
 ## -description
 A collection of animations triggered when a condition is met.
 
-Implicit Animations will help drive animations for an application using triggers as way to start animations. Implicit animation helps decouple kicking off animation from app logic. Composition does the work of executing animations based on trigger execution. App developers define animations which they want to execute, and the events that trigger these animations. Composition then executes these animations when the appropriate trigger conditions are met.
-
 ## -remarks
-Implicit Animations provide a convenient way for developers to create and execute animations without managing them. Implicit animations provide a way of automatically starting animations when an associated property is changed. 
-<!--Everything that is supported on StartAnimation(..) will eventually be supported on ImplicitAnimations.-->
+
+Implicit animations let you drive animations by specifying trigger conditions rather than requiring the manual definition of animation behavior. They help decouple animation start logic from core app logic. You define animations and the events that should trigger these animations. The compositor then executes the set animations when the appropriate trigger conditions are met.
 
 ### Triggers
 
@@ -72,7 +70,7 @@ Animations will support this.FinalValue keyword as a valid keyword to signify th
 
 ### Events and target properties for ImplicitAnimationCollection and CompositionAnimationGroup
 
-[ImplicitAnimationCollection](implicitanimationcollection.md) lets you add triggers which implicit animation will monitor for changes and kick off related animations as provided by the developer. [ImplicitAnimationCollection](implicitanimationcollection.md) supports all Visual animatable properties which are also used as target properties for animations. Target has to be defined on the animation or it will throw an exception.
+ImplicitAnimationCollection lets you add triggers which implicit animation will monitor for changes and kick off related animations as provided by the developer. ImplicitAnimationCollection supports all Visual animatable properties which are also used as target properties for animations. Target has to be defined on the animation or it will throw an exception.
 
 ```
 

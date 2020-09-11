@@ -14,7 +14,16 @@ The result of [NotifyValueAsync](gattlocalcharacteristic_notifyvalueasync_483273
 
 ## -remarks
 
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1709 | 16299 | BytesSent |
+
 ## -see-also
 
 ## -examples
 
+
+## -capabilities
+bluetooth

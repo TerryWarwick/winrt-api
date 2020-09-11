@@ -17,4 +17,4 @@ Indicates the numeric range constraints for the value of a data field.
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

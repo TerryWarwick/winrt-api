@@ -10,7 +10,7 @@ public Windows.Foundation.IAsyncOperation<Windows.Foundation.Collections.IVector
 # Windows.Storage.StorageFolder.GetFilesAsync
 
 ## -description
-<!--{annotation author="miriamw" time="2/22/2012 4:21:25 PM"}TODO: confirm that the files are assigned indexes based on teh sorting dictated by CommonfileQuery-->
+
 Gets an index-based range of files from the list of all files in the current folder. Also gets the files from the subfolders of the current folder when the value of the *query* argument is something other than [CommonFileQuery.DefaultQuery](../windows.storage.search/commonfilequery.md). Files are sorted based on the specified value from the [CommonFileQuery](../windows.storage.search/commonfilequery.md) enumeration.
 
 ## -parameters
@@ -29,11 +29,11 @@ When this method completes successfully, it returns a flat list of files sorted 
 ## -exceptions
 ### System.UnauthorizedAccessException
 
-You don't have permission to access the contents of the current folder.
+You don't have permission to access the contents of the current folder. For more information, see [File access permissions](/windows/uwp/files/file-access-permissions).
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[GetFilesAsync(CommonFileQuery)](storagefolder_getfilesasync_1429382825.md), [GetFilesAsync](storagefolder_getfilesasync_819750470.md), [GetItemsAsync](storagefolder_getitemsasync.md)
+[File access permissions](/windows/uwp/files/file-access-permissions), [GetFilesAsync(CommonFileQuery)](storagefolder_getfilesasync_1429382825.md), [GetFilesAsync](storagefolder_getfilesasync_819750470.md), [GetItemsAsync](/uwp/api/windows.storage.storagefolder.getitemsasync)

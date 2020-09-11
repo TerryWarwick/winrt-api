@@ -29,7 +29,7 @@ If the image source is a stream, that stream is expected to contain an image fil
 
 ### LoadedImageSurface encoding and decoding
 The underlying codec support for image files is supplied by Windows Imaging Component (WIC) API in Windows. For more info on specific image formats as documented for the codes, see
-[Native WIC Codecs](http://msdn.microsoft.com/library/8d3e4b3a-fa39-475c-b177-61fc81e5ffcc).
+[Native WIC Codecs](/windows/desktop/wic/native-wic-codecs).
 
 Using one of the factory methods, you can create an instance of **LoadedImageSurface** from different types of image sources and control the max size that the image decodes at. If 
 no max size is specified, then the image will decode to its natural size.
@@ -55,7 +55,7 @@ when the surface has been populated. During the loading process, the surface wil
 ## -examples
 This example shows how to load an image from a local URI onto a surface and use it in a [CompositionSurfaceBrush](../windows.ui.composition/compositionsurfacebrush.md).
 
-```c#
+```csharp
 Compositor compositor = new Compositor();
 CompositionSurfaceBrush imageBrush = compositor.CreateSurfaceBrush();
 
@@ -63,5 +63,4 @@ LoadedImageSurface loadedSurface = LoadedImageSurface.StartLoadFromUri(new Uri("
 
 // The loadedSurface currently has a size of 0x0 since it has not been downloaded, decoded and loaded to the surface yet
 imageBrush.Surface = loadedSurface;
-
 ```

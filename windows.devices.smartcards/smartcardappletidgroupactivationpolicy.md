@@ -10,7 +10,7 @@ public enum Windows.Devices.SmartCards.SmartCardAppletIdGroupActivationPolicy : 
 # SmartCardAppletIdGroupActivationPolicy
 
 ## -description
-Defines the valid values that can be passed to the [RequestActivationPolicyChangeAsync](smartcardappletidgroupregistration_requestactivationpolicychangeasync.md) method.
+Defines the valid values that can be passed to the [RequestActivationPolicyChangeAsync](smartcardappletidgroupregistration_requestactivationpolicychangeasync_926513637.md) method.
 
 ## -enum-fields
 ### -field Disabled:0
@@ -35,4 +35,4 @@ The system prompts the user if an app asks to be **Enabled**, but the system won
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

@@ -14,7 +14,7 @@ public void StartPeriodicUpdateBatch(Windows.Foundation.Collections.IIterable<Wi
 Begins a series of timed updates that cycle on the tile that the updater is bound to. Update content is retrieved from an array of specified Uniform Resource Identifier (URI) with updates beginning at a specified time and subsequent updates occurring at the periodic interval thereafter.
 
 > [!NOTE]
-> To use this feature, you must first enable the tile's notification queue by calling [EnableNotificationQueue](tileupdater_enablenotificationqueue.md).
+> To use this feature, you must first enable the tile's notification queue by calling [EnableNotificationQueue](tileupdater_enablenotificationqueue_1798421599.md).
 
 ## -parameters
 ### -param tileContents
@@ -31,13 +31,9 @@ The frequency with which the Uniform Resource Identifier (URI) is polled for new
 
 To use the notification queue, you must first enable it for your tile with this line of code:
 
-
-
 ```javascript
 Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication().enableNotificationQueue(true);
 ```
-
-
 
 This API only needs to be called once in your app's lifetime, but there is no harm in calling it each time the app launches.
 
@@ -57,12 +53,9 @@ An example is shown here:
 X-WNS-Tag: stockMSFT
 ```
 
-
-
 ### Setting an expiration time for periodic updates
 
 Tiles expire by default after three days. If your notification content has a significantly different useful lifespan— shorter or longer— you should explicitly set an expiration time for each notification. This prevents stale or irrelevant content from remaining in the queue. This is especially important if the user's machine loses Internet connectivity for a long period of time.
-<!-- @WRITER erictill 4/19/2012 : why? -->
 
 For example, during active trading, it would be advisable for a stock app to set the expiration on a stock price notification to twice that of your polling interval, such as a notification that expires one hour after it is sent if you poll for an update every half-hour. In the case of a news app, an expiration of one day for a tile that shows the top daily news would be appropriate.
 
@@ -74,11 +67,11 @@ For periodic notifications, the expiration time is set in the X-WNS-Expires head
 + Sun Nov 6 08:49:37 1994
 
 
-For more information on the HTTP-date format, see the World Wide Web Consortium (W3C) [3 Protocol Parameters](http://go.microsoft.com/fwlink/p/?linkid=133333) document.
+For more information on the HTTP-date format, see the World Wide Web Consortium (W3C) [3 Protocol Parameters](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html) document.
 
-For an example of a full implementation of periodic notifications used in conjunction with the notification queue, see Scenario 3 in the [Push and periodic notifications sample](http://go.microsoft.com/fwlink/p/?linkid=231476).
+For an example of a full implementation of periodic notifications used in conjunction with the notification queue, see Scenario 3 in the [Push and periodic notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Push%20and%20periodic%20notifications%20client-side%20sample).
 
 ## -examples
 
 ## -see-also
-[StartPeriodicUpdateBatch(IIterable(Uri), PeriodicUpdateRecurrence)](tileupdater_startperiodicupdatebatch_1331011351.md), [StartPeriodicUpdate](tileupdater_startperiodicupdate.md), [How to set up periodic notifications for tiles](http://msdn.microsoft.com/library/96c67773-2e5b-4278-b16d-2f813b16580c), [Guidelines and checklist for periodic notifications](http://msdn.microsoft.com/library/4be95d67-2adf-4d0e-83e1-4ad25e0f4c0b), [Tile and tile notification overview](http://msdn.microsoft.com/library/10a05b52-42c4-4f85-9310-57663e378b9e)
+[StartPeriodicUpdateBatch(IIterable(Uri), PeriodicUpdateRecurrence)](tileupdater_startperiodicupdatebatch_1331011351.md), [StartPeriodicUpdate](tileupdater_startperiodicupdate_1369986471.md), [How to set up periodic notifications for tiles](/previous-versions/windows/apps/hh761476(v=win.10)), [Guidelines and checklist for periodic notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-periodic-notification-overview), [Tile and tile notification overview](/previous-versions/windows/apps/hh779724(v=win.10))

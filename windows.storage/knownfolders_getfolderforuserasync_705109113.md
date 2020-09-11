@@ -27,4 +27,8 @@ When this method completes, it returns the requested [StorageFolder](storagefold
 ## -examples
 
 ## -see-also
-[KnownFolderId](knownfolderid.md), [StorageFolder](storagefolder.md)
+[KnownFolderId](knownfolderid.md)
+
+[StorageFolder](storagefolder.md)
+
+[GetFolderAsync](knownfolders_getfolderasync_705109113.md)

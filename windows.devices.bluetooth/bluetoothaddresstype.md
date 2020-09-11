@@ -20,12 +20,20 @@ Public address.
 ### -field Random:1
 Random address.
 
-
 ### -field Unspecified:2
-
+Unspecified address.
 
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1703 | 15063 | Unspecified |
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+bluetooth

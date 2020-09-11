@@ -4,7 +4,7 @@
 ---
 
 <!-- Event syntax
-static public event Windows.Foundation.EventHandler CallStateChanged<object>
+public static event Windows.Foundation.EventHandler CallStateChanged<object>
 -->
 
 # Windows.ApplicationModel.Calls.PhoneCallManager.CallStateChanged
@@ -17,3 +17,6 @@ Occurs when the basic call state of the device changes.
 ## -examples
 
 ## -see-also
+
+## -capabilities
+phoneCallHistory, phoneCallHistorySystem

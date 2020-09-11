@@ -17,4 +17,7 @@ Provides socket error status on a [MessageWebSocket](messagewebsocket.md) or [St
 ## -examples
 
 ## -see-also
-[Connecting with WebSockets sample](http://go.microsoft.com/fwlink/p/?linkid=239964), [MessageWebSocket](messagewebsocket.md), [StreamWebSocket](streamwebsocket.md)
+[MessageWebSocket](messagewebsocket.md),
+[StreamWebSocket](streamwebsocket.md),
+[WebSockets](/windows/uwp/networking/websockets?branch=live),
+[WebSocket sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebSocket)

@@ -11,7 +11,7 @@ public enum Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryRe
 
 ## -description
 > [!NOTE]
-> [EasPasswordHistoryResult](easpasswordhistoryresult.md) may be unavailable for releases after Windows 10.
+> EasPasswordHistoryResult may be unavailable for releases after Windows 10.
 
 Represents the password history. These values are mapped against the HRESULT codes returned from the EAS policy engine.
 
@@ -23,7 +23,7 @@ The policy is not set for evaluation.
 The computer is compliant to the policy.HRESULT: S_OK and the user is controlled.
 
 ### -field CanBeCompliant:2
-The computer can be compliant using the [ApplyAsync](easclientsecuritypolicy_applyasync.md) method.HRESULT: EAS_E_POLICY_COMPLIANT_WITH_ACTIONS and the user is an admin.
+The computer can be compliant using the [ApplyAsync](easclientsecuritypolicy_applyasync_489349523.md) method.HRESULT: EAS_E_POLICY_COMPLIANT_WITH_ACTIONS and the user is an admin.
 
 HRESULT: S_OK but the user is not controlled.
 
@@ -39,4 +39,4 @@ The policy value is not in a valid range.HRESULT: HRESULT_FROM_WIN32(ERROR_INVAL
 ## -examples
 
 ## -see-also
-[ApplyAsync](easclientsecuritypolicy_applyasync.md)
+[ApplyAsync](easclientsecuritypolicy_applyasync_489349523.md)

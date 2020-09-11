@@ -10,12 +10,21 @@ public class AudioDeviceInputNode : Windows.Foundation.IClosable, Windows.Media.
 # Windows.Media.Audio.AudioDeviceInputNode
 
 ## -description
-Represents an audio device input node.
+
+Represents a node in an audio graph node that inputs audio data into the graph from an audio device such as a microphone or external audio interface.
 
 ## -remarks
-Get an instance of this class by calling [AudioGraph::CreateDeviceInputNodeAsync](audiograph_createdeviceinputnodeasync.md) and then accessing the [CreateAudioDeviceInputNodeResult::DeviceInputNode](createaudiodeviceinputnoderesult_deviceinputnode.md) property.
+
+Get an instance of this class by calling [AudioGraph.CreateDeviceInputNodeAsync](audiograph_createdeviceinputnodeasync_1285412965.md) and then accessing the [CreateAudioDeviceInputNodeResult.DeviceInputNode](createaudiodeviceinputnoderesult_deviceinputnode.md) property.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | Emitter |
 
 ## -examples
 
 ## -see-also
-[IAudioInputNode](iaudioinputnode.md), [IAudioNode](iaudionode.md), [IClosable](../windows.foundation/iclosable.md)
+
+[IAudioInputNode](iaudioinputnode.md), [IAudioNode](iaudionode.md), [IClosable](../windows.foundation/iclosable.md), [AudioGraph sample](https://github.com/Microsoft/Windows-universal-samples/tree/dev/Samples/AudioCreation)

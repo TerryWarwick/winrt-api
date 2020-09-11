@@ -16,17 +16,14 @@ Gets the PlayReady content protection system ID inside a PSSH box.
 Specifies the PlayReady content protection system ID inside a PSSH box. This parameter is sensitive to the underlying platform's endianness. Carefully test your app on all platforms you intend to support to ensure that correct endianness is used on each platform.
 
 ## -remarks
-Previous releases of the PlayReady API required callers to hard-code a well-known string and GUID in their code. These APIs provide those values to the caller so they can request them rather than hard-coding them.
+Previous releases of the PlayReady API required callers to hard-code a well-known string and [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) in their code. These APIs provide those values to the caller so they can request them rather than hard-coding them.
 
-In the [MediaProtectionManager.Properties](https://msdn.microsoft.com/library/windows/apps/windows.media.protection.mediaprotectionmanager.properties.aspx) property (a [PropertySet](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.propertyset.aspx) object), the "Windows.Media.Protection.MediaProtectionContainerGuid" string maps to a GUID, which will typically be the following string: ```csharp
+
+In the [MediaProtectionManager.Properties](/uwp/api/windows.media.protection.mediaprotectionmanager.properties) property (a [PropertySet](/uwp/api/windows.foundation.collections.propertyset) object), the "Windows.Media.Protection.MediaProtectionContainerGuid" string maps to a GUID, which will typically be the following string: ```csharp
 "{" +  Windows.Media.Protection.PlayReady.PlayReadyStatics.ProtectionSystemId.ToString().ToUpper() + "}"
 ```
 
-
-
-
-<!--<auto_snippet sample_id="PlayReadyStatics" snippet_id="SetUpMediaProtectionManager"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>-->
-
 ## -examples
+
 
 ## -see-also

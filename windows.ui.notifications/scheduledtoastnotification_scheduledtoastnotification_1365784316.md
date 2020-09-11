@@ -11,14 +11,14 @@ public ScheduledToastNotification(Windows.Data.Xml.Dom.XmlDocument content, Wind
 # Windows.UI.Notifications.ScheduledToastNotification.ScheduledToastNotification
 
 ## -description
-Creates and initializes a new instance of a recurring [ScheduledToastNotification](scheduledtoastnotification.md).
+Deprecated in Windows 10. On Windows 8 systems, creates and initializes a new instance of a [ScheduledToastNotification](scheduledtoastnotification.md) that re-appears after a specified time after initially appearing. On Windows 10, this functions equivalently to [ScheduledToastNotification(XmlDocument, DateTime)](windows.ui.notifications/scheduledtoastnotification_scheduledtoastnotification_1677895932.md). To achieve the same snooze interval behavior in Windows 10, you can use [buttons on your toasts](/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts#buttons).
 
 ## -parameters
 ### -param content
 The XML that defines the toast notification content.
 
 ### -param deliveryTime
-The date and time that Windows should first display the toast notification. You must call [AddToSchedule](toastnotifier_addtoschedule.md) before this time.
+The date and time that Windows should first display the toast notification. You must call [AddToSchedule](toastnotifier_addtoschedule_1355516744.md) before this time.
 
 ### -param snoozeInterval
 The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
@@ -27,14 +27,14 @@ The amount of time between occurrences of the notification. To be valid, this va
 The maximum number of times to display this notification. Valid values range from 1 to 5.
 
 ## -remarks
-This type of recurring scheduled toast notification is good for a snooze alarm-like functionality. For instance, the notification could be displayed every five minutes until the maximum snooze count is reached, unless the notification is explicitly removed from the schedule in response to a user action.
+This type of snooze interval scheduled toast notification is good for a snooze alarm-like functionality. For instance, the notification could be displayed every five minutes until the maximum snooze count is reached, unless the notification is explicitly removed from the schedule by your app.
 
 
 
 > [!IMPORTANT]
-> The sender is responsible for removing the notification from the schedule once the user activates the notification through a touch or click. Failure to do so can see the notification recurring until the maximum snooze count is reached, even if the user has already dealt with it.
+> Your app is responsible for removing the notification from the schedule once the user activates the notification through a touch or click. Failure to do so can cause the notification to re-appear until the maximum snooze count is reached, even if the user has already dealt with it.
 
-If you want to schedule long recurrence intervals like months or years, we recommend that you use individual scheduled toasts rather than this method. That will avoid timing errors caused by daylight savings time or leap years.
+If you want to schedule long snooze intervals like months or years, we recommend that you use individual scheduled toasts rather than this method. That will avoid timing errors caused by daylight savings time or leap years.
 
 The following code shows a call to this method that displays a toast beginning at *myData* every five minutes for a maximum of three times. 
 
@@ -72,4 +72,4 @@ Notifications.ToastNotificationManager.createToastNotifier().addToSchedule(toast
 
 
 ## -see-also
-[ScheduledToastNotification(XmlDocument, DateTime)](scheduledtoastnotification_scheduledtoastnotification_1677895932.md), [Scheduled notifications sample](http://go.microsoft.com/fwlink/p/?linkid=241614), [Toast schema](XREF:TODO:toast.Schema_Root), [Guidelines and checklist for scheduled notifications](http://msdn.microsoft.com/library/ca9e9121-d1b1-461f-9c7e-b25225d917ca)
+[ScheduledToastNotification(XmlDocument, DateTime)](scheduledtoastnotification_scheduledtoastnotification_1677895932.md), [Scheduled notifications sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Scheduled%20notifications%20sample), [Toast schema](/uwp/schemas/tiles/toastschema/schema-root), [Guidelines and checklist for scheduled notifications](/windows/uwp/controls-and-patterns/tiles-and-notifications-choosing-a-notification-delivery-method)

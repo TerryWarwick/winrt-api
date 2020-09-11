@@ -19,9 +19,9 @@ The new collection items.
 ## -remarks
 For implementations that track a "changed" event, the initial reset fires an event, but the items added do not fire discrete per-item events.
 
-If you are programming using C# or Microsoft Visual Basic, there is no single-call equivalent to [ReplaceAll](uielementcollection_replaceall.md). Use [Clear](uielementcollection_clear.md) and then successive calls to [Add](uielementcollection_add.md).
+If you are programming using C# or Microsoft Visual Basic, there is no single-call equivalent to ReplaceAll. Use [Clear](uielementcollection_clear_556466.md) and then successive calls to [Add](/dotnet/api/system.collections.generic.icollection-1.add).
 
 ## -examples
 
 ## -see-also
-[Clear](uielementcollection_clear.md)
+[Clear](uielementcollection_clear_556466.md)

@@ -28,4 +28,7 @@ An Advanced Query Syntax (AQS) string that represents a device selector.
 ## -examples
 
 ## -see-also
-[GetDeviceSelector(UInt16, UInt16, UInt16, UInt16)](hiddevice_getdeviceselector_1541481733.md)
+
+### Reference
+
+[GetDeviceSelector(UInt16, UInt16, UInt16, UInt16)](hiddevice_getdeviceselector_1541481733.md), [Custom HID device sample](https://github.com/Microsoft/Windows-universal-samples/tree/6370138b150ca8a34ff86de376ab6408c5587f5d/Samples/CustomHidDeviceAccess)

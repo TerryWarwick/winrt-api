@@ -15,10 +15,7 @@ Gets or sets the content for the control's header.
 ## -xaml-syntax
 ```xaml
 <TimePicker Header="headerString"/>
-
-```
-
-```xaml
+- or -
 <TimePicker>
   <TimePicker.Header>headerObject</TimePicker.Header>
 </TimePicker>
@@ -34,7 +31,7 @@ Gets or sets the content for the control's header.
 The content of the control's header. The default is **null**.
 
 ## -remarks
-You can set a data template for the [Header](timepicker_header.md) by using the [HeaderTemplate](timepicker_headertemplate.md) property.
+You can set a data template for the Header by using the [HeaderTemplate](timepicker_headertemplate.md) property.
 
 ## -examples
 

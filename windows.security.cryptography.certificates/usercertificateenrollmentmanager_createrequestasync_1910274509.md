@@ -23,9 +23,9 @@ An asynchronous operation to retrieve the base64 encoded PKCS #10 certificate re
 Certificate enrollment can be performed in an app container. We recommend that you use the following request objects to submit the request:
 
 
-+ [XMLHttpRequest](XREF:TODO:ie.XMLHttpRequest_Object) (JavaScript)
-+ [HttpWebRequest](https://msdn.microsoft.com/library/system.net.httpwebrequest.aspx) (C#)
-+ [IXMLHTTPRequest](XREF:TODO:63409298-0516-437d-b5af-68368157eae3) (C++)
++ [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) (JavaScript)
++ [HttpWebRequest](/dotnet/api/system.net.httpwebrequest?redirectedfrom=MSDN) (C#)
++ [IXMLHTTPRequest](/previous-versions/windows/desktop/ms759148(v=vs.85)) (C++)
 The [CertificateRequestProperties](certificaterequestproperties.md) object contains the following default values.
 
 <table>
@@ -41,7 +41,7 @@ The [CertificateRequestProperties](certificaterequestproperties.md) object conta
    <tr><td>[KeyStorageProviderName](certificaterequestproperties_keystorageprovidername.md)</td><td>Microsoft Software Key Storage Provider</td></tr>
 </table>
 
-While the [CreateRequestAsync](usercertificateenrollmentmanager_createrequestasync.md) method creates the certificate request, you will need to submit the request to an http enrollment end point. You can then take the response from the http enrollment end point and then call the [InstallCertificateAsync](usercertificateenrollmentmanager_installcertificateasync.md) method to install the response.
+While the CreateRequestAsync method creates the certificate request, you will need to submit the request to an http enrollment end point. You can then take the response from the http enrollment end point and then call the [InstallCertificateAsync](usercertificateenrollmentmanager_installcertificateasync_225635424.md) method to install the response.
 
 > [!NOTE]
 > You must include the **Signing** value in the [KeyUsages](certificaterequestproperties_keyusages.md) property in any[ CertificateRequestProperties](certificaterequestproperties.md) object that you use in a call to **CreateRequestAsync**. If you wish to set [KeyUsages](certificaterequestproperties_keyusages.md) to **Decryption** or **KeyAgreement**, you must also OR in **Signing**. Otherwise, the call to **CreateRequestAsync** will fail.

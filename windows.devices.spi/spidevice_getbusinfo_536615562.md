@@ -27,4 +27,4 @@ The bus info requested.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

@@ -20,9 +20,9 @@ The name of the element to find.
 The named element from the template, if the element is found. Can return null if no element with name *childName* was found in the template.
 
 ## -remarks
-You call [GetTemplateChild](control_gettemplatechild.md) to get references to objects in a controls [Template](control_template.md) after it's instantiated. The [ControlTemplate](controltemplate.md) is instantiated in the [OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate.md) method. You can use the [GetTemplateChild](control_gettemplatechild.md) method inside your [OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate.md) override and keep a reference to the objects you need.
+You call GetTemplateChild to get references to objects in a controls [Template](control_template.md) after it's instantiated. The [ControlTemplate](controltemplate.md) is instantiated in the [OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate_1955470198.md) method. You can use the GetTemplateChild method inside your [OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate_1955470198.md) override and keep a reference to the objects you need.
 
 ## -examples
 
 ## -see-also
-[OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate.md)
+[OnApplyTemplate](../windows.ui.xaml/frameworkelement_onapplytemplate_1955470198.md)

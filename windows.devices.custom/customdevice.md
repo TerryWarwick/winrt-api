@@ -10,11 +10,13 @@ public class CustomDevice : Windows.Devices.Custom.ICustomDevice
 # Windows.Devices.Custom.CustomDevice
 
 ## -description
+
 Represents a custom device.
 
 ## -remarks
-<!-- <rem>TODO: Document how the developer can obtain this class object, and add or update retriever elements as necessary.</rem>-->
 
 ## -examples
 
 ## -see-also
+
+[Custom capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)

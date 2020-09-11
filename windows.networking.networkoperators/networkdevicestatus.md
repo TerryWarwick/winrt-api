@@ -14,11 +14,11 @@ public enum Windows.Networking.NetworkOperators.NetworkDeviceStatus : int
 Describes the readiness of a device to connect to a wireless network.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators.
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
 
-For permission to use this API, please reach out to [Network Operators API Permissions](mailto:netopperm@microsoft.com).
 
-For technical help with this API, please reach out to [Network Operators API Help](mailto:netophelp@microsoft.com)
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -enum-fields
 ### -field DeviceNotReady:0
@@ -47,8 +47,10 @@ The mobile broadband device is blocked by a PIN or password preventing the devic
 
 
 ## -remarks
-Mobile operator Windows Store app can have access to different states of the device. Access to the device states such as device readiness, account activation state, and device lock status are made available through the [NetworkDeviceStatus](networkdevicestatus.md) enumeration. The radio state information is available through the [CurrentRadioState](mobilebroadbanddeviceinformation_currentradiostate.md) enumeration. Note that these are two different states. For example, a radio state **Off** does not translate to a **DeviceNotReady** state and vice versa.
+Mobile operator UWP app can have access to different states of the device. Access to the device states such as device readiness, account activation state, and device lock status are made available through the NetworkDeviceStatus enumeration. The radio state information is available through the [CurrentRadioState](mobilebroadbanddeviceinformation_currentradiostate.md) enumeration. Note that these are two different states. For example, a radio state **Off** does not translate to a **DeviceNotReady** state and vice versa.
 
 ## -examples
 
 ## -see-also
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

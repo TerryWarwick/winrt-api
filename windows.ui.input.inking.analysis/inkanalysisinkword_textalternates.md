@@ -13,7 +13,7 @@ public IVectorView<string> TextAlternates { get; }
 Gets the collection of strings identified as potential matches of the InkAnalysisInkWord object.
 
 ## -property-value
-The recognition matches as a collection of [String](https://msdn.microsoft.com/library/system.string.aspx) objects. The most likely candidate is topmost in the collection.
+The recognition matches as a collection of [String](/dotnet/api/system.string?redirectedfrom=MSDN) objects. The most likely candidate is topmost in the collection.
 
 ## -remarks
 

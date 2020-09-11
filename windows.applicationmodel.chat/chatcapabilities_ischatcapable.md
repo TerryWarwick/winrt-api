@@ -11,13 +11,16 @@ public bool IsChatCapable { get; }
 # Windows.ApplicationModel.Chat.ChatCapabilities.IsChatCapable
 
 ## -description
-Gets a Boolean value indicating if a phone number supports Rich Communication Services (RCS) chat.
+Gets a Boolean value indicating whether a phone number supports Rich Communication Services (RCS) chat.
 
 ## -property-value
-A Boolean value indicating of the app supports chat.
+A Boolean value indicating whether the app supports chat.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

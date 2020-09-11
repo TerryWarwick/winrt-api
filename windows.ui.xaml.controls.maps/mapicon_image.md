@@ -11,6 +11,11 @@ public Windows.Storage.Streams.IRandomAccessStreamReference Image { get;  set; }
 
 ## -description
 Gets or sets the image for the [MapIcon](mapicon.md). Provide an optional custom image to replace the default point of interest (POI) image.
+The following stream formats are supported:
+* PNG - a compressed PNG formatted stream
+* JPG - a compressed JPG formatted stream
+* BMP - an uncompressed BMP format stream
+* Raw RGB bytes. The size of the image is assumed to be square. This is only valid for a stream with an integral square root length. 
 
 ## -property-value
 The point of interest (POI) image for the [MapIcon](mapicon.md).
@@ -23,4 +28,4 @@ The following line of code displays the [MapIcon](mapicon.md) with a custom imag
 ## -examples
 
 ## -see-also
-[Display maps with 2D, 3D, and Streetside views](http://msdn.microsoft.com/library/3839e00b-2c1e-4627-a45f-6dda98d7077f)
+[Display maps with 2D, 3D, and Streetside views](/windows/uwp/maps-and-location/display-maps)

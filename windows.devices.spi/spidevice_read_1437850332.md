@@ -24,4 +24,4 @@ Array containing data read from the device.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

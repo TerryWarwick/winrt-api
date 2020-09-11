@@ -17,8 +17,11 @@ Gets the local timestamp of the message.
 The local timestamp of the message.
 
 ## -remarks
-The value for [LocalTimestamp](chatmessage_localtimestamp.md) is the local time of the device.
+The value for LocalTimestamp is the local time of the device.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+chatSystem, smsSend, chat

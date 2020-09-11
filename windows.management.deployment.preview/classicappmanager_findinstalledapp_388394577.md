@@ -16,6 +16,8 @@ Finds and returns info for an installed classic desktop app.
 ### -param appUninstallKey
 The uninstall registry key for the app.
 
+[Uninstall registry keys](/windows/desktop/Msi/uninstall-registry-key) can be found at: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
+
 ## -returns
 Info for the app.
 

@@ -29,9 +29,9 @@ The identifier for the asynchronous operation that's unique within the platform 
 The completion status of the asynchronous operation.
 
 ## -remarks
-This function is used to indicate that a previously created asynchronous operation has completed all of its asynchronous work. The only work that the operation may schedule after logging completion is its completion continuation. The *operationId* and *platformId* parameters must match an asynchronous operation that was previously logged by a call to the [TraceOperationCreation](asynccausalitytracer_traceoperationcreation.md) method.
+This function is used to indicate that a previously created asynchronous operation has completed all of its asynchronous work. The only work that the operation may schedule after logging completion is its completion continuation. The *operationId* and *platformId* parameters must match an asynchronous operation that was previously logged by a call to the [TraceOperationCreation](asynccausalitytracer_traceoperationcreation_1939304732.md) method.
 
 ## -examples
 
 ## -see-also
-[CausalityRelation](causalityrelation.md), [CausalitySource](causalitysource.md), [CausalitySynchronousWork](causalitysynchronouswork.md), [CausalityTraceLevel](causalitytracelevel.md), [TraceOperationCreation](asynccausalitytracer_traceoperationcreation.md)
+[CausalityRelation](causalityrelation.md), [CausalitySource](causalitysource.md), [CausalitySynchronousWork](causalitysynchronouswork.md), [CausalityTraceLevel](causalitytracelevel.md), [TraceOperationCreation](asynccausalitytracer_traceoperationcreation_1939304732.md)

@@ -11,16 +11,12 @@ public class PrintManager : Windows.Graphics.Printing.IPrintManager
 # Windows.Graphics.Printing.PrintManager
 
 ## -description
-Informs Windows that an application wishes to participate in printing. The [PrintManager](printmanager.md) class is also used for programmatically initiating printing.
+Provides the entry-point for printing within an application.
 
 ## -remarks
-The [PrintManager](printmanager.md) class is responsible for orchestrating the printing flow for Windows Store app. To use this class, you must first call the [GetForCurrentView](printmanager_getforcurrentview.md) method. This method returns the [PrintManager](printmanager.md) object that is specific to the current active window. Next, you must add an event listener for the [PrintTaskRequested](printmanager_printtaskrequested.md) event. This event is raised by the system when a user indicates the possibility of initiating a printing operation. Typically this occurs when the user taps the Devices charm, but the event may also be invoked programmatically.
+The PrintManager class is responsible for orchestrating the printing flow for UWP app. To use this class, you must first call the [GetForCurrentView](printmanager_getforcurrentview_1363600702.md) method. This method returns the PrintManager object that is specific to the current active window. Next, you must add an event listener for the [PrintTaskRequested](printmanager_printtaskrequested.md) event. This event is raised when the application invokes the printing dialog via the **ShowPrintUIAsync** method.
 
-When a Windows Store app registers its "intention" to print, it creates a print contract with the print manager. Here is a JavaScript code snippet to show how to register your app for a print contract using a [PrintManager](printmanager.md):
-
-
-
-
+When a UWP app registers its "intention" to print, it creates a print contract with the print manager. Here is a JavaScript code snippet to show how to register your app for a print contract using a PrintManager:
 
 ```javascript
     var app = WinJS.Application;
@@ -39,9 +35,15 @@ When a Windows Store app registers its "intention" to print, it creates a print 
 
 ```
 
-For more examples involving the print manager and to see some sample code for printing scenarios in Windows Store app, see [Printing](http://msdn.microsoft.com/library/windows/apps/hh465225.aspx) in the Windows Dev Center.
+For more examples involving the print manager and to see some sample code for printing scenarios in UWP apps, see [Printing](/previous-versions/windows/apps/hh465225(v=win.10)) in the Windows Dev Center.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | IsSupported |
 
 ## -examples
 
 ## -see-also
-[Authoring a  for Printers](http://msdn.microsoft.com/library/windows/hardware/br259129), [Developing v4 Print Drivers](http://msdn.microsoft.com/library/windows/hardware/br259124), [Printing](http://msdn.microsoft.com/library/windows/apps/hh465225.aspx)
+[Authoring a  for Printers](/windows-hardware/drivers/devapps/windows-store-device-apps-for-printers), [Developing v4 Print Drivers](/windows-hardware/drivers/print/v4-printer-driver), [Printing](/previous-versions/windows/apps/hh465225(v=win.10))

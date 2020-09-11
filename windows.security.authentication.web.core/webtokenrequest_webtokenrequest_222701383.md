@@ -20,7 +20,7 @@ The web account provider the request is for.
 The scope of the request.
 
 ### -param clientId
-The client Id.
+The client ID.
 
 ### -param promptType
 The request prompt type.
@@ -30,4 +30,4 @@ The request prompt type.
 ## -examples
 
 ## -see-also
-[Web account management code sample](http://go.microsoft.com/fwlink/p/?LinkId=620621), [WebTokenRequest(WebAccountProvider, String, String)](webtokenrequest_webtokenrequest_817645895.md)
+[Web account management code sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement), [WebTokenRequest(WebAccountProvider, String, String)](webtokenrequest_webtokenrequest_817645895.md)

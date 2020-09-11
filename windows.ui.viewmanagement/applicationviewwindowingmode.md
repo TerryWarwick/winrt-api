@@ -23,8 +23,24 @@ The window is sized as specified by the [ApplicationView.PreferredLaunchViewSize
 The window is full-screen.
 
 
+### -field CompactOverlay:3
+
+The window is shown as a compact overlay (picture-in-picture).
+
+### -field Maximized:4
+
+The window is maximized.
+
 ## -remarks
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1809 | 17763 | CompactOverlay |
+| 1809 | 17763 | Maximized |
 
 ## -examples
 
 ## -see-also
+

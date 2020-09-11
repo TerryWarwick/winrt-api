@@ -10,7 +10,7 @@ public Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType PublicK
 # Windows.Devices.SmartCards.SmartCardCryptogramStorageKeyInfo.PublicKeyBlobType
 
 ## -description
-Gets the type of the public key object. This value reflects the public key blob type requested in the [RequestCryptogramMaterialStorageKeyInfoAsync](smartcardcryptogramgenerator_requestcryptogrammaterialstoragekeyinfoasync.md) method.
+Gets the type of the public key object. This value reflects the public key blob type requested in the [RequestCryptogramMaterialStorageKeyInfoAsync](smartcardcryptogramgenerator_requestcryptogrammaterialstoragekeyinfoasync_688264229.md) method.
 
 ## -property-value
 The type of the public key object.
@@ -20,4 +20,4 @@ The type of the public key object.
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

@@ -10,7 +10,7 @@ public void AcceptChangesThrough(Windows.ApplicationModel.Appointments.Appointme
 # Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader.AcceptChangesThrough
 
 ## -description
-Tells the system that all of the changes to appointments returned by the call to [ReadBatchAsync](appointmentstorechangereader_readbatchasync.md), up to the specified [AppointmentStoreChange](appointmentstorechange.md), have been addressed by the app.
+Tells the system that all of the changes to appointments returned by the call to [ReadBatchAsync](appointmentstorechangereader_readbatchasync_888788553.md), up to the specified [AppointmentStoreChange](appointmentstorechange.md), have been addressed by the app.
 
 ## -parameters
 ### -param lastChangeToAccept
@@ -21,3 +21,6 @@ The [AppointmentStoreChange](appointmentstorechange.md) object indicating the la
 ## -examples
 
 ## -see-also
+
+## -capabilities
+appointmentsSystem

@@ -13,7 +13,7 @@ public Windows.UI.Xaml.Thickness Padding { get;  set; }
 Gets or sets the distance between the border and its child object.
 
 ## -xaml-syntax
-```xml
+```xaml
 <RelativePanel Padding="uniform"/>
 - or -
 <RelativePanel Padding="left&right,top&bottom"/>
@@ -33,7 +33,7 @@ Gets or sets the distance between the border and its child object.
 The dimensions of the space between the border and its child as a [Thickness](../windows.ui.xaml/thickness.md) value. [Thickness](../windows.ui.xaml/thickness.md) is a structure that stores dimension values using pixel measures.
 
 ## -remarks
-A related property is [Margin](../windows.ui.xaml/frameworkelement_margin.md) (a property of [FrameworkElement](../windows.ui.xaml/frameworkelement.md)). For more info about the relationship between margin and padding, see [Alignment, margin, and padding](http://msdn.microsoft.com/library/9412abd4-3674-4865-b07d-64c7c26e4842) or [Define layouts with XAML](http://msdn.microsoft.com/library/8d4e4162-1c9c-48f4-8a94-34976fb17079).
+A related property is [Margin](../windows.ui.xaml/frameworkelement_margin.md) (a property of [FrameworkElement](../windows.ui.xaml/frameworkelement.md)). For more info about the relationship between margin and padding, see [Alignment, margin, and padding](/windows/uwp/layout/alignment-margin-padding) or [Define layouts with XAML](/windows/uwp/layout/layouts-with-xaml).
 
 ## -examples
 

@@ -14,12 +14,12 @@ public class TileUpdater : Windows.UI.Notifications.ITileUpdater, Windows.UI.Not
 Changes the content of the specific tile that the updater is bound to.
 
 ## -remarks
-To get an instance of this object, call the [TileUpdateManager.CreateTileUpdaterForApplication](tileupdatemanager_createtileupdaterforapplication.md) or [TileUpdateManager.CreateTileUpdaterForSecondaryTile](tileupdatemanager_createtileupdaterforsecondarytile.md) method.
+To get an instance of this object, call the [TileUpdateManager.CreateTileUpdaterForApplication](tileupdatemanager_createtileupdaterforapplication_1541898748.md) or [TileUpdateManager.CreateTileUpdaterForSecondaryTile](tileupdatemanager_createtileupdaterforsecondarytile_445640521.md) method.
 
-When it is created, [TileUpdater](tileupdater.md) is bound to a specific app or secondary tile, so the methods of this class affect only the single tile that the object instance is bound to.
+When it is created, TileUpdater is bound to a specific app or secondary tile, so the methods of this class affect only the single tile that the object instance is bound to.
 
 ## -examples
-The following example shows [Update](tileupdater_update.md) used to send a notification to the app's tile.
+The following example shows [Update](tileupdater_update_673402202.md) used to send a notification to the app's tile.
 
 ```javascript
 
@@ -42,14 +42,14 @@ function sendTileTextNotification() {
 }
 ```
 
-The following line of code uses [EnableNotificationQueue](tileupdater_enablenotificationqueue.md) to enable the notification queue for the calling app's tile.
+The following line of code uses [EnableNotificationQueue](tileupdater_enablenotificationqueue_1798421599.md) to enable the notification queue for the calling app's tile.
 
 ```javascript
 
 Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication().enableNotificationQueue(true);
 ```
 
-The following example shows the use of the [RemoveFromSchedule](tileupdater_removefromschedule.md) method.
+The following example shows the use of the [RemoveFromSchedule](tileupdater_removefromschedule_928610118.md) method.
 
 ```javascript
 

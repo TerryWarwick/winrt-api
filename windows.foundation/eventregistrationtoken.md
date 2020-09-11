@@ -10,25 +10,30 @@ public struct EventRegistrationToken
 # EventRegistrationToken
 
 ## -description
+
 Represents a reference to a delegate that receives change notifications.
 
-
-
 > **.NET**
-> When programming with .NET, this type is hidden. Advanced-scenario developers should use [System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](https://msdn.microsoft.com/library/system.runtime.interopservices.windowsruntime.eventregistrationtoken.aspx).
+> When programming with .NET, this type is hidden. If you're an advanced scenario developer, then use [System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](/dotnet/api/system.runtime.interopservices.windowsruntime.eventregistrationtoken).
+> 
+> [**C++/WinRT**](/windows/uwp/cpp-and-winrt-apis/)
+> In the C++/WinRT language projection, this type appears as [winrt::event_token](/uwp/cpp-ref-for-winrt/event-token).
 
 ## -struct-fields
 
 ### -field Value
+
 The reference to the delegate.
 A valid reference will not have a value of zero.
 
 ## -remarks
-When programming with .NET, this type is hidden and developers that need an event registration token for advanced event scenarios should use the [System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](https://msdn.microsoft.com/library/system.runtime.interopservices.windowsruntime.eventregistrationtoken.aspx) type. For most app code, you won't need [EventRegistrationToken](https://msdn.microsoft.com/library/system.runtime.interopservices.windowsruntime.eventregistrationtoken.aspx) (or event registration tokens) at all, because the add/remove syntax for C# and Visual Basic languages enables the compiler to generate the registration tokens from a simpler syntax.
 
-In the event subscription model, a delegate registers to receive change notifications from a specified object such as a collection. The [EventRegistrationToken](eventregistrationtoken.md) is used to remove the delegate as a subscriber of change notifications when notifications are no longer needed.
+When programming with .NET, this type is hidden and developers that need an event registration token for advanced event scenarios should use the [System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](/dotnet/api/system.runtime.interopservices.windowsruntime.eventregistrationtoken?redirectedfrom=MSDN) type. For most app code, you won't need [EventRegistrationToken](/dotnet/api/system.runtime.interopservices.windowsruntime.eventregistrationtoken?redirectedfrom=MSDN) (or event registration tokens) at all, because the add/remove syntax for C# and Visual Basic languages enables the compiler to generate the registration tokens from a simpler syntax.
+
+In the event subscription model, a delegate registers to receive change notifications from a specified object such as a collection. The EventRegistrationToken is used to remove the delegate as a subscriber of change notifications when notifications are no longer needed.
 
 ## -examples
 
 ## -see-also
-[System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](https://msdn.microsoft.com/library/system.runtime.interopservices.windowsruntime.eventregistrationtoken.aspx), [Events (C++/CX)](http://msdn.microsoft.com/library/31c8e08a-00ad-40f9-8f7e-124864aaad58), [Delegates (C++/CX)](http://msdn.microsoft.com/library/3175bf1c-86d8-4eda-8d8f-c5b6753d8e38)
+
+[System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken](/dotnet/api/system.runtime.interopservices.windowsruntime.eventregistrationtoken?redirectedfrom=MSDN), [Events (C++/CX)](/cpp/cppcx/events-c-cx), [Delegates (C++/CX)](/cpp/cppcx/delegates-c-cx)

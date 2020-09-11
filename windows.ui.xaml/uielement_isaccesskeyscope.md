@@ -20,3 +20,4 @@ Gets or sets a value that indicates whether an element defines its own access ke
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

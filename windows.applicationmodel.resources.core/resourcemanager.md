@@ -10,12 +10,14 @@ public class ResourceManager : Windows.ApplicationModel.Resources.Core.IResource
 # Windows.ApplicationModel.Resources.Core.ResourceManager
 
 ## -description
+
 Provides access to application resource maps and more advanced resource functionality.
 
 ## -remarks
 
 ## -examples
-This example is based on scenario 13 of the [Application resources and localization sample](http://go.microsoft.com/fwlink/p/?linkid=227301). See the sample for the more complete solution.
+
+This example is based on scenario 13 of the [Application resources and localization sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources). See the sample for the more complete solution.
 
 ```javascript
 // Create a ResourceContext.
@@ -72,7 +74,6 @@ function renderCandidate(candidate, index, output) {
 }
 ```
 
-
-
 ## -see-also
-[Creating and retrieving resources in ](http://go.microsoft.com/fwlink/p/?linkid=251463), [App resources and localization sample](http://go.microsoft.com/fwlink/p/?linkid=227301), [Application resources and localization sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620487)
+
+[Creating and retrieving resources in ](/previous-versions/windows/apps/hh694557(v=vs.140)), [App resources and localization sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources), [Application resources and localization sample (Windows 10)](https://go.microsoft.com/fwlink/p/?LinkId=620487)

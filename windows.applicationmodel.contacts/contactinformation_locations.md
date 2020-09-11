@@ -19,8 +19,11 @@ A read-only list of locations stored with the contact.
 A read-only list of locations.
 
 ## -remarks
-Use the [Locations](contactinformation_locations.md) property to access a contact's address and other information from a [ContactInformation](contactinformation.md) object.
+Use the Locations property to access a contact's address and other information from a [ContactInformation](contactinformation.md) object.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+contactsSystem

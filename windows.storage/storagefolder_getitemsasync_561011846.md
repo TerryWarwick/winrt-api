@@ -22,16 +22,16 @@ The maximum number of items to get.
 ## -returns
 When this method completes successfully, it returns a list of the files and subfolders in the current folder. The list is of type **IReadOnlyList**&lt;[IStorageItem](istorageitem.md)&gt;. Each item in the list is represented by an [IStorageItem](istorageitem.md) object.
 
-To work with the returned items, call the [IsOfType](istorageitem_isoftype.md) method of the [IStorageItem](istorageitem.md) interface to determine whether each item is a file or a folder. Then cast the item to a [StorageFolder](storagefolder.md) or [StorageFile](storagefile.md).
+To work with the returned items, call the [IsOfType](istorageitem_isoftype_1417811226.md) method of the [IStorageItem](istorageitem.md) interface to determine whether each item is a file or a folder. Then cast the item to a [StorageFolder](storagefolder.md) or [StorageFile](storagefile.md).
 
 ## -exceptions
 ### System.UnauthorizedAccessException
 
-You don't have permission to access the contents of the current folder.
+You don't have permission to access the contents of the current folder. For more information, see [File access permissions](/windows/uwp/files/file-access-permissions).
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[GetItemsAsync](storagefolder_getitemsasync_1518547059.md), [GetFilesAsync](storagefolder_getfilesasync.md), [GetFoldersAsync](storagefolder_getfoldersasync.md)
+[File access permissions](/windows/uwp/files/file-access-permissions), [GetItemsAsync](storagefolder_getitemsasync_1518547059.md), [GetFilesAsync](/uwp/api/windows.storage.storagefolder.getfilesasync), [GetFoldersAsync](/uwp/api/windows.storage.storagefolder.getfoldersasync)

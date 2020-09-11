@@ -10,20 +10,36 @@ public Windows.Foundation.IAsyncOperation<Windows.Gaming.XboxLive.Storage.GameSa
 # Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync
 
 ## -description
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Gets a game save provider for the specified user.
 
 ## -parameters
 ### -param user
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: [User](windows.system.user)
+
+User who the game saves are for.
 
 ### -param serviceConfigId
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **String** \[JavaScript\] | [System.String](/dotnet/api/system.string?redirectedfrom=MSDN) \[.NET\] | [Platform::String](/cpp/cppcx/platform-string-class) \[C++\]
+
+The service configuration ID (SCID) used by your game.
 
 ## -returns
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **IAsyncOperation\<;GameSaveProviderGetResult>;**
+
+**IAsyncOperation\<;GameSaveProviderGetResult>;** that represents the state of the asynchronous operation.
 
 ## -remarks
+
+GetForUserAsync obtains a [GameSaveProvider](gamesaveprovider.md) instance for the specified user. After the asynchronous operation completes, check the [Status](gamesaveprovidergetresult_status.md) property of the result to determine whether the operation succeeded with [GameSaveErrorStatus.Ok](gamesaveerrorstatus.md).
+
+Your title ID and service configuration ID (SCID) must be properly configured or this method will fail.
 
 ## -examples
 
 ## -see-also
+
+[GameSaveProvider](gamesaveprovider.md)

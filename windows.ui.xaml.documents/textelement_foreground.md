@@ -15,19 +15,12 @@ Gets or sets the [Brush](../windows.ui.xaml.media/brush.md) to apply to the cont
 ## -xaml-syntax
 ```xaml
 <textElementForeground="{StaticResource resourceName}"/>
-
-```
-
-```xaml
+- or -
 <textElementForeground="colorString"/>
-
-```
-
-```xaml
+- or -
 <textElement>
   <textElement.Foreground>singleBrush</textElement.Foreground>
 </textElement>
-
 ```
 
 
@@ -40,9 +33,9 @@ Gets or sets the [Brush](../windows.ui.xaml.media/brush.md) to apply to the cont
 The brush that is applied to the text content. The default is a [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md) with [Color](../windows.ui.xaml.media/solidcolorbrush_color.md) value [Black](../windows.ui/colors_black.md).
 
 ## -remarks
-Setting [Foreground](textelement_foreground.md) has no visible effect for [LineBreak](linebreak.md) or [InlineUIContainer](inlineuicontainer.md) objects.
+Setting Foreground has no visible effect for [LineBreak](linebreak.md) or [InlineUIContainer](inlineuicontainer.md) objects.
 
 ## -examples
 
 ## -see-also
-[Quickstart: Displaying text](http://msdn.microsoft.com/library/3efa9d2a-71a5-41d3-bba4-ec6cc356d47f), [Use brushes](http://msdn.microsoft.com/library/02141f86-355e-4046-86ea-2a89d615b7db)
+[Quickstart: Displaying text](/previous-versions/windows/apps/hh700392(v=win.10)), [Use brushes](/windows/uwp/graphics/using-brushes)

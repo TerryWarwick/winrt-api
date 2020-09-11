@@ -11,17 +11,22 @@ public string EventToken { get; }
 # Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails.EventToken
 
 ## -description
-Gets a GUID that uniquely identifies the authentication attempt for which this event was raised.
+Gets a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) that uniquely identifies the authentication attempt for which this event was raised.
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators. For more information, see [Mobile Broadband: ](http://msdn.microsoft.com/library/windows/hardware/hh852368.aspx) and [Windows 8 Integration for Wireless Hotspot Operators](http://msdn.microsoft.com/library/windows/hardware/hh770516.aspx).
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators. For more information, see [Mobile Broadband: ](/windows-hardware/drivers/mobilebroadband/index) and [Windows 8 Integration for Wireless Hotspot Operators](/windows-hardware/drivers/mobilebroadband/integrating-windows-with-wireless-hotspots).
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -property-value
-A GUID that uniquely identifies the connection attempt.
+A [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) that uniquely identifies the connection attempt.
 
 ## -remarks
-The handler retrieving this token must call [TryGetAuthenticationContext](hotspotauthenticationcontext_trygetauthenticationcontext.md) to retrieve the full context of this event.
+The handler retrieving this token must call [TryGetAuthenticationContext](hotspotauthenticationcontext_trygetauthenticationcontext_1029198546.md) to retrieve the full context of this event.
 
 ## -examples
 
 ## -see-also
+
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

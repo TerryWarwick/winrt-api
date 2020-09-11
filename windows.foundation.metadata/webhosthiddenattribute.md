@@ -17,4 +17,4 @@ Identifies the type as one whose functionality is not projected into the specifi
 ## -examples
 
 ## -see-also
-[Attribute](https://msdn.microsoft.com/library/system.attribute.aspx)
+[Attribute](/dotnet/api/system.attribute?redirectedfrom=MSDN)

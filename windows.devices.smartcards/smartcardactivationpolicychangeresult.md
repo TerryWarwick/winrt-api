@@ -10,7 +10,7 @@ public enum Windows.Devices.SmartCards.SmartCardActivationPolicyChangeResult : i
 # SmartCardActivationPolicyChangeResult
 
 ## -description
-Defines the return values for the [RequestActivationPolicyChangeAsync](smartcardappletidgroupregistration_requestactivationpolicychangeasync.md) method.
+Defines the return values for the [RequestActivationPolicyChangeAsync](smartcardappletidgroupregistration_requestactivationpolicychangeasync_926513637.md) method.
 
 ## -enum-fields
 ### -field Denied:0
@@ -25,4 +25,4 @@ The policy change was allowed.
 ## -examples
 
 ## -see-also
-[Create an NFC Smart Card app](http://msdn.microsoft.com/library/26834a51-512b-485b-84c8-abf713787588)
+[Create an NFC Smart Card app (applies to Windows 10 Mobile only)](/windows/uwp/devices-sensors/host-card-emulation)

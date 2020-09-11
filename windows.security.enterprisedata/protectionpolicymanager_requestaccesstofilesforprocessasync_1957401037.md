@@ -8,21 +8,33 @@ public IAsyncOperation<ProtectionPolicyEvaluationResult> ProtectionPolicyManager
 -->
 
 # Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessToFilesForProcessAsync
-Requests access to enterprise-protected content for a process of an app.
+
+
 ## -description
 
-## -params
+Requests access to enterprise-protected content for a process of an app.
 
-## -param sourceItemList
+## -parameters
+
+### -param sourceItemList
+
 An array of files to that you want to grant access to.
-## -param processId
+
+### -param processId
+
 The process id of the process that you want to grant the permission to.
-## -param auditInfo
+
+### -param auditInfo
+
 An audit info object; an instance of [ProtectionPolicyAuditInfo](protectionpolicyauditinfo.md).
+
 ## -returns
+
 A value of the [ProtectionPolicyEvaluationResult](protectionpolicyevaluationresult.md) enumeration that is the result of the query.
+
 ## -remarks
 
 ## -see-also
 
 ## -examples
+

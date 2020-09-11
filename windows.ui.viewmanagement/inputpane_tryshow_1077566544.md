@@ -10,16 +10,21 @@ public bool TryShow()
 # Windows.UI.ViewManagement.InputPane.TryShow
 
 ## -description
-Shows the [InputPane](inputpane.md) if it is hidden.
+Tries to show the [InputPane](inputpane.md), if it is hidden.
+
+This method is a "best effort" and guarantees only that the user has a way to enter text in the focused control. The touch keyboard, or Soft Input Panel (SIP), is shown only if a hardware keyboard is not available.
 
 ## -returns
-**true** if the [InputPane](inputpane.md) was shown successfully; otherwise **false**.
+**true** if the request to show the [InputPane](inputpane.md) was accepted; otherwise **false**.
+
+If this method is called from an app that is not in foreground, the request is rejected and **false** is returned.
 
 ## -remarks
-> In some cases, overlay UI such as an [InputPane](inputpane.md) is not fully supported. This includes:+ [ apps](https://msdn.microsoft.com/en-us/windows/uwp/gaming/index) in full-screen mode.
-+ Windows Holographic apps in [holographic view](https://developer.microsoft.com/en-us/windows/holographic/app_model#app_views).
 
+If you set [CoreTextEditContext.InputPaneDisplayPolicy](../windows.ui.text.core/coretexteditcontext_inputpanedisplaypolicy.md) to **Manual** in your app, you are responsible for showing and hiding the input pane using TryShow and TryHide.
 
 ## -examples
 
 ## -see-also
+[TryHide](inputpane_tryhide_42550069.md)
+[Showing](inputpane_showing.md)

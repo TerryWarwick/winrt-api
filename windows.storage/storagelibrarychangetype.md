@@ -41,7 +41,7 @@ The item was changed from one where the content can be indexed to one where the 
 The encryption applied to this item has changed.
 
 ### -field ChangeTrackingLost:9
-The change tracking information associated with the item was lost. Call [Reset](storagelibrarychangetracker_reset.md) to reestablish continuity with the storage library.
+The change tracking information associated with the item was lost. Call [Reset](storagelibrarychangetracker_reset_1636126115.md) to reestablish continuity with the storage library.
 
 
 ## -remarks
@@ -49,3 +49,4 @@ The change tracking information associated with the item was lost. Call [Reset](
 ## -examples
 
 ## -see-also
+[Track file system changes in the background](/windows/uwp/files/change-tracking-filesystem)

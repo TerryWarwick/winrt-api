@@ -13,8 +13,8 @@ public class HtmlPrintDocumentSource : Windows.Foundation.IClosable, Windows.Gra
 Manages the document source for app printing.
 
 ## -remarks
-To get an instance of [HtmlPrintDocumentSource](htmlprintdocumentsource.md), call the [getHtmlPrintDocumentSource](XREF:TODO:wwa.MSApp_getHtmlPrintDocumentSource)[MSApp](XREF:TODO:wwa.MSApp_object) method. 
-<!--TODO: Document how the developer can obtain this class object, and add or update retriever elements as necessary.-->
+To get an instance of HtmlPrintDocumentSource, call the [getHtmlPrintDocumentSource](/previous-versions/hh772325(v=vs.85))[MSApp](/previous-versions/hh772326(v=vs.85)) method. 
+
 
 ## -examples
 

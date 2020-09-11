@@ -10,11 +10,11 @@ public TouchCapabilities()
 # Windows.Devices.Input.TouchCapabilities.TouchCapabilities
 
 ## -description
-Initializes a new instance of the [TouchCapabilities](touchcapabilities_touchcapabilities.md) class.
+Initializes a new instance of the TouchCapabilities class.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[Quickstart: Identifying input devices](http://msdn.microsoft.com/library/7001b56d-081b-4683-84bb-24c361397c08)
+[Quickstart: Identifying input devices](/windows/uwp/design/input/identify-input-devices)

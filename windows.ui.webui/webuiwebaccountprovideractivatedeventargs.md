@@ -13,7 +13,12 @@ public class WebUIWebAccountProviderActivatedEventArgs : Windows.ApplicationMode
 Represents the arguments involved in activated a web account provider.
 
 ## -remarks
-TODO: Document how the developer can obtain this class object, and add or update retriever elements as necessary.
+
+### Version history
+
+| Windows version | SDK version | Value added |
+| -- | -- | -- |
+| 1607 | 14393 | User |
 
 ## -examples
 

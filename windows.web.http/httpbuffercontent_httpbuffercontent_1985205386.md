@@ -16,15 +16,18 @@ Initializes a new instance of the [HttpBufferContent](httpbuffercontent.md) clas
 ### -param content
 The content used to initialize the [HttpBufferContent](httpbuffercontent.md).
 
-## -exceptions
+## -remarks
+The entire buffer specified in the *content* parameter is used to initialize the [HttpBufferContent](httpbuffercontent.md).
+
+Below are the exceptions that this function throws.
+
 ### E_INVALIDARG
 
 The *content* parameter is **null** (**Nothing** in Visual Basic).
 
-## -remarks
-The entire buffer specified in the *content* parameter is used to initialize the [HttpBufferContent](httpbuffercontent.md).
-
 ## -examples
+
+See [POST binary data over HTTP](/windows/uwp/networking/httpclient#post-binary-data-over-http).
 
 ## -see-also
 [HttpBufferContent(IBuffer, UInt32, UInt32)](httpbuffercontent_httpbuffercontent_2118840992.md)

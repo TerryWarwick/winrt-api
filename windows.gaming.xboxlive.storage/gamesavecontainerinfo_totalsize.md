@@ -10,13 +10,19 @@ public ulong TotalSize { get; }
 # Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize
 
 ## -description
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+The total size, in bytes, of the game save container and its blobs.
 
 ## -property-value
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **Number** \[JavaScript\] | [System.UInt64](/dotnet/api/system.uint64?redirectedfrom=MSDN) \[.NET\] | **uint64** \[C++\]
+
+Total size, in bytes, of the game save container and its blobs.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
+
+[GameSaveContainerInfo](gamesavecontainerinfo.md)

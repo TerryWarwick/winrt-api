@@ -24,11 +24,11 @@ Gets the collection used to generate the content of the menu.
 <dl><dt>oneOrMoreItems</dt><dd>oneOrMoreItemsSets of MenuFlyoutItem elements. Can also include MenuFlyoutSeparator elements between groups of items, or ToggleMenuFlyoutItem elements.</dd>
 </dl>
 ## -property-value
-The collection that is used to generate the content of the menu, if it exists; otherwise, **null**. The default is an empty collection.
+The collection that is used to generate the content of the menu. The default is an empty collection.
 
 ## -remarks
 
 ## -examples
 
 ## -see-also
-[MenuFlyoutItem](menuflyoutitem.md), [Quickstart: Adding a MenuFlyout](http://msdn.microsoft.com/library/0261a056-9b91-41f7-88ff-a104cbb9ac26)
+[MenuFlyoutItem](menuflyoutitem.md)

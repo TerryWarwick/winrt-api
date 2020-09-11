@@ -19,12 +19,11 @@ The smallest size allowed for the app window, or a [Size](../windows.foundation/
 ## -remarks
 To remove the preferred minimum size and use and system default minimum size instead, set the [Size](../windows.foundation/size.md) value to "0,0".
 
-The smallest allowed minimum size is 192 x 48 effective pixels. The largest allowed minimum size is 500 x 500 effective pixels. If you set a value outside of these bounds, it is coerced to be within the allowed bounds. (To learn about effective pixels, see [
-      Responsive design 101 for ](http://msdn.microsoft.com/library/bf42e810-cdc8-47d2-9c30-baa19dcbe2da).)
+The smallest allowed minimum size is 192 x 48 effective pixels. The largest allowed minimum size is 500 x 500 effective pixels. If you set a value outside of these bounds, it is coerced to be within the allowed bounds. (To learn about effective pixels, see [Introduction to Windows app design](/windows/uwp/design/basics/design-and-ui-intro).)
 
 Setting the preferred minimum size affects only the view it was requested on; setting it on one view does not impact the preferred minimum size of the other views.
 
-The preferred minimum size is not persisted after the app is closed. You should always set your preferred minimum size on your view before [Window.Activate](../windows.ui.xaml/window_activate.md) is called to present it.
+The preferred minimum size is not persisted after the app is closed. You should always set your preferred minimum size on your view before [Window.Activate](../windows.ui.xaml/window_activate_1797342875.md) is called to present it.
 
 If you set a preferred minimum size that is larger than the current size, the app is resized so that the preferred minimum size is honored.
 
@@ -33,5 +32,4 @@ If you set a preferred minimum size that is larger than the current size, the ap
 ## -examples
 
 ## -see-also
-[Window resizing sample](http://go.microsoft.com/fwlink/p/?LinkId=620026), [
-      Responsive design 101 for ](http://msdn.microsoft.com/library/bf42e810-cdc8-47d2-9c30-baa19dcbe2da)
+[Window resizing sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ResizeAppView), [Introduction to Windows app design](/windows/uwp/design/basics/design-and-ui-intro)

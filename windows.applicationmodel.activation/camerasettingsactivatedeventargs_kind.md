@@ -16,14 +16,14 @@ Gets the activation type.
 One of the enumeration values.
 
 ## -remarks
-If [Kind](camerasettingsactivatedeventargs_kind.md) is **CameraSettings**, the app should open using a flyout. If [Kind](camerasettingsactivatedeventargs_kind.md) is **Launched**, it should open full-screen.
+If Kind is **CameraSettings**, the app should open using a flyout. If Kind is **Launched**, it should open full-screen.
 
 
 
 > [!NOTE]
-> Do not declare device capabilities for webcam or location. Those capabilities will cause a prompt for permissions to appear, which will obstruct the UI in your Windows Store app.
+> Do not declare device capabilities for webcam or location. Those capabilities will cause a prompt for permissions to appear, which will obstruct the UI in your UWP app.
 
 ## -examples
 
 ## -see-also
-[Windows Store device app for camera sample](http://go.microsoft.com/fwlink/p/?LinkID=249442), [Developing  device apps for cameras](http://go.microsoft.com/fwlink/p/?LinkId=226802)
+[Microsoft Store device app for camera sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/CameraStarterKit), [Developing  device apps for cameras](https://go.microsoft.com/fwlink/p/?LinkId=226802)

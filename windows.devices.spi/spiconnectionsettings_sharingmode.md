@@ -23,4 +23,4 @@ The sharing mode.
 
 
 ## -capabilities
-lowLevelDevices
+lowLevel

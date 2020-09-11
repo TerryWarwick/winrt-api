@@ -12,7 +12,7 @@ public Windows.UI.StartScreen.ForegroundText ForegroundText { get;  set; }
 
 ## -description
 > [!NOTE]
-> [ForegroundText](secondarytile_foregroundtext.md) may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.ForegroundText](secondarytilevisualelements_foregroundtext.md).
+> ForegroundText may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.ForegroundText](secondarytilevisualelements_foregroundtext.md).
 
 Gets or sets whether the tile should use dark or light text.
 
@@ -29,4 +29,3 @@ Only two text colors are available— default dark and default light— and are 
 ## -examples
 
 ## -see-also
-[BackgroundColor](secondarytile_backgroundcolor.md), [Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

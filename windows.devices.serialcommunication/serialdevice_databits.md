@@ -16,7 +16,7 @@ The number of data bits in each character value that is transmitted or received,
 The number of data bits in each character value that is transmitted or received.
 
 ## -remarks
-[DataBits](serialdevice_databits.md) corresponds to the **WordLength** member of the [SERIAL_LINE_CONTROL](XREF:TODO:serports.serial_line_control) structure.
+DataBits corresponds to the **WordLength** member of the [SERIAL_LINE_CONTROL](/windows-hardware/drivers/ddi/content/ntddser/ns-ntddser-_serial_line_control) structure.
 
 ## -examples
 

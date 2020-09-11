@@ -10,23 +10,45 @@ public Windows.Foundation.IAsyncOperation<Windows.Gaming.XboxLive.Storage.GameSa
 # Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync
 
 ## -description
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Similar to [SubmitUpdatesAsync](gamesavecontainer_submitupdatesasync_1002100950.md), except that this method operates on a **PropertySet** instead of a mapped view (or dictionary in C\#).
 
 ## -parameters
 ### -param blobsToWrite
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: [IPropertySet](w_found_coll.ipropertyset)
+
+Collection of blob names and the data to write for each blob.
 
 ### -param blobsToDelete
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **IIterable\<;String>;** \[JavaScript/C++\] | [System.Collections.Generic.IEnumerable\<;String>;](/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN) \[.NET\]
+
+Collection containing the string names of blobs to delete.
 
 ### -param displayName
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **String** \[JavaScript\] | [System.String](/dotnet/api/system.string?redirectedfrom=MSDN) \[.NET\] | [Platform::String](/cpp/cppcx/platform-string-class) \[C++\]
+
+The save game container's display name. Set this to the name that will be displayed for the game save.
 
 ## -returns
-This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
+
+Type: **IAsyncOperation\<;GameSaveOperationResult>;**
+
+**IAsyncOperation\<;GameSaveOperationResult>;** that represents the state of the asynchronous operation.
 
 ## -remarks
+
+This method can be called from JavaScript, unlike [SubmitUpdatesAsync](gamesavecontainer_submitupdatesasync_1002100950.md) which requires creating a mapped view (or dictionary in C\#).
+
+*blobsToWrite* is a **PropertySet** that should contain key-value pairs of a blob name and a Windows.Storage.Streams.IBuffer (Windows.Storage.Streams.DataWriter, for example).
+
+After the asynchronous operation completes, check the [Status](gamesaveoperationresult_status.md) property of the result to determine whether the operation succeeded with [GameSaveErrorStatus.Ok](gamesaveerrorstatus.md).
 
 ## -examples
 
 ## -see-also
+
+[GameSaveContainer](gamesavecontainer.md)
+[SubmitUpdatesAsync](gamesavecontainer_submitupdatesasync_1002100950.md)

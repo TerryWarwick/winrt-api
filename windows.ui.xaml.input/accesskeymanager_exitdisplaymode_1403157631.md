@@ -17,3 +17,4 @@ Causes the app to exit an access key sequence.
 ## -examples
 
 ## -see-also
+[Access keys](/windows/uwp/design/input/access-keys)

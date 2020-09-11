@@ -10,17 +10,21 @@ public uint Id { get; }
 # Windows.UI.Input.Inking.InkStroke.Id
 
 ## -description
-Gets the Global Unique Identifier (GUID) that identifies the ink stroke.
+Gets the ink stroke identifier.
 
-A GUID is assigned to each ink stroke managed by the [InkPresenter](inkpresenter.md).
+A unique identifier is assigned to each ink stroke managed by the [InkPresenter](inkpresenter.md).
 
 ## -property-value
-The unique identifier for the ink stroke.
+The identifier for the ink stroke.
 
 ## -remarks
-This GUID persists through serialization/deserialization of the ink stroke. 
+This identifier does not persist through serialization/deserialization of the ink stroke. After deserialization, a new identifer is assigned.
+
+Calling the **[Clone](/uwp/api/Windows.UI.Input.Inking.InkStroke.Clone)** method also generates a new identifier for the cloned stroke.
 
 ## -examples
 
 ## -see-also
-- [InkStrokeContainer.GetStrokeById](inkstrokecontainer_getstrokebyid_91415375.md)
+[InkStrokeContainer.GetStrokeById](inkstrokecontainer_getstrokebyid_91415375.md), [Pen and stylus interactions](/windows/uwp/input-and-devices/pen-and-stylus-interactions), [Get started: Support ink in your UWP app](/windows/uwp/get-started/ink-walkthrough), [Ink analysis sample (basic) (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-analysis-basic.zip), [Ink handwriting recognition sample (C#)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-handwriting-reco.zip), [Save and load ink strokes from an Ink Serialized Format (ISF) file](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store.zip), [Save and load ink strokes from the clipboard](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-store-clipboard.zip), [Ink toolbar location and orientation sample (basic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness.zip), [Ink toolbar location and orientation sample (dynamic)](https://github.com/MicrosoftDocs/windows-topic-specific-samples/archive/uwp-ink-toolbar-handedness-dynamic.zip), [Coloring book sample](https://aka.ms/cpubsample-coloringbook), [Family notes sample](https://aka.ms/cpubsample-familynotessample), [Inking sample (JavaScript)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Ink), [Simple inking sample (C#/C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SimpleInk), [Complex inking sample (C++)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ComplexInk), [Ink analysis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/InkAnalysis)
+
+

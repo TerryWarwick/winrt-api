@@ -13,8 +13,6 @@ public Windows.Data.Xml.Dom.XmlDocument GetTemplateContent(Windows.UI.Notificati
 ## -description
 Gets a blank XML template content that defines a tile flyout (mix view) notification. You can then fill in this template as needed, using Document Object Model (DOM)  API.
 
-
-<!-- @WRITER erictill 5/7/2014 : Do you need to remove unused elements? Empty text elements might be OK, but I have doubts about the image elements with the empty src attribute. -->
 > [!NOTE]
 > When you use the template retrieved through this method, you don't need to remove unused elements. They will be ignored.
 
@@ -26,8 +24,9 @@ The specific template. At this time, the only valid value is **TileFlyoutTemplat
 The template's content represented as an [XmlDocument](../windows.data.xml.dom/xmldocument.md) object.
 
 ## -remarks
-Because there is currently only one template, this method always fetches the following XML: ```xml
+Because there is currently only one template, this method always fetches the following XML: 
 
+```xml
 <tileflyout>
     <visual version="3">
         <binding template="TileFlyoutTemplate01">
@@ -114,8 +113,6 @@ Because there is currently only one template, this method always fetches the fol
     </visual>
 </tileflyout>
 ```
-
-
 
 ## -examples
 

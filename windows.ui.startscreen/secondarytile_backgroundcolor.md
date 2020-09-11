@@ -12,7 +12,7 @@ public Windows.UI.Color BackgroundColor { get;  set; }
 
 ## -description
 > [!NOTE]
-> [BackgroundColor](secondarytile_backgroundcolor.md) may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.BackgroundColor](secondarytilevisualelements_backgroundcolor.md).
+> BackgroundColor may be altered or unavailable for releases after Windows 8.1. Instead, use [SecondaryTileVisualElements.BackgroundColor](secondarytilevisualelements_backgroundcolor.md).
 
 Gets or sets the tile's background color.
 
@@ -25,24 +25,23 @@ If this property is not set, its value is inherited from the background color of
 ## -examples
 The following lines show different ways to express the color through this property.
 
-```javascript
-
-secondaryTile.backgroundColor = Windows.UI.Colors.magenta;
-```
-
 ```csharp
-
 secondaryTile.BackgroundColor = Windows.UI.Color.Magenta;
 secondaryTile.BackgroundColor = Windows.UI.Color.FromArgb(255, 255, 255, 255);
 ```
 
-```cpp
+```cppwinrt
+secondaryTile.BackgroundColor(Windows::UI::Colors::Magenta());
+secondaryTile.BackgroundColor(Windows::UI::ColorHelper::FromArgb(0, 255, 255, 120));
+```
 
+```cppcx
 secondaryTile->BackgroundColor = Windows::UI::Colors::Magenta;
 secondaryTile->BackgroundColor = Windows::UI::ColorHelper::FromArgb(0, 255, 255, 120);
 ```
 
-
+```javascript
+secondaryTile.backgroundColor = Windows.UI.Colors.magenta;
+```
 
 ## -see-also
-[Secondary tiles sample](http://go.microsoft.com/fwlink/p/?linkid=231487)

@@ -122,12 +122,12 @@ The supplied certificate is invalid. This can be returned for a number of reason
 
 
 ## -remarks
-An error encountered on socket operation is returned as **HRESULT** value. The [SocketError.GetStatus](socketerror_getstatus.md) method is used to convert an error from a socket operation to a [SocketErrorStatus](socketerrorstatus.md) enumeration value. Most of the [SocketErrorStatus](socketerrorstatus.md) enumeration values correspond to an error returned by the native Windows sockets operation.
+An error encountered on socket operation is returned as **HRESULT** value. The [SocketError.GetStatus](socketerror_getstatus_1856274933.md) method is used to convert an error from a socket operation to a SocketErrorStatus enumeration value. Most of the SocketErrorStatus enumeration values correspond to an error returned by the native Windows sockets operation.
 
 ## -examples
 
 ## -see-also
-[SocketError](socketerror.md), [SocketError.GetStatus](socketerror_getstatus.md)
+[SocketError](socketerror.md), [SocketError.GetStatus](socketerror_getstatus_1856274933.md)
 
 ## -capabilities
 ID_CAP_NETWORKING [Windows Phone]

@@ -15,11 +15,11 @@ Provides access to the application data store. Application data consists of file
 ## -remarks
 ### Types of application data
 
-[ApplicationData](applicationdata.md) provides local, roaming, and temporary storage for app data on a per-user basis. Use this class to preserve app-specific data between sessions, users, and across multiple devices.
+ApplicationData provides local, roaming, and temporary storage for app data on a per-user basis. Use this class to preserve app-specific data between sessions, users, and across multiple devices.
 
-[ApplicationData](applicationdata.md) does not provide access to files in an app package. To do this, use [Windows.ApplicationModel.Package.InstalledLocation](../windows.applicationmodel/package_installedlocation.md).
+ApplicationData does not provide access to files in an app package. To do this, use [Windows.ApplicationModel.Package.InstalledLocation](../windows.applicationmodel/package_installedlocation.md).
 
-[ApplicationData.Current](applicationdata_current.md) gives you the app's [ApplicationData](applicationdata.md) instance. Use this instance to get app folders or settings.
+[ApplicationData.Current](applicationdata_current.md) gives you the app's ApplicationData instance. Use this instance to get app folders or settings.
 
 Folders are used to store app data as files on the file system. App settings are stored in key/value pairs that can be organized in to nested sets. Settings data is saved in the Windows registry.
 
@@ -29,7 +29,6 @@ These are the main types of app data:
 + SharedLocal: persistent across all app users
 + Roaming: exists on all devices where the user has installed the app
 + Temporary: can be deleted by the system at any time
-
 
 ### Using application folders
 
@@ -45,62 +44,25 @@ These are the main types of app data:
 
 Another folder, [SharedLocalFolder](applicationdata_sharedlocalfolder.md), is persistent across app user accounts and should be used for large files accessed by multiple users. There is some extra set up required to access [SharedLocalFolder](applicationdata_sharedlocalfolder.md). For more information on accessing and using this folder, see [SharedLocalFolder](applicationdata_sharedlocalfolder.md).
 
-You can store your app data in app-specific, versioned formats. For more info, see [Version](applicationdata_version.md) and [SetVersionAsync](applicationdata_setversionasync.md).
+You can store your app data in app-specific, versioned formats. For more info, see [Version](applicationdata_version.md) and [SetVersionAsync](applicationdata_setversionasync_766938731.md).
 
-For more details on using these APIs, see [Store and retrieve settings and other app data](http://msdn.microsoft.com/library/41676a02-325a-455e-8565-c9ec0bc3a8fe).
+For more details on using these APIs, see [Store and retrieve settings and other app data](/windows/uwp/app-settings/store-and-retrieve-app-data).
 
 ## -examples
-The following code example demonstrates how to read or write to an [ApplicationData](applicationdata.md) folder of your choice. This example uses the [LocalFolder](applicationdata_localfolder.md), but the code can be slightly modified to access the [LocalCacheFolder](applicationdata_localcachefolder.md), [RoamingFolder](applicationdata_roamingfolder.md), [SharedLocalFolder](applicationdata_sharedlocalfolder.md), or [TemporaryFolder](applicationdata_temporaryfolder.md) based on how your data should be stored. [SharedLocalFolder](applicationdata_sharedlocalfolder.md) has some restrictions and needs special permissions to access, for more information, see [SharedLocalFolder](applicationdata_sharedlocalfolder.md).
-
-```javascript
-
-// This example code can be used to read or write to an ApplicationData folder of your choice.
-
-var applicationData = Windows.Storage.ApplicationData.current;
-var localFolder = applicationData.localFolder;  // Change this to var roamingFolder = applicationData.roamingFolder;
-                                                // to use the RoamingFolder instead, for example.
-
-// Write data to a file
-
-function writeTimestamp() {
-   localFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
-      .then(function (sampleFile) {
-         var formatter = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("longtime");
-         var timestamp = formatter.format(new Date());
-
-         return Windows.Storage.FileIO.writeTextAsync(sampleFile, timestamp);
-      }).done(function () {      
-      });
-}
-
-// Read data from a file
-
-function readTimestamp() {
-   localFolder.getFileAsync("dataFile.txt")
-      .then(function (sampleFile) {
-         return Windows.Storage.FileIO.readTextAsync(sampleFile);
-      }).done(function (timestamp) {
-         // Data is contained in timestamp
-      }, function () {
-         // Timestamp not found
-      });
-}
-```
+The following code example demonstrates how to read or write to an ApplicationData folder of your choice. This example uses the [LocalFolder](applicationdata_localfolder.md), but the code can be slightly modified to access the [LocalCacheFolder](applicationdata_localcachefolder.md), [RoamingFolder](applicationdata_roamingfolder.md), [SharedLocalFolder](applicationdata_sharedlocalfolder.md), or [TemporaryFolder](applicationdata_temporaryfolder.md) based on how your data should be stored. [SharedLocalFolder](applicationdata_sharedlocalfolder.md) has some restrictions and needs special permissions to access, for more information, see [SharedLocalFolder](applicationdata_sharedlocalfolder.md).
 
 ```csharp
-
 // This example code can be used to read or write to an ApplicationData folder of your choice.
 
-// Change this to Windows.Storage.StorageFolder roamingFolder = Windows.Storage.ApplicationData.Current.RoamingFolder
+// Change this to Windows.Storage.StorageFolder roamingFolder = Windows.Storage.ApplicationData.Current.RoamingFolder;
 // to use the RoamingFolder instead, for example.
 Windows.Storage.StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
 
 // Write data to a file
-
 async void WriteTimestamp()
 {
    Windows.Globalization.DateTimeFormatting.DateTimeFormatter formatter = 
-       new Windows.Globalization.DatetimeFormatting.DateTimeFormatter("longtime");
+       new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("longtime");
 
    StorageFile sampleFile = await localFolder.CreateFileAsync("dataFile.txt", 
        CreationCollisionOption.ReplaceExisting);
@@ -108,55 +70,90 @@ async void WriteTimestamp()
 }
 
 // Read data from a file
-
 async Task ReadTimestamp()
 {
-   try
-   {
-      StorageFile sampleFile = await localFolder.GetFileAsync("dataFile.txt");
-      String timestamp = await FileIO.ReadTextAsync(sampleFile);
-      // Data is contained in timestamp
-   }
-   catch (Exception)
-   {
-      // Timestamp not found
-   }
+    try
+    {
+        StorageFile sampleFile = await localFolder.GetFileAsync("dataFile.txt");
+        String timestamp = await FileIO.ReadTextAsync(sampleFile);
+        // Data is contained in timestamp
+    }
+    catch (FileNotFoundException e)
+    {
+        // Cannot find file
+    }
+    catch (IOException e)
+    {
+        // Get information from the exception, then throw
+        // the info to the parent method.
+        if(e.Source != null)
+        {
+            Debug.WriteLine("IOException source: {0}", e.Source);
+        }
+        throw;
+    }
 }
 ```
 
-```vb
+```cppwinrt
+#include <winrt/Windows.Globalization.h>
+#include <winrt/Windows.Globalization.DateTimeFormatting.h>
+#include <winrt/Windows.Storage.h>
 
-' This example code can be used to read or write to an ApplicationData folder of your choice.
+using namespace winrt;
+using namespace Windows::Foundation;
+using namespace Windows::Storage;
+using namespace Windows::UI::Xaml;
 
-' Change this to Dim roamingFolder As Windows.Storage.StorageFolder = Windows.Storage.ApplicationData.Current.RoamingFolder
-' to use the RoamingFolder instead, for example.
-Dim localFolder As Windows.Storage.StorageFolder = Windows.Storage.ApplicationData.Current.LocalFolder
+// This example code can be used to read or write to an ApplicationData folder of your choice.
 
-' Write data to a file
+// Change this to StorageFolder m_localFolder{ Windows::Storage::ApplicationData::Current().RoamingFolder() }; to 
+// use the RoamingFolder instead, for example.
+StorageFolder m_localFolder{ Windows::Storage::ApplicationData::Current().LocalFolder() };
 
-Private Async Sub WriteTimestamp()
-   Dim formatter As DateTimeFormatter = New DateTimeFormatter("longtime")
+// Write data to a file.
+IAsyncAction MainPage::WriteTimestampAsync()
+{
+    StorageFile sampleFile{ co_await m_localFolder.CreateFileAsync(L"dataFile.txt", CreationCollisionOption::ReplaceExisting) };
+    Windows::Globalization::Calendar calendar;
+    auto now = calendar.GetDateTime();
+    Windows::Globalization::DateTimeFormatting::DateTimeFormatter formatter{ L"longtime" };
 
-   Dim sampleFile As StorageFile = Await localFolder.CreateFileAsync("dataFile.txt", 
-       CreationCollisionOption.ReplaceExisting)
-   Await FileIO.WriteTextAsync(sampleFile, formatter.Format(DateTime.Now));
-End Sub
+    try
+    {
+        co_await FileIO::WriteTextAsync(sampleFile, formatter.Format(now));
+    }
+    catch (winrt::hresult_error const& /* ex */)
+    {
+        // Timestamp not written.
+    }
+}
 
-' Read data from a file
+// Read data from a file.
+IAsyncAction MainPage::ReadTimestampAsync()
+{
+    StorageFile file{ co_await m_localFolder.GetFileAsync(L"dataFile.txt") };
 
-Private Async Function ReadTimestamp() As Task
-   Try
-      Dim sampleFile As StorageFile = Await localFolder.GetFileAsync("dataFile.txt")
-      Dim timestamp As string = Await FileIO.ReadTextAsync(sampleFile)
-      ' Data is contained in timestamp
-   Catch e1 As Exception
-      ' Timestamp not found
-   End Try
-End Function
+    try
+    {
+        winrt::hstring timestamp{ co_await Windows::Storage::FileIO::ReadTextAsync(file) };
+    }
+    catch (winrt::hresult_error const& /* ex */)
+    {
+        // Timestamp not read.
+    }
+}
+
+IAsyncAction MainPage::ClickHandler(IInspectable const&, RoutedEventArgs const&)
+{
+    myButton().Content(box_value(L"Clicked"));
+
+    co_await WriteTimestampAsync();
+    co_await ReadTimestampAsync();
+}
 ```
 
-```cpp
-
+```cppcx
 // This example code can be used to read or write to an ApplicationData folder of your choice.
 
 // Change this to StorageFolder^ roamingFolder = ApplicationData::Current->RoamingFolder; to 
@@ -164,7 +161,6 @@ End Function
 StorageFolder^ localFolder = ApplicationData::Current->LocalFolder;
 
 // Write data to a file
-
 void MainPage::WriteTimestamp()
 {
    concurrency::task<StorageFile^> fileOperation = 
@@ -186,7 +182,6 @@ void MainPage::WriteTimestamp()
 }
 
 // Read data from a file
-
 void MainPage::ReadTimestamp()
 {
    concurrency::task<StorageFile^> getFileOperation(localFolder->GetFileAsync("dataFile.txt"));
@@ -206,7 +201,69 @@ void MainPage::ReadTimestamp()
 }
 ```
 
+```javascript
+// This example code can be used to read or write to an ApplicationData folder of your choice.
 
+var applicationData = Windows.Storage.ApplicationData.current;
+
+// Change this to var roamingFolder = applicationData.roamingFolder;
+// to use the RoamingFolder instead, for example.
+var localFolder = applicationData.localFolder;  
+
+// Write data to a file
+function writeTimestamp() {
+   localFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+      .then(function (sampleFile) {
+         var formatter = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("longtime");
+         var timestamp = formatter.format(new Date());
+
+         return Windows.Storage.FileIO.writeTextAsync(sampleFile, timestamp);
+      }).done(function () {      
+      });
+}
+
+// Read data from a file
+function readTimestamp() {
+   localFolder.getFileAsync("dataFile.txt")
+      .then(function (sampleFile) {
+         return Windows.Storage.FileIO.readTextAsync(sampleFile);
+      }).done(function (timestamp) {
+         // Data is contained in timestamp
+      }, function () {
+         // Timestamp not found
+      });
+}
+```
+
+```vb
+' This example code can be used to read or write to an ApplicationData folder of your choice.
+
+' Change this to Dim roamingFolder As Windows.Storage.StorageFolder = Windows.Storage.ApplicationData.Current.RoamingFolder
+' to use the RoamingFolder instead, for example.
+Dim localFolder As Windows.Storage.StorageFolder = Windows.Storage.ApplicationData.Current.LocalFolder
+
+' Write data to a file
+Private Async Sub WriteTimestamp()
+   Dim formatter As DateTimeFormatter = New DateTimeFormatter("longtime")
+
+   Dim sampleFile As StorageFile = Await localFolder.CreateFileAsync("dataFile.txt", 
+       CreationCollisionOption.ReplaceExisting)
+   Await FileIO.WriteTextAsync(sampleFile, formatter.Format(DateTime.Now));
+End Sub
+
+' Read data from a file
+Private Async Function ReadTimestamp() As Task
+   Try
+      Dim sampleFile As StorageFile = Await localFolder.GetFileAsync("dataFile.txt")
+      Dim timestamp As string = Await FileIO.ReadTextAsync(sampleFile)
+      ' Data is contained in timestamp
+   Catch e1 As Exception
+      ' Timestamp not found
+   End Try
+End Function
+```
+
+For more samples and information about reading and writing to a file, see [Create, write, and read a file](/windows/uwp/files/quickstart-reading-and-writing-files).
 
 ## -see-also
-[Quickstart: Local application data (JavaScript)](http://msdn.microsoft.com/library/87dfe8e5-2d01-45cf-bcb1-25f54219a439), [Quickstart: Roaming application data (JavaScript)](http://msdn.microsoft.com/library/60f40214-c201-4afe-a2f5-0ef3a7de0076), [Quickstart: Temporary application data (JavaScript)](http://msdn.microsoft.com/library/2e875049-85ef-4581-b6df-f9f0663d93c9), [Store and retrieve settings and other app data](http://msdn.microsoft.com/library/41676a02-325a-455e-8565-c9ec0bc3a8fe), [Guidelines for roaming application data](https://msdn.microsoft.com/library/windows/apps/hh465094.aspx), [Guidelines for app settings](https://docs.microsoft.com/windows/uwp/app-settings/guidelines-for-app-settings), [ApplicationDataCompositeValue](applicationdatacompositevalue.md), [ApplicationDataContainer](applicationdatacontainer.md), [ApplicationDataContainerSettings](applicationdatacontainersettings.md), [Application settings sample (Windows 8.1, Windows Phone 8.1)](http://go.microsoft.com/fwlink/p/?linkid=226738), [Application data sample (Windows 8.1, Windows Phone 8.1)](http://go.microsoft.com/fwlink/p/?linkid=231478), [Application data sample (Windows 10)](http://go.microsoft.com/fwlink/p/?LinkId=620486)
+[Quickstart: Local application data (JavaScript)](/previous-versions/windows/apps/hh465118(v=win.10)), [Quickstart: Roaming application data (JavaScript)](/previous-versions/windows/apps/hh465123(v=win.10)), [Quickstart: Temporary application data (JavaScript)](/previous-versions/windows/apps/hh465130(v=win.10)), [Store and retrieve settings and other app data](/windows/uwp/app-settings/store-and-retrieve-app-data), [Guidelines for roaming application data](/windows/uwp/design/app-settings/store-and-retrieve-app-data), [Guidelines for app settings](/windows/uwp/app-settings/guidelines-for-app-settings), [ApplicationDataCompositeValue](applicationdatacompositevalue.md), [ApplicationDataContainer](applicationdatacontainer.md), [ApplicationDataContainerSettings](applicationdatacontainersettings.md), [Application settings sample (Windows 8.1, Windows Phone 8.1)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/App%20settings%20sample), [Application data sample (Windows 8.1, Windows Phone 8.1)](https://go.microsoft.com/fwlink/p/?linkid=231478), [Application data sample (Windows 10)](https://go.microsoft.com/fwlink/p/?LinkId=620486)

@@ -13,7 +13,11 @@ public Windows.Networking.NetworkOperators.MobileBroadbandRadioState RadioState 
 ## -description
 Gets the new state of the radio.
 
-This functionality is only available to mobile operator apps and Windows Store app given privileged access by mobile network operators. For more information, see [Mobile Broadband: ](http://msdn.microsoft.com/library/windows/hardware/hh852368.aspx).
+> [!NOTE]
+> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
+
+
+> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
 
 ## -property-value
 The new state of the radio after a radio state change.
@@ -23,3 +27,6 @@ The new state of the radio after a radio state change.
 ## -examples
 
 ## -see-also
+
+## -capabilities
+cellularDeviceIdentity, cellularDeviceControl

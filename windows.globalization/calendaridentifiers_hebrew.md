@@ -16,13 +16,13 @@ Gets the identifier for the Hebrew calendar.
 The string "HebrewCalendar", which is the identifier for the Hebrew calendar.
 
 ## -remarks
-<!--{annotation author="raymonsh" time="9/6/2012 3:01:23 PM"}The following remarks are adapted from http://msdn.microsoft.com/en-us/library/system.globalization.hebrewcalendar-->
+
 The Hebrew calendar recognizes two eras: B.C.E. (before the common era) and C.E. (current era). This implementation of the Hebrew calendar system recognizes only the current era (C.E.) and the Hebrew years 5343 to 5999 (1583 to 2239 in the [Gregorian](calendaridentifiers_gregorian.md) calendar).
 
 In every 19-year cycle that ends with a year that is evenly divisible by 19, the 3rd, 6th, 8th, 11th, 14th, 17th, and 19th years are leap years. A common year can have from 353 to 355 days, depending on the placement of Jewish holidays. A leap year can have from 383 to 385 days.
 
 The Hebrew calendar has 12 months during common years and 13 months during leap years:<table>
-   <tr><th>[MonthAsNumericString](calendar_monthasnumericstring.md) (common year)</th><th>[MonthAsNumericString](calendar_monthasnumericstring.md) (leap year)</th><th>Month</th><th>Days in common years</th><th>Days in leap years</th></tr>
+   <tr><th>[MonthAsNumericString](calendar_monthasnumericstring_952914344.md) (common year)</th><th>[MonthAsNumericString](calendar_monthasnumericstring_952914344.md) (leap year)</th><th>Month</th><th>Days in common years</th><th>Days in leap years</th></tr>
    <tr><td>1</td><td>1</td><td>תשרי (Tishrei)</td><td>30</td><td>30</td></tr>
    <tr><td>2</td><td>2</td><td>חשון (Cheshvan)</td><td>29/30</td><td>29/30</td></tr>
    <tr><td>3</td><td>3</td><td>כסלו (Kislev)</td><td>29/30</td><td>29/30</td></tr>

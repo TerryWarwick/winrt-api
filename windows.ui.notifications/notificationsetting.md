@@ -28,7 +28,6 @@ An administrator has disabled all notifications on this computer through group p
 
 ### -field DisabledByManifest:4
 This app has not declared itself toast capable in its package.appxmanifest file. This setting is found on the manifest's Application UI page, under the Notification section. For an app to send toast, the **Toast Capable** option must be set to "Yes".
-<!-- @WRITER erictill 12/13/2011 : TBD: Revisit before RTM to make sure they haven't changed the UI again. Also, does this apply to tiles? -->
 
 
 ## -remarks
@@ -36,4 +35,4 @@ This app has not declared itself toast capable in its package.appxmanifest file.
 ## -examples
 
 ## -see-also
-[TileUpdater.Setting](tileupdater_setting.md), [ToastNotifier.Setting](toastnotifier_setting.md), [App tiles and badges sample](http://go.microsoft.com/fwlink/p/?linkid=231469), [Toast notifications sample](http://go.microsoft.com/fwlink/p/?linkid=231503)
+[TileUpdater.Setting](tileupdater_setting.md), [ToastNotifier.Setting](toastnotifier_setting.md), [App tiles and badges sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/App%20tiles%20and%20badges%20sample), [Toast notifications sample](https://go.microsoft.com/fwlink/p/?linkid=231503)

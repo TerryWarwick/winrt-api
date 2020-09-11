@@ -24,15 +24,15 @@ Suggestions are provided based on local, indexed files in a listed [storageFolde
 
 If local suggestions are disabled, this property has no effect. Set the [localContentSuggestionSettings.enabled](localcontentsuggestionsettings_enabled.md) property to true to display local suggestions in the search pane.
 
-You can use this list to provide suggestions from libraries or folders for which your app hasn't declared capabilities, like folders that were accessed using the file picker. Learn more about capabilities in [Access to user resources using the Windows Runtime](http://msdn.microsoft.com/library/7b4402ea-55f6-438d-b9d1-8e65d56c8f42).
+You can use this list to provide suggestions from libraries or folders for which your app hasn't declared capabilities, like folders that were accessed using the file picker. Learn more about capabilities in [Access to user resources using the Windows Runtime](/previous-versions/windows/apps/hh464936(v=win.10)).
 
 ## -examples
-The [Search contract sample](http://go.microsoft.com/fwlink/p/?linkid=234892) demonstrates how to append a location to the list:
+The [Search contract sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Search%20contract%20sample/C%23) demonstrates how to append a location to the list:
 
 
 
 [!code-js[lssettings_appendloc_js](../windows.applicationmodel.search/code/SearchContract/js/js/scenario4.js#Snippetlssettings_appendloc_js)]
-> If there is only one [storageFolder](../windows.storage/storagefolder.md) in the [locations](localcontentsuggestionsettings_locations.md) list, like the Music library in the example, the local files in that location only are used to provide suggestions in the search pane.
+> If there is only one [storageFolder](../windows.storage/storagefolder.md) in the locations list, like the Music library in the example, the local files in that location only are used to provide suggestions in the search pane.
 
 ## -see-also
-[Access to user resources using the Windows Runtime](http://msdn.microsoft.com/library/7b4402ea-55f6-438d-b9d1-8e65d56c8f42), [Quickstart: Adding search](http://msdn.microsoft.com/library/d412c562-22d2-41c4-9f27-27503b89b9e9), [Search contract sample](http://go.microsoft.com/fwlink/p/?linkid=234892), [Object class](https://msdn.microsoft.com/library/system.object.aspx), [LocalContentSuggestionSettings class](localcontentsuggestionsettings.md), [LocalContentSuggestionSettings.Enabled property](localcontentsuggestionsettings_enabled.md), [SearchPane.SetLocalContentSuggestionSettings method](searchpane_setlocalcontentsuggestionsettings.md), [Windows.Storage.KnownFolders class](../windows.storage/knownfolders.md), [Windows.Storage.StorageFolder class](../windows.storage/storagefolder.md)
+[Access to user resources using the Windows Runtime](/previous-versions/windows/apps/hh464936(v=win.10)), [Quickstart: Adding search](/previous-versions/windows/apps/hh465238(v=win.10)), [Search contract sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Search%20contract%20sample), [Object class](/dotnet/api/system.object?redirectedfrom=MSDN), [LocalContentSuggestionSettings class](localcontentsuggestionsettings.md), [LocalContentSuggestionSettings.Enabled property](localcontentsuggestionsettings_enabled.md), [SearchPane.SetLocalContentSuggestionSettings method](searchpane_setlocalcontentsuggestionsettings_156524340.md), [Windows.Storage.KnownFolders class](../windows.storage/knownfolders.md), [Windows.Storage.StorageFolder class](../windows.storage/storagefolder.md)

@@ -37,36 +37,9 @@ The timing controls [Control1](scaleanimation_control1.md) and [Control2](scalea
 On the resulting Bézier curve, the x-coordinate represents time and the y-coordinate represents progress. The raw curve from (0,0) to (1,1) is scaled to match the actual duration and range of the animated transition, such that x=0 is the starting time of the transform, x=1 is the ending time, y=0 is the initial value of the animated property, and y=1 is the final value. Values of x and y between 0 and 1 represent corresponding intermediate values of time and the animation.
 
 ## -examples
-To obtain an instance of the [ScaleAnimation](scaleanimation.md) class, you first obtain the collection of [animations](animationdescription_animations.md) in the [animation description](animationdescription.md), and then walk that array of animations to find any that are of type [scale](propertyanimationtype.md). The following examples shows this process. The *effect* and *target* parameters are assumed to have been previously assigned.
-<!-- @WRITER erictill 1/12/2012 : To obtain a pointer to this interface, get the <xref rid="w_ui_core_animmet.ipropertyanimation" targtype="interface_winrt">IPropertyAnimation</xref> object by using the <xref rid="w_ui_core_animmet.animationdescription_animations" targtype="property_winrt">AnimationDescription.Animations</xref> property and cast it as an <xref rid="w_ui_core_animmet.iscaleanimation" targtype="class_winrt">IScaleAnimation</xref>. -->
-
-```javascript
-
-var animationDescription = new Windows.UI.Core.AnimationMetrics.AnimationDescription(effect, target);
-
-var animations = animationDescription.animations;
-for (var i = 0; i < animations.size; i++) {
-    var animation = animations[i];
-
-    switch (animation.type) {
-        case animationMetrics.PropertyAnimationType.scale:
-            // Retrieve scale animation metrics
-            break;
-        case animationMetrics.PropertyAnimationType.translation:
-            // Retrieve translation animation metrics
-            break;
-        case animationMetrics.PropertyAnimationType.opacity:
-            
-            // Retrieve scale animation metrics
-            break;
-    }
-}
-```
-
-The following example shows the C# version of the same code.
+To obtain an instance of the ScaleAnimation class, you first obtain the collection of [animations](animationdescription_animations.md) in the [animation description](animationdescription.md), and then walk that array of animations to find any that are of type [scale](propertyanimationtype.md). The following examples shows this process. The *effect* and *target* parameters are assumed to have been previously assigned.
 
 ```csharp
-
 using Windows.UI.Core.AnimationMetrics;
 
 AnimationDescription animationDescription = new AnimationDescription(effect, target);
@@ -96,7 +69,27 @@ foreach (var animation in animationDescription.Animations)
 }
 ```
 
+```javascript
+var animationDescription = new Windows.UI.Core.AnimationMetrics.AnimationDescription(effect, target);
 
+var animations = animationDescription.animations;
+for (var i = 0; i < animations.size; i++) {
+    var animation = animations[i];
+
+    switch (animation.type) {
+        case animationMetrics.PropertyAnimationType.scale:
+            // Retrieve scale animation metrics
+            break;
+        case animationMetrics.PropertyAnimationType.translation:
+            // Retrieve translation animation metrics
+            break;
+        case animationMetrics.PropertyAnimationType.opacity:
+            
+            // Retrieve scale animation metrics
+            break;
+    }
+}
+```
 
 ## -see-also
-[Animation metrics sample](http://go.microsoft.com/fwlink/p/?linkid=242462), [AnimationDescription](animationdescription.md)
+[Animation metrics sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/AnimationMetrics), [AnimationDescription](animationdescription.md)

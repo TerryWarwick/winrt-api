@@ -15,15 +15,9 @@ Gets or sets a brush that describes the border fill of the panel.
 ## -xaml-syntax
 ```xaml
 <RelativePanel BorderBrush="{StaticResource resourceName}"/>
-
-```
-
-```xaml
+- or -
 <RelativePanel BorderBrush="colorString"/>
-
-```
-
-```xaml
+- or -
 <RelativePanel>
   <RelativePanel.BorderBrush>singleBrush</RelativePanel.BorderBrush>
 </RelativePanel>
@@ -40,7 +34,7 @@ Gets or sets a brush that describes the border fill of the panel.
 The brush that is used to fill the panel's border. The default is **null**, (a null brush) which is evaluated as [Transparent](../windows.ui/colors_transparent.md) for rendering.
 
 ## -remarks
-The [BorderThickness](relativepanel_borderthickness.md) value must be greater than 0 in order to see the [BorderBrush](relativepanel_borderbrush.md) value take effect.
+The [BorderThickness](relativepanel_borderthickness.md) value must be greater than 0 in order to see the BorderBrush value take effect.
 
 ## -examples
 
